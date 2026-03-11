@@ -3,8 +3,75 @@
   "entity_type": "spec",
   "display_name": "Spec 17: 仓库重构对齐Base",
   "directory": "规格/P17_仓库重构对齐Base",
-  "session_count": 2,
+  "session_count": 3,
   "sessions": [
+    {
+      "session_id": "d975fd50-8501-402f-8803-b1eeffc6efff",
+      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/d975fd50-8501-402f-8803-b1eeffc6efff.jsonl",
+      "confidence": 0.12,
+      "start_time": "2026-03-08T15:17:30.425Z",
+      "end_time": "2026-03-11T00:56:54.909Z",
+      "message_count": 436,
+      "matched_message_count": 7,
+      "matched_messages": [
+        {
+          "uuid": "2f280d11-09e7-4e35-a77a-4cf5a85c7c3c",
+          "line_number": 36,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T15:18:17.624Z",
+          "preview": ""
+        },
+        {
+          "uuid": "be5e5ad6-80da-4366-ae1e-02941149c961",
+          "line_number": 552,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T19:40:37.451Z",
+          "preview": ""
+        },
+        {
+          "uuid": "e539e2d3-27f5-4684-8e1d-510c551ef425",
+          "line_number": 749,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-11T00:43:39.025Z",
+          "preview": ""
+        },
+        {
+          "uuid": "914724b4-170d-4d95-b12e-7b21ca5008da",
+          "line_number": 751,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-11T00:43:55.848Z",
+          "preview": ""
+        },
+        {
+          "uuid": "2f0bb519-a983-4437-9261-aa83cde9dda2",
+          "line_number": 790,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-11T00:45:08.391Z",
+          "preview": ""
+        },
+        {
+          "uuid": "aa884bf0-c647-42e0-9a04-9b0e3843cab5",
+          "line_number": 800,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-11T00:45:27.156Z",
+          "preview": ""
+        },
+        {
+          "uuid": "a5d15a72-2ee1-4884-8348-b91e2b112c99",
+          "line_number": 830,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-11T00:46:05.100Z",
+          "preview": ""
+        }
+      ],
+      "evidence": [
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P17_仓库重构对齐Base/requirements.md",
+        "File: 规格/P17_仓库重构对齐Base/history/sessions-index.json",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P17_仓库重构对齐Base/pdf",
+        "File: 规格/P17_仓库重构对齐Base/P17-变更说明-Onboarding-Guide.md",
+        "File: 规格/P17_仓库重构对齐Base/pdf/P17-变更说明-Onboarding-Guide.pdf"
+      ]
+    },
     {
       "session_id": "36591ed3-c021-4888-ae47-f7c95c23fedc",
       "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/36591ed3-c021-4888-ae47-f7c95c23fedc.jsonl",
@@ -12,65 +79,9 @@
       "start_time": "2026-02-22T01:39:42.977Z",
       "end_time": "2026-03-07T06:24:40.383Z",
       "message_count": 380,
-      "matched_message_count": 7,
-      "matched_messages": [
-        {
-          "uuid": "1d1ec152-f4a3-4573-be0d-2405301fbc5f",
-          "line_number": 33,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-22T01:40:03.193Z",
-          "preview": ""
-        },
-        {
-          "uuid": "f139cfd4-ede6-4449-9cd5-398af112ca30",
-          "line_number": 318,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-22T02:02:17.148Z",
-          "preview": ""
-        },
-        {
-          "uuid": "41452479-991d-4641-be3f-0a28b4e0632d",
-          "line_number": 323,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-22T02:02:30.032Z",
-          "preview": ""
-        },
-        {
-          "uuid": "5bcb9f80-fb6f-4437-bf88-ac06bc9ba4b7",
-          "line_number": 327,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-22T02:02:41.977Z",
-          "preview": ""
-        },
-        {
-          "uuid": "887077fd-093b-4408-94ec-c04022fa1362",
-          "line_number": 330,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-22T02:02:53.359Z",
-          "preview": ""
-        },
-        {
-          "uuid": "245fd5d4-cecb-4df3-a8f3-8cc3e45175ff",
-          "line_number": 386,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-22T02:05:01.622Z",
-          "preview": ""
-        },
-        {
-          "uuid": "11ca6eff-9111-42ea-a7e3-bebdf0be06ba",
-          "line_number": 444,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-22T02:26:47.615Z",
-          "preview": ""
-        }
-      ],
-      "evidence": [
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P17_仓库重构对齐Base/P17-变更说明-Onboarding-Guide.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P17_仓库重构对齐Base/P17-变更说明-Onboarding-Guide.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P17_仓库重构对齐Base/P17-变更说明-Onboarding-Guide.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P17_仓库重构对齐Base/P17-变更说明-Onboarding-Guide.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P17_仓库重构对齐Base/P17-变更说明-Onboarding-Guide.md"
-      ]
+      "matched_message_count": 0,
+      "matched_messages": [],
+      "evidence": []
     },
     {
       "session_id": "4ff8dafa-38cb-4694-990c-59beac133601",
@@ -79,178 +90,10 @@
       "start_time": "2026-02-21T01:37:08.937Z",
       "end_time": "2026-02-21T02:18:26.092Z",
       "message_count": 299,
-      "matched_message_count": 23,
-      "matched_messages": [
-        {
-          "uuid": "013d846c-f695-44ea-a4f2-d360cbb5aa56",
-          "line_number": 312,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:41:03.502Z",
-          "preview": ""
-        },
-        {
-          "uuid": "997c3794-da8e-4542-a01b-cc40214355c2",
-          "line_number": 314,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:41:29.897Z",
-          "preview": ""
-        },
-        {
-          "uuid": "b098aa5d-956f-4d5d-b9a4-0ea092ec73fe",
-          "line_number": 319,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:41:55.027Z",
-          "preview": ""
-        },
-        {
-          "uuid": "d916e9b4-d10b-46eb-b075-45e25de68e8c",
-          "line_number": 324,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:42:02.857Z",
-          "preview": ""
-        },
-        {
-          "uuid": "c58df8ab-2619-4fa9-a86e-e72896d522c0",
-          "line_number": 329,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:42:08.186Z",
-          "preview": ""
-        },
-        {
-          "uuid": "85c0a2bf-1a5e-4e0a-8988-a943af2140d5",
-          "line_number": 437,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:46:07.822Z",
-          "preview": ""
-        },
-        {
-          "uuid": "63d6e591-538c-4b61-a70a-0fe22bdd78d0",
-          "line_number": 458,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:46:37.936Z",
-          "preview": ""
-        },
-        {
-          "uuid": "561b0381-8690-4fe3-a346-32958c29ce1d",
-          "line_number": 460,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:46:38.962Z",
-          "preview": ""
-        },
-        {
-          "uuid": "57228dce-a73e-46a4-b958-1f9adc3e7e0f",
-          "line_number": 472,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:47:17.249Z",
-          "preview": ""
-        },
-        {
-          "uuid": "fb959d4b-d469-431f-8ba9-1ee1b27da1a5",
-          "line_number": 477,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:47:30.496Z",
-          "preview": ""
-        },
-        {
-          "uuid": "e820034b-dfcd-4238-a5d7-88ad9d018640",
-          "line_number": 485,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:47:53.210Z",
-          "preview": "All session history commands working correctly. Here's a summary of everything accomplished:\n\n---\n\n#"
-        },
-        {
-          "uuid": "e37d377d-f5a4-48b4-acea-cca14500bafd",
-          "line_number": 499,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:56:51.958Z",
-          "preview": ""
-        },
-        {
-          "uuid": "51508e05-d786-4790-92d7-6bb40b773ca0",
-          "line_number": 501,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:56:56.583Z",
-          "preview": ""
-        },
-        {
-          "uuid": "ca205d87-9c0f-44b1-ac50-9cd390eab836",
-          "line_number": 503,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:56:57.215Z",
-          "preview": ""
-        },
-        {
-          "uuid": "bd83c135-cd99-4c63-a85d-1fa6c01684d8",
-          "line_number": 512,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:57:02.396Z",
-          "preview": ""
-        },
-        {
-          "uuid": "ba8d1922-4281-46bc-b669-6f75aa0b283e",
-          "line_number": 522,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:58:35.399Z",
-          "preview": ""
-        },
-        {
-          "uuid": "6a3bb86f-e3e5-4a42-af58-d0db7bad2382",
-          "line_number": 527,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:58:45.107Z",
-          "preview": "Done. The guide is at:\n\n**`规格/P17_仓库重构对齐Base/P17-变更说明-Onboarding-Guide.md`**\n\nIt covers all 5 points"
-        },
-        {
-          "uuid": "4e8250cb-a424-4227-b4f8-1dd694e5d79c",
-          "line_number": 566,
-          "msg_type": "user",
-          "timestamp": "2026-02-21T02:15:14.891Z",
-          "preview": "in 规格/P17_仓库重构对齐Base/P17-变更说明-Onboarding-Guide.md,\n1. can you add this part of explainnation \"The on"
-        },
-        {
-          "uuid": "003254f2-557b-4b99-86e0-4dc15e7de4a4",
-          "line_number": 576,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T02:15:28.288Z",
-          "preview": ""
-        },
-        {
-          "uuid": "fecc0f32-dbdd-48f5-b11a-107a6af56751",
-          "line_number": 580,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T02:15:42.257Z",
-          "preview": ""
-        },
-        {
-          "uuid": "f5de5e8d-10c8-4c59-91b9-89d550c3338b",
-          "line_number": 584,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T02:16:13.690Z",
-          "preview": ""
-        },
-        {
-          "uuid": "460b4410-5e10-446d-86c7-f006a2ce5bfa",
-          "line_number": 588,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T02:16:25.887Z",
-          "preview": ""
-        },
-        {
-          "uuid": "35a1090a-0241-4787-9f6c-9911b3ff0a96",
-          "line_number": 603,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T02:18:15.070Z",
-          "preview": ""
-        }
-      ],
-      "evidence": [
-        "File: 规格/P17_仓库重构对齐Base",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P17_仓库重构对齐Base/requirements.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P17_仓库重构对齐Base/design.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P17_仓库重构对齐Base/tasks.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P17_仓库重构对齐Base/status.md"
-      ]
+      "matched_message_count": 0,
+      "matched_messages": [],
+      "evidence": []
     }
   ],
-  "last_updated": "2026-03-08T12:40:22.000963"
+  "last_updated": "2026-03-10T17:57:00.953454"
 }
