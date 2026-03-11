@@ -1,0 +1,81 @@
+{
+  "entity_id": "spec:P11_实验数据分析建模系统",
+  "entity_type": "spec",
+  "display_name": "Spec 11: 实验数据分析建模系统",
+  "directory": "规格/P11_实验数据分析建模系统",
+  "session_count": 2,
+  "sessions": [
+    {
+      "session_id": "9abe2710-400d-4e28-916e-30dfe211699f",
+      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/9abe2710-400d-4e28-916e-30dfe211699f.jsonl",
+      "confidence": 0.12,
+      "start_time": "2026-02-21T02:55:15.953Z",
+      "end_time": "2026-02-22T07:03:33.384Z",
+      "message_count": 568,
+      "matched_message_count": 6,
+      "matched_messages": [
+        {
+          "uuid": "be4aeb2c-beba-4091-b143-d9c5f4c11380",
+          "line_number": 3131,
+          "msg_type": "user",
+          "timestamp": "2026-02-22T05:25:03.312Z",
+          "preview": "execute spec 08"
+        },
+        {
+          "uuid": "d9da8f35-dd50-480c-8d70-15426a8281a9",
+          "line_number": 3175,
+          "msg_type": "user",
+          "timestamp": "2026-02-22T05:28:27.342Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        },
+        {
+          "uuid": "10ec3c79-6a66-4a8f-92c8-fe672c7c24cd",
+          "line_number": 3177,
+          "msg_type": "assistant",
+          "timestamp": "2026-02-22T05:28:33.139Z",
+          "preview": "Continuing with Spec 08 implementation. I need to read the current `main.py` and the design doc for "
+        },
+        {
+          "uuid": "1deeacaf-1d4f-4a93-a316-b428797ce354",
+          "line_number": 3247,
+          "msg_type": "assistant",
+          "timestamp": "2026-02-22T05:31:47.401Z",
+          "preview": "Clean audit: 0 tiny conversations, 0 dead groups. All tiers showing in the top 20. Now let me write "
+        },
+        {
+          "uuid": "164f1fb7-494b-41a9-bf9b-897e4ae31d88",
+          "line_number": 3292,
+          "msg_type": "assistant",
+          "timestamp": "2026-02-22T05:33:47.746Z",
+          "preview": "Spec 08 implementation is complete through Phase 4. Here's the summary:\n\n## Spec 08: WeChat Message "
+        },
+        {
+          "uuid": "4711f83e-06ee-470a-be61-b6068ad81009",
+          "line_number": 3317,
+          "msg_type": "assistant",
+          "timestamp": "2026-02-22T07:03:33.314Z",
+          "preview": "Done. Committed and pushed 62 files to `main` — Spec 08 filter engine, management CLI, cleanup resul"
+        }
+      ],
+      "evidence": [
+        "Text: ...execute spec 08...",
+        "Text: ...This session is being continued from a previous conversation that ran out of con...",
+        "Text: ...Continuing with Spec 08 implementation. I need to read the current `main.py` and...",
+        "Text: ...Clean audit: 0 tiny conversations, 0 dead groups. All tiers showing in the top 2...",
+        "Text: ...Spec 08 implementation is complete through Phase 4. Here's the summary:  ## Spec..."
+      ]
+    },
+    {
+      "session_id": "4127ab64-4252-4528-99e8-630f4012efb5",
+      "file_path": "/Users/zihangweng/.claude/projects/-Users-zihangweng-Desktop-Enpack-CCC/4127ab64-4252-4528-99e8-630f4012efb5.jsonl",
+      "confidence": 0.34,
+      "start_time": "2026-01-27T14:01:40.911Z",
+      "end_time": "2026-02-02T18:16:34.893Z",
+      "message_count": 2209,
+      "matched_message_count": 0,
+      "matched_messages": [],
+      "evidence": []
+    }
+  ],
+  "last_updated": "2026-03-08T12:40:22.005471"
+}
