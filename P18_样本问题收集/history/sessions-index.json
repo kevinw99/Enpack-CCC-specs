@@ -10,8 +10,8 @@
       "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/0da77daf-0891-43ef-ad0d-0f1a746b9d0b.jsonl",
       "confidence": 0.15,
       "start_time": "2026-03-08T16:49:53.563Z",
-      "end_time": "2026-03-08T20:54:53.478Z",
-      "message_count": 211,
+      "end_time": "2026-03-08T19:39:55.702Z",
+      "message_count": 159,
       "matched_message_count": 7,
       "matched_messages": [
         {
@@ -75,11 +75,11 @@
     {
       "session_id": "d975fd50-8501-402f-8803-b1eeffc6efff",
       "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/d975fd50-8501-402f-8803-b1eeffc6efff.jsonl",
-      "confidence": 0.15,
+      "confidence": 0.12,
       "start_time": "2026-03-08T15:17:30.425Z",
-      "end_time": "2026-03-08T19:40:51.328Z",
-      "message_count": 306,
-      "matched_message_count": 5,
+      "end_time": "2026-03-08T19:40:21.261Z",
+      "message_count": 295,
+      "matched_message_count": 4,
       "matched_messages": [
         {
           "uuid": "f461473a-5897-4d8f-8227-08f24869e262",
@@ -108,23 +108,15 @@
           "msg_type": "assistant",
           "timestamp": "2026-03-08T16:40:51.201Z",
           "preview": ""
-        },
-        {
-          "uuid": "be5e5ad6-80da-4366-ae1e-02941149c961",
-          "line_number": 552,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:40:37.451Z",
-          "preview": ""
         }
       ],
       "evidence": [
         "File: /Users/kweng/AI/Enpack_CCC/规格/P18_样本问题收集/requirements.md",
         "File: /Users/kweng/AI/Enpack_CCC/规格/P18_样本问题收集/design.md",
         "File: /Users/kweng/AI/Enpack_CCC/规格/P18_样本问题收集/tasks.md",
-        "File: 规格/P18_样本问题收集/",
-        "File: 规格/P18_样本问题收集/history/"
+        "File: 规格/P18_样本问题收集/"
       ]
     }
   ],
-  "last_updated": "2026-03-08T13:54:53.771740"
+  "last_updated": "2026-03-08T12:40:21.998261"
 }
