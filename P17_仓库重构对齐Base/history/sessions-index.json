@@ -10,9 +10,9 @@
       "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/d975fd50-8501-402f-8803-b1eeffc6efff.jsonl",
       "confidence": 0.12,
       "start_time": "2026-03-08T15:17:30.425Z",
-      "end_time": "2026-03-11T00:56:54.909Z",
-      "message_count": 436,
-      "matched_message_count": 7,
+      "end_time": "2026-03-12T00:04:52.836Z",
+      "message_count": 634,
+      "matched_message_count": 9,
       "matched_messages": [
         {
           "uuid": "2f280d11-09e7-4e35-a77a-4cf5a85c7c3c",
@@ -62,6 +62,20 @@
           "msg_type": "assistant",
           "timestamp": "2026-03-11T00:46:05.100Z",
           "preview": ""
+        },
+        {
+          "uuid": "541758ac-6db7-4688-b005-e73d7ac8d7e8",
+          "line_number": 1687,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-11T03:28:03.228Z",
+          "preview": ""
+        },
+        {
+          "uuid": "6baf9504-0fe0-4289-99f8-ad633bfd6b94",
+          "line_number": 1699,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-11T03:28:29.765Z",
+          "preview": ""
         }
       ],
       "evidence": [
@@ -95,5 +109,5 @@
       "evidence": []
     }
   ],
-  "last_updated": "2026-03-10T17:57:00.953454"
+  "last_updated": "2026-03-11T17:04:54.213133"
 }

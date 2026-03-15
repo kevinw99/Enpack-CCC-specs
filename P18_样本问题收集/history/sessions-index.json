@@ -12,81 +12,18 @@
       "start_time": "2026-03-08T16:49:53.563Z",
       "end_time": "2026-03-08T21:40:47.546Z",
       "message_count": 219,
-      "matched_message_count": 8,
-      "matched_messages": [
-        {
-          "uuid": "1008389d-d3dd-48fb-b630-976f1dd3093c",
-          "line_number": 37,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T16:50:27.128Z",
-          "preview": ""
-        },
-        {
-          "uuid": "b99ec33c-7ffa-4617-97c6-996d9b9e0cf2",
-          "line_number": 104,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:02:19.014Z",
-          "preview": ""
-        },
-        {
-          "uuid": "9467a627-9f9f-4d86-841c-788fc48207ca",
-          "line_number": 207,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:22:16.644Z",
-          "preview": ""
-        },
-        {
-          "uuid": "c95c7a84-579d-4e3b-b986-d528c5703fec",
-          "line_number": 237,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:25:24.500Z",
-          "preview": ""
-        },
-        {
-          "uuid": "0c6f389f-3409-4e22-86f9-63c152a9a864",
-          "line_number": 243,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:25:32.457Z",
-          "preview": ""
-        },
-        {
-          "uuid": "04cf2557-b81f-4654-8491-e6a5b4a7b02e",
-          "line_number": 246,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:25:47.592Z",
-          "preview": ""
-        },
-        {
-          "uuid": "5b1a4139-c6a3-4ab6-a191-6a0fb6f7d18c",
-          "line_number": 252,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:25:57.515Z",
-          "preview": ""
-        },
-        {
-          "uuid": "24836675-09e1-40ed-81dd-027b97ef2c61",
-          "line_number": 358,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T20:55:02.384Z",
-          "preview": "Session scanned and recorded. This session was classified under **Spec 19: 知识库缺口分析** (primary) with "
-        }
-      ],
-      "evidence": [
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P18_样本问题收集/requirements.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P18_样本问题收集/tasks.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P18_样本问题收集/design.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P18_样本问题收集/question-bank.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P18_样本问题收集/tasks.md"
-      ]
+      "matched_message_count": 0,
+      "matched_messages": [],
+      "evidence": []
     },
     {
       "session_id": "d975fd50-8501-402f-8803-b1eeffc6efff",
       "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/d975fd50-8501-402f-8803-b1eeffc6efff.jsonl",
-      "confidence": 0.18,
+      "confidence": 0.25,
       "start_time": "2026-03-08T15:17:30.425Z",
-      "end_time": "2026-03-11T00:56:54.909Z",
-      "message_count": 436,
-      "matched_message_count": 12,
+      "end_time": "2026-03-12T00:04:52.836Z",
+      "message_count": 634,
+      "matched_message_count": 25,
       "matched_messages": [
         {
           "uuid": "f461473a-5897-4d8f-8227-08f24869e262",
@@ -171,6 +108,97 @@
           "msg_type": "assistant",
           "timestamp": "2026-03-11T00:56:43.846Z",
           "preview": ""
+        },
+        {
+          "uuid": "de0c6bc3-2936-4228-a1c7-0e2e946ac7ea",
+          "line_number": 874,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-11T00:58:50.416Z",
+          "preview": ""
+        },
+        {
+          "uuid": "5b7f69db-20c1-495b-b4f6-b792d39a34b3",
+          "line_number": 884,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-11T01:01:17.461Z",
+          "preview": ""
+        },
+        {
+          "uuid": "c4a4a803-4b96-4bd0-b29d-347d59ab30e4",
+          "line_number": 904,
+          "msg_type": "user",
+          "timestamp": "2026-03-11T01:02:58.291Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        },
+        {
+          "uuid": "a806607f-8134-41e4-8a17-d309746c2e53",
+          "line_number": 907,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-11T01:03:02.810Z",
+          "preview": ""
+        },
+        {
+          "uuid": "0dc39eda-28a8-4c48-a495-7765471f03d5",
+          "line_number": 919,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-11T01:05:24.571Z",
+          "preview": ""
+        },
+        {
+          "uuid": "5ad4c42b-e956-42e2-af80-c9ac806e7aee",
+          "line_number": 946,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-11T01:08:22.827Z",
+          "preview": ""
+        },
+        {
+          "uuid": "82813c7a-f419-4870-9930-bb43fec88c9a",
+          "line_number": 1219,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-11T01:15:57.693Z",
+          "preview": ""
+        },
+        {
+          "uuid": "05155538-ba30-4f0c-9be1-8e05c61474c6",
+          "line_number": 1527,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-11T01:26:32.984Z",
+          "preview": ""
+        },
+        {
+          "uuid": "373700bd-51fb-46d4-9a5d-0ad5baebee8f",
+          "line_number": 1530,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-11T01:26:42.256Z",
+          "preview": ""
+        },
+        {
+          "uuid": "c149e2c5-7ec5-48c8-b4eb-d228147f8785",
+          "line_number": 1534,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-11T01:26:54.741Z",
+          "preview": ""
+        },
+        {
+          "uuid": "1b929c4b-8d7c-4bd6-829d-2b49fd311f86",
+          "line_number": 1574,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-11T03:23:01.290Z",
+          "preview": ""
+        },
+        {
+          "uuid": "e3c283f1-9a1d-4cef-b1ea-c4a491341288",
+          "line_number": 1689,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-11T03:28:07.425Z",
+          "preview": ""
+        },
+        {
+          "uuid": "6baf9504-0fe0-4289-99f8-ad633bfd6b94",
+          "line_number": 1699,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-11T03:28:29.765Z",
+          "preview": ""
         }
       ],
       "evidence": [
@@ -182,5 +210,5 @@
       ]
     }
   ],
-  "last_updated": "2026-03-10T17:57:00.953187"
+  "last_updated": "2026-03-11T17:04:54.211816"
 }

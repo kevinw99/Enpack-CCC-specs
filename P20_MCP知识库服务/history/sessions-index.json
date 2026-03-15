@@ -1,0 +1,63 @@
+{
+  "entity_id": "spec:P20_MCP知识库服务",
+  "entity_type": "spec",
+  "display_name": "Spec 20: MCP知识库服务",
+  "directory": "规格/P20_MCP知识库服务",
+  "session_count": 1,
+  "sessions": [
+    {
+      "session_id": "d975fd50-8501-402f-8803-b1eeffc6efff",
+      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/d975fd50-8501-402f-8803-b1eeffc6efff.jsonl",
+      "confidence": 0.16,
+      "start_time": "2026-03-08T15:17:30.425Z",
+      "end_time": "2026-03-12T00:04:52.836Z",
+      "message_count": 634,
+      "matched_message_count": 5,
+      "matched_messages": [
+        {
+          "uuid": "02cd1bd0-6684-4804-a802-3a4d49115170",
+          "line_number": 81,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T15:21:06.093Z",
+          "preview": ""
+        },
+        {
+          "uuid": "307908ec-4330-46d5-a1ce-28971662f9d2",
+          "line_number": 86,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T15:21:42.754Z",
+          "preview": ""
+        },
+        {
+          "uuid": "46d4fa74-ffcc-4aee-84fa-91b9dc2cd493",
+          "line_number": 91,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T15:21:57.472Z",
+          "preview": ""
+        },
+        {
+          "uuid": "ccfe02d9-efc3-4b83-8669-7e63a167731d",
+          "line_number": 109,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T16:40:51.201Z",
+          "preview": ""
+        },
+        {
+          "uuid": "c4a4a803-4b96-4bd0-b29d-347d59ab30e4",
+          "line_number": 904,
+          "msg_type": "user",
+          "timestamp": "2026-03-11T01:02:58.291Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        }
+      ],
+      "evidence": [
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P20_MCP知识库服务/requirements.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P20_MCP知识库服务/design.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P20_MCP知识库服务/tasks.md",
+        "File: 规格/P20_MCP知识库服务/",
+        "Text: ...This session is being continued from a previous conversation that ran out of con..."
+      ]
+    }
+  ],
+  "last_updated": "2026-03-11T17:04:54.212776"
+}

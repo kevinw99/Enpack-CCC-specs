@@ -1,0 +1,63 @@
+{
+  "entity_id": "spec:P21_MCP问答质量评估",
+  "entity_type": "spec",
+  "display_name": "Spec 21: MCP问答质量评估",
+  "directory": "规格/P21_MCP问答质量评估",
+  "session_count": 1,
+  "sessions": [
+    {
+      "session_id": "d975fd50-8501-402f-8803-b1eeffc6efff",
+      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/d975fd50-8501-402f-8803-b1eeffc6efff.jsonl",
+      "confidence": 0.16,
+      "start_time": "2026-03-08T15:17:30.425Z",
+      "end_time": "2026-03-12T00:04:52.836Z",
+      "message_count": 634,
+      "matched_message_count": 5,
+      "matched_messages": [
+        {
+          "uuid": "b53dff0f-30fe-4860-b70b-f57342782104",
+          "line_number": 113,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T16:41:19.577Z",
+          "preview": ""
+        },
+        {
+          "uuid": "a0ef6b1c-ba6d-40de-b063-7c8152cdc9da",
+          "line_number": 117,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T16:41:56.092Z",
+          "preview": ""
+        },
+        {
+          "uuid": "c3169857-4b19-4743-a6b7-2428a31511b1",
+          "line_number": 122,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T16:42:07.081Z",
+          "preview": ""
+        },
+        {
+          "uuid": "b9a584fd-e6e2-4bd0-a31f-cf601a47fc1f",
+          "line_number": 127,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T16:42:14.059Z",
+          "preview": ""
+        },
+        {
+          "uuid": "c4a4a803-4b96-4bd0-b29d-347d59ab30e4",
+          "line_number": 904,
+          "msg_type": "user",
+          "timestamp": "2026-03-11T01:02:58.291Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        }
+      ],
+      "evidence": [
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P21_MCP问答质量评估/requirements.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P21_MCP问答质量评估/design.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P21_MCP问答质量评估/tasks.md",
+        "File: 规格/P21_MCP问答质量评估/",
+        "Text: ...This session is being continued from a previous conversation that ran out of con..."
+      ]
+    }
+  ],
+  "last_updated": "2026-03-11T17:04:54.212961"
+}
