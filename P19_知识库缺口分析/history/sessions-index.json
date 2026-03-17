@@ -21,9 +21,9 @@
       "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/d975fd50-8501-402f-8803-b1eeffc6efff.jsonl",
       "confidence": 0.29,
       "start_time": "2026-03-08T15:17:30.425Z",
-      "end_time": "2026-03-12T00:04:52.836Z",
-      "message_count": 634,
-      "matched_message_count": 39,
+      "end_time": "2026-03-17T03:08:20.265Z",
+      "message_count": 657,
+      "matched_message_count": 42,
       "matched_messages": [
         {
           "uuid": "79393028-7c91-431d-a946-33255801651a",
@@ -297,6 +297,27 @@
           "msg_type": "assistant",
           "timestamp": "2026-03-11T03:28:29.765Z",
           "preview": ""
+        },
+        {
+          "uuid": "52ce0338-5e99-48f7-b045-02fc1b7a6620",
+          "line_number": 1722,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-12T00:04:59.670Z",
+          "preview": "Scan complete. 1 new session classified:\n\n- **d975fd50** (634 messages) — mapped to:\n  - Source: mcp"
+        },
+        {
+          "uuid": "6c107e68-838f-4dd0-9ee5-3e5f88345baa",
+          "line_number": 1733,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-15T01:42:17.194Z",
+          "preview": ""
+        },
+        {
+          "uuid": "bab6a79e-3c06-47ad-a89c-d78ebd3f7f42",
+          "line_number": 1736,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-15T01:42:22.646Z",
+          "preview": ""
         }
       ],
       "evidence": [
@@ -308,5 +329,5 @@
       ]
     }
   ],
-  "last_updated": "2026-03-11T17:04:54.211276"
+  "last_updated": "2026-03-16T20:08:28.631510"
 }

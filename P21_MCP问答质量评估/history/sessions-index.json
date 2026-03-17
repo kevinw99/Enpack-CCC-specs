@@ -10,9 +10,9 @@
       "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/d975fd50-8501-402f-8803-b1eeffc6efff.jsonl",
       "confidence": 0.16,
       "start_time": "2026-03-08T15:17:30.425Z",
-      "end_time": "2026-03-12T00:04:52.836Z",
-      "message_count": 634,
-      "matched_message_count": 5,
+      "end_time": "2026-03-17T03:08:20.265Z",
+      "message_count": 657,
+      "matched_message_count": 7,
       "matched_messages": [
         {
           "uuid": "b53dff0f-30fe-4860-b70b-f57342782104",
@@ -48,6 +48,20 @@
           "msg_type": "user",
           "timestamp": "2026-03-11T01:02:58.291Z",
           "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        },
+        {
+          "uuid": "6c107e68-838f-4dd0-9ee5-3e5f88345baa",
+          "line_number": 1733,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-15T01:42:17.194Z",
+          "preview": ""
+        },
+        {
+          "uuid": "bab6a79e-3c06-47ad-a89c-d78ebd3f7f42",
+          "line_number": 1736,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-15T01:42:22.646Z",
+          "preview": ""
         }
       ],
       "evidence": [
@@ -55,9 +69,9 @@
         "File: /Users/kweng/AI/Enpack_CCC/规格/P21_MCP问答质量评估/design.md",
         "File: /Users/kweng/AI/Enpack_CCC/规格/P21_MCP问答质量评估/tasks.md",
         "File: 规格/P21_MCP问答质量评估/",
-        "Text: ...This session is being continued from a previous conversation that ran out of con..."
+        "File: 规格/P21_MCP问答质量评估/history/"
       ]
     }
   ],
-  "last_updated": "2026-03-11T17:04:54.212961"
+  "last_updated": "2026-03-16T20:08:28.640113"
 }
