@@ -3,17 +3,147 @@
   "entity_type": "spec",
   "display_name": "Spec 21: MCP问答质量评估",
   "directory": "规格/P21_MCP问答质量评估",
-  "session_count": 1,
+  "session_count": 2,
   "sessions": [
+    {
+      "session_id": "0da77daf-0891-43ef-ad0d-0f1a746b9d0b",
+      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/0da77daf-0891-43ef-ad0d-0f1a746b9d0b.jsonl",
+      "confidence": 0.25,
+      "start_time": "2026-03-08T16:49:53.563Z",
+      "end_time": "2026-03-08T21:40:47.546Z",
+      "message_count": 219,
+      "matched_message_count": 15,
+      "matched_messages": [
+        {
+          "uuid": "d706009e-5491-4108-a166-1175e898dcb4",
+          "line_number": 77,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T17:08:22.870Z",
+          "preview": "Looks like someone (or the other session) already moved it — there's now:\n\n- `P20_MCP知识库服务/` — the r"
+        },
+        {
+          "uuid": "befea220-b91a-4412-a191-08ae9178f1e7",
+          "line_number": 78,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T17:08:24.197Z",
+          "preview": ""
+        },
+        {
+          "uuid": "dae7d601-ee0a-4b67-91b6-b6d337b1fb3f",
+          "line_number": 84,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T17:08:29.944Z",
+          "preview": "P21 already has updated content (references P20 correctly). The duplicate `P20_MCP问答质量评估/` just need"
+        },
+        {
+          "uuid": "db1a6319-313f-4657-a9ab-facb7d453df1",
+          "line_number": 87,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T17:08:35.658Z",
+          "preview": "\n\nThe other session already moved it to P21. I just need to delete the duplicate `P20_MCP问答质量评估/` di"
+        },
+        {
+          "uuid": "1ebb2509-1dfb-4b94-9a6c-dd445ea98448",
+          "line_number": 90,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T17:08:42.547Z",
+          "preview": "Done. The duplicate is removed. Now we have:\n\n- **P20_MCP知识库服务** — MCP knowledge base server (create"
+        },
+        {
+          "uuid": "bff9ee7b-3a1f-43dd-8bf8-79bc6cf70b6f",
+          "line_number": 93,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T17:08:48.000Z",
+          "preview": ""
+        },
+        {
+          "uuid": "5388a96f-e80d-423c-b3d8-722f092fde27",
+          "line_number": 96,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T17:08:54.965Z",
+          "preview": "All P20/P18/P19 references in P21 are already correct — the other session updated them when renumber"
+        },
+        {
+          "uuid": "816a2a72-b9ed-4be0-a246-340be797f993",
+          "line_number": 103,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T19:02:18.438Z",
+          "preview": "Let me check the status of the recent specs (P18-P21) to see where things stand."
+        },
+        {
+          "uuid": "c410bb2c-7f9c-4365-a07e-3f906d8e5513",
+          "line_number": 107,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T19:02:20.550Z",
+          "preview": ""
+        },
+        {
+          "uuid": "4efd6cd7-5cdd-413e-99a4-576d3d3f89f7",
+          "line_number": 142,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T19:02:51.116Z",
+          "preview": "P20 is well underway. Here's the full picture:\n\n## Spec Status Overview\n\n| Spec | Name | Status | No"
+        },
+        {
+          "uuid": "569dd3b4-65ab-4197-94a1-ef8a4e585768",
+          "line_number": 200,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T19:21:29.405Z",
+          "preview": "You're right to be surprised — but P18 was also just created today by the other session (commit `653"
+        },
+        {
+          "uuid": "306bf3e6-3a51-471d-acf5-67f6999d241e",
+          "line_number": 256,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T19:26:10.494Z",
+          "preview": "P18 Phase 1-3 is now substantially done. Here's the summary:\n\n## P18 Execution Results\n\n**52 questio"
+        },
+        {
+          "uuid": "1419e0cc-2928-478a-9784-b9703a705b73",
+          "line_number": 305,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T19:43:08.453Z",
+          "preview": "P19 is done. Here's the combined status update:\n\n## P19 Gap Analysis — Complete\n\n### The big picture"
+        },
+        {
+          "uuid": "24836675-09e1-40ed-81dd-027b97ef2c61",
+          "line_number": 358,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T20:55:02.384Z",
+          "preview": "Session scanned and recorded. This session was classified under **Spec 19: 知识库缺口分析** (primary) with "
+        },
+        {
+          "uuid": "ea49c371-1b33-46e2-8e20-9de2604c3530",
+          "line_number": 365,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T21:40:47.476Z",
+          "preview": "Based on where we are:\n\n## Immediate (can do right now)\n\n1. **P19 Type A content — write the 5 KB do"
+        }
+      ],
+      "evidence": [
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P21_MCP问答质量评估/requirements.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P21_MCP问答质量评估",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P21_MCP问答质量评估/tasks.md",
+        "Text: ...Looks like someone (or the other session) already moved it — there's now:  - `P2...",
+        "Text: ...P21 already has updated content (references P20 correctly). The duplicate `P20_M..."
+      ]
+    },
     {
       "session_id": "d975fd50-8501-402f-8803-b1eeffc6efff",
       "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/d975fd50-8501-402f-8803-b1eeffc6efff.jsonl",
-      "confidence": 0.16,
+      "confidence": 0.28,
       "start_time": "2026-03-08T15:17:30.425Z",
-      "end_time": "2026-03-17T03:08:20.265Z",
-      "message_count": 657,
-      "matched_message_count": 7,
+      "end_time": "2026-03-17T16:46:10.350Z",
+      "message_count": 701,
+      "matched_message_count": 16,
       "matched_messages": [
+        {
+          "uuid": "4e400e81-e7ea-4992-a99c-6ceb7d5e47dd",
+          "line_number": 111,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T16:40:56.786Z",
+          "preview": "Committed: `5211d12`.\n\nNow I see the selected text mentions a new spec to **evaluate MCP Q&A quality"
+        },
         {
           "uuid": "b53dff0f-30fe-4860-b70b-f57342782104",
           "line_number": 113,
@@ -43,11 +173,46 @@
           "preview": ""
         },
         {
+          "uuid": "7803d3fc-d5ac-4fd5-b807-1ab14a635b22",
+          "line_number": 313,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T16:46:54.796Z",
+          "preview": "Here's the summary of everything done:\n\n## Commits Made (4 total)\n\n1. **`5211d12`** — P18 (样本问题收集), "
+        },
+        {
+          "uuid": "d5b8c8d0-f140-41da-8865-4742c0906c29",
+          "line_number": 559,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T19:40:51.313Z",
+          "preview": "Done. Session history scanned, committed, and pushed. The scan picked up the new entities — P18-P21 "
+        },
+        {
+          "uuid": "8c40da4e-9df4-441f-a9b2-0ff884c0409c",
+          "line_number": 733,
+          "msg_type": "user",
+          "timestamp": "2026-03-11T00:42:46.635Z",
+          "preview": "from latest sepcs P17 ~ P21, please genreate pdfs for non standard md files. i.e., no need to gnerea"
+        },
+        {
+          "uuid": "b53bb4cf-0c42-41dc-9334-b36eb60296d5",
+          "line_number": 832,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-11T00:46:13.745Z",
+          "preview": "Done. 7 PDFs generated and pushed:\n\n| Spec | PDF | Size |\n|------|-----|------|\n| P17 | P17-变更说明-Onb"
+        },
+        {
           "uuid": "c4a4a803-4b96-4bd0-b29d-347d59ab30e4",
           "line_number": 904,
           "msg_type": "user",
           "timestamp": "2026-03-11T01:02:58.291Z",
           "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        },
+        {
+          "uuid": "52ce0338-5e99-48f7-b045-02fc1b7a6620",
+          "line_number": 1722,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-12T00:04:59.670Z",
+          "preview": "Scan complete. 1 new session classified:\n\n- **d975fd50** (634 messages) — mapped to:\n  - Source: mcp"
         },
         {
           "uuid": "6c107e68-838f-4dd0-9ee5-3e5f88345baa",
@@ -62,6 +227,27 @@
           "msg_type": "assistant",
           "timestamp": "2026-03-15T01:42:22.646Z",
           "preview": ""
+        },
+        {
+          "uuid": "8f93bbb6-3e0f-4220-87fd-a3e154c96af4",
+          "line_number": 1740,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-15T01:42:31.825Z",
+          "preview": "Done. Committed `d748496` and pushed — session history indices updated, including new history entrie"
+        },
+        {
+          "uuid": "0ff914ed-88a8-4df3-9a46-a5a6e0eb10a1",
+          "line_number": 1756,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-17T03:08:54.821Z",
+          "preview": ""
+        },
+        {
+          "uuid": "4f8c6561-e345-4514-b4f1-e22a9734de4a",
+          "line_number": 1774,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-17T03:10:10.807Z",
+          "preview": "Replay generated for **P20 MCP知识库服务**:\n\n| Date | Person | File |\n|------|--------|------|\n| 2026-03-"
         }
       ],
       "evidence": [
@@ -73,5 +259,5 @@
       ]
     }
   ],
-  "last_updated": "2026-03-16T20:08:28.640113"
+  "last_updated": "2026-03-20T14:48:07.765479"
 }

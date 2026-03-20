@@ -3,7 +3,7 @@
   "entity_type": "spec",
   "display_name": "Spec 11: 实验数据分析建模系统",
   "directory": "规格/P11_实验数据分析建模系统",
-  "session_count": 2,
+  "session_count": 1,
   "sessions": [
     {
       "session_id": "9abe2710-400d-4e28-916e-30dfe211699f",
@@ -64,18 +64,7 @@
         "Text: ...Clean audit: 0 tiny conversations, 0 dead groups. All tiers showing in the top 2...",
         "Text: ...Spec 08 implementation is complete through Phase 4. Here's the summary:  ## Spec..."
       ]
-    },
-    {
-      "session_id": "4127ab64-4252-4528-99e8-630f4012efb5",
-      "file_path": "/Users/zihangweng/.claude/projects/-Users-zihangweng-Desktop-Enpack-CCC/4127ab64-4252-4528-99e8-630f4012efb5.jsonl",
-      "confidence": 0.34,
-      "start_time": "2026-01-27T14:01:40.911Z",
-      "end_time": "2026-02-02T18:16:34.893Z",
-      "message_count": 2209,
-      "matched_message_count": 0,
-      "matched_messages": [],
-      "evidence": []
     }
   ],
-  "last_updated": "2026-03-08T12:40:22.005471"
+  "last_updated": "2026-03-20T14:48:07.768316"
 }
