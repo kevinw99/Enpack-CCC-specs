@@ -3,8 +3,37 @@
   "entity_type": "spec",
   "display_name": "Spec 18: 样本问题收集",
   "directory": "规格/P18_样本问题收集",
-  "session_count": 2,
+  "session_count": 3,
   "sessions": [
+    {
+      "session_id": "650a3dc9-73c7-4e96-be0e-5e16bc00f446",
+      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/650a3dc9-73c7-4e96-be0e-5e16bc00f446.jsonl",
+      "confidence": 0.11,
+      "start_time": "2026-03-20T21:41:20.338Z",
+      "end_time": "2026-03-20T22:09:24.589Z",
+      "message_count": 122,
+      "matched_message_count": 2,
+      "matched_messages": [
+        {
+          "uuid": "b2beb70a-04c1-40ee-ab93-6fd9a641b120",
+          "line_number": 109,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-20T21:54:41.004Z",
+          "preview": "All done. Here's a summary:\n\n**Completed:**\n1. Pulled latest from `base` repo and resolved merge con"
+        },
+        {
+          "uuid": "b2a2c994-d18e-4dd2-a7ec-c7160a7217d1",
+          "line_number": 170,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-20T22:02:37.484Z",
+          "preview": "## LLM vs Regex 分类结果全面对比\n\n### 一、总体结构性差异\n\n| 维度 | 旧版（Regex） | 新版（LLM） |\n|------|-----------|----------"
+        }
+      ],
+      "evidence": [
+        "Text: ...All done. Here's a summary:  **Completed:** 1. Pulled latest from `base` repo an...",
+        "Text: ...## LLM vs Regex 分类结果全面对比  ### 一、总体结构性差异  | 维度 | 旧版（Regex） | 新版（LLM） | |------|--..."
+      ]
+    },
     {
       "session_id": "0da77daf-0891-43ef-ad0d-0f1a746b9d0b",
       "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/0da77daf-0891-43ef-ad0d-0f1a746b9d0b.jsonl",
@@ -12,163 +41,9 @@
       "start_time": "2026-03-08T16:49:53.563Z",
       "end_time": "2026-03-08T21:40:47.546Z",
       "message_count": 219,
-      "matched_message_count": 21,
-      "matched_messages": [
-        {
-          "uuid": "f1f99677-a648-4a6d-a38e-d50bb4c54347",
-          "line_number": 36,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T16:50:26.604Z",
-          "preview": "Let me check P18 and P19 to understand the current sequence."
-        },
-        {
-          "uuid": "1008389d-d3dd-48fb-b630-976f1dd3093c",
-          "line_number": 37,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T16:50:27.128Z",
-          "preview": ""
-        },
-        {
-          "uuid": "d01ab578-6afb-4ce8-a8e8-c856b8aaf303",
-          "line_number": 44,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T16:50:41.339Z",
-          "preview": "Good news — P20 is the next available number and it's already referenced in P18/P19 as the MCP-relat"
-        },
-        {
-          "uuid": "cf3d9c70-1c9c-4aa9-8b03-059d135dce39",
-          "line_number": 62,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T16:52:15.657Z",
-          "preview": "P20 spec is created. Here's the summary:\n\n## P20: MCP 问答质量评估 (MCP Q&A Quality Evaluation)\n\n**Core id"
-        },
-        {
-          "uuid": "5388a96f-e80d-423c-b3d8-722f092fde27",
-          "line_number": 96,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T17:08:54.965Z",
-          "preview": "All P20/P18/P19 references in P21 are already correct — the other session updated them when renumber"
-        },
-        {
-          "uuid": "816a2a72-b9ed-4be0-a246-340be797f993",
-          "line_number": 103,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:02:18.438Z",
-          "preview": "Let me check the status of the recent specs (P18-P21) to see where things stand."
-        },
-        {
-          "uuid": "b99ec33c-7ffa-4617-97c6-996d9b9e0cf2",
-          "line_number": 104,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:02:19.014Z",
-          "preview": ""
-        },
-        {
-          "uuid": "4efd6cd7-5cdd-413e-99a4-576d3d3f89f7",
-          "line_number": 142,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:02:51.116Z",
-          "preview": "P20 is well underway. Here's the full picture:\n\n## Spec Status Overview\n\n| Spec | Name | Status | No"
-        },
-        {
-          "uuid": "569dd3b4-65ab-4197-94a1-ef8a4e585768",
-          "line_number": 200,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:21:29.405Z",
-          "preview": "You're right to be surprised — but P18 was also just created today by the other session (commit `653"
-        },
-        {
-          "uuid": "9467a627-9f9f-4d86-841c-788fc48207ca",
-          "line_number": 207,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:22:16.644Z",
-          "preview": ""
-        },
-        {
-          "uuid": "c95c7a84-579d-4e3b-b986-d528c5703fec",
-          "line_number": 237,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:25:24.500Z",
-          "preview": ""
-        },
-        {
-          "uuid": "0c6f389f-3409-4e22-86f9-63c152a9a864",
-          "line_number": 243,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:25:32.457Z",
-          "preview": ""
-        },
-        {
-          "uuid": "04cf2557-b81f-4654-8491-e6a5b4a7b02e",
-          "line_number": 246,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:25:47.592Z",
-          "preview": ""
-        },
-        {
-          "uuid": "5b1a4139-c6a3-4ab6-a191-6a0fb6f7d18c",
-          "line_number": 252,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:25:57.515Z",
-          "preview": ""
-        },
-        {
-          "uuid": "306bf3e6-3a51-471d-acf5-67f6999d241e",
-          "line_number": 256,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:26:10.494Z",
-          "preview": "P18 Phase 1-3 is now substantially done. Here's the summary:\n\n## P18 Execution Results\n\n**52 questio"
-        },
-        {
-          "uuid": "9cc0295e-7ee4-4700-9852-673147e6f461",
-          "line_number": 263,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:39:38.904Z",
-          "preview": "P19 (KB Gap Analysis) is the natural next step — it takes P18's 52 questions and maps them against t"
-        },
-        {
-          "uuid": "1419e0cc-2928-478a-9784-b9703a705b73",
-          "line_number": 305,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:43:08.453Z",
-          "preview": "P19 is done. Here's the combined status update:\n\n## P19 Gap Analysis — Complete\n\n### The big picture"
-        },
-        {
-          "uuid": "92976289-665a-4bc3-a0fe-92a88ef7627a",
-          "line_number": 340,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T20:54:09.929Z",
-          "preview": "I notice only P19 changes are showing. Let me check if the P18 changes were already committed by the"
-        },
-        {
-          "uuid": "e000c6cf-eaee-423e-8a3c-12548d34149b",
-          "line_number": 345,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T20:54:23.617Z",
-          "preview": "P18 files (question-bank.md, status.md, tasks.md) were already committed in `a359971`. Only P19 chan"
-        },
-        {
-          "uuid": "24836675-09e1-40ed-81dd-027b97ef2c61",
-          "line_number": 358,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T20:55:02.384Z",
-          "preview": "Session scanned and recorded. This session was classified under **Spec 19: 知识库缺口分析** (primary) with "
-        },
-        {
-          "uuid": "ea49c371-1b33-46e2-8e20-9de2604c3530",
-          "line_number": 365,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T21:40:47.476Z",
-          "preview": "Based on where we are:\n\n## Immediate (can do right now)\n\n1. **P19 Type A content — write the 5 KB do"
-        }
-      ],
-      "evidence": [
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P18_样本问题收集/requirements.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P18_样本问题收集/tasks.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P18_样本问题收集/design.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P18_样本问题收集/question-bank.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P18_样本问题收集/tasks.md"
-      ]
+      "matched_message_count": 0,
+      "matched_messages": [],
+      "evidence": []
     },
     {
       "session_id": "d975fd50-8501-402f-8803-b1eeffc6efff",
@@ -177,304 +52,10 @@
       "start_time": "2026-03-08T15:17:30.425Z",
       "end_time": "2026-03-17T16:46:10.350Z",
       "message_count": 701,
-      "matched_message_count": 41,
-      "matched_messages": [
-        {
-          "uuid": "5c29bc59-4b09-47ad-a1a9-d97bad3bd042",
-          "line_number": 42,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T15:18:38.698Z",
-          "preview": "Now I have a clear picture. The project is an AI opportunity research for 英联股份 (Enpack) focusing on "
-        },
-        {
-          "uuid": "c5bebc34-3c0b-4c8f-ba0b-d19d3f8b41fd",
-          "line_number": 49,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T15:18:57.398Z",
-          "preview": "P14-15 are likely in the restricted repo. Next available is P18. Creating all three specs now."
-        },
-        {
-          "uuid": "f461473a-5897-4d8f-8227-08f24869e262",
-          "line_number": 51,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T15:19:13.245Z",
-          "preview": ""
-        },
-        {
-          "uuid": "97224186-13af-495c-875d-98338a922524",
-          "line_number": 56,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T15:19:41.353Z",
-          "preview": ""
-        },
-        {
-          "uuid": "0c1f48bc-ed6f-41fd-b952-998c77a813fb",
-          "line_number": 61,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T15:19:50.921Z",
-          "preview": ""
-        },
-        {
-          "uuid": "2d895abd-344e-4216-9b98-ce1e0a30fce5",
-          "line_number": 95,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T15:22:15.233Z",
-          "preview": "All three specs created. Here's the summary:\n\n## Three Specs Created\n\n### P18_样本问题收集 (Sample Questio"
-        },
-        {
-          "uuid": "ccfe02d9-efc3-4b83-8669-7e63a167731d",
-          "line_number": 109,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T16:40:51.201Z",
-          "preview": ""
-        },
-        {
-          "uuid": "7803d3fc-d5ac-4fd5-b807-1ab14a635b22",
-          "line_number": 313,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T16:46:54.796Z",
-          "preview": "Here's the summary of everything done:\n\n## Commits Made (4 total)\n\n1. **`5211d12`** — P18 (样本问题收集), "
-        },
-        {
-          "uuid": "be5e5ad6-80da-4366-ae1e-02941149c961",
-          "line_number": 552,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:40:37.451Z",
-          "preview": ""
-        },
-        {
-          "uuid": "d5b8c8d0-f140-41da-8865-4742c0906c29",
-          "line_number": 559,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:40:51.313Z",
-          "preview": "Done. Session history scanned, committed, and pushed. The scan picked up the new entities — P18-P21 "
-        },
-        {
-          "uuid": "f78a2e9e-b3e7-47f5-807b-ec50a37f4bbc",
-          "line_number": 738,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T00:43:00.936Z",
-          "preview": "Non-standard files to convert to PDF:\n\n| Spec | File |\n|------|------|\n| P17 | P17-变更说明-Onboarding-G"
-        },
-        {
-          "uuid": "e539e2d3-27f5-4684-8e1d-510c551ef425",
-          "line_number": 749,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T00:43:39.025Z",
-          "preview": ""
-        },
-        {
-          "uuid": "914724b4-170d-4d95-b12e-7b21ca5008da",
-          "line_number": 751,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T00:43:55.848Z",
-          "preview": ""
-        },
-        {
-          "uuid": "2f0bb519-a983-4437-9261-aa83cde9dda2",
-          "line_number": 790,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T00:45:08.391Z",
-          "preview": ""
-        },
-        {
-          "uuid": "aa884bf0-c647-42e0-9a04-9b0e3843cab5",
-          "line_number": 800,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T00:45:27.156Z",
-          "preview": ""
-        },
-        {
-          "uuid": "a5d15a72-2ee1-4884-8348-b91e2b112c99",
-          "line_number": 830,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T00:46:05.100Z",
-          "preview": ""
-        },
-        {
-          "uuid": "b53bb4cf-0c42-41dc-9334-b36eb60296d5",
-          "line_number": 832,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T00:46:13.745Z",
-          "preview": "Done. 7 PDFs generated and pushed:\n\n| Spec | PDF | Size |\n|------|-----|------|\n| P17 | P17-变更说明-Onb"
-        },
-        {
-          "uuid": "6f075542-9927-4464-8c45-01eeac460c33",
-          "line_number": 844,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T00:55:14.764Z",
-          "preview": "\n\n| Spec | PDF | Size |\n|------|-----|------|\n| P18 | question-bank.pdf | 616K |\n| P19 | gap-analysi"
-        },
-        {
-          "uuid": "e76c67e4-0b44-4c3c-b175-f9c16278a923",
-          "line_number": 849,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T00:56:38.349Z",
-          "preview": ""
-        },
-        {
-          "uuid": "a743e5c2-7ce5-41f5-a735-2cec33f9e844",
-          "line_number": 851,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T00:56:43.846Z",
-          "preview": ""
-        },
-        {
-          "uuid": "0dfbfd3a-6fb9-4f35-baa8-f0d829ea159c",
-          "line_number": 857,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T00:56:54.454Z",
-          "preview": "| Spec | PDF | Size |\n|------|-----|------|\n| P18 | 样本问题库.pdf | 616K |\n| P19 | 缺口分析矩阵.pdf | 388K |\n|"
-        },
-        {
-          "uuid": "de0c6bc3-2936-4228-a1c7-0e2e946ac7ea",
-          "line_number": 874,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T00:58:50.416Z",
-          "preview": ""
-        },
-        {
-          "uuid": "dda04a66-a940-4363-9eac-7278a813d834",
-          "line_number": 881,
-          "msg_type": "user",
-          "timestamp": "2026-03-11T01:01:11.705Z",
-          "preview": "can these pdfs file be translated to chinese? Especially in \"P18  │ 样本问题库.pdf     \", those questsion"
-        },
-        {
-          "uuid": "5b7f69db-20c1-495b-b4f6-b792d39a34b3",
-          "line_number": 884,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:01:17.461Z",
-          "preview": ""
-        },
-        {
-          "uuid": "c4a4a803-4b96-4bd0-b29d-347d59ab30e4",
-          "line_number": 904,
-          "msg_type": "user",
-          "timestamp": "2026-03-11T01:02:58.291Z",
-          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
-        },
-        {
-          "uuid": "a806607f-8134-41e4-8a17-d309746c2e53",
-          "line_number": 907,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:03:02.810Z",
-          "preview": ""
-        },
-        {
-          "uuid": "0dc39eda-28a8-4c48-a495-7765471f03d5",
-          "line_number": 919,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:05:24.571Z",
-          "preview": ""
-        },
-        {
-          "uuid": "5ad4c42b-e956-42e2-af80-c9ac806e7aee",
-          "line_number": 946,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:08:22.827Z",
-          "preview": ""
-        },
-        {
-          "uuid": "82813c7a-f419-4870-9930-bb43fec88c9a",
-          "line_number": 1219,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:15:57.693Z",
-          "preview": ""
-        },
-        {
-          "uuid": "05155538-ba30-4f0c-9be1-8e05c61474c6",
-          "line_number": 1527,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:26:32.984Z",
-          "preview": ""
-        },
-        {
-          "uuid": "373700bd-51fb-46d4-9a5d-0ad5baebee8f",
-          "line_number": 1530,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:26:42.256Z",
-          "preview": ""
-        },
-        {
-          "uuid": "c149e2c5-7ec5-48c8-b4eb-d228147f8785",
-          "line_number": 1534,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:26:54.741Z",
-          "preview": ""
-        },
-        {
-          "uuid": "f9809db7-0a25-4719-906c-317e441c5b9c",
-          "line_number": 1553,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:27:59.945Z",
-          "preview": "All done. Here's a summary of what was completed:\n\n**Markdown files translated to Chinese** (4 files"
-        },
-        {
-          "uuid": "1b929c4b-8d7c-4bd6-829d-2b49fd311f86",
-          "line_number": 1574,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T03:23:01.290Z",
-          "preview": ""
-        },
-        {
-          "uuid": "e3c283f1-9a1d-4cef-b1ea-c4a491341288",
-          "line_number": 1689,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T03:28:07.425Z",
-          "preview": ""
-        },
-        {
-          "uuid": "6baf9504-0fe0-4289-99f8-ad633bfd6b94",
-          "line_number": 1699,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T03:28:29.765Z",
-          "preview": ""
-        },
-        {
-          "uuid": "52ce0338-5e99-48f7-b045-02fc1b7a6620",
-          "line_number": 1722,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-12T00:04:59.670Z",
-          "preview": "Scan complete. 1 new session classified:\n\n- **d975fd50** (634 messages) — mapped to:\n  - Source: mcp"
-        },
-        {
-          "uuid": "6c107e68-838f-4dd0-9ee5-3e5f88345baa",
-          "line_number": 1733,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-15T01:42:17.194Z",
-          "preview": ""
-        },
-        {
-          "uuid": "bab6a79e-3c06-47ad-a89c-d78ebd3f7f42",
-          "line_number": 1736,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-15T01:42:22.646Z",
-          "preview": ""
-        },
-        {
-          "uuid": "0ff914ed-88a8-4df3-9a46-a5a6e0eb10a1",
-          "line_number": 1756,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-17T03:08:54.821Z",
-          "preview": ""
-        },
-        {
-          "uuid": "4f8c6561-e345-4514-b4f1-e22a9734de4a",
-          "line_number": 1774,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-17T03:10:10.807Z",
-          "preview": "Replay generated for **P20 MCP知识库服务**:\n\n| Date | Person | File |\n|------|--------|------|\n| 2026-03-"
-        }
-      ],
-      "evidence": [
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P18_样本问题收集/requirements.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P18_样本问题收集/design.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P18_样本问题收集/tasks.md",
-        "File: 规格/P18_样本问题收集/",
-        "File: 规格/P18_样本问题收集/history/"
-      ]
+      "matched_message_count": 0,
+      "matched_messages": [],
+      "evidence": []
     }
   ],
-  "last_updated": "2026-03-20T14:48:07.761816"
+  "last_updated": "2026-03-24T17:40:57.603165"
 }
