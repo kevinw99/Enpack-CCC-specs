@@ -7,44 +7,39 @@ Build a Python-based MCP server that indexes the knowledge base into a vector st
 ## Architecture
 
 ```
-┌─────────────────────────────────────────────┐
-│  AI Client (Claude Desktop / Claude Code)    │
-│  User asks: "采购10吨氧化铜合理吗?"           │
-└──────────────┬──────────────────────────────┘
-               │ MCP Protocol (stdio/SSE)
-               ▼
-┌─────────────────────────────────────────────┐
-│  MCP Server: enpack-kb-server                │
-│                                              │
-│  Tools:                                      │
-│  ├── search_knowledge_base(query, filters)   │
-│  ├── get_document(path_or_topic)             │
-│  ├── list_topics()                           │
-│  ├── get_company_profile(aspect)             │
-│  ├── lookup_product(product_name)            │
-│  ├── lookup_competitor(company_name)         │
-│  └── get_industry_context(topic)             │
-│                                              │
-│  Resources:                                  │
-│  ├── kb://index — Knowledge base index       │
-│  └── kb://stats — Coverage statistics        │
-│                                              │
-│  Internal:                                   │
-│  ├── Document Loader (markdown parser)       │
-│  ├── Chunker (splits docs into sections)     │
-│  ├── Embedder (generates vectors)            │
-│  └── Vector Store (search index)             │
-└──────────────┬──────────────────────────────┘
-               │
-               ▼
-┌─────────────────────────────────────────────┐
-│  Data Layer                                  │
-│  ├── 知识库/ (markdown files)                │
-│  ├── 研究/ (research outputs)                │
-│  ├── embeddings.db (SQLite + vectors)        │
-│  └── [Future] ERP/CRM API connections        │
-└─────────────────────────────────────────────┘
+┌───────────────────────────────────────────────────────────────────┐
+│  AI Client (Claude Desktop / Claude Code)                         │
+│  User asks: "采购10吨氧化铜合理吗?"                                │
+└─────────────┬───────────────────────────────────┬────────────────┘
+              │ MCP Protocol (stdio)               │ MCP Protocol (stdio)
+              ▼                                    ▼
+┌─────────────────────────────┐  ┌──────────────────────────────────┐
+│  enpack-kb-server (P20)     │  │  kingdee-erp MCP (Yongzhi)       │
+│  源代码/mcp-kb-server/      │  │  源代码/mcp-kingdee-server/       │
+│                             │  │                                  │
+│  Tools:                     │  │  Tools:                          │
+│  ├ search_knowledge_base    │  │  ├ kingdee_query_bills           │
+│  ├ get_document             │  │  ├ kingdee_query_materials       │
+│  ├ list_topics              │  │  ├ kingdee_query_inventory       │
+│  ├ get_company_profile      │  │  ├ kingdee_query_fixed_assets    │
+│  ├ lookup_product           │  │  ├ kingdee_describe_form         │
+│  ├ lookup_competitor        │  │  ├ kingdee_search_forms_online   │
+│  └ get_industry_context     │  │  ├ futures_spot                  │
+│                             │  │  ├ futures_history               │
+│  Search: hybrid semantic    │  │  ├ futures_analysis              │
+│  + keyword fallback         │  │  └ futures_purchase_cost_analysis│
+└─────────────┬───────────────┘  └──────────────┬───────────────────┘
+              │                                  │
+              ▼                                  ▼
+┌─────────────────────────────┐  ┌──────────────────────────────────┐
+│  Knowledge Data Layer       │  │  External Systems                │
+│  ├ 知识库/ (markdown)       │  │  ├ 金蝶云星空 ERP WebAPI         │
+│  ├ 研究/ (research)         │  │  └ AkShare 期货数据 API          │
+│  └ embeddings.db (SQLite)   │  │                                  │
+└─────────────────────────────┘  └──────────────────────────────────┘
 ```
+
+**双MCP协同模式**: AI客户端同时连接两个MCP server。回答复合问题时（如"采购10吨氧化铜合理吗？"），AI可同时调用知识库MCP获取行业背景和定价分析，调用ERP MCP获取库存数据和期货走势，综合后给出建议。
 
 ## MCP Tools Design
 
@@ -205,10 +200,13 @@ Build a Python-based MCP server that indexes the knowledge base into a vector st
 ## Key Decisions
 
 - **Python over TypeScript**: Better Chinese NLP ecosystem, simpler embedding pipeline, team familiarity
-- **SQLite over cloud vector DB**: Local-first, no external dependencies, good enough for <1000 documents
+- **SQLite over cloud vector DB**: Local-first, no external dependencies, good enough for <10k chunks (currently 1,345)
+- **Local embedding model**: `paraphrase-multilingual-MiniLM-L12-v2` (384 dims) — runs locally, no API key, good Chinese+English support
+- **Hybrid search**: Semantic (vector similarity) as primary, keyword matching as fallback when semantic score < 0.6
 - **Tools over Resources**: MCP tools allow parameterized queries; resources are static. Tools are more flexible for search
 - **Stdio transport**: Simplest integration with Claude Desktop and Claude Code
 - **Section-level chunking**: Split on markdown headers, not arbitrary token counts — preserves semantic coherence
+- **Separate MCP servers for KB vs ERP**: KB MCP (this project) and ERP MCP (kingdee-erp by Yongzhi) run independently, connected to same AI client
 
 ## Alternative Approaches
 
