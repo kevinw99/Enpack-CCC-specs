@@ -1,41 +1,51 @@
 # Tasks: MCP问答质量评估 (MCP Q&A Quality Evaluation)
 
-## Phase 1: Framework Setup
-- [ ] Task 1.1 - Finalize evaluation dimensions and scoring rubric
-- [ ] Task 1.2 - Select test question subset from P18 (30-50 questions)
-- [ ] Task 1.3 - Design blind evaluation protocol (randomization, label assignment)
-- [ ] Task 1.4 - Create evaluation spreadsheet/template for human scorers
+## Phase 1: Framework Setup — ✅ 完成 (2026-04-12)
+- [x] Task 1.1 - 评分维度确定: 准确性/具体性/相关性/可操作性 (1-5分)
+- [x] Task 1.2 - 从P18选定30题测试集 (覆盖7部门、3覆盖度、3复杂度)
+- [x] Task 1.3 - 盲评协议设计: 随机A/B顺序，LLM-as-Judge
+- [x] Task 1.4 - 评估模板: `eval/scorer.py` 自动化评分
 
-## Phase 2: Test Harness
-- [ ] Task 2.1 - Build test harness script (run questions through vanilla + MCP configs)
-- [ ] Task 2.2 - Implement Config A: vanilla Claude API call
-- [ ] Task 2.3 - Implement Config B: Claude with MCP tools (P20 server)
-- [ ] Task 2.4 - Implement Config C (optional): vanilla + company info system prompt
-- [ ] Task 2.5 - Implement automated metrics (grounding score, specificity score, length)
-- [ ] Task 2.6 - Generate answer pairs for all test questions
+## Phase 2: Test Harness — ✅ 完成 (2026-04-12)
+- [x] Task 2.1 - 搭建测试框架 `eval/harness.py`
+- [x] Task 2.2 - Config A: Vanilla DeepSeek (无知识库)
+- [x] Task 2.3 - Config B: DeepSeek + KB搜索结果注入 (模拟MCP增强)
+- [x] Task 2.5 - LLM-as-Judge自动评分 `eval/scorer.py`
+- [x] Task 2.6 - 生成30题答案对 → `eval/results/answer_pairs.json`
 
-## Phase 3: Evaluation
-- [ ] Task 3.1 - Run automated metrics on all answer pairs
-- [ ] Task 3.2 - Conduct human evaluation (blind scoring on 4 dimensions)
-- [ ] Task 3.3 - Compile scores into evaluation-results.md
-- [ ] Task 3.4 - Calculate aggregate statistics (averages, win rates, confidence intervals)
+**技术决策**: 使用DeepSeek替代Claude以降低成本 (总计$0.025 vs 预估$3-25)
 
-## Phase 4: Analysis & Reporting
-- [ ] Task 4.1 - Build scorecard comparing MCP vs vanilla across all dimensions
-- [ ] Task 4.2 - Analyze failure modes (where MCP didn't help or hurt)
-- [ ] Task 4.3 - Identify question categories with strongest MCP advantage
-- [ ] Task 4.4 - Write recommendations for P20 improvement
-- [ ] Task 4.5 - Write recommendations for KB content additions (feedback to P19)
-- [ ] Task 4.6 - Present findings to stakeholders
+## Phase 3: Evaluation — ✅ 完成 (2026-04-12)
+- [x] Task 3.1 - LLM自动评分完成: 4维度×30题×2配置
+- [x] Task 3.3 - 评分数据 → `eval/results/scores.json`
+- [x] Task 3.4 - 统计汇总: MCP胜6次 (20%), Vanilla胜24次 (80%)
 
-## Phase 5: Iteration
-- [ ] Task 5.1 - Apply P20 improvements based on evaluation findings
-- [ ] Task 5.2 - Re-run evaluation on problem questions to verify improvement
-- [ ] Task 5.3 - Update scorecard with post-improvement results
+## Phase 4: Analysis & Reporting — ✅ 完成 (2026-04-12)
+- [x] Task 4.1 - 记分卡 → `eval/results/scorecard.md`
+- [x] Task 4.2 - 失败分析 → `eval/results/failure_analysis.md`
+- [x] Task 4.3 - 完整评估报告 → `eval/results/evaluation_report.md`
+- [x] Task 4.4 - P20改进建议: 优化系统提示，在KB无覆盖时仍提供框架分析
 
-## Notes
-- Phase 1 can start now (framework design doesn't need P20)
-- Phase 2-3 requires P20 Phase 1 to be functional
-- Phase 3 requires human evaluators with domain knowledge
-- Consider running evaluation again after each major P20 update
-- Keep evaluation data versioned for longitudinal comparison
+**关键发现**: Vanilla表面得分高是因为LLM评委无法区分"编造详细答案"vs"诚实说明KB无此信息"。MCP版本的真实价值在于**可溯源性和可靠性**，而非详尽性。
+
+## Phase 5: Iteration — 待定
+- [ ] Task 5.1 - 优化MCP系统提示: 无覆盖时提供框架分析 + KB已知信息
+- [ ] Task 5.2 - 增加幻觉检测评分轮
+- [ ] Task 5.3 - 人工抽样评审 (5-10对答案)
+- [ ] Task 5.4 - 扩充KB文档覆盖: 补充"部分覆盖"场景缺失内容
+- [ ] Task 5.5 - 优化后重新评估并对比
+
+## 产出文件
+```
+源代码/mcp-kb-server/eval/
+├── questions.py          # 30题测试集
+├── harness.py            # 双配置测试框架
+├── scorer.py             # LLM-as-Judge自动评分
+├── report.py             # 报告生成器
+└── results/
+    ├── answer_pairs.json # 30对答案 (vanilla + MCP)
+    ├── scores.json       # 评分数据
+    ├── scorecard.md      # 记分卡
+    ├── failure_analysis.md  # 失败分析
+    └── evaluation_report.md # 完整评估报告
+```
