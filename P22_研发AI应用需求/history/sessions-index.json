@@ -1,0 +1,26 @@
+{
+  "entity_id": "spec:P22_研发AI应用需求",
+  "entity_type": "spec",
+  "display_name": "Spec 22: 研发AI应用需求",
+  "directory": "规格/P22_研发AI应用需求",
+  "session_count": 1,
+  "sessions": [
+    {
+      "session_id": "d187553a-451e-4a3a-a3a8-c44a1cb4f5d0",
+      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/d187553a-451e-4a3a-a3a8-c44a1cb4f5d0.jsonl",
+      "confidence": 1.0,
+      "start_time": "2026-04-12T00:00:00.000Z",
+      "end_time": "2026-04-13T04:00:00.000Z",
+      "message_count": 0,
+      "matched_message_count": 0,
+      "matched_messages": [],
+      "evidence": [
+        "Created P22 spec: requirements.md, design.md, tasks.md",
+        "Implemented rd_ai_tools: 6 tools, 37 Python files",
+        "DeepSeek LLM integration, demo verified for all tools",
+        "Demo results documented in demo-results.md"
+      ]
+    }
+  ],
+  "last_updated": "2026-04-13T04:00:00.000000"
+}
