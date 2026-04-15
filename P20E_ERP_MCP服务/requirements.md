@@ -62,5 +62,5 @@
 ## Relationship to Other Specs
 
 - **P20E（本规格）**: 已完成的 MCP 服务器 + 样本问题回答 V0.1 方案
-- **P20T_TextToSql**: V0.2 演进方向，用 LLM Wiki 或 Text2SQL 解决 L1-L4 瓶颈
+- **P20T_ERP_TextToSql**: V0.2 演进方向，用 LLM Wiki 或 Text2SQL 解决 L1-L4 瓶颈
 - **P23_ERP_MCP问答质量评估**（main 分支）: 对本服务的问答质量评估

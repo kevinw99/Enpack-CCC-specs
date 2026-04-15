@@ -54,11 +54,11 @@
 ## Phase 6: 已知问题跟踪 🟡 待处理
 
 - [ ] T1: `describe_form` 65KB 响应优化（按需返回字段子集）
-- [ ] T2: 业务语义结构化（解决方案见 P20T_TextToSql）
+- [ ] T2: 业务语义结构化（解决方案见 P20T_ERP_TextToSql）
 - [ ] T3: 表单关联关系建模
 - [ ] T4: Q013 式错误的自动化检测（由 P23 评估规格处理）
 
 ## Phase 7: 后续演进（不在本规格范围）
 
-- 推进 P20T_TextToSql 设计落地
+- 推进 P20T_ERP_TextToSql 设计落地
 - 推进 P23_ERP_MCP问答质量评估 的评估框架

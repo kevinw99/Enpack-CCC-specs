@@ -3,7 +3,7 @@
 ## Overview
 
 构建一套自动化机制，从金蝶云星空系统抽取表和字段的 **DDL + 业务描述**（中文名、含义、
-枚举值、关联关系），输出为结构化的 Schema 知识库，为下游的 P20T_TextToSql 和
+枚举值、关联关系），输出为结构化的 Schema 知识库，为下游的 P20T_ERP_TextToSql 和
 P20E_ERP_MCP服务 提供权威的元数据底座。
 
 ## Business Context
@@ -11,7 +11,7 @@ P20E_ERP_MCP服务 提供权威的元数据底座。
 - P20E 现有 `kingdee_describe_form` 工具返回 65KB 全量字段，上下文消耗大（技术债 T1）
 - P20E `问题库回答指南.md` 中的字段映射、状态值枚举完全靠人工维护（技术债 T2）
 - AI 在字段选择上不稳定（如 Q013 反复修正 3 次），根因是缺乏结构化的字段语义
-- P20T_TextToSql 方向要求有完整 schema 标注才能跑通
+- P20T_ERP_TextToSql 方向要求有完整 schema 标注才能跑通
 - 金蝶 ERP 有几百张表，人工标注工作量巨大，必须有自动化抽取
 
 ## Functional Requirements
@@ -82,5 +82,5 @@ P20E_ERP_MCP服务 提供权威的元数据底座。
 ## Relationship to Other Specs
 
 - **P20E_ERP_MCP服务**: 本规格产出物可替换/优化 P20E 的 `describe_form` 工具
-- **P20T_TextToSql**: 本规格是 Text2SQL 的 schema 基础设施
+- **P20T_ERP_TextToSql**: 本规格是 Text2SQL 的 schema 基础设施
 - **P23_ERP_MCP问答质量评估**: 用 Q013 等案例验证本规格的价值

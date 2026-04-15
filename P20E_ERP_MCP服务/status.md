@@ -26,7 +26,7 @@
 
 - 样本问题答案 ~14 题
 - `describe_form` 响应体积优化
-- 与 P20T_TextToSql 对接（V0.2 方案演进）
+- 与 P20T_ERP_TextToSql 对接（V0.2 方案演进）
 - 与 P23 评估规格对接
 
 ## Session Notes
@@ -35,7 +35,7 @@
 - Accomplished: 为已完成的 `源代码/mcp-kingdee-server/` 创建回顾性规格文档
 - Context: 本分支（`yongzhi_erp_mcp_0325`）原将该工作归入 P18，现在做如下区分：
   - **P20E**（本规格）= 已完成的 V0.1 方案（MCP Server + 手工指南）
-  - **P20T_TextToSql** = V0.2 演进方向（LLM Wiki / Text2SQL）
+  - **P20T_ERP_TextToSql** = V0.2 演进方向（LLM Wiki / Text2SQL）
   - **P23_ERP_MCP问答质量评估** = 对本服务的质量评估框架（在 main 分支）
 - Next steps: 将 retrofit spec 与源码目录交叉链接，确保文档可追溯
 

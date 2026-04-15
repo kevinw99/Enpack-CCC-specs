@@ -1,4 +1,4 @@
-# Requirements: P20T TextToSql
+# Requirements: P20T ERP TextToSql
 
 ## Overview
 
