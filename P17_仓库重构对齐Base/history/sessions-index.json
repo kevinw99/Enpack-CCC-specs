@@ -3,16 +3,16 @@
   "entity_type": "spec",
   "display_name": "Spec 17: 仓库重构对齐Base",
   "directory": "规格/P17_仓库重构对齐Base",
-  "session_count": 4,
+  "session_count": 3,
   "sessions": [
     {
       "session_id": "d975fd50-8501-402f-8803-b1eeffc6efff",
       "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/d975fd50-8501-402f-8803-b1eeffc6efff.jsonl",
-      "confidence": 0.27,
+      "confidence": 0.15,
       "start_time": "2026-03-08T15:17:30.425Z",
       "end_time": "2026-03-17T16:46:10.350Z",
       "message_count": 701,
-      "matched_message_count": 17,
+      "matched_message_count": 12,
       "matched_messages": [
         {
           "uuid": "2f280d11-09e7-4e35-a77a-4cf5a85c7c3c",
@@ -27,20 +27,6 @@
           "msg_type": "assistant",
           "timestamp": "2026-03-08T19:40:37.451Z",
           "preview": ""
-        },
-        {
-          "uuid": "8c40da4e-9df4-441f-a9b2-0ff884c0409c",
-          "line_number": 733,
-          "msg_type": "user",
-          "timestamp": "2026-03-11T00:42:46.635Z",
-          "preview": "from latest sepcs P17 ~ P21, please genreate pdfs for non standard md files. i.e., no need to gnerea"
-        },
-        {
-          "uuid": "f78a2e9e-b3e7-47f5-807b-ec50a37f4bbc",
-          "line_number": 738,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T00:43:00.936Z",
-          "preview": "Non-standard files to convert to PDF:\n\n| Spec | File |\n|------|------|\n| P17 | P17-变更说明-Onboarding-G"
         },
         {
           "uuid": "e539e2d3-27f5-4684-8e1d-510c551ef425",
@@ -76,27 +62,6 @@
           "msg_type": "assistant",
           "timestamp": "2026-03-11T00:46:05.100Z",
           "preview": ""
-        },
-        {
-          "uuid": "b53bb4cf-0c42-41dc-9334-b36eb60296d5",
-          "line_number": 832,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T00:46:13.745Z",
-          "preview": "Done. 7 PDFs generated and pushed:\n\n| Spec | PDF | Size |\n|------|-----|------|\n| P17 | P17-变更说明-Onb"
-        },
-        {
-          "uuid": "c87cc96e-7d12-4ac2-be59-3fcda7196ddf",
-          "line_number": 842,
-          "msg_type": "user",
-          "timestamp": "2026-03-11T00:55:06.326Z",
-          "preview": "can you generate the table again without P17"
-        },
-        {
-          "uuid": "c4a4a803-4b96-4bd0-b29d-347d59ab30e4",
-          "line_number": 904,
-          "msg_type": "user",
-          "timestamp": "2026-03-11T01:02:58.291Z",
-          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
         },
         {
           "uuid": "541758ac-6db7-4688-b005-e73d7ac8d7e8",
@@ -145,337 +110,25 @@
     {
       "session_id": "36591ed3-c021-4888-ae47-f7c95c23fedc",
       "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/36591ed3-c021-4888-ae47-f7c95c23fedc.jsonl",
-      "confidence": 0.2,
+      "confidence": 0.12,
       "start_time": "2026-02-22T01:39:42.977Z",
       "end_time": "2026-03-07T06:24:40.383Z",
       "message_count": 380,
-      "matched_message_count": 10,
-      "matched_messages": [
-        {
-          "uuid": "3c885a4e-ac90-4af6-86b5-0b807ee0a5dd",
-          "line_number": 1,
-          "msg_type": "user",
-          "timestamp": "2026-02-22T01:39:42.977Z",
-          "preview": "Implement the following plan:\n\n# Plan: Create AI子公司 Repo and Migrate R15 → A15\n\n## Context\nThe AI su"
-        },
-        {
-          "uuid": "1d1ec152-f4a3-4573-be0d-2405301fbc5f",
-          "line_number": 33,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-22T01:40:03.193Z",
-          "preview": ""
-        },
-        {
-          "uuid": "78bbcc4a-bce5-4874-b7ad-4f67fd00cc78",
-          "line_number": 317,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-22T02:02:12.932Z",
-          "preview": "Now update `P17-变更说明-Onboarding-Guide.md` — the directory tree and spec table:"
-        },
-        {
-          "uuid": "f139cfd4-ede6-4449-9cd5-398af112ca30",
-          "line_number": 318,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-22T02:02:17.148Z",
-          "preview": ""
-        },
-        {
-          "uuid": "038c53ac-60b8-4b25-b24b-adceae617273",
-          "line_number": 322,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-22T02:02:25.936Z",
-          "preview": "Update the specs table in P17 guide:"
-        },
-        {
-          "uuid": "41452479-991d-4641-be3f-0a28b4e0632d",
-          "line_number": 323,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-22T02:02:30.032Z",
-          "preview": ""
-        },
-        {
-          "uuid": "5bcb9f80-fb6f-4437-bf88-ac06bc9ba4b7",
-          "line_number": 327,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-22T02:02:41.977Z",
-          "preview": ""
-        },
-        {
-          "uuid": "887077fd-093b-4408-94ec-c04022fa1362",
-          "line_number": 330,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-22T02:02:53.359Z",
-          "preview": ""
-        },
-        {
-          "uuid": "245fd5d4-cecb-4df3-a8f3-8cc3e45175ff",
-          "line_number": 386,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-22T02:05:01.622Z",
-          "preview": ""
-        },
-        {
-          "uuid": "11ca6eff-9111-42ea-a7e3-bebdf0be06ba",
-          "line_number": 444,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-22T02:26:47.615Z",
-          "preview": ""
-        }
-      ],
-      "evidence": [
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P17_仓库重构对齐Base/P17-变更说明-Onboarding-Guide.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P17_仓库重构对齐Base/P17-变更说明-Onboarding-Guide.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P17_仓库重构对齐Base/P17-变更说明-Onboarding-Guide.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P17_仓库重构对齐Base/P17-变更说明-Onboarding-Guide.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P17_仓库重构对齐Base/P17-变更说明-Onboarding-Guide.md"
-      ]
+      "matched_message_count": 0,
+      "matched_messages": [],
+      "evidence": []
     },
     {
       "session_id": "4ff8dafa-38cb-4694-990c-59beac133601",
       "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/4ff8dafa-38cb-4694-990c-59beac133601.jsonl",
-      "confidence": 0.3,
+      "confidence": 0.26,
       "start_time": "2026-02-21T01:37:08.937Z",
       "end_time": "2026-02-21T02:18:26.092Z",
       "message_count": 299,
-      "matched_message_count": 26,
-      "matched_messages": [
-        {
-          "uuid": "013d846c-f695-44ea-a4f2-d360cbb5aa56",
-          "line_number": 312,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:41:03.502Z",
-          "preview": ""
-        },
-        {
-          "uuid": "997c3794-da8e-4542-a01b-cc40214355c2",
-          "line_number": 314,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:41:29.897Z",
-          "preview": ""
-        },
-        {
-          "uuid": "b098aa5d-956f-4d5d-b9a4-0ea092ec73fe",
-          "line_number": 319,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:41:55.027Z",
-          "preview": ""
-        },
-        {
-          "uuid": "d916e9b4-d10b-46eb-b075-45e25de68e8c",
-          "line_number": 324,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:42:02.857Z",
-          "preview": ""
-        },
-        {
-          "uuid": "c58df8ab-2619-4fa9-a86e-e72896d522c0",
-          "line_number": 329,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:42:08.186Z",
-          "preview": ""
-        },
-        {
-          "uuid": "85c0a2bf-1a5e-4e0a-8988-a943af2140d5",
-          "line_number": 437,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:46:07.822Z",
-          "preview": ""
-        },
-        {
-          "uuid": "63d6e591-538c-4b61-a70a-0fe22bdd78d0",
-          "line_number": 458,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:46:37.936Z",
-          "preview": ""
-        },
-        {
-          "uuid": "561b0381-8690-4fe3-a346-32958c29ce1d",
-          "line_number": 460,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:46:38.962Z",
-          "preview": ""
-        },
-        {
-          "uuid": "57228dce-a73e-46a4-b958-1f9adc3e7e0f",
-          "line_number": 472,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:47:17.249Z",
-          "preview": ""
-        },
-        {
-          "uuid": "fb959d4b-d469-431f-8ba9-1ee1b27da1a5",
-          "line_number": 477,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:47:30.496Z",
-          "preview": ""
-        },
-        {
-          "uuid": "e820034b-dfcd-4238-a5d7-88ad9d018640",
-          "line_number": 485,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:47:53.210Z",
-          "preview": "All session history commands working correctly. Here's a summary of everything accomplished:\n\n---\n\n#"
-        },
-        {
-          "uuid": "e37d377d-f5a4-48b4-acea-cca14500bafd",
-          "line_number": 499,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:56:51.958Z",
-          "preview": ""
-        },
-        {
-          "uuid": "51508e05-d786-4790-92d7-6bb40b773ca0",
-          "line_number": 501,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:56:56.583Z",
-          "preview": ""
-        },
-        {
-          "uuid": "ca205d87-9c0f-44b1-ac50-9cd390eab836",
-          "line_number": 503,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:56:57.215Z",
-          "preview": ""
-        },
-        {
-          "uuid": "bd83c135-cd99-4c63-a85d-1fa6c01684d8",
-          "line_number": 512,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:57:02.396Z",
-          "preview": ""
-        },
-        {
-          "uuid": "ba8d1922-4281-46bc-b669-6f75aa0b283e",
-          "line_number": 522,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:58:35.399Z",
-          "preview": ""
-        },
-        {
-          "uuid": "6a3bb86f-e3e5-4a42-af58-d0db7bad2382",
-          "line_number": 527,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:58:45.107Z",
-          "preview": "Done. The guide is at:\n\n**`规格/P17_仓库重构对齐Base/P17-变更说明-Onboarding-Guide.md`**\n\nIt covers all 5 points"
-        },
-        {
-          "uuid": "12c46403-8ecf-4cbe-8208-b9f56bbb1dc8",
-          "line_number": 561,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T02:08:43.168Z",
-          "preview": "Now I have the full picture. Here's the situation:\n\n## Current State\n\n| Directory | What's in it | O"
-        },
-        {
-          "uuid": "4e8250cb-a424-4227-b4f8-1dd694e5d79c",
-          "line_number": 566,
-          "msg_type": "user",
-          "timestamp": "2026-02-21T02:15:14.891Z",
-          "preview": "in 规格/P17_仓库重构对齐Base/P17-变更说明-Onboarding-Guide.md,\n1. can you add this part of explainnation \"The on"
-        },
-        {
-          "uuid": "003254f2-557b-4b99-86e0-4dc15e7de4a4",
-          "line_number": 576,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T02:15:28.288Z",
-          "preview": ""
-        },
-        {
-          "uuid": "fecc0f32-dbdd-48f5-b11a-107a6af56751",
-          "line_number": 580,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T02:15:42.257Z",
-          "preview": ""
-        },
-        {
-          "uuid": "f5de5e8d-10c8-4c59-91b9-89d550c3338b",
-          "line_number": 584,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T02:16:13.690Z",
-          "preview": ""
-        },
-        {
-          "uuid": "460b4410-5e10-446d-86c7-f006a2ce5bfa",
-          "line_number": 588,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T02:16:25.887Z",
-          "preview": ""
-        },
-        {
-          "uuid": "d304efa8-8ad0-43e7-9217-e357d8bcf5bd",
-          "line_number": 591,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T02:16:38.547Z",
-          "preview": "Done. Two changes made:\n\n1. **Added `specs/` vs `规格/` explanation** — inserted after the \"How Histor"
-        },
-        {
-          "uuid": "35a1090a-0241-4787-9f6c-9911b3ff0a96",
-          "line_number": 603,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T02:18:15.070Z",
-          "preview": ""
-        },
-        {
-          "uuid": "09173fe6-0d16-4189-a4a0-f41a06bbf9b2",
-          "line_number": 607,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T02:18:26.013Z",
-          "preview": "Committed and pushed. All commits from this session are now on `origin/main`:\n\n```\n9b547d7 Add P17 o"
-        }
-      ],
-      "evidence": [
-        "File: 规格/P17_仓库重构对齐Base",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P17_仓库重构对齐Base/requirements.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P17_仓库重构对齐Base/design.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P17_仓库重构对齐Base/tasks.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P17_仓库重构对齐Base/status.md"
-      ]
-    },
-    {
-      "session_id": "272927c6-c958-4eb5-853a-ffe55fe08a70",
-      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/272927c6-c958-4eb5-853a-ffe55fe08a70.jsonl",
-      "confidence": 0.14,
-      "start_time": "2026-02-21T01:17:05.211Z",
-      "end_time": "2026-02-22T01:39:42.994Z",
-      "message_count": 191,
-      "matched_message_count": 4,
-      "matched_messages": [
-        {
-          "uuid": "fee5b97e-7c24-435a-b872-38f9bee16561",
-          "line_number": 124,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:47:28.772Z",
-          "preview": "Here's the state:\n- **origin/main**: fully up to date, no incoming changes\n- **base/main**: fully up"
-        },
-        {
-          "uuid": "65fc0f8b-9f46-41d2-b1c7-e1ff0262a5d7",
-          "line_number": 125,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:47:30.454Z",
-          "preview": ""
-        },
-        {
-          "uuid": "d9750ad7-7061-4afe-9aeb-5c5affa59954",
-          "line_number": 132,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:47:46.804Z",
-          "preview": ""
-        },
-        {
-          "uuid": "8d5f7f00-2898-4012-990b-1f41cfef8610",
-          "line_number": 138,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-21T01:48:03.462Z",
-          "preview": "Done. Summary:\n\n- **Fetched** both remotes (`origin`, `base`) — no incoming changes, no conflicts\n- "
-        }
-      ],
-      "evidence": [
-        "File: 规格/P17_仓库重构对齐Base/status.md",
-        "File: 规格/P17_仓库重构对齐Base/history/",
-        "File: 规格/P17_仓库重构对齐Base/status.md",
-        "File: 规格/P17_仓库重构对齐Base/history/",
-        "Text: ...Here's the state: - **origin/main**: fully up to date, no incoming changes - **b..."
-      ]
+      "matched_message_count": 0,
+      "matched_messages": [],
+      "evidence": []
     }
   ],
-  "last_updated": "2026-03-20T14:48:07.766985"
+  "last_updated": "2026-04-15T18:30:59.596904"
 }

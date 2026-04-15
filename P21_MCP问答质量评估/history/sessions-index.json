@@ -3,24 +3,17 @@
   "entity_type": "spec",
   "display_name": "Spec 21: MCP问答质量评估",
   "directory": "规格/P21_MCP问答质量评估",
-  "session_count": 4,
+  "session_count": 3,
   "sessions": [
     {
       "session_id": "0b9d88c9-f14f-40f8-adbc-9bc4c7407828",
       "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/0b9d88c9-f14f-40f8-adbc-9bc4c7407828.jsonl",
-      "confidence": 0.38,
+      "confidence": 0.22,
       "start_time": "2026-04-12T04:02:06.163Z",
-      "end_time": "2026-04-13T03:37:05.927Z",
-      "message_count": 1579,
-      "matched_message_count": 37,
+      "end_time": "2026-04-15T09:23:08.281Z",
+      "message_count": 1658,
+      "matched_message_count": 20,
       "matched_messages": [
-        {
-          "uuid": "efc96cb4-ca86-4567-b024-80e7356d9465",
-          "line_number": 501,
-          "msg_type": "user",
-          "timestamp": "2026-04-12T13:18:27.429Z",
-          "preview": "lets continue on P21, what is the status and what to do next"
-        },
         {
           "uuid": "4f271fa6-410b-4c1a-acd4-bed120333be3",
           "line_number": 508,
@@ -43,34 +36,6 @@
           "preview": ""
         },
         {
-          "uuid": "8dc38d03-3a7e-4554-b619-8e607f722a11",
-          "line_number": 514,
-          "msg_type": "assistant",
-          "timestamp": "2026-04-12T13:19:54.114Z",
-          "preview": "## P21 状态\n\n**当前进度**: 全部 Phase 都还未开始 (所有 task 都是 `[ ]`)。\n\n但现在 **P20 已经完全可用了**，所以 P21 的所有依赖都已满足：\n- P18"
-        },
-        {
-          "uuid": "e607b6cc-f1d4-41be-837b-1a15f13860e5",
-          "line_number": 530,
-          "msg_type": "assistant",
-          "timestamp": "2026-04-12T13:22:41.837Z",
-          "preview": "很好，项目里已经有现成的 DeepSeek 客户端封装了。让我来回答你的问题：\n\n## 成本分析\n\n| 项目 | 数量 | 说明 |\n|------|------|------|\n| 测试问题 | ~"
-        },
-        {
-          "uuid": "1b5efd96-669c-4447-895d-a4ddcf016af2",
-          "line_number": 583,
-          "msg_type": "user",
-          "timestamp": "2026-04-12T13:28:31.559Z",
-          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
-        },
-        {
-          "uuid": "1cbf6fe1-3446-4968-ab6b-b38302a6449f",
-          "line_number": 1041,
-          "msg_type": "assistant",
-          "timestamp": "2026-04-12T14:02:29.335Z",
-          "preview": "Now let me update P21 tasks.md and commit everything:"
-        },
-        {
           "uuid": "c476cf81-163b-4e71-824a-5b604db71852",
           "line_number": 1049,
           "msg_type": "assistant",
@@ -85,39 +50,11 @@
           "preview": ""
         },
         {
-          "uuid": "e82612a0-19aa-407e-9b6a-c1fe2380e829",
-          "line_number": 1062,
-          "msg_type": "assistant",
-          "timestamp": "2026-04-12T14:03:21.420Z",
-          "preview": "I see there are a lot of untracked `rd_ai_tools` files — these appear to be pre-existing code from a"
-        },
-        {
           "uuid": "9eb63ab9-0942-494f-89e5-bde6f5b90cb8",
           "line_number": 1063,
           "msg_type": "assistant",
           "timestamp": "2026-04-12T14:03:23.678Z",
           "preview": ""
-        },
-        {
-          "uuid": "92986363-4f47-43b0-b282-8fe464cd64ad",
-          "line_number": 1072,
-          "msg_type": "assistant",
-          "timestamp": "2026-04-12T14:03:59.038Z",
-          "preview": "All P21 tasks complete. Here's a summary of what was accomplished:\n\n---\n\n## P21 评估完成\n\n### 产出文件\n- `ev"
-        },
-        {
-          "uuid": "30c8bc97-8968-48da-9ee0-eaacd81eafb0",
-          "line_number": 1164,
-          "msg_type": "user",
-          "timestamp": "2026-04-12T15:35:20.553Z",
-          "preview": "<task-notification>\n<task-id>bae46j3rn</task-id>\n<tool-use-id>toolu_019p4EHpkDHGz8VSHDw3PxUF</tool-u"
-        },
-        {
-          "uuid": "29f12a9a-de01-4c79-9dad-58193b560523",
-          "line_number": 1210,
-          "msg_type": "assistant",
-          "timestamp": "2026-04-12T16:36:04.493Z",
-          "preview": "Now update P21 tasks and commit:"
         },
         {
           "uuid": "2f45a2a3-d8b7-4e3e-8466-6c60ec6878d1",
@@ -139,13 +76,6 @@
           "msg_type": "assistant",
           "timestamp": "2026-04-12T16:36:32.570Z",
           "preview": ""
-        },
-        {
-          "uuid": "6292a9a9-cfd9-4ede-917b-a06c6bc21825",
-          "line_number": 1228,
-          "msg_type": "assistant",
-          "timestamp": "2026-04-12T16:37:02.248Z",
-          "preview": "P21 Phase 5 完成，全部已推送到 GitHub `7a94a99`。\n\n---\n\n## 总结\n\nP21评估完成了两轮迭代：\n\n### V1 → V2 改进效果\n\n| | V1 | V2 | "
         },
         {
           "uuid": "5571c9e2-ffc6-4dbb-9394-b7e79357cdc5",
@@ -176,13 +106,6 @@
           "preview": ""
         },
         {
-          "uuid": "b8754c14-f942-49ed-b896-01e223fc1caa",
-          "line_number": 1873,
-          "msg_type": "assistant",
-          "timestamp": "2026-04-13T00:37:15.127Z",
-          "preview": "Now update P21 tasks.md to reflect the report and the fairness qualification."
-        },
-        {
           "uuid": "4d7c1106-1fab-4f69-8627-8458766811ea",
           "line_number": 1874,
           "msg_type": "assistant",
@@ -211,13 +134,6 @@
           "preview": ""
         },
         {
-          "uuid": "64601bb1-dae8-471e-b5a4-86a102275793",
-          "line_number": 1901,
-          "msg_type": "assistant",
-          "timestamp": "2026-04-13T02:04:30.905Z",
-          "preview": "P22 already exists, so the next number is P23. Let me now update P21's conclusion and create P23."
-        },
-        {
           "uuid": "71aca4db-631f-4fbc-b0c4-244dfd1efcc1",
           "line_number": 1902,
           "msg_type": "assistant",
@@ -225,46 +141,11 @@
           "preview": ""
         },
         {
-          "uuid": "3792e1dc-5214-4b72-beb3-48fbd811f7ea",
-          "line_number": 1904,
-          "msg_type": "assistant",
-          "timestamp": "2026-04-13T02:04:36.726Z",
-          "preview": "Now let me update P21 with a final conclusion section and create P23."
-        },
-        {
           "uuid": "7f78c6c5-6c69-4c3b-8ae0-a20006a0efaf",
           "line_number": 1905,
           "msg_type": "assistant",
           "timestamp": "2026-04-13T02:04:49.241Z",
           "preview": ""
-        },
-        {
-          "uuid": "67fd2c28-2d86-4af4-a250-f9a86caffe27",
-          "line_number": 1921,
-          "msg_type": "assistant",
-          "timestamp": "2026-04-13T02:07:17.199Z",
-          "preview": "Done. Here's what was updated/created:\n\n**P21 更新**:\n- tasks.md 增加了\"总结论\"部分，明确了：\n  - P21验证了什么（方法论可行、KB"
-        },
-        {
-          "uuid": "a764afac-329f-4710-9a55-fe413f4cbb88",
-          "line_number": 1940,
-          "msg_type": "assistant",
-          "timestamp": "2026-04-13T03:28:47.198Z",
-          "preview": "Now I have all the data. Let me cross-reference P19's gap matrix to build the ERP question set. I ne"
-        },
-        {
-          "uuid": "80233790-46fc-4e35-ac95-7e76986ab3f6",
-          "line_number": 1958,
-          "msg_type": "assistant",
-          "timestamp": "2026-04-13T03:31:32.601Z",
-          "preview": "Done. Here's what was completed:\n\n**Task 1.1 + 1.3 + 1.4**: Created `eval/questions_erp.py` with **2"
-        },
-        {
-          "uuid": "e28ca000-c329-45fe-a0e8-8026d4aa43fb",
-          "line_number": 1964,
-          "msg_type": "assistant",
-          "timestamp": "2026-04-13T03:35:53.830Z",
-          "preview": "\n\nLooking at what's left across P21 and P23:\n\n**P21 remaining**: Task 5.5 (human review) and 5.6 (ex"
         },
         {
           "uuid": "2ad32667-ad23-407d-a4dc-4cc02d07d4d8",
@@ -285,11 +166,11 @@
     {
       "session_id": "cd10a8e5-37e3-49f3-b4e7-4d2dc2237e69",
       "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/cd10a8e5-37e3-49f3-b4e7-4d2dc2237e69.jsonl",
-      "confidence": 0.32,
+      "confidence": 0.16,
       "start_time": "2026-04-11T23:34:15.740Z",
-      "end_time": "2026-04-14T09:12:26.888Z",
-      "message_count": 1070,
-      "matched_message_count": 23,
+      "end_time": "2026-04-15T09:18:19.436Z",
+      "message_count": 1308,
+      "matched_message_count": 6,
       "matched_messages": [
         {
           "uuid": "0a2d81c7-d637-4ca7-9aa3-196fbaa7891a",
@@ -313,27 +194,6 @@
           "preview": ""
         },
         {
-          "uuid": "c60e720a-2ace-40c6-9557-c0fc57b2fc31",
-          "line_number": 56,
-          "msg_type": "assistant",
-          "timestamp": "2026-04-11T23:38:58.348Z",
-          "preview": "P22 spec created. Three files under `规格/P22_AI实验因子筛选/`:\n\n**`requirements.md`** — 需求说明\n- **出处**：明确标注需"
-        },
-        {
-          "uuid": "e91216dc-6c5a-4632-9981-27490ff01cad",
-          "line_number": 455,
-          "msg_type": "user",
-          "timestamp": "2026-04-12T04:18:05.959Z",
-          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
-        },
-        {
-          "uuid": "d2107542-d741-44a9-b079-d1eb6139e0ef",
-          "line_number": 502,
-          "msg_type": "assistant",
-          "timestamp": "2026-04-13T03:28:31.733Z",
-          "preview": "Let me look at P21's limitations and the sample questions in the referenced path."
-        },
-        {
           "uuid": "bbd220ed-67e9-4c9a-8a4b-0a573dceb822",
           "line_number": 520,
           "msg_type": "assistant",
@@ -341,109 +201,11 @@
           "preview": ""
         },
         {
-          "uuid": "6ced3153-3f4b-4a14-b650-55021e8817a1",
-          "line_number": 566,
-          "msg_type": "assistant",
-          "timestamp": "2026-04-13T03:32:04.063Z",
-          "preview": "Next public spec number is P24. Now let me also read P21 tasks.md to see the specific conclusion sec"
-        },
-        {
           "uuid": "35a174be-4321-4e20-a994-b1a5867706fa",
           "line_number": 567,
           "msg_type": "assistant",
           "timestamp": "2026-04-13T03:32:05.449Z",
           "preview": ""
-        },
-        {
-          "uuid": "d7ae3184-f849-4193-913e-9049863d1b43",
-          "line_number": 569,
-          "msg_type": "assistant",
-          "timestamp": "2026-04-13T03:32:11.407Z",
-          "preview": "Now I have everything I need. Let me look at the existing P21 questions.py to understand the format."
-        },
-        {
-          "uuid": "62a9c355-dccb-4016-9764-e0c01460f353",
-          "line_number": 575,
-          "msg_type": "assistant",
-          "timestamp": "2026-04-13T03:32:23.599Z",
-          "preview": "Now I have the full picture. Here's the core issue:\n\n**P21 used P18's 52-question bank, but only 2/5"
-        },
-        {
-          "uuid": "c6375866-990f-40d4-bd11-c69a0558b7b8",
-          "line_number": 644,
-          "msg_type": "assistant",
-          "timestamp": "2026-04-13T03:39:44.368Z",
-          "preview": "好的，你提出了一个很好的观点。我目前生成的 V1 只是**方法一：KB 覆盖型**。让我来梳理一下完整的问题生成方法论：\n\n## 三类问题 × 多种生成方法\n\n你说得对，最终的评估问题集应该包含**三"
-        },
-        {
-          "uuid": "27aad8e6-f66d-466c-9017-dfc4445f9e29",
-          "line_number": 659,
-          "msg_type": "assistant",
-          "timestamp": "2026-04-13T03:47:07.007Z",
-          "preview": "这是一个很好的方法论问题。核心矛盾是：**预知 vs 客观性**。让我设计一个管理这个问题的方案。\n\n## 关键原则：分阶段信息隔离\n\n```\n阶段 1: 问题生成          阶段 2: 盲评"
-        },
-        {
-          "uuid": "f893890d-fa97-45cb-903d-7ef03cc3b353",
-          "line_number": 716,
-          "msg_type": "assistant",
-          "timestamp": "2026-04-13T03:58:33.406Z",
-          "preview": "完成。总结一下 P24 当前状态：\n\n**已完成：**\n- 规格文档（requirements, design, tasks）— 含三类别设计和盲评协议\n- `questions_kb.py` V2 "
-        },
-        {
-          "uuid": "1f48a3c6-4cc6-45e7-b3b9-624b0102f641",
-          "line_number": 719,
-          "msg_type": "user",
-          "timestamp": "2026-04-13T08:41:43.662Z",
-          "preview": "are we ready to give P21 a run for a real eval with the P24 questions set?"
-        },
-        {
-          "uuid": "535ec469-83e1-4e8a-bbb7-28baa2bd838f",
-          "line_number": 726,
-          "msg_type": "assistant",
-          "timestamp": "2026-04-13T08:42:51.768Z",
-          "preview": "Let me check the P21 evaluation harness to see what's needed."
-        },
-        {
-          "uuid": "5949a438-13ed-4de3-a19c-92f6a3bb9962",
-          "line_number": 758,
-          "msg_type": "user",
-          "timestamp": "2026-04-13T08:46:28.713Z",
-          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
-        },
-        {
-          "uuid": "b52e9192-e000-4ea9-a9ca-7b78fc300598",
-          "line_number": 829,
-          "msg_type": "user",
-          "timestamp": "2026-04-13T08:50:08.421Z",
-          "preview": "<task-notification>\n<task-id>b4w3o6oyf</task-id>\n<tool-use-id>toolu_01R5aKzXRmZPxaMMw8mPaXsR</tool-u"
-        },
-        {
-          "uuid": "7632491c-4cf0-41f3-8fc8-e72458a729c4",
-          "line_number": 871,
-          "msg_type": "user",
-          "timestamp": "2026-04-13T09:01:58.263Z",
-          "preview": "那现在你已经有了API keys， 能否进行 P21 real test with P24？"
-        },
-        {
-          "uuid": "68861855-3db8-41a8-a8a5-7a863abecd36",
-          "line_number": 951,
-          "msg_type": "user",
-          "timestamp": "2026-04-13T10:35:20.560Z",
-          "preview": "<task-notification>\n<task-id>b2msfkc47</task-id>\n<tool-use-id>toolu_015zAhvF2CbTxWE4tp66etpB</tool-u"
-        },
-        {
-          "uuid": "e3a6d34f-3f6e-4cae-bc72-786e33d795d8",
-          "line_number": 1018,
-          "msg_type": "user",
-          "timestamp": "2026-04-13T11:18:59.453Z",
-          "preview": "<task-notification>\n<task-id>b0fyl0tcv</task-id>\n<summary>Monitor event: \"Anthropic harness progress"
-        },
-        {
-          "uuid": "8c879d41-b10a-4141-ae2b-c0dd1c762f1b",
-          "line_number": 1304,
-          "msg_type": "user",
-          "timestamp": "2026-04-13T14:10:15.594Z",
-          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
         },
         {
           "uuid": "249581b9-a82b-44c1-b890-e94575c1b4a5",
@@ -462,27 +224,79 @@
       ]
     },
     {
-      "session_id": "0da77daf-0891-43ef-ad0d-0f1a746b9d0b",
-      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/0da77daf-0891-43ef-ad0d-0f1a746b9d0b.jsonl",
-      "confidence": 0.25,
-      "start_time": "2026-03-08T16:49:53.563Z",
-      "end_time": "2026-03-08T21:40:47.546Z",
-      "message_count": 219,
-      "matched_message_count": 0,
-      "matched_messages": [],
-      "evidence": []
-    },
-    {
       "session_id": "d975fd50-8501-402f-8803-b1eeffc6efff",
       "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/d975fd50-8501-402f-8803-b1eeffc6efff.jsonl",
-      "confidence": 0.28,
+      "confidence": 0.16,
       "start_time": "2026-03-08T15:17:30.425Z",
       "end_time": "2026-03-17T16:46:10.350Z",
       "message_count": 701,
-      "matched_message_count": 0,
-      "matched_messages": [],
-      "evidence": []
+      "matched_message_count": 8,
+      "matched_messages": [
+        {
+          "uuid": "b53dff0f-30fe-4860-b70b-f57342782104",
+          "line_number": 113,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T16:41:19.577Z",
+          "preview": ""
+        },
+        {
+          "uuid": "a0ef6b1c-ba6d-40de-b063-7c8152cdc9da",
+          "line_number": 117,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T16:41:56.092Z",
+          "preview": ""
+        },
+        {
+          "uuid": "c3169857-4b19-4743-a6b7-2428a31511b1",
+          "line_number": 122,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T16:42:07.081Z",
+          "preview": ""
+        },
+        {
+          "uuid": "b9a584fd-e6e2-4bd0-a31f-cf601a47fc1f",
+          "line_number": 127,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-08T16:42:14.059Z",
+          "preview": ""
+        },
+        {
+          "uuid": "c4a4a803-4b96-4bd0-b29d-347d59ab30e4",
+          "line_number": 904,
+          "msg_type": "user",
+          "timestamp": "2026-03-11T01:02:58.291Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        },
+        {
+          "uuid": "6c107e68-838f-4dd0-9ee5-3e5f88345baa",
+          "line_number": 1733,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-15T01:42:17.194Z",
+          "preview": ""
+        },
+        {
+          "uuid": "bab6a79e-3c06-47ad-a89c-d78ebd3f7f42",
+          "line_number": 1736,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-15T01:42:22.646Z",
+          "preview": ""
+        },
+        {
+          "uuid": "0ff914ed-88a8-4df3-9a46-a5a6e0eb10a1",
+          "line_number": 1756,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-17T03:08:54.821Z",
+          "preview": ""
+        }
+      ],
+      "evidence": [
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P21_MCP问答质量评估/requirements.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P21_MCP问答质量评估/design.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P21_MCP问答质量评估/tasks.md",
+        "File: 规格/P21_MCP问答质量评估/",
+        "File: 规格/P21_MCP问答质量评估/history/"
+      ]
     }
   ],
-  "last_updated": "2026-04-14T17:28:23.414534"
+  "last_updated": "2026-04-15T18:30:59.593464"
 }
