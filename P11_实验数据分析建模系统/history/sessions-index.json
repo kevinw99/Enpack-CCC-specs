@@ -3,8 +3,173 @@
   "entity_type": "spec",
   "display_name": "Spec 11: 实验数据分析建模系统",
   "directory": "规格/P11_实验数据分析建模系统",
-  "session_count": 1,
+  "session_count": 2,
   "sessions": [
+    {
+      "session_id": "cd10a8e5-37e3-49f3-b4e7-4d2dc2237e69",
+      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/cd10a8e5-37e3-49f3-b4e7-4d2dc2237e69.jsonl",
+      "confidence": 0.31,
+      "start_time": "2026-04-11T23:34:15.740Z",
+      "end_time": "2026-04-14T09:12:26.888Z",
+      "message_count": 1070,
+      "matched_message_count": 21,
+      "matched_messages": [
+        {
+          "uuid": "9f828859-993e-4090-a839-bb762031478c",
+          "line_number": 12,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-11T23:34:31.673Z",
+          "preview": ""
+        },
+        {
+          "uuid": "192b38ed-8bc3-41b5-a197-a6d00291f814",
+          "line_number": 14,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-11T23:34:36.191Z",
+          "preview": ""
+        },
+        {
+          "uuid": "6b98da31-0014-45da-b138-052b7aa242aa",
+          "line_number": 34,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-11T23:35:27.298Z",
+          "preview": ""
+        },
+        {
+          "uuid": "340aa45e-87a9-4ba5-930c-fc2559fcdfde",
+          "line_number": 42,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-11T23:35:51.632Z",
+          "preview": "Now I have enough context. This is a distinct requirement from P11 (which builds models from histori"
+        },
+        {
+          "uuid": "c60e720a-2ace-40c6-9557-c0fc57b2fc31",
+          "line_number": 56,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-11T23:38:58.348Z",
+          "preview": "P22 spec created. Three files under `规格/P22_AI实验因子筛选/`:\n\n**`requirements.md`** — 需求说明\n- **出处**：明确标注需"
+        },
+        {
+          "uuid": "6e9b61dd-e0b6-47e7-ad80-c8b05aab5fcf",
+          "line_number": 72,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T02:32:54.022Z",
+          "preview": "Let me check P11's status and history first."
+        },
+        {
+          "uuid": "dd1a6871-a1d6-4466-9151-5a86ec6d3d44",
+          "line_number": 73,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T02:32:55.459Z",
+          "preview": ""
+        },
+        {
+          "uuid": "90e0dc56-aad6-4b29-b5a5-20d5b339cdd4",
+          "line_number": 74,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T02:32:55.913Z",
+          "preview": ""
+        },
+        {
+          "uuid": "1c2d3563-41fc-47f2-adc2-5a9a5240cd76",
+          "line_number": 77,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T02:32:56.647Z",
+          "preview": ""
+        },
+        {
+          "uuid": "33fd136d-4d74-4e34-865b-793c36bed1e8",
+          "line_number": 82,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T02:33:01.540Z",
+          "preview": ""
+        },
+        {
+          "uuid": "b5fe35bf-51ab-49f0-9adb-2444614e5a04",
+          "line_number": 84,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T02:33:02.102Z",
+          "preview": ""
+        },
+        {
+          "uuid": "7fba31b0-1288-4e9d-b297-f5c9926bbbf4",
+          "line_number": 86,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T02:33:04.921Z",
+          "preview": ""
+        },
+        {
+          "uuid": "7aa478e1-82c3-4f47-bf72-01af3433fd71",
+          "line_number": 89,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T02:33:12.907Z",
+          "preview": ""
+        },
+        {
+          "uuid": "26a3b6cc-0405-439f-b270-7a167da09158",
+          "line_number": 91,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T02:33:13.532Z",
+          "preview": ""
+        },
+        {
+          "uuid": "632a1a45-e356-4889-a150-247fdce9690f",
+          "line_number": 103,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T02:33:56.752Z",
+          "preview": "Good. Now I have the full picture. Let me answer your questions:\n\n---\n\n### 4. P22 与 P11 的关系\n\n两者是**互补"
+        },
+        {
+          "uuid": "41235b79-f97f-4c84-a2f1-a8b12375960e",
+          "line_number": 128,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T02:38:32.938Z",
+          "preview": "Done. Here's a summary of what changed:\n\n### 规格已迁移至 `RESTRICTED/规格/R22_AI实验因子筛选/`\n\n三项决策已体现在 v1.1：\n\n|"
+        },
+        {
+          "uuid": "6ce71df8-a73f-493d-a6ec-97fab2245256",
+          "line_number": 137,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T02:58:41.141Z",
+          "preview": ""
+        },
+        {
+          "uuid": "acf2caca-801b-4517-ab04-855427a37686",
+          "line_number": 139,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T02:58:41.321Z",
+          "preview": ""
+        },
+        {
+          "uuid": "7f3033e1-bcaf-4fde-a136-805612b3bb1d",
+          "line_number": 154,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T03:00:02.762Z",
+          "preview": "好，我现在对 P11 的代码和能力有了完整了解。让我深入解释。\n\n---\n\n## P11 是什么、能干什么\n\nP11（`源代码/experiment_analyzer/`）是一个**已实现到 Phas"
+        },
+        {
+          "uuid": "2b2ce141-8175-4f63-8c41-8d6e0749181f",
+          "line_number": 162,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T03:22:51.330Z",
+          "preview": "Looking at the R22 task list, here's where things stand:\n\n**Phase 0 (需求对齐)** — mostly needs human ac"
+        },
+        {
+          "uuid": "e91216dc-6c5a-4632-9981-27490ff01cad",
+          "line_number": 455,
+          "msg_type": "user",
+          "timestamp": "2026-04-12T04:18:05.959Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        }
+      ],
+      "evidence": [
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P11_实验数据分析建模系统/",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P11_实验数据分析建模系统/requirements.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P11_实验数据分析建模系统/design.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P11_实验数据分析建模系统/status.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P11_实验数据分析建模系统/tasks.md"
+      ]
+    },
     {
       "session_id": "9abe2710-400d-4e28-916e-30dfe211699f",
       "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/9abe2710-400d-4e28-916e-30dfe211699f.jsonl",
@@ -12,59 +177,10 @@
       "start_time": "2026-02-21T02:55:15.953Z",
       "end_time": "2026-02-22T07:03:33.384Z",
       "message_count": 568,
-      "matched_message_count": 6,
-      "matched_messages": [
-        {
-          "uuid": "be4aeb2c-beba-4091-b143-d9c5f4c11380",
-          "line_number": 3131,
-          "msg_type": "user",
-          "timestamp": "2026-02-22T05:25:03.312Z",
-          "preview": "execute spec 08"
-        },
-        {
-          "uuid": "d9da8f35-dd50-480c-8d70-15426a8281a9",
-          "line_number": 3175,
-          "msg_type": "user",
-          "timestamp": "2026-02-22T05:28:27.342Z",
-          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
-        },
-        {
-          "uuid": "10ec3c79-6a66-4a8f-92c8-fe672c7c24cd",
-          "line_number": 3177,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-22T05:28:33.139Z",
-          "preview": "Continuing with Spec 08 implementation. I need to read the current `main.py` and the design doc for "
-        },
-        {
-          "uuid": "1deeacaf-1d4f-4a93-a316-b428797ce354",
-          "line_number": 3247,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-22T05:31:47.401Z",
-          "preview": "Clean audit: 0 tiny conversations, 0 dead groups. All tiers showing in the top 20. Now let me write "
-        },
-        {
-          "uuid": "164f1fb7-494b-41a9-bf9b-897e4ae31d88",
-          "line_number": 3292,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-22T05:33:47.746Z",
-          "preview": "Spec 08 implementation is complete through Phase 4. Here's the summary:\n\n## Spec 08: WeChat Message "
-        },
-        {
-          "uuid": "4711f83e-06ee-470a-be61-b6068ad81009",
-          "line_number": 3317,
-          "msg_type": "assistant",
-          "timestamp": "2026-02-22T07:03:33.314Z",
-          "preview": "Done. Committed and pushed 62 files to `main` — Spec 08 filter engine, management CLI, cleanup resul"
-        }
-      ],
-      "evidence": [
-        "Text: ...execute spec 08...",
-        "Text: ...This session is being continued from a previous conversation that ran out of con...",
-        "Text: ...Continuing with Spec 08 implementation. I need to read the current `main.py` and...",
-        "Text: ...Clean audit: 0 tiny conversations, 0 dead groups. All tiers showing in the top 2...",
-        "Text: ...Spec 08 implementation is complete through Phase 4. Here's the summary:  ## Spec..."
-      ]
+      "matched_message_count": 0,
+      "matched_messages": [],
+      "evidence": []
     }
   ],
-  "last_updated": "2026-03-20T14:48:07.768316"
+  "last_updated": "2026-04-14T17:28:23.419190"
 }
