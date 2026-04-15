@@ -1,7 +1,7 @@
 # Status: P20T ERP TextToSql
 
 ## Current Status
-**Overall**: Ready to Execute（V0.3 设计已对齐 P20S 实际交付；entry criteria 全部满足，可启动 Phase 1/2A/2B）
+**Overall**: Phase 1/2A/2B/3/5/6 Done（Phase 4 待持续补全样本答案，不阻塞 core）
 **Started**: 2026-04-15
 **Last Updated**: 2026-04-15
 
@@ -25,15 +25,15 @@
 - P20T 所有 Phase 的 entry criteria 已满足，可全面启动
 - 下一步：启动 Phase 1（Wiki 骨架）+ Phase 2B（业务主题页）
 
-## Remaining Work（P20S 交付后所有 entry criteria 已满足）
+## Remaining Work
 
-- [x] Phase 1: 建立 LLM Wiki 骨架（wiki/ 目录 + README + 伪问题清单 + CLAUDE.md V0.2 路由规则）
-- [ ] Phase 2A: schema 枚举业务含义审核（已生成给吕经理的审核请求文档，待回收）
-- [x] Phase 2B: 核心业务主题 Wiki 页面（采购数据流/销售数据流/物料分类/生产数据流/应收应付/资产台账/采购成本分析 共 7 页已建）
-- [ ] Phase 3: 集成验证（V0.2 三层联动） — 需 Phase 2A 回收后做 Q013 端到端
-- [ ] Phase 4: 补全样本问题库答案 ✅ schema 已覆盖 32 张
-- [ ] Phase 5: 知识沉淀机制（持续）
-- [ ] Phase 6（可选）: Text2SQL 演进 ✅ ready（schema + relations + LLM 注解全到位）
+- [x] Phase 1: 建立 LLM Wiki 骨架（wiki/ + README + 伪问题清单 + CLAUDE.md V0.2 路由规则）
+- [x] Phase 2A: 吕经理审核完成，DEFAULT_ENUM_MAP 通用语义无需调整；公司特殊业务含义（应收单 B=催收）已写入 wiki
+- [x] Phase 2B: 7 个核心业务主题 Wiki 页面
+- [x] Phase 3: 集成验证（V0.2 三层联动，4 个核心用例通过）— 见 `docs/Phase3_集成验证结果.md`
+- [ ] Phase 4: 补全样本问题库答案（持续）— Q013 已验证修正、Q002/Q005/Q006/Q009/Q011/Q012/Q019 已有；待补 Q015/Q022/Q036/Q039/Q043
+- [x] Phase 5: 知识沉淀机制 — 见 `wiki/知识沉淀规范.md`
+- [x] Phase 6（可选）: Text2SQL 评估完成，建议短期不上 Vanna，中期评估 — 见 `docs/Phase6_Vanna_Text2SQL可行性评估.md`
 
 ## Session Notes
 
@@ -46,6 +46,31 @@
   - 讨论中提到 Vanna/Text2SQL 方向，但当前阶段 LLM Wiki 更轻量可行
 - Next steps: 确认 Wiki 存放位置，开始 Phase 1
 - Blockers: 枚举值需要业务人员（吕经理）配合确认
+
+### Session 2026-04-15（Phase 2A/3/5/6 实施 — 吕经理审核后）
+- Context: 用户告知吕经理审核完成，DEFAULT_ENUM_MAP 无需调整 → 继续实施后续 Phase
+- 关键发现（Q013 wiki 修正）:
+  - 原 wiki 写"催收 = FDocumentStatus = C"是错的
+  - 核对 `answer/q013_answer.md` 发现：公司业务上应收单 B=货出款未到=**催收候选**，C=款已到=不催收
+  - 这与采购订单/销售订单的"C=已审核=生效"直觉相反
+  - 说明同一枚举值在不同业务对象上可有不同业务含义 — 这正是 wiki 相对 schema 的价值
+- Accomplished:
+  - **Phase 2A 完成**: DEFAULT_ENUM_MAP 通用语义无需改；`wiki/销售/销售订单数据流.md` + `wiki/财务/应收应付.md` 的"公司特殊业务约定"段修正为"应收单 B=催收候选、C=款到不催收"
+  - **Phase 3 完成**: 生成 `docs/Phase3_集成验证结果.md`，4 个核心用例走查（Q013/Q001/Q007/Q006）均通过
+    - 发现 schema 缺口：SAL_SaleOrder / AR_Receivable / SAL_PriceList / 简单生产领料单 / FIN_CostCalculation 反馈给 P20S
+    - `wiki/README.md` 的"已知 schema 缺口清单"已填入
+  - **Phase 5 完成**: 生成 `wiki/知识沉淀规范.md`
+    - 按性质分流沉淀表（字段级 → schema；业务级 → wiki；伪问题 → 清单）
+    - 月度 lint 清单
+    - 对 P20S 的接口动作对应表
+  - **Phase 6 完成（评估文档）**: 生成 `docs/Phase6_Vanna_Text2SQL可行性评估.md`
+    - 方案 A（真 SQL）不可行：金蝶 API 不开放 SQL
+    - 方案 B（Vanna + MCP query DSL）可行，3-4 周开发
+    - 方案 C（tool-use 增强，当前路径）近期主推
+    - 建议：短期不上 Vanna；Phase 4 补全到 30+ 题后回测基线；基线 <70% 才启动 Vanna PoC
+- Remaining:
+  - Phase 4 (样本答案补全) 是持续性工作，每道题独立、不阻塞 core
+  - 等 P20S 扩 FORM_CATALOG 后（特别是 AR_Receivable / SAL_SaleOrder），再做更多 Q011/Q012/Q013 类题的端到端
 
 ### Session 2026-04-15（Phase 1 + Phase 2B 实施）
 - Accomplished:
