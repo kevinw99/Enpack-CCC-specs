@@ -27,10 +27,10 @@
 
 ## Remaining Work（P20S 交付后所有 entry criteria 已满足）
 
-- [ ] Phase 1: 建立 LLM Wiki 骨架 ✅ ready
-- [ ] Phase 2A: schema 枚举业务含义审核（与吕经理协作） ✅ ready
-- [ ] Phase 2B: 核心业务主题 Wiki 页面 ✅ ready
-- [ ] Phase 3: 集成验证（V0.2 三层联动） — 需 Phase 1 + Phase 2B 主页就绪
+- [x] Phase 1: 建立 LLM Wiki 骨架（wiki/ 目录 + README + 伪问题清单 + CLAUDE.md V0.2 路由规则）
+- [ ] Phase 2A: schema 枚举业务含义审核（已生成给吕经理的审核请求文档，待回收）
+- [x] Phase 2B: 核心业务主题 Wiki 页面（采购数据流/销售数据流/物料分类/生产数据流/应收应付/资产台账/采购成本分析 共 7 页已建）
+- [ ] Phase 3: 集成验证（V0.2 三层联动） — 需 Phase 2A 回收后做 Q013 端到端
 - [ ] Phase 4: 补全样本问题库答案 ✅ schema 已覆盖 32 张
 - [ ] Phase 5: 知识沉淀机制（持续）
 - [ ] Phase 6（可选）: Text2SQL 演进 ✅ ready（schema + relations + LLM 注解全到位）
@@ -46,6 +46,32 @@
   - 讨论中提到 Vanna/Text2SQL 方向，但当前阶段 LLM Wiki 更轻量可行
 - Next steps: 确认 Wiki 存放位置，开始 Phase 1
 - Blockers: 枚举值需要业务人员（吕经理）配合确认
+
+### Session 2026-04-15（Phase 1 + Phase 2B 实施）
+- Accomplished:
+  - 创建 `源代码/mcp-kingdee-server/wiki/` 目录骨架（采购/销售/生产/库存/财务/固定资产/伪问题与数据缺口）
+  - `wiki/README.md`：业务主题索引 + AI 检索决策树 + 职责分离表 + 知识沉淀回路
+  - `wiki/伪问题与数据缺口/无法回答的问题清单.md`：分类录入 Q007/Q010/Q016/Q018/Q020/Q021/Q030/Q034/Q038/Q040/Q041/Q049-Q051
+  - 7 个核心业务主题页：
+    - 采购/采购订单数据流.md（PUR_Requisition → PurchaseOrder → ReceiveBill → InStock）
+    - 采购/采购成本分析.md（铜箔基材物料确认 + 期货 MCP 联动）
+    - 销售/销售订单数据流.md（含 Q013 公司"已审核 = 发票+收款"约定）
+    - 库存/物料分类.md（靶材 vs 非靶材判断 + 单位换算陷阱）
+    - 生产/生产订单数据流.md（标准路径 + 简单生产路径 + 线别字段）
+    - 财务/应收应付.md（催收逻辑 + Q013 教训）
+    - 固定资产/资产台账.md（骨架，待业务方补充）
+  - 更新 `源代码/mcp-kingdee-server/CLAUDE.md`：
+    - 问题回答指引 V0.2 — 6 步路由规则（list_cached_schemas → wiki/schema/relations 分流）
+    - 写答案前必须步骤 V0.2 — kingdee_get_schema 替代 describe_form
+    - 标注 `问题库回答指南.md` 已分流到 wiki/，仅作历史参考
+- Key design decision applied:
+  - Wiki 页**完全不写字段表**，全部引用 `kingdee_get_schema(form_id)`
+  - 公司私有规则（"应收单已审核 = 发票+收款"、"靶材 vs 非靶材路径"、"单位换算 m² ↔ kg"）显式写入对应 wiki 主题页
+  - 伪问题清单按业务原因分类（伪问题/数据缺口/线下数据/外部数据）
+- Next steps:
+  - 等吕经理回收 DEFAULT_ENUM_MAP 审核结果后，进入 Phase 3 集成验证（Q013 端到端）
+  - Phase 4：补全样本问题库剩余答案（基于新的三层路由）
+  - Phase 5：建立知识沉淀回路实操规范
 
 ### Session 2026-04-15（V0.3 设计对齐 — P20S 全量交付后）
 - Context: 用户告知"P20S 的功能已经完全实现"，要求重新更新 P20T
