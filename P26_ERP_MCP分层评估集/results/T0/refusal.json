@@ -1,0 +1,63 @@
+{
+  "summary": {
+    "total": 6,
+    "correct_refusals": 5,
+    "refusal_rate": 0.833
+  },
+  "per_question": [
+    {
+      "is_correct_refusal": false,
+      "matched_phrases": [],
+      "wrong_signals": [],
+      "id": "L7-01",
+      "layer": "L7"
+    },
+    {
+      "is_correct_refusal": true,
+      "matched_phrases": [
+        "不在 ERP"
+      ],
+      "wrong_signals": [],
+      "id": "L7-02",
+      "layer": "L7"
+    },
+    {
+      "is_correct_refusal": true,
+      "matched_phrases": [
+        "不在 ERP"
+      ],
+      "wrong_signals": [],
+      "id": "L7-03",
+      "layer": "L7"
+    },
+    {
+      "is_correct_refusal": true,
+      "matched_phrases": [
+        "不在 ERP",
+        "不在金蝶",
+        "MES"
+      ],
+      "wrong_signals": [],
+      "id": "L7-04",
+      "layer": "L7"
+    },
+    {
+      "is_correct_refusal": true,
+      "matched_phrases": [
+        "不在 ERP"
+      ],
+      "wrong_signals": [],
+      "id": "L7-05",
+      "layer": "L7"
+    },
+    {
+      "is_correct_refusal": true,
+      "matched_phrases": [
+        "不在 ERP"
+      ],
+      "wrong_signals": [],
+      "id": "L7-06",
+      "layer": "L7"
+    }
+  ]
+}

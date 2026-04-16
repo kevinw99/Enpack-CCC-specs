@@ -1,0 +1,110 @@
+[
+  {
+    "id": "L6-01",
+    "layer": "L6",
+    "source": "new",
+    "question": "这个采购订单 PO2026040001 能不能发货？（即供应商是否可向我司发货）",
+    "expected_p20s_gain": "small",
+    "expected_p20t_gain": "large",
+    "required_forms": ["PUR_PurchaseOrder"],
+    "required_fields_hint": ["FBillNo", "FDocumentStatus"],
+    "reference_answer_points": [
+      "公司规则: 订单已审核（FDocumentStatus='C'）且未关闭、未全部收货时可发货",
+      "纯 schema 不够，需 Wiki 记录公司规则"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["business_grounding", "factual_correctness"]
+  },
+  {
+    "id": "L6-02",
+    "layer": "L6",
+    "source": "P23-Q-010",
+    "question": "本月采购部的预算执行到什么程度了？哪些品类超支？",
+    "expected_p20s_gain": "small",
+    "expected_p20t_gain": "medium",
+    "required_forms": ["PUR_PurchaseOrder"],
+    "required_fields_hint": ["FAllAmount"],
+    "reference_answer_points": ["超支口径由公司预算规则定义"],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["business_grounding"]
+  },
+  {
+    "id": "L6-03",
+    "layer": "L6",
+    "source": "P23-Q-037",
+    "question": "各产品型号的成品库存周转天数分别是多少？哪些产品积压严重？",
+    "expected_p20s_gain": "small",
+    "expected_p20t_gain": "large",
+    "required_forms": ["STK_Inventory", "STK_MisDelivery"],
+    "required_fields_hint": ["FBaseQty"],
+    "reference_answer_points": ["\"积压/呆滞\"的口径由公司规则定义（如 90 天不动）"],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["business_grounding"]
+  },
+  {
+    "id": "L6-04",
+    "layer": "L6",
+    "source": "new",
+    "question": "某笔应收单的状态显示已审核，那这笔款是否已收到了？",
+    "expected_p20s_gain": "small",
+    "expected_p20t_gain": "large",
+    "required_forms": ["AR_receivable"],
+    "required_fields_hint": ["FDOCUMENTSTATUS"],
+    "reference_answer_points": [
+      "公司规则: 应收单\"已审核\"仅代表发票/账单确认，不代表收到款",
+      "收款状态需看核销记录或收款单"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["business_grounding"]
+  },
+  {
+    "id": "L6-05",
+    "layer": "L6",
+    "source": "new",
+    "question": "某供应商能否用于新的采购订单（是否为合格供应商）？",
+    "expected_p20s_gain": "small",
+    "expected_p20t_gain": "large",
+    "required_forms": ["BD_Supplier"],
+    "required_fields_hint": ["FForbidStatus"],
+    "reference_answer_points": [
+      "公司规则: 供应商未禁用 + 有合格供应商标识才能新开 PO"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["business_grounding"]
+  },
+  {
+    "id": "L6-06",
+    "layer": "L6",
+    "source": "P23-Q-033",
+    "question": "目前哪些原材料的库存低于安全库存线？预计还能支撑多少天的生产？",
+    "expected_p20s_gain": "medium",
+    "expected_p20t_gain": "medium",
+    "required_forms": ["STK_Inventory", "BD_MATERIAL"],
+    "required_fields_hint": ["FBaseQty"],
+    "reference_answer_points": [
+      "安全库存字段位置 + 支撑天数计算口径"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["business_grounding"]
+  },
+  {
+    "id": "L6-07",
+    "layer": "L6",
+    "source": "new",
+    "question": "这一批物料什么情况下算\"验收合格\"可入账？",
+    "expected_p20s_gain": "small",
+    "expected_p20t_gain": "large",
+    "required_forms": ["PUR_ReceiveBill", "QM_InspectBill"],
+    "required_fields_hint": [],
+    "reference_answer_points": ["公司 IQC 流程和状态约束"],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["business_grounding"]
+  }
+]

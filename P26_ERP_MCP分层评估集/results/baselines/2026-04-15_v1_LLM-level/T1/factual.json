@@ -1,0 +1,230 @@
+{
+  "summary": {
+    "total": 32,
+    "overall_mean": 3.531,
+    "by_layer": {
+      "L1": {
+        "count": 5,
+        "mean": 3.6
+      },
+      "L2": {
+        "count": 10,
+        "mean": 4.1
+      },
+      "L3": {
+        "count": 6,
+        "mean": 2.833
+      },
+      "L4": {
+        "count": 3,
+        "mean": 3.667
+      },
+      "L5": {
+        "count": 3,
+        "mean": 4
+      },
+      "L6": {
+        "count": 1,
+        "mean": 3
+      },
+      "L8": {
+        "count": 4,
+        "mean": 2.75
+      }
+    }
+  },
+  "per_question": [
+    {
+      "id": "L1-01",
+      "layer": "L1",
+      "score": 5,
+      "reason": "完全符合参考要点，正确使用BD_MATERIAL表，字段FNumber、FName、FSpecification、FBaseUnitId与标准一致，过滤条件为所有记录，聚合粒度正确。"
+    },
+    {
+      "id": "L1-02",
+      "layer": "L1",
+      "score": 3,
+      "reason": "方向正确，但误用FDocumentStatus作为有效性条件，而参考答案仅基于FForbidStatus='A'，关键要点缺失。"
+    },
+    {
+      "id": "L1-03",
+      "layer": "L1",
+      "score": 5,
+      "reason": "完全符合参考要点，正确识别BD_Customer表单中的编码和名称字段，无偏差。"
+    },
+    {
+      "id": "L1-04",
+      "layer": "L1",
+      "score": 5,
+      "reason": "完全符合参考要点，正确指定了BD_Department表的字段和自引用关系，无偏差。"
+    },
+    {
+      "id": "L1-05",
+      "layer": "L1",
+      "score": 0,
+      "reason": "完全偏题，未提供任何与ERP相关的答案，而是拒答"
+    },
+    {
+      "id": "L2-01",
+      "layer": "L2",
+      "score": 5,
+      "reason": "完全符合参考要点，正确使用字段、过滤条件和关联，包括FApplicationDeptId、FApplicantId、FDocumentStatus='C'和本月日期筛选。"
+    },
+    {
+      "id": "L2-02",
+      "layer": "L2",
+      "score": 3,
+      "reason": "方向正确，但关键要点缺失：未使用正确的总金额字段（FAllAmount 误为 FBillAllAmount），未应用单据状态过滤条件（FDocumentStatus='C'），且聚合粒度未明确分组。"
+    },
+    {
+      "id": "L2-03",
+      "layer": "L2",
+      "score": 2,
+      "reason": "被测答案使用了错误的字段名（FCustomerID、FSaleID），与参考答案要点（FCustId、FSalerId）不符，且未明确指定过滤条件（如本月数据的具体实现），但方向基本正确。"
+    },
+    {
+      "id": "L2-04",
+      "layer": "L2",
+      "score": 5,
+      "reason": "完全符合参考要点，正确使用PUR_ReceiveBill主表字段，字段、过滤条件、聚合粒度均正确。"
+    },
+    {
+      "id": "L2-05",
+      "layer": "L2",
+      "score": 5,
+      "reason": "完全符合参考要点，正确使用STK_MisDelivery主表字段（FStockId、FQty、FDate），筛选本月出库单，按仓库分组统计出库数量。"
+    },
+    {
+      "id": "L2-06",
+      "layer": "L2",
+      "score": 5,
+      "reason": "完全符合参考要点，正确识别STK_InStock主表字段，筛选条件、字段和聚合粒度均无误。"
+    },
+    {
+      "id": "L2-07",
+      "layer": "L2",
+      "score": 3,
+      "reason": "方向正确，但关键要点缺失：未明确指定过滤条件（如本月数据的具体SQL实现）和字段精确匹配（如大写字段名），且字段名可能不精确（如FCustomerID.FName可能需调整）。"
+    },
+    {
+      "id": "L2-08",
+      "layer": "L2",
+      "score": 4,
+      "reason": "基本符合参考要点，但字段名有小偏差（如FNUMBER/FNAME vs FAssetNO/FName），过滤条件提及单据状态正确，关联基础资料合理。"
+    },
+    {
+      "id": "L2-09",
+      "layer": "L2",
+      "score": 5,
+      "reason": "完全符合参考要点，字段、过滤条件、聚合粒度均正确"
+    },
+    {
+      "id": "L2-10",
+      "layer": "L2",
+      "score": 4,
+      "reason": "大部分符合，但供应商字段应为FCONTACTUNITID关联，被测答案使用FSupplierID.FName，可能不匹配标准字段名。"
+    },
+    {
+      "id": "L3-01",
+      "layer": "L3",
+      "score": 3,
+      "reason": "方向正确，提到了JOIN采购订单和收货单、按供应商聚合，但未明确计算交期达成率的具体方法（如延迟定义），且字段和过滤条件（如上个季度）未具体化。"
+    },
+    {
+      "id": "L3-02",
+      "layer": "L3",
+      "score": 0,
+      "reason": "完全偏题，被测答案未提供任何ERP相关数据或分析，直接拒答"
+    },
+    {
+      "id": "L3-03",
+      "layer": "L3",
+      "score": 0,
+      "reason": "完全偏题，被测答案拒答，未提供任何与ERP相关的字段、过滤条件或聚合粒度信息，与参考答案要点不符。"
+    },
+    {
+      "id": "L3-04",
+      "layer": "L3",
+      "score": 4,
+      "reason": "基本符合参考要点，但未明确指定JOIN类型和库存字段选择，有小偏差。"
+    },
+    {
+      "id": "L3-05",
+      "layer": "L3",
+      "score": 5,
+      "reason": "完全符合参考要点，正确关联即时库存和物料主档，筛选条件、字段和聚合粒度均正确。"
+    },
+    {
+      "id": "L3-06",
+      "layer": "L3",
+      "score": 5,
+      "reason": "完全符合参考要点，正确指定了数据源、筛选条件、分组字段、统计字段和关联表，所有要素准确无误。"
+    },
+    {
+      "id": "L4-01",
+      "layer": "L4",
+      "score": 5,
+      "reason": "完全符合参考要点，正确识别未审核状态（暂存或审核中），字段和过滤条件准确。"
+    },
+    {
+      "id": "L4-02",
+      "layer": "L4",
+      "score": 3,
+      "reason": "方向对但关键要点缺失：被测答案正确识别了FForbidStatus='B'代表禁用，但错误地添加了FForbidDate过滤条件，而参考答案要点未指定日期过滤，导致关键要点误用。"
+    },
+    {
+      "id": "L4-05",
+      "layer": "L4",
+      "score": 3,
+      "reason": "方向正确但关键要点缺失，未具体说明FDocumentStatus的A/B/C/D语义对应审核中状态，仅泛泛提及筛选审核中状态。"
+    },
+    {
+      "id": "L5-01",
+      "layer": "L5",
+      "score": 4,
+      "reason": "大部分符合，但电话字段名有偏差（F_BDK_DH vs F_BDK_LXDH）"
+    },
+    {
+      "id": "L5-02",
+      "layer": "L5",
+      "score": 3,
+      "reason": "方向对，但未明确说明如何发现自定义字段（如通过schema），且答案中直接列出字段而非描述方法，关键要点缺失。"
+    },
+    {
+      "id": "L5-03",
+      "layer": "L5",
+      "score": 5,
+      "reason": "完全符合参考要点，明确说明无相关自定义字段，未编造信息，符合事实正确性要求。"
+    },
+    {
+      "id": "L6-01",
+      "layer": "L6",
+      "score": 3,
+      "reason": "方向对但关键要点缺失，未明确提及订单已审核（FDocumentStatus='C'）且未关闭、未全部收货的公司规则，仅列出字段未给出判断逻辑。"
+    },
+    {
+      "id": "L8-01",
+      "layer": "L8",
+      "score": 3,
+      "reason": "方向正确，但关键要点缺失：未明确计算变异系数（标准差/均值），且字段和表名（如PUR_ReceiveBill）可能与标准ERP不一致，但整体逻辑接近。"
+    },
+    {
+      "id": "L8-02",
+      "layer": "L8",
+      "score": 3,
+      "reason": "方向正确，但关键要点缺失：未提及跨MCP组合（ERP + futures）的具体实现，仅泛泛提及对比外部铜价，且未说明如何获取期货模块铜价数据。"
+    },
+    {
+      "id": "L8-03",
+      "layer": "L8",
+      "score": 2,
+      "reason": "答案仅列出字段名，未提供具体查询逻辑或分析，与参考要点差距大，但提及了相关表名和概念。"
+    },
+    {
+      "id": "L8-04",
+      "layer": "L8",
+      "score": 3,
+      "reason": "方向对但关键要点缺失：未定义'本周 vs 上周'的过滤条件，仅列出字段和模块，未提供具体对比方法或聚合粒度。"
+    }
+  ]
+}

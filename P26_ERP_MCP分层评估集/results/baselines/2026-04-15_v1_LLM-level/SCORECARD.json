@@ -1,0 +1,96 @@
+{
+  "baseline_id": "2026-04-15_v1_LLM-level",
+  "date": "2026-04-15",
+  "question_set": "P26 V1 / 46 questions / questions/_all.json",
+  "model": "deepseek-chat (temperature=0)",
+  "method": "LLM-level simulation: T0=form_id only, T1=form_id+schema injected into prompt",
+  "scorer_version": {
+    "validity_regex": "F_?[A-Z][A-Za-z0-9_]*  (supports F_BDK_*)",
+    "refusal_gating": true,
+    "judges": "DeepSeek LLM-as-Judge (factual + business)"
+  },
+  "states": {
+    "T0": {
+      "overall": {
+        "validity_rate": 0.493,
+        "hit_rate": 0.471,
+        "refusal_correctness_L7": 0.833,
+        "factual_mean_5": 3.656,
+        "business_mean_5": 2.833
+      },
+      "by_layer_validity": {
+        "L1": 0.833,
+        "L2": 0.297,
+        "L3": 0.584,
+        "L4": 0.539,
+        "L5": 0.71,
+        "L6": 0.309,
+        "L8": 0.521
+      },
+      "by_layer_hit": {
+        "L1": 0.767,
+        "L2": 0.423,
+        "L3": 0.25,
+        "L4": 0.433,
+        "L5": 0.75,
+        "L6": 0.333,
+        "L8": 0.5
+      },
+      "by_layer_factual": {
+        "L1": 4.4,
+        "L2": 4.1,
+        "L3": 3.667,
+        "L4": 4,
+        "L5": 2,
+        "L6": 2,
+        "L8": 3
+      },
+      "by_layer_business": {
+        "L4": 2.667,
+        "L6": 2.857,
+        "L8": 3
+      }
+    },
+    "T1": {
+      "overall": {
+        "validity_rate": 0.829,
+        "hit_rate": 0.577,
+        "refusal_correctness_L7": 0.833,
+        "factual_mean_5": 3.531,
+        "business_mean_5": 2.667
+      },
+      "by_layer_validity": {
+        "L1": 1.0,
+        "L2": 0.65,
+        "L3": 1.0,
+        "L4": 0.95,
+        "L5": 0.635,
+        "L6": 0.8,
+        "L8": 0.969
+      },
+      "by_layer_hit": {
+        "L1": 0.8,
+        "L2": 0.612,
+        "L3": 0.562,
+        "L4": 0.6,
+        "L5": 0.167,
+        "L6": 0.5,
+        "L8": 0.666
+      },
+      "by_layer_factual": {
+        "L1": 3.6,
+        "L2": 4.1,
+        "L3": 2.833,
+        "L4": 3.667,
+        "L5": 4,
+        "L6": 3,
+        "L8": 2.75
+      },
+      "by_layer_business": {
+        "L4": 3,
+        "L6": 2.429,
+        "L8": 3
+      }
+    }
+  }
+}

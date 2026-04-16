@@ -1,0 +1,78 @@
+[
+  {
+    "id": "L1-01",
+    "layer": "L1",
+    "source": "new",
+    "question": "列出所有物料档案的编码、名称、规格、基本计量单位。",
+    "expected_p20s_gain": "none",
+    "expected_p20t_gain": "none",
+    "required_forms": ["BD_MATERIAL"],
+    "required_fields_hint": ["FNumber", "FName", "FSpecification", "FBaseUnitId.FName"],
+    "reference_answer_points": [
+      "使用 BD_MATERIAL 表",
+      "FNumber / FName / FSpecification 为标准字段"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness"]
+  },
+  {
+    "id": "L1-02",
+    "layer": "L1",
+    "source": "new",
+    "question": "查询当前所有有效的供应商列表，显示供应商编码和名称。",
+    "expected_p20s_gain": "none",
+    "expected_p20t_gain": "none",
+    "required_forms": ["BD_Supplier"],
+    "required_fields_hint": ["FNumber", "FName", "FForbidStatus"],
+    "reference_answer_points": [
+      "FForbidStatus='A' 代表未禁用",
+      "BD_Supplier 标准字段即可"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness"]
+  },
+  {
+    "id": "L1-03",
+    "layer": "L1",
+    "source": "new",
+    "question": "列出所有客户的编码和名称。",
+    "expected_p20s_gain": "none",
+    "expected_p20t_gain": "none",
+    "required_forms": ["BD_Customer"],
+    "required_fields_hint": ["FNumber", "FName"],
+    "reference_answer_points": ["BD_Customer 基本字段"],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness"]
+  },
+  {
+    "id": "L1-04",
+    "layer": "L1",
+    "source": "new",
+    "question": "查询所有部门的编码、名称及上级部门。",
+    "expected_p20s_gain": "none",
+    "expected_p20t_gain": "none",
+    "required_forms": ["BD_Department"],
+    "required_fields_hint": ["FNumber", "FName", "FParentID.FName"],
+    "reference_answer_points": ["BD_Department 基本字段", "FParentId 自引用"],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness"]
+  },
+  {
+    "id": "L1-05",
+    "layer": "L1",
+    "source": "P23-Q-007",
+    "question": "未来 3 个月内有哪些供应商合同即将到期？",
+    "expected_p20s_gain": "small",
+    "expected_p20t_gain": "small",
+    "required_forms": ["BD_Supplier"],
+    "required_fields_hint": ["FNumber", "FName"],
+    "reference_answer_points": ["按合同到期日过滤"],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness"]
+  }
+]

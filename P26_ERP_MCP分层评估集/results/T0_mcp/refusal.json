@@ -1,0 +1,57 @@
+{
+  "summary": {
+    "total": 6,
+    "correct_refusals": 3,
+    "refusal_rate": 0.5
+  },
+  "per_question": [
+    {
+      "is_correct_refusal": false,
+      "matched_phrases": [],
+      "wrong_signals": [],
+      "id": "L7-01",
+      "layer": "L7"
+    },
+    {
+      "is_correct_refusal": false,
+      "matched_phrases": [],
+      "wrong_signals": [],
+      "id": "L7-02",
+      "layer": "L7"
+    },
+    {
+      "is_correct_refusal": false,
+      "matched_phrases": [],
+      "wrong_signals": [],
+      "id": "L7-03",
+      "layer": "L7"
+    },
+    {
+      "is_correct_refusal": true,
+      "matched_phrases": [
+        "MES"
+      ],
+      "wrong_signals": [],
+      "id": "L7-04",
+      "layer": "L7"
+    },
+    {
+      "is_correct_refusal": true,
+      "matched_phrases": [
+        "HR"
+      ],
+      "wrong_signals": [],
+      "id": "L7-05",
+      "layer": "L7"
+    },
+    {
+      "is_correct_refusal": true,
+      "matched_phrases": [
+        "不在金蝶"
+      ],
+      "wrong_signals": [],
+      "id": "L7-06",
+      "layer": "L7"
+    }
+  ]
+}

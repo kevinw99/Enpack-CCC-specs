@@ -1,0 +1,71 @@
+[
+  {
+    "id": "L8-01",
+    "layer": "L8",
+    "source": "new",
+    "question": "最近 3 个月哪个供应商供货最不稳定（交期波动大）？",
+    "expected_p20s_gain": "medium",
+    "expected_p20t_gain": "large",
+    "required_forms": ["PUR_PurchaseOrder", "PUR_ReceiveBill", "BD_Supplier"],
+    "required_fields_hint": ["FSupplierId", "FPurOrderDate", "FReceiveDate"],
+    "reference_answer_points": [
+      "需先取 PO + 收货记录",
+      "按供应商聚合，计算交期差的变异系数",
+      "排序取 top"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["factual_correctness", "business_grounding"]
+  },
+  {
+    "id": "L8-02",
+    "layer": "L8",
+    "source": "P23-Q-006",
+    "question": "过去 12 个月铜箔基材的采购单价变化趋势？和同期铜价走势相比，我们的采购价偏高还是偏低？",
+    "expected_p20s_gain": "small",
+    "expected_p20t_gain": "medium",
+    "required_forms": ["PUR_PurchaseOrder"],
+    "required_fields_hint": ["FPrice", "FDate"],
+    "reference_answer_points": [
+      "需 PO 明细 + 期货模块铜价",
+      "跨 MCP 组合（ERP + futures）"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["factual_correctness"]
+  },
+  {
+    "id": "L8-03",
+    "layer": "L8",
+    "source": "P23-Q-035",
+    "question": "根据目前的库存、在制品和排产计划，下个月的订单交期有没有风险？",
+    "expected_p20s_gain": "medium",
+    "expected_p20t_gain": "large",
+    "required_forms": ["STK_Inventory", "PRD_MO", "SAL_SaleOrder"],
+    "required_fields_hint": [],
+    "reference_answer_points": [
+      "库存 + 在制 + 排产 + 销售订单四方 JOIN",
+      "按产品算\"可供\"vs\"需交\"的 gap"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["factual_correctness", "business_grounding"]
+  },
+  {
+    "id": "L8-04",
+    "layer": "L8",
+    "source": "P23-Q-045",
+    "question": "给我一份本周的经营简报：营收、订单、产量、良率、库存、应收款的关键数字和上周对比。",
+    "expected_p20s_gain": "medium",
+    "expected_p20t_gain": "medium",
+    "required_forms": ["SAL_SaleOrder", "PRD_MO", "STK_Inventory", "AR_receivable"],
+    "required_fields_hint": [],
+    "reference_answer_points": [
+      "跨多模块聚合",
+      "对\"本周 vs 上周\"定义清晰"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["factual_correctness"]
+  }
+]

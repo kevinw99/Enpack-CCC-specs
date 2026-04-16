@@ -1,0 +1,90 @@
+[
+  {
+    "id": "L3-01",
+    "layer": "L3",
+    "source": "P23-Q-009",
+    "question": "上个季度各主要供应商的交期达成率是多少？哪些供应商经常延迟？",
+    "expected_p20s_gain": "medium",
+    "expected_p20t_gain": "small",
+    "required_forms": ["PUR_PurchaseOrder", "PUR_ReceiveBill", "BD_Supplier"],
+    "required_fields_hint": ["FSupplierId", "FPurOrderDate", "FReceiveDate"],
+    "reference_answer_points": [
+      "需 JOIN 采购订单 + 收货单",
+      "按供应商聚合",
+      "延迟定义 = 实际收货日 > 承诺交期"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness"]
+  },
+  {
+    "id": "L3-02",
+    "layer": "L3",
+    "source": "P23-Q-025",
+    "question": "本月白班和夜班的产量、良率、废品率分别是多少？",
+    "expected_p20s_gain": "small",
+    "expected_p20t_gain": "small",
+    "required_forms": ["PRD_MO", "QM_InspectBill"],
+    "required_fields_hint": [],
+    "reference_answer_points": ["生产记录 + 质检数据 JOIN"],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness"]
+  },
+  {
+    "id": "L3-03",
+    "layer": "L3",
+    "source": "P23-Q-041",
+    "question": "本月复合集流体事业部的经营现金流情况怎么样？应收和应付的账期分别是多少天？",
+    "expected_p20s_gain": "small",
+    "expected_p20t_gain": "small",
+    "required_forms": ["AR_receivable", "AP_Payable"],
+    "required_fields_hint": [],
+    "reference_answer_points": ["应收应付 JOIN 部门维度"],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness"]
+  },
+  {
+    "id": "L3-04",
+    "layer": "L3",
+    "source": "new",
+    "question": "按物料汇总本月采购订单总金额，并显示每个物料当前的即时库存数量。",
+    "expected_p20s_gain": "medium",
+    "expected_p20t_gain": "small",
+    "required_forms": ["PUR_PurchaseOrder", "STK_Inventory", "BD_MATERIAL"],
+    "required_fields_hint": ["FMaterialId", "FAllAmount", "FBaseQty"],
+    "reference_answer_points": ["PO 明细 JOIN 物料 JOIN 即时库存"],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness"]
+  },
+  {
+    "id": "L3-05",
+    "layer": "L3",
+    "source": "new",
+    "question": "列出所有即时库存中库存数量大于 0 的物料，显示物料编码、名称、规格、仓库、即时数量。",
+    "expected_p20s_gain": "medium",
+    "expected_p20t_gain": "small",
+    "required_forms": ["STK_Inventory", "BD_MATERIAL"],
+    "required_fields_hint": ["FMaterialId.FNumber", "FMaterialId.FName", "FStockId.FName", "FBaseQty"],
+    "reference_answer_points": ["即时库存 JOIN 物料主档"],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness"]
+  },
+  {
+    "id": "L3-06",
+    "layer": "L3",
+    "source": "new",
+    "question": "本月每个部门的采购申请单数量和总金额。",
+    "expected_p20s_gain": "medium",
+    "expected_p20t_gain": "small",
+    "required_forms": ["PUR_Requisition", "BD_Department"],
+    "required_fields_hint": ["FApplicationDeptId.FName", "FAllAmount"],
+    "reference_answer_points": ["按部门聚合，部门名称通过关联获取"],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness"]
+  }
+]

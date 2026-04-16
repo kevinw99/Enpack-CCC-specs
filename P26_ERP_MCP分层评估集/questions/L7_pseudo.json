@@ -1,0 +1,92 @@
+[
+  {
+    "id": "L7-01",
+    "layer": "L7",
+    "source": "P19-A",
+    "question": "本月研发部立项了几个新项目？各项目负责人是谁？",
+    "expected_p20s_gain": "none",
+    "expected_p20t_gain": "large",
+    "required_forms": [],
+    "required_fields_hint": [],
+    "reference_answer_points": [
+      "研发立项数据不在 ERP 中",
+      "正确去向: 研发 PLM 或线下项目管理表"
+    ],
+    "pseudo_question": true,
+    "expected_refusal": "此数据不在 ERP 中，建议查研发项目管理系统或线下立项表",
+    "scoring_dimensions": ["refusal_correctness"]
+  },
+  {
+    "id": "L7-02",
+    "layer": "L7",
+    "source": "P23-Q-015",
+    "question": "最近 3 个月收到的客户投诉有哪些？",
+    "expected_p20s_gain": "none",
+    "expected_p20t_gain": "large",
+    "required_forms": [],
+    "required_fields_hint": [],
+    "reference_answer_points": [
+      "客户投诉数据可能不在 ERP（独立 CRM / 质量系统）",
+      "应识别并引导到正确来源"
+    ],
+    "pseudo_question": true,
+    "expected_refusal": "投诉数据通常不在 ERP，建议查 CRM 或质量管理系统",
+    "scoring_dimensions": ["refusal_correctness"]
+  },
+  {
+    "id": "L7-03",
+    "layer": "L7",
+    "source": "P23-Q-038",
+    "question": "从韩国进口的靶材目前通关到什么阶段了？",
+    "expected_p20s_gain": "none",
+    "expected_p20t_gain": "medium",
+    "required_forms": [],
+    "required_fields_hint": [],
+    "reference_answer_points": ["通关状态来自报关行或物流系统，非 ERP 标准模块"],
+    "pseudo_question": true,
+    "expected_refusal": "ERP 暂无通关状态数据，请查物流 / 报关系统",
+    "scoring_dimensions": ["refusal_correctness"]
+  },
+  {
+    "id": "L7-04",
+    "layer": "L7",
+    "source": "new",
+    "question": "我们公司各条产线的设备 OEE（综合效率）指标本月是多少？",
+    "expected_p20s_gain": "none",
+    "expected_p20t_gain": "large",
+    "required_forms": [],
+    "required_fields_hint": [],
+    "reference_answer_points": ["OEE 指标通常在 MES 或独立统计表"],
+    "pseudo_question": true,
+    "expected_refusal": "OEE 数据不在 ERP，建议查 MES 或生产统计台账",
+    "scoring_dimensions": ["refusal_correctness"]
+  },
+  {
+    "id": "L7-05",
+    "layer": "L7",
+    "source": "new",
+    "question": "请帮我查询本月员工考勤情况。",
+    "expected_p20s_gain": "none",
+    "expected_p20t_gain": "large",
+    "required_forms": [],
+    "required_fields_hint": [],
+    "reference_answer_points": ["考勤通常在 HR/OA 系统"],
+    "pseudo_question": true,
+    "expected_refusal": "考勤数据不在金蝶 ERP，建议查 HR/OA 系统",
+    "scoring_dimensions": ["refusal_correctness"]
+  },
+  {
+    "id": "L7-06",
+    "layer": "L7",
+    "source": "new",
+    "question": "竞争对手 A 公司最新报价比我们便宜多少？",
+    "expected_p20s_gain": "none",
+    "expected_p20t_gain": "large",
+    "required_forms": [],
+    "required_fields_hint": [],
+    "reference_answer_points": ["竞品数据不可能在 ERP 中"],
+    "pseudo_question": true,
+    "expected_refusal": "ERP 不含竞争对手报价，建议查市场调研资料",
+    "scoring_dimensions": ["refusal_correctness"]
+  }
+]

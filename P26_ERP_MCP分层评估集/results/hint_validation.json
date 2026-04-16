@@ -1,0 +1,155 @@
+{
+  "issues": [
+    {
+      "id": "L2-03",
+      "layer": "L2",
+      "forms": [
+        "SAL_SaleOrder"
+      ],
+      "missing_hints": [
+        "FBillNo",
+        "FCustId.FName",
+        "FSalerId.FName",
+        "FAllAmount",
+        "FDocumentStatus"
+      ],
+      "suggestion": {
+        "FBillNo": null,
+        "FCustId.FName": null,
+        "FSalerId.FName": null,
+        "FAllAmount": null,
+        "FDocumentStatus": null
+      }
+    },
+    {
+      "id": "L2-07",
+      "layer": "L2",
+      "forms": [
+        "AR_receivable"
+      ],
+      "missing_hints": [
+        "FBillNo",
+        "FCUSTOMERID.FName",
+        "FALLAMOUNTFOR"
+      ],
+      "suggestion": {
+        "FBillNo": null,
+        "FCUSTOMERID.FName": null,
+        "FALLAMOUNTFOR": null
+      }
+    },
+    {
+      "id": "L2-08",
+      "layer": "L2",
+      "forms": [
+        "FA_CARD"
+      ],
+      "missing_hints": [
+        "FUSEDEPTID.FName",
+        "FUSERID.FName"
+      ],
+      "suggestion": {
+        "FUSEDEPTID.FName": "FVCHUSEDDEPTID",
+        "FUSERID.FName": null
+      }
+    },
+    {
+      "id": "L2-10",
+      "layer": "L2",
+      "forms": [
+        "AP_PAYBILL"
+      ],
+      "missing_hints": [
+        "FBillNo",
+        "FCONTACTUNITID.FName",
+        "FREALPAYAMOUNTFOR"
+      ],
+      "suggestion": {
+        "FBillNo": null,
+        "FCONTACTUNITID.FName": null,
+        "FREALPAYAMOUNTFOR": null
+      }
+    },
+    {
+      "id": "L3-01",
+      "layer": "L3",
+      "forms": [
+        "PUR_PurchaseOrder",
+        "PUR_ReceiveBill",
+        "BD_Supplier"
+      ],
+      "missing_hints": [
+        "FPurOrderDate",
+        "FReceiveDate"
+      ],
+      "suggestion": {
+        "FPurOrderDate": null,
+        "FReceiveDate": "FReceiverId"
+      }
+    },
+    {
+      "id": "L3-06",
+      "layer": "L3",
+      "forms": [
+        "PUR_Requisition",
+        "BD_Department"
+      ],
+      "missing_hints": [
+        "FAllAmount"
+      ],
+      "suggestion": {
+        "FAllAmount": "FAmount"
+      }
+    },
+    {
+      "id": "L4-03",
+      "layer": "L4",
+      "forms": [
+        "AR_receivable",
+        "BD_Customer"
+      ],
+      "missing_hints": [
+        "FCUSTOMERID",
+        "FDATE",
+        "FDOCUMENTSTATUS"
+      ],
+      "suggestion": {
+        "FCUSTOMERID": null,
+        "FDATE": null,
+        "FDOCUMENTSTATUS": null
+      }
+    },
+    {
+      "id": "L6-04",
+      "layer": "L6",
+      "forms": [
+        "AR_receivable"
+      ],
+      "missing_hints": [
+        "FDOCUMENTSTATUS"
+      ],
+      "suggestion": {
+        "FDOCUMENTSTATUS": null
+      }
+    },
+    {
+      "id": "L8-01",
+      "layer": "L8",
+      "forms": [
+        "PUR_PurchaseOrder",
+        "PUR_ReceiveBill",
+        "BD_Supplier"
+      ],
+      "missing_hints": [
+        "FPurOrderDate",
+        "FReceiveDate"
+      ],
+      "suggestion": {
+        "FPurOrderDate": null,
+        "FReceiveDate": "FReceiverId"
+      }
+    }
+  ],
+  "total_hints": 94,
+  "missing_hints": 22
+}

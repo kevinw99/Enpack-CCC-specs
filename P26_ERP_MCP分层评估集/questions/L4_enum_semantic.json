@@ -1,0 +1,78 @@
+[
+  {
+    "id": "L4-01",
+    "layer": "L4",
+    "source": "new",
+    "question": "哪些采购订单目前还没审核完？列出单据编号、日期、供应商。",
+    "expected_p20s_gain": "medium",
+    "expected_p20t_gain": "small",
+    "required_forms": ["PUR_PurchaseOrder"],
+    "required_fields_hint": ["FBillNo", "FDocumentStatus"],
+    "reference_answer_points": [
+      "FDocumentStatus='A'(暂存) 或 'B'(审核中)",
+      "不能把 'C' 理解为未审核"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness", "business_grounding"]
+  },
+  {
+    "id": "L4-02",
+    "layer": "L4",
+    "source": "new",
+    "question": "本月禁用了几个物料？列出这些物料的编码和名称。",
+    "expected_p20s_gain": "medium",
+    "expected_p20t_gain": "small",
+    "required_forms": ["BD_MATERIAL"],
+    "required_fields_hint": ["FNumber", "FName", "FForbidStatus"],
+    "reference_answer_points": ["FForbidStatus='B' 代表已禁用"],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness"]
+  },
+  {
+    "id": "L4-03",
+    "layer": "L4",
+    "source": "P23-Q-013",
+    "question": "目前哪些客户的应收账款超过了信用期限？金额分别是多少？",
+    "expected_p20s_gain": "medium",
+    "expected_p20t_gain": "large",
+    "required_forms": ["AR_receivable", "BD_Customer"],
+    "required_fields_hint": ["FCUSTOMERID", "FDATE", "FDOCUMENTSTATUS"],
+    "reference_answer_points": [
+      "应收单 FDOCUMENTSTATUS='C' 已审核",
+      "信用期限需结合客户档案或业务规则"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "business_grounding"]
+  },
+  {
+    "id": "L4-04",
+    "layer": "L4",
+    "source": "P23-Q-018",
+    "question": "U&S ENERGY 的第 3 批订单目前生产到什么阶段了？",
+    "expected_p20s_gain": "medium",
+    "expected_p20t_gain": "large",
+    "required_forms": ["PRD_MO"],
+    "required_fields_hint": ["FDocumentStatus"],
+    "reference_answer_points": ["生产订单状态值语义"],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "business_grounding"]
+  },
+  {
+    "id": "L4-05",
+    "layer": "L4",
+    "source": "new",
+    "question": "列出当前处于审核中（未审批完成）的所有采购申请单。",
+    "expected_p20s_gain": "medium",
+    "expected_p20t_gain": "small",
+    "required_forms": ["PUR_Requisition"],
+    "required_fields_hint": ["FBillNo", "FDocumentStatus"],
+    "reference_answer_points": ["FDocumentStatus 的 A/B/C/D 语义"],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness"]
+  }
+]

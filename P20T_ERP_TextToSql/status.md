@@ -1,9 +1,9 @@
 # Status: P20T ERP TextToSql
 
 ## Current Status
-**Overall**: Phase 1/2A/2B/3/5/6 Done（Phase 4 待持续补全样本答案，不阻塞 core）
+**Overall**: Phase 1/2A/2B/3/5/6 Done；Phase 4 持续补全中（P23 82% 胜率已验证 end-to-end）
 **Started**: 2026-04-15
-**Last Updated**: 2026-04-15
+**Last Updated**: 2026-04-15 (post-P23 live test)
 
 ## Completed Work
 
@@ -46,6 +46,19 @@
   - 讨论中提到 Vanna/Text2SQL 方向，但当前阶段 LLM Wiki 更轻量可行
 - Next steps: 确认 Wiki 存放位置，开始 Phase 1
 - Blockers: 枚举值需要业务人员（吕经理）配合确认
+
+### Session 2026-04-15（Post-P23 剩余任务实施）
+- Context: 用户确认 P23 results.md 成功验证端到端（28 题 / 82% 胜率 / 27/28 成功取到 ERP 数据 / 综合分 4.70 vs 4.01 +17.2%）；要求实现剩余建议任务
+- Accomplished:
+  1. **FORM_CATALOG 扩容**: 在 `src/kingdee_client.py` 和 `schema_extractor/channels/official.py:EXTENDED_FORM_IDS` 同步加入 4 张缺口表（SAL_SaleOrder / AR_Receivable / SAL_PriceList / FIN_CostCalculation）；"简单生产领料单" form_id 需用 `--list` 发现后补入
+  2. **月度 wiki lint**: `wiki/月度Lint记录.md` — 字段表扫描（仅枚举语义对照，合规）/ form_id 对齐 / answer 引用完整性 / DEFAULT_ENUM_MAP 一致性 / 缺口消项建议
+  3. **F_BDK 审核清单**: `docs/F_BDK自定义字段业务方审核清单.md` — 86 个自定义字段分布 12 张表，按表列出审核要点，重点标记 PRD_MO（33 字段，工序计划/实际量、设备/线别）
+  4. **Q015 → 伪问题**: 更新 `wiki/伪问题与数据缺口/无法回答的问题清单.md` 加入 Q015（线下客户反馈表）；`wiki/销售/销售订单数据流.md` 引用改为伪问题清单；`样本问题库回答执行状态.md` 同步更新 Q013/Q015/Q022/Q036/Q039/Q043 状态
+- Deferred (需外部条件):
+  - Q022/Q039 答案撰写 — 需待 `python3 -m schema_extractor --extended --enums` 运行后（API 凭证/网络）
+  - Q036/Q043 需业务方澄清问题定义
+  - 简单生产领料单 form_id — 需要 live Kingdee 环境通过 `--list 简单生产` 发现
+- P23 验证总结: MCP 在 Q013 综合分略低于 Vanilla（24 vs 22），原因是 MCP 暴露了"应收单当前无数据"的查询失败细节；这其实是诚实而非缺陷
 
 ### Session 2026-04-15（Phase 2A/3/5/6 实施 — 吕经理审核后）
 - Context: 用户告知吕经理审核完成，DEFAULT_ENUM_MAP 无需调整 → 继续实施后续 Phase

@@ -1,0 +1,164 @@
+[
+  {
+    "id": "L2-01",
+    "layer": "L2",
+    "source": "P20S-regression-Q013",
+    "question": "查询本月已审核的采购申请单，显示单据编号、申请日期、单据状态、申请部门名称、申请人。",
+    "expected_p20s_gain": "large",
+    "expected_p20t_gain": "small",
+    "required_forms": ["PUR_Requisition"],
+    "required_fields_hint": [
+      "FBillNo", "FApplicationDate", "FDocumentStatus",
+      "FApplicationDeptId.FName", "FApplicantId.FName"
+    ],
+    "reference_answer_points": [
+      "必须使用 FApplicationDeptId 而非 FDeptId（常见幻觉）",
+      "必须使用 FApplicantId 而非 FCreatorId",
+      "FDocumentStatus='C' 代表已审核",
+      "本月: FDate >= 本月 1 日"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness"]
+  },
+  {
+    "id": "L2-02",
+    "layer": "L2",
+    "source": "P23-Q-019-变形",
+    "question": "本月采购订单按供应商汇总金额，需要显示单据编号、订单日期、供应商名称、订单总金额、单据状态。",
+    "expected_p20s_gain": "large",
+    "expected_p20t_gain": "small",
+    "required_forms": ["PUR_PurchaseOrder"],
+    "required_fields_hint": [
+      "FBillNo", "FDate", "FSupplierId.FName",
+      "FAllAmount", "FDocumentStatus"
+    ],
+    "reference_answer_points": [
+      "FSupplierId 是关联 BD_Supplier 的字段",
+      "FAllAmount 为订单总金额（区别于 FAmount 行金额）",
+      "FDocumentStatus='C' 代表已审核"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness"]
+  },
+  {
+    "id": "L2-03",
+    "layer": "L2",
+    "source": "new",
+    "question": "查询本月销售订单，显示单据编号、客户名称、业务员、订单金额、单据状态。",
+    "expected_p20s_gain": "large",
+    "expected_p20t_gain": "small",
+    "required_forms": ["SAL_SaleOrder"],
+    "required_fields_hint": [
+      "FBillNo", "FCustId.FName", "FSalerId.FName",
+      "FAllAmount", "FDocumentStatus"
+    ],
+    "reference_answer_points": [
+      "销售订单主表字段",
+      "FCustId 而非 FCustomerId",
+      "FSalerId 而非 FSalesmanId"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness"]
+  },
+  {
+    "id": "L2-04",
+    "layer": "L2",
+    "source": "new",
+    "question": "查询本月收料通知单（采购入库前置单据），显示单据编号、供应商、物料、数量。",
+    "expected_p20s_gain": "large",
+    "expected_p20t_gain": "small",
+    "required_forms": ["PUR_ReceiveBill"],
+    "required_fields_hint": ["FBillNo", "FSupplierId.FName", "FDate"],
+    "reference_answer_points": ["PUR_ReceiveBill 主表字段"],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness"]
+  },
+  {
+    "id": "L2-05",
+    "layer": "L2",
+    "source": "new",
+    "question": "查询本月出库单，按仓库统计出库数量。",
+    "expected_p20s_gain": "large",
+    "expected_p20t_gain": "small",
+    "required_forms": ["STK_MisDelivery"],
+    "required_fields_hint": ["FBillNo", "FDate", "FStockId.FName"],
+    "reference_answer_points": ["STK_MisDelivery 主表字段"],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness"]
+  },
+  {
+    "id": "L2-06",
+    "layer": "L2",
+    "source": "new",
+    "question": "查询本月采购入库单，显示单据编号、供应商、入库仓库、物料、入库数量。",
+    "expected_p20s_gain": "large",
+    "expected_p20t_gain": "small",
+    "required_forms": ["STK_InStock"],
+    "required_fields_hint": ["FBillNo", "FSupplierId.FName", "FStockId.FName"],
+    "reference_answer_points": ["STK_InStock 主表字段"],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness"]
+  },
+  {
+    "id": "L2-07",
+    "layer": "L2",
+    "source": "new",
+    "question": "查询本月应收单，显示单据编号、客户、应收金额、核销状态。",
+    "expected_p20s_gain": "large",
+    "expected_p20t_gain": "small",
+    "required_forms": ["AR_receivable"],
+    "required_fields_hint": ["FBillNo", "FCUSTOMERID.FName", "FALLAMOUNTFOR"],
+    "reference_answer_points": ["应收单字段多为大写，需精确匹配"],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness"]
+  },
+  {
+    "id": "L2-08",
+    "layer": "L2",
+    "source": "new",
+    "question": "查询当前固定资产清单，显示资产编码、名称、使用部门、使用人、原值。",
+    "expected_p20s_gain": "large",
+    "expected_p20t_gain": "small",
+    "required_forms": ["FA_CARD"],
+    "required_fields_hint": ["FNumber", "FName", "FUSEDEPTID.FName", "FUSERID.FName"],
+    "reference_answer_points": ["固定资产字段多为大写 FNUMBER/FNAME"],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness"]
+  },
+  {
+    "id": "L2-09",
+    "layer": "L2",
+    "source": "new",
+    "question": "查询本月生产订单，显示订单号、物料、计划数量、实际完工数量、订单状态。",
+    "expected_p20s_gain": "large",
+    "expected_p20t_gain": "small",
+    "required_forms": ["PRD_MO"],
+    "required_fields_hint": ["FBillNo", "FDate", "FDocumentStatus"],
+    "reference_answer_points": ["生产订单（工单）主表字段"],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness"]
+  },
+  {
+    "id": "L2-10",
+    "layer": "L2",
+    "source": "new",
+    "question": "查询本月付款单（付款给供应商），显示单据编号、供应商、付款金额、付款方式、单据状态。",
+    "expected_p20s_gain": "large",
+    "expected_p20t_gain": "small",
+    "required_forms": ["AP_PAYBILL"],
+    "required_fields_hint": ["FBillNo", "FCONTACTUNITID.FName", "FREALPAYAMOUNTFOR"],
+    "reference_answer_points": ["付款单字段名多为大写", "FCONTACTUNITID 关联供应商"],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness"]
+  }
+]

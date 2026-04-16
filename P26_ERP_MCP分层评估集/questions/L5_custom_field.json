@@ -1,0 +1,54 @@
+[
+  {
+    "id": "L5-01",
+    "layer": "L5",
+    "source": "new",
+    "question": "查询所有供应商的联系人姓名和电话。",
+    "expected_p20s_gain": "large",
+    "expected_p20t_gain": "medium",
+    "required_forms": ["BD_Supplier"],
+    "required_fields_hint": ["FNumber", "FName", "F_BDK_LXR", "F_BDK_LXDH"],
+    "reference_answer_points": [
+      "本公司联系人数据在自定义字段 F_BDK_LXR（而非标准 FContact）",
+      "电话在 F_BDK_DH（而非标准 FTel）",
+      "纯 LLM 必答错（不可能猜到 F_BDK_* 前缀）"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness"]
+  },
+  {
+    "id": "L5-02",
+    "layer": "L5",
+    "source": "new",
+    "question": "查询物料档案中本公司特有的扩展属性（非标准字段），哪些物料填写了这些扩展信息？",
+    "expected_p20s_gain": "large",
+    "expected_p20t_gain": "medium",
+    "required_forms": ["BD_MATERIAL"],
+    "required_fields_hint": ["FNumber", "FName"],
+    "reference_answer_points": [
+      "需先通过 schema 发现物料档案上 F_BDK_* 或 F_XX_* 类自定义字段",
+      "然后过滤非空记录"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness"]
+  },
+  {
+    "id": "L5-03",
+    "layer": "L5",
+    "source": "new",
+    "question": "本公司采购订单上是否有标记\"紧急程度\"或\"项目号\"等自定义字段？列出近一个月填写了这些字段的订单。",
+    "expected_p20s_gain": "large",
+    "expected_p20t_gain": "medium",
+    "required_forms": ["PUR_PurchaseOrder"],
+    "required_fields_hint": ["FBillNo", "FDate"],
+    "reference_answer_points": [
+      "需 schema 发现 PO 上的 F_BDK_* 自定义字段",
+      "若实际无此字段，应明确说明而非编造"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": ["field_validity_rate", "factual_correctness", "refusal_correctness"]
+  }
+]
