@@ -3,8 +3,104 @@
   "entity_type": "spec",
   "display_name": "Spec 19: 知识库缺口分析",
   "directory": "规格/P19_知识库缺口分析",
-  "session_count": 2,
+  "session_count": 5,
   "sessions": [
+    {
+      "session_id": "0b9d88c9-f14f-40f8-adbc-9bc4c7407828",
+      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/0b9d88c9-f14f-40f8-adbc-9bc4c7407828.jsonl",
+      "confidence": 0.21,
+      "start_time": "2026-04-12T04:02:06.163Z",
+      "end_time": "2026-04-16T05:20:32.347Z",
+      "message_count": 2711,
+      "matched_message_count": 0,
+      "matched_messages": [],
+      "evidence": []
+    },
+    {
+      "session_id": "cd10a8e5-37e3-49f3-b4e7-4d2dc2237e69",
+      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/cd10a8e5-37e3-49f3-b4e7-4d2dc2237e69.jsonl",
+      "confidence": 0.21,
+      "start_time": "2026-04-11T23:34:15.740Z",
+      "end_time": "2026-04-16T04:09:28.017Z",
+      "message_count": 2150,
+      "matched_message_count": 8,
+      "matched_messages": [
+        {
+          "uuid": "c60e720a-2ace-40c6-9557-c0fc57b2fc31",
+          "line_number": 56,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-11T23:38:58.348Z",
+          "preview": "P22 spec created. Three files under `规格/P22_AI实验因子筛选/`:\n\n**`requirements.md`** — 需求说明\n- **出处**：明确标注需"
+        },
+        {
+          "uuid": "e91216dc-6c5a-4632-9981-27490ff01cad",
+          "line_number": 455,
+          "msg_type": "user",
+          "timestamp": "2026-04-12T04:18:05.959Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        },
+        {
+          "uuid": "9df90b53-f5e3-4cf8-bc55-2c4b041a6bf9",
+          "line_number": 496,
+          "msg_type": "user",
+          "timestamp": "2026-04-13T03:27:51.823Z",
+          "preview": "\"      65                                                                                           "
+        },
+        {
+          "uuid": "7a221d6b-7a5c-4164-a30d-1caca1bbd391",
+          "line_number": 556,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T03:31:47.363Z",
+          "preview": "Now I have a complete picture. Let me also check P19 for the gap analysis."
+        },
+        {
+          "uuid": "f916f550-7071-48d7-b385-f628bd4afa1a",
+          "line_number": 559,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T03:31:52.535Z",
+          "preview": ""
+        },
+        {
+          "uuid": "c6375866-990f-40d4-bd11-c69a0558b7b8",
+          "line_number": 644,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T03:39:44.368Z",
+          "preview": "好的，你提出了一个很好的观点。我目前生成的 V1 只是**方法一：KB 覆盖型**。让我来梳理一下完整的问题生成方法论：\n\n## 三类问题 × 多种生成方法\n\n你说得对，最终的评估问题集应该包含**三"
+        },
+        {
+          "uuid": "4c50a1a6-fdc3-4665-b23d-715355f8de13",
+          "line_number": 697,
+          "msg_type": "user",
+          "timestamp": "2026-04-13T03:55:26.979Z",
+          "preview": "<task-notification>\n<task-id>a543609d384e6ba38</task-id>\n<tool-use-id>toolu_01NxHPP5zLc1ePeajSEdX4v8"
+        },
+        {
+          "uuid": "5949a438-13ed-4de3-a19c-92f6a3bb9962",
+          "line_number": 758,
+          "msg_type": "user",
+          "timestamp": "2026-04-13T08:46:28.713Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        }
+      ],
+      "evidence": [
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P19_知识库缺口分析/缺口分析矩阵.md",
+        "Text: ...P22 spec created. Three files under `规格/P22_AI实验因子筛选/`:  **`requirements.md`** —...",
+        "Text: ...This session is being continued from a previous conversation that ran out of con...",
+        "Text: ...\"      65                                                                       ...",
+        "Text: ...Now I have a complete picture. Let me also check P19 for the gap analysis...."
+      ]
+    },
+    {
+      "session_id": "d187553a-451e-4a3a-a3a8-c44a1cb4f5d0",
+      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/d187553a-451e-4a3a-a3a8-c44a1cb4f5d0.jsonl",
+      "confidence": 0.13,
+      "start_time": "2026-04-08T13:28:37.764Z",
+      "end_time": "2026-04-17T03:57:53.228Z",
+      "message_count": 1108,
+      "matched_message_count": 0,
+      "matched_messages": [],
+      "evidence": []
+    },
     {
       "session_id": "0da77daf-0891-43ef-ad0d-0f1a746b9d0b",
       "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/0da77daf-0891-43ef-ad0d-0f1a746b9d0b.jsonl",
@@ -12,114 +108,9 @@
       "start_time": "2026-03-08T16:49:53.563Z",
       "end_time": "2026-03-08T21:40:47.546Z",
       "message_count": 219,
-      "matched_message_count": 14,
-      "matched_messages": [
-        {
-          "uuid": "a3d28996-bccf-416f-b44b-b9f126becc17",
-          "line_number": 40,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T16:50:27.168Z",
-          "preview": ""
-        },
-        {
-          "uuid": "41230fe7-ed2d-462b-bdae-948e620f48dc",
-          "line_number": 105,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:02:19.967Z",
-          "preview": ""
-        },
-        {
-          "uuid": "d360995f-d738-437c-9256-0500e1c355e7",
-          "line_number": 264,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:39:39.865Z",
-          "preview": ""
-        },
-        {
-          "uuid": "8eb0f6a2-3d51-478e-80d7-5277d213dc11",
-          "line_number": 279,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:41:07.747Z",
-          "preview": ""
-        },
-        {
-          "uuid": "2ba2763b-32d1-4ff9-b7f0-7dada2fedad6",
-          "line_number": 284,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:41:43.561Z",
-          "preview": ""
-        },
-        {
-          "uuid": "272e3585-f2cf-483c-ad6e-66b2827823cc",
-          "line_number": 290,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:42:20.062Z",
-          "preview": ""
-        },
-        {
-          "uuid": "ecce6cbe-e4c9-4809-a0dc-e7ba38e33003",
-          "line_number": 295,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:42:40.386Z",
-          "preview": ""
-        },
-        {
-          "uuid": "2e0739bf-bed6-4a81-97dd-693d22bc0c6a",
-          "line_number": 300,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:42:52.436Z",
-          "preview": ""
-        },
-        {
-          "uuid": "ef4f389b-fd18-450d-8149-658b4b9065a9",
-          "line_number": 312,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:45:51.057Z",
-          "preview": ""
-        },
-        {
-          "uuid": "5cd4493e-6436-4b46-9f2e-4090102673f0",
-          "line_number": 316,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:45:58.246Z",
-          "preview": "Report created at `规格/P19_知识库缺口分析/知识库缺口分析报告.md`.\n\nKey points for your team:\n- **81% 的业务问题需要ERP数据** —"
-        },
-        {
-          "uuid": "5da1ebd2-1fbc-4c1d-a4fc-ac96493eed1d",
-          "line_number": 322,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T20:12:55.805Z",
-          "preview": ""
-        },
-        {
-          "uuid": "f0263bbf-bcaf-4318-bae2-c95ba2e2212b",
-          "line_number": 327,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T20:13:07.681Z",
-          "preview": "报告已生成：`规格/P19_知识库缺口分析/下一步行动计划.md`\n\n主要内容：\n\n**5个阶段，12周时间线**：\n1. **摸底调查（第1-2周）** — 盘点公司所有IT系统、确认ERP类型和模"
-        },
-        {
-          "uuid": "09880779-e082-42bc-97b3-10ab6e9213ad",
-          "line_number": 346,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T20:54:25.760Z",
-          "preview": ""
-        },
-        {
-          "uuid": "24836675-09e1-40ed-81dd-027b97ef2c61",
-          "line_number": 358,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T20:55:02.384Z",
-          "preview": "Session scanned and recorded. This session was classified under **Spec 19: 知识库缺口分析** (primary) with "
-        }
-      ],
-      "evidence": [
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P19_知识库缺口分析/requirements.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P19_知识库缺口分析/tasks.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P19_知识库缺口分析/design.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P19_知识库缺口分析/gap-analysis-matrix.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P19_知识库缺口分析/fill-plan.md"
-      ]
+      "matched_message_count": 0,
+      "matched_messages": [],
+      "evidence": []
     },
     {
       "session_id": "d975fd50-8501-402f-8803-b1eeffc6efff",
@@ -128,318 +119,10 @@
       "start_time": "2026-03-08T15:17:30.425Z",
       "end_time": "2026-03-17T16:46:10.350Z",
       "message_count": 701,
-      "matched_message_count": 43,
-      "matched_messages": [
-        {
-          "uuid": "79393028-7c91-431d-a946-33255801651a",
-          "line_number": 66,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T15:20:03.803Z",
-          "preview": ""
-        },
-        {
-          "uuid": "64f61356-ac33-4b48-bd60-8002f61e24b9",
-          "line_number": 71,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T15:20:26.880Z",
-          "preview": ""
-        },
-        {
-          "uuid": "9f3929c5-92d5-4be9-8a7e-3871a778f6b9",
-          "line_number": 75,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T15:20:37.255Z",
-          "preview": ""
-        },
-        {
-          "uuid": "ccfe02d9-efc3-4b83-8669-7e63a167731d",
-          "line_number": 109,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T16:40:51.201Z",
-          "preview": ""
-        },
-        {
-          "uuid": "be5e5ad6-80da-4366-ae1e-02941149c961",
-          "line_number": 552,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-08T19:40:37.451Z",
-          "preview": ""
-        },
-        {
-          "uuid": "e539e2d3-27f5-4684-8e1d-510c551ef425",
-          "line_number": 749,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T00:43:39.025Z",
-          "preview": ""
-        },
-        {
-          "uuid": "914724b4-170d-4d95-b12e-7b21ca5008da",
-          "line_number": 751,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T00:43:55.848Z",
-          "preview": ""
-        },
-        {
-          "uuid": "2f0bb519-a983-4437-9261-aa83cde9dda2",
-          "line_number": 790,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T00:45:08.391Z",
-          "preview": ""
-        },
-        {
-          "uuid": "aa884bf0-c647-42e0-9a04-9b0e3843cab5",
-          "line_number": 800,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T00:45:27.156Z",
-          "preview": ""
-        },
-        {
-          "uuid": "a5d15a72-2ee1-4884-8348-b91e2b112c99",
-          "line_number": 830,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T00:46:05.100Z",
-          "preview": ""
-        },
-        {
-          "uuid": "e76c67e4-0b44-4c3c-b175-f9c16278a923",
-          "line_number": 849,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T00:56:38.349Z",
-          "preview": ""
-        },
-        {
-          "uuid": "a743e5c2-7ce5-41f5-a735-2cec33f9e844",
-          "line_number": 851,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T00:56:43.846Z",
-          "preview": ""
-        },
-        {
-          "uuid": "de0c6bc3-2936-4228-a1c7-0e2e946ac7ea",
-          "line_number": 874,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T00:58:50.416Z",
-          "preview": ""
-        },
-        {
-          "uuid": "ffc24c06-6ff7-4f8b-bfdd-c91ea85e1659",
-          "line_number": 887,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:01:18.951Z",
-          "preview": ""
-        },
-        {
-          "uuid": "795b8fb9-20fe-4259-8548-9125bb073d9e",
-          "line_number": 890,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:01:18.999Z",
-          "preview": ""
-        },
-        {
-          "uuid": "965582e6-4934-493e-9f57-26644a6cd8ff",
-          "line_number": 891,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:01:19.000Z",
-          "preview": ""
-        },
-        {
-          "uuid": "113ce6b8-1316-443f-b844-f5229e9e853d",
-          "line_number": 896,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:01:19.690Z",
-          "preview": ""
-        },
-        {
-          "uuid": "0fee27f3-355e-4600-a157-87908be25dca",
-          "line_number": 899,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:01:20.780Z",
-          "preview": ""
-        },
-        {
-          "uuid": "c4a4a803-4b96-4bd0-b29d-347d59ab30e4",
-          "line_number": 904,
-          "msg_type": "user",
-          "timestamp": "2026-03-11T01:02:58.291Z",
-          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
-        },
-        {
-          "uuid": "7a77f09d-2188-4456-9d90-0657468113d0",
-          "line_number": 910,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:03:03.278Z",
-          "preview": ""
-        },
-        {
-          "uuid": "9e3b7089-513c-43af-8498-e91e8671fdda",
-          "line_number": 913,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:03:04.097Z",
-          "preview": ""
-        },
-        {
-          "uuid": "c9238535-04b7-455f-bd50-f113d4539c1f",
-          "line_number": 924,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:06:43.557Z",
-          "preview": ""
-        },
-        {
-          "uuid": "027b1f0a-80c3-4568-9b46-5736f0eb6c37",
-          "line_number": 929,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:07:19.667Z",
-          "preview": ""
-        },
-        {
-          "uuid": "2efcf3a8-2ed7-4cf6-9818-921ffa6a845a",
-          "line_number": 934,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:07:58.769Z",
-          "preview": ""
-        },
-        {
-          "uuid": "0d86ba18-292e-424b-af1a-eab45a0bc7ca",
-          "line_number": 947,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:08:24.157Z",
-          "preview": ""
-        },
-        {
-          "uuid": "3fac9f0a-f6bf-4772-a0ac-e9017b4e1b4f",
-          "line_number": 948,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:08:25.491Z",
-          "preview": ""
-        },
-        {
-          "uuid": "1debaff6-776a-488f-ac6d-8cca29cd9373",
-          "line_number": 950,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:08:26.488Z",
-          "preview": ""
-        },
-        {
-          "uuid": "82813c7a-f419-4870-9930-bb43fec88c9a",
-          "line_number": 1219,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:15:57.693Z",
-          "preview": ""
-        },
-        {
-          "uuid": "8a234bac-0fae-455e-88ae-c97a11f5cd9e",
-          "line_number": 1536,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:27:02.719Z",
-          "preview": ""
-        },
-        {
-          "uuid": "a6273270-f651-4b3f-8ec8-6a96a0ecfa3b",
-          "line_number": 1539,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:27:14.643Z",
-          "preview": ""
-        },
-        {
-          "uuid": "9b42a290-dbd8-4657-8e8d-d2de6ba651b1",
-          "line_number": 1541,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:27:22.920Z",
-          "preview": ""
-        },
-        {
-          "uuid": "02e3f975-cb30-4923-b6be-e0cc6d06c434",
-          "line_number": 1544,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:27:35.119Z",
-          "preview": ""
-        },
-        {
-          "uuid": "3e2160c0-992b-406a-8548-e3f4152beb97",
-          "line_number": 1546,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T01:27:46.322Z",
-          "preview": ""
-        },
-        {
-          "uuid": "1b929c4b-8d7c-4bd6-829d-2b49fd311f86",
-          "line_number": 1574,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T03:23:01.290Z",
-          "preview": ""
-        },
-        {
-          "uuid": "03063eff-fba3-4772-9ad7-cf1b560a274e",
-          "line_number": 1584,
-          "msg_type": "user",
-          "timestamp": "2026-03-11T03:24:45.270Z",
-          "preview": "please check contnet and format of the pdf, i looked at Enpack_CCC/规格/P19_知识库缺口分析/pdf/知识库缺口分析报告.pdf,"
-        },
-        {
-          "uuid": "9aed577f-b098-4ba0-9d69-918f5f4f3506",
-          "line_number": 1587,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T03:24:53.751Z",
-          "preview": ""
-        },
-        {
-          "uuid": "b3d36576-9bff-4ad5-af5d-0a0674c1c223",
-          "line_number": 1691,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T03:28:13.970Z",
-          "preview": ""
-        },
-        {
-          "uuid": "77d75326-8bd9-4248-a856-5b8b165151db",
-          "line_number": 1694,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T03:28:20.728Z",
-          "preview": ""
-        },
-        {
-          "uuid": "6baf9504-0fe0-4289-99f8-ad633bfd6b94",
-          "line_number": 1699,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-11T03:28:29.765Z",
-          "preview": ""
-        },
-        {
-          "uuid": "52ce0338-5e99-48f7-b045-02fc1b7a6620",
-          "line_number": 1722,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-12T00:04:59.670Z",
-          "preview": "Scan complete. 1 new session classified:\n\n- **d975fd50** (634 messages) — mapped to:\n  - Source: mcp"
-        },
-        {
-          "uuid": "6c107e68-838f-4dd0-9ee5-3e5f88345baa",
-          "line_number": 1733,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-15T01:42:17.194Z",
-          "preview": ""
-        },
-        {
-          "uuid": "bab6a79e-3c06-47ad-a89c-d78ebd3f7f42",
-          "line_number": 1736,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-15T01:42:22.646Z",
-          "preview": ""
-        },
-        {
-          "uuid": "0ff914ed-88a8-4df3-9a46-a5a6e0eb10a1",
-          "line_number": 1756,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-17T03:08:54.821Z",
-          "preview": ""
-        }
-      ],
-      "evidence": [
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P19_知识库缺口分析/requirements.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P19_知识库缺口分析/design.md",
-        "File: /Users/kweng/AI/Enpack_CCC/规格/P19_知识库缺口分析/tasks.md",
-        "File: 规格/P19_知识库缺口分析/",
-        "File: 规格/P19_知识库缺口分析/history/"
-      ]
+      "matched_message_count": 0,
+      "matched_messages": [],
+      "evidence": []
     }
   ],
-  "last_updated": "2026-04-15T18:30:59.594676"
+  "last_updated": "2026-04-18T14:37:51.978742"
 }

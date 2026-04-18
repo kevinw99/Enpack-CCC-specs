@@ -17,6 +17,7 @@
 | [2026-04-15_v1_MCP-level](./2026-04-15_v1_MCP-level/) | 2026-04-15 | **真实 MCP-level** T0+T1+T2 | validity 0.529 / factual 1.344 / business 2.833 | P26 V1 真实链路基线；揭示 turn budget 瓶颈、P20T wiki 误用 L8；**business +0.250 是唯一干净增益** |
 | [2026-04-16_v2_MCP-level](./2026-04-16_v2_MCP-level/) | 2026-04-16 | MCP-level T0+T1+T2 · P0 修复后 | validity 0.526 / **factual 3.031** / business 2.917 / hit 0.737 | MAX_TURNS 8→12 + 幂等性+抗伪问题 prompt。factual T1 翻倍、L4/L6/L8 灾难修复；新回归：L7 refusal -0.333 全线 |
 | [2026-04-16_v3_MCP-level](./2026-04-16_v3_MCP-level/) | 2026-04-16 | MCP-level T0+T1+T2 · L7 窄修 | validity 0.492 / factual 2.594 / business 2.750 / **L7 0.667** | 双向约束（正面拒答清单 A + 客观交易必须 query B）。L7 T1 0.167→0.667、T2 0.500→0.833 全线回归修复；factual T1 -0.437 但仍 ≥2.5 |
+| [2026-04-16_v4_MCP-level](./2026-04-16_v4_MCP-level/) | 2026-04-16 | MCP-level T0+T1+T2 · stage prompt + tool quota | validity 0.516 / **factual 2.688** / **business 2.917** / hit 0.704 | B/C 约束仅 T1/T2 + search_forms_online 硬限 2 次。T0 factual +0.250 恢复；T1/T2 factual/business 回到 v2 水平；L7 再次 0.500（结构性矛盾确认）|
 
 ## 使用规则
 

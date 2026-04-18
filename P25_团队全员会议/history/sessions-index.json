@@ -1,5 +1,186 @@
 {
-  "spec_id": "P25",
-  "title": "团队全员会议",
-  "sessions": []
+  "entity_id": "spec:P25_团队全员会议",
+  "entity_type": "spec",
+  "display_name": "Spec 25: 团队全员会议",
+  "directory": "规格/P25_团队全员会议",
+  "session_count": 2,
+  "sessions": [
+    {
+      "session_id": "cd10a8e5-37e3-49f3-b4e7-4d2dc2237e69",
+      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/cd10a8e5-37e3-49f3-b4e7-4d2dc2237e69.jsonl",
+      "confidence": 0.34,
+      "start_time": "2026-04-11T23:34:15.740Z",
+      "end_time": "2026-04-16T04:09:28.017Z",
+      "message_count": 2150,
+      "matched_message_count": 21,
+      "matched_messages": [
+        {
+          "uuid": "d4045310-15d9-4f3e-b0ad-cae9c0277d96",
+          "line_number": 1412,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T08:51:04.486Z",
+          "preview": "### 分支清单\n\n本地：\n- `main` ← 当前\n- `yongzhi_erp_mcp_0325` ← 永芝的分支（已存在本地）\n- `feature/oc-*` 三个\n\n远程还有：\n- `or"
+        },
+        {
+          "uuid": "174edff8-768b-4742-b813-f5ff1cf20030",
+          "line_number": 1421,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T08:54:48.894Z",
+          "preview": ""
+        },
+        {
+          "uuid": "2cabc0eb-a653-4611-887a-a6cf82a2b2e9",
+          "line_number": 1442,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T08:55:33.162Z",
+          "preview": "### 当前状态\n\n- 分支：`yongzhi_erp_mcp_0325`（已 pull 最新，HEAD: `dec8f6f 添加文档`）\n- 此分支上**有两个 P18 目录**：\n  - `P18"
+        },
+        {
+          "uuid": "61aeb521-d911-4609-ac15-d435c90b1878",
+          "line_number": 1446,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T08:56:15.029Z",
+          "preview": "“另外，你之前在 main                                                      \n  上的未提交改动（P24/P25/会话历史等）现在看起来已经没"
+        },
+        {
+          "uuid": "69e1eed1-ff62-4916-95b9-e680a764f103",
+          "line_number": 1451,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T08:56:34.157Z",
+          "preview": "找到了！**没有丢失**，改动都已经提交在 main 上了。\n\n### 实际发生的事\n\n从 reflog 看出，你（或其他 session）在切分支**之前**已经做了两次提交到 main：\n\n| C"
+        },
+        {
+          "uuid": "4c9573d5-f450-40d4-a770-a4a7c11f638d",
+          "line_number": 1455,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T08:56:40.717Z",
+          "preview": "✅ 一切安全：\n\n- 本地 main 和 `origin/main` 完全同步（都到 `50a4c41`）\n- P25 spec、CLAUDE.md、会话历史更新、P24 评估全部已提交并推送\n- 当"
+        },
+        {
+          "uuid": "053929a0-933f-4867-b879-9c27fe723ae2",
+          "line_number": 1556,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T09:09:17.514Z",
+          "preview": "3. \" 金蝶系统的数据库怎么能够得到它的描述呢？就是DD                                         \n  L有没有什么开源的或者别人已经做过的注解能够得到。  "
+        },
+        {
+          "uuid": "a12a7bfe-0ccd-42d1-bbae-d9a5fedc833d",
+          "line_number": 1774,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T11:03:03.959Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        },
+        {
+          "uuid": "d612a006-d1f3-490b-8bbc-94baf1f1ebd2",
+          "line_number": 1946,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T11:44:45.596Z",
+          "preview": ""
+        },
+        {
+          "uuid": "bb89d79d-6cee-4ac2-a25f-754c706f84b3",
+          "line_number": 1960,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T11:45:30.551Z",
+          "preview": ""
+        },
+        {
+          "uuid": "d52a35c0-9726-484e-8712-4ef8aaca0336",
+          "line_number": 2024,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T11:50:44.736Z",
+          "preview": "All pushed. 4 commits total to main:\n\n1. **6a275bf** — P20S full implementation (57 files, 14760 ins"
+        },
+        {
+          "uuid": "a1beea17-768e-4bba-994d-70a9c805aef3",
+          "line_number": 2652,
+          "msg_type": "user",
+          "timestamp": "2026-04-16T00:36:31.485Z",
+          "preview": "lets work on P25, in presentation.md , \"生成器    评委    MCP 胜率\nDeepSeek    DeepSeek    60%\nDeepSeek    "
+        },
+        {
+          "uuid": "fbcc38a5-45af-40f2-b5a0-abe041bfe06a",
+          "line_number": 2696,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-16T00:55:15.054Z",
+          "preview": ""
+        },
+        {
+          "uuid": "384e0951-4335-4e60-9e4c-b3fe8ac0dbdc",
+          "line_number": 2707,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-16T00:55:55.926Z",
+          "preview": ""
+        },
+        {
+          "uuid": "59695d19-a3b2-4f70-82d1-a1b293249096",
+          "line_number": 2726,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-16T04:06:16.077Z",
+          "preview": ""
+        },
+        {
+          "uuid": "1b6564d7-5e91-4423-97b8-7d56d010b2e3",
+          "line_number": 2736,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-16T04:08:31.150Z",
+          "preview": ""
+        },
+        {
+          "uuid": "4410eb75-468f-44f9-8f80-d8ce60b57ccd",
+          "line_number": 2738,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-16T04:08:34.800Z",
+          "preview": ""
+        },
+        {
+          "uuid": "2ea8f444-8e8e-4be5-88e9-84ec494958f3",
+          "line_number": 2743,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-16T04:08:44.229Z",
+          "preview": ""
+        },
+        {
+          "uuid": "32afa7a1-b1da-489e-be6b-0108f07f6b37",
+          "line_number": 2752,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-16T04:09:01.409Z",
+          "preview": ""
+        },
+        {
+          "uuid": "aa9e38f1-60c4-4faf-8b0f-a2684732778e",
+          "line_number": 2758,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-16T04:09:20.585Z",
+          "preview": ""
+        },
+        {
+          "uuid": "4f7fd4c9-80a0-489b-a814-e74f628f2bfc",
+          "line_number": 2760,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-16T04:09:27.970Z",
+          "preview": "PDF updated at `规格/P25_团队全员会议/presentation.pdf` (538KB). Generated from the latest `presentation.md`"
+        }
+      ],
+      "evidence": [
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P25_团队全员会议/",
+        "File: 规格/P25_团队全员会议/presentation.md",
+        "File: 规格/P25_团队全员会议/presentation.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P25_团队全员会议/presentation.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P25_团队全员会议/presentation.md"
+      ]
+    },
+    {
+      "session_id": "d187553a-451e-4a3a-a3a8-c44a1cb4f5d0",
+      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/d187553a-451e-4a3a-a3a8-c44a1cb4f5d0.jsonl",
+      "confidence": 0.33,
+      "start_time": "2026-04-08T13:28:37.764Z",
+      "end_time": "2026-04-17T03:57:53.228Z",
+      "message_count": 1108,
+      "matched_message_count": 0,
+      "matched_messages": [],
+      "evidence": []
+    }
+  ],
+  "last_updated": "2026-04-18T14:37:51.975923"
 }

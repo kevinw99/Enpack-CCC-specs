@@ -1,0 +1,361 @@
+{
+  "entity_id": "spec:P26_ERP_MCP分层评估集",
+  "entity_type": "spec",
+  "display_name": "Spec 26: ERP_MCP分层评估集",
+  "directory": "规格/P26_ERP_MCP分层评估集",
+  "session_count": 2,
+  "sessions": [
+    {
+      "session_id": "0b9d88c9-f14f-40f8-adbc-9bc4c7407828",
+      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/0b9d88c9-f14f-40f8-adbc-9bc4c7407828.jsonl",
+      "confidence": 0.41,
+      "start_time": "2026-04-12T04:02:06.163Z",
+      "end_time": "2026-04-16T05:20:32.347Z",
+      "message_count": 2711,
+      "matched_message_count": 0,
+      "matched_messages": [],
+      "evidence": []
+    },
+    {
+      "session_id": "cd10a8e5-37e3-49f3-b4e7-4d2dc2237e69",
+      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/cd10a8e5-37e3-49f3-b4e7-4d2dc2237e69.jsonl",
+      "confidence": 0.41,
+      "start_time": "2026-04-11T23:34:15.740Z",
+      "end_time": "2026-04-16T04:09:28.017Z",
+      "message_count": 2150,
+      "matched_message_count": 46,
+      "matched_messages": [
+        {
+          "uuid": "a2aae1a4-b07d-4bd3-af66-8e7006b969c6",
+          "line_number": 2281,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T13:31:24.796Z",
+          "preview": "can you help me understand P23 and P26? the implementation status, the usage. My understanding is fo"
+        },
+        {
+          "uuid": "30136350-72ad-499e-b74e-6eae6de32900",
+          "line_number": 2286,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T13:31:48.094Z",
+          "preview": ""
+        },
+        {
+          "uuid": "0794791d-c4f0-45d8-af5f-bc67ec261661",
+          "line_number": 2288,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T13:32:01.532Z",
+          "preview": ""
+        },
+        {
+          "uuid": "f3d9ab28-4551-4510-b2c8-1e1f2561a6ff",
+          "line_number": 2290,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T13:32:13.380Z",
+          "preview": ""
+        },
+        {
+          "uuid": "eb6fcf11-26c6-4eab-860b-4e99a05869aa",
+          "line_number": 2294,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T13:32:43.499Z",
+          "preview": ""
+        },
+        {
+          "uuid": "d2cfb838-c3b4-49ea-af0f-3f7108611623",
+          "line_number": 2296,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T13:32:57.793Z",
+          "preview": ""
+        },
+        {
+          "uuid": "dd89bf0e-8c09-47f4-9773-f167badd3523",
+          "line_number": 2299,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T13:33:40.339Z",
+          "preview": "I have enough to answer. Here's the breakdown:\n\n## P23 — ERP MCP 问答质量评估（已跑完）\n\n**Pattern**: blind A/B"
+        },
+        {
+          "uuid": "4f080e1b-2410-4c83-9362-43f4009a5927",
+          "line_number": 2316,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T13:50:42.399Z",
+          "preview": "Short answer: **now**, before you do anything else on P26. The timing is driven by what unblocks wha"
+        },
+        {
+          "uuid": "fc7d053c-4c74-4173-9d8e-d3757e4bcb35",
+          "line_number": 2444,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T14:04:41.035Z",
+          "preview": "Wired. Here's what changed:\n\n## Tool layer (`src/`)\n\n- **`src/tools/schema.py`** — rewrote docstring"
+        },
+        {
+          "uuid": "fb7dee4c-d783-4308-8776-6ceeff000d7b",
+          "line_number": 2451,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T14:08:16.275Z",
+          "preview": "Short answer: **no, not cleanly.** Here's why:\n\n1. **This session doesn't have the MCP server loaded"
+        },
+        {
+          "uuid": "915db36b-9616-4eea-8cd3-d130fbe3eae3",
+          "line_number": 2460,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T14:16:52.115Z",
+          "preview": "是的，基本就是这个思路。具体分三种情况：\n\n## 1. 如果 MCP 是被 Claude Desktop 或某个 Claude Code 会话挂载的\n\n**做法**：去那个客户端重启 MCP 连接。\n"
+        },
+        {
+          "uuid": "fa931a20-7e9a-4169-bafe-56bdd6aae079",
+          "line_number": 2463,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T14:18:17.619Z",
+          "preview": "“3. 如果只是要跑 P23 / P26 评估                                                                     \n       "
+        },
+        {
+          "uuid": "d040b736-43e6-4a45-b910-7cdf1b4c2ff5",
+          "line_number": 2466,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T14:18:24.056Z",
+          "preview": "让我先核对一下 P26 runner 实际是怎么跑的，别给你拍脑袋的答案。"
+        },
+        {
+          "uuid": "797836b7-5786-4f78-a8fa-b53f592a8095",
+          "line_number": 2467,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T14:18:25.735Z",
+          "preview": ""
+        },
+        {
+          "uuid": "f862c60b-99aa-4538-a67c-5ed7ac819094",
+          "line_number": 2469,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T14:18:48.201Z",
+          "preview": "我要纠正一下之前那句话 —— **P26 当前的 runner 根本不调 MCP**。\n\n## 当前 P26 runner 的实际做法\n\n看 `scorer/runner.py`：\n- T0: 只把 "
+        },
+        {
+          "uuid": "70adf457-3d53-43d0-932b-b602404b744f",
+          "line_number": 2473,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T14:20:15.321Z",
+          "preview": "lets do it! 2 \"下一步应该是写 P26 的 MCP-level runner（Phase 4 的 8.7）what else are still missing?"
+        },
+        {
+          "uuid": "a82f3549-d107-4116-b3cc-73e73c493490",
+          "line_number": 2477,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T14:20:19.815Z",
+          "preview": ""
+        },
+        {
+          "uuid": "4e82258f-1927-44b4-83eb-b9c90847caff",
+          "line_number": 2478,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T14:20:24.922Z",
+          "preview": ""
+        },
+        {
+          "uuid": "23171b28-4554-4c23-a3dc-a2be5eb1d72f",
+          "line_number": 2494,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T14:21:50.836Z",
+          "preview": "Good — MCP client SDK is installed in the venv, and OpenAI SDK is recent enough to support function "
+        },
+        {
+          "uuid": "a007e6f5-181d-4ad9-b2c5-e46b0505efd2",
+          "line_number": 2508,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T14:23:18.920Z",
+          "preview": ""
+        },
+        {
+          "uuid": "b031dc55-8ab3-4f42-a977-465142859b4d",
+          "line_number": 2514,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T14:25:37.621Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        },
+        {
+          "uuid": "46acaf60-e25b-48b2-939c-eda41c3f2186",
+          "line_number": 2522,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T14:25:53.328Z",
+          "preview": ""
+        },
+        {
+          "uuid": "6449e12e-9504-42a0-8d3f-e57d034b2418",
+          "line_number": 2528,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T14:26:08.183Z",
+          "preview": ""
+        },
+        {
+          "uuid": "6c1aed24-a54b-4fcd-bb15-3dc9766add0b",
+          "line_number": 2535,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T14:27:27.871Z",
+          "preview": ""
+        },
+        {
+          "uuid": "76eabc1c-993a-4395-a7b7-6491c4c3b3b5",
+          "line_number": 2538,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T14:27:46.605Z",
+          "preview": ""
+        },
+        {
+          "uuid": "9eaf321b-692a-4183-96e5-e4939e02115e",
+          "line_number": 2546,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T14:29:54.612Z",
+          "preview": ""
+        },
+        {
+          "uuid": "4763d4bd-67eb-4d77-bed1-159313091284",
+          "line_number": 2557,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T14:30:35.843Z",
+          "preview": "Pipeline is verified end-to-end. Runner output is validity.py-compatible.\n\n## Smoke test summary\n\n**"
+        },
+        {
+          "uuid": "e6f3ca31-4651-480c-833c-dedc936b5e80",
+          "line_number": 2562,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T14:59:14.027Z",
+          "preview": "## P26 MCP-level runner status\n\n**Built & smoke-tested** — `scorer/mcp_runner.py` works end-to-end a"
+        },
+        {
+          "uuid": "d11d7ad3-17db-4d24-973d-dad45a989531",
+          "line_number": 2578,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T15:00:33.520Z",
+          "preview": "That 500 error is an Anthropic API hiccup (`claude.ai` / Claude Code calling home), not from anythin"
+        },
+        {
+          "uuid": "b1e62fce-da7f-429c-8bb1-f389ed646849",
+          "line_number": 2579,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T15:00:35.977Z",
+          "preview": ""
+        },
+        {
+          "uuid": "91ac66d5-0302-4217-be9d-2abe330ccc84",
+          "line_number": 2581,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T15:00:44.496Z",
+          "preview": ""
+        },
+        {
+          "uuid": "81164638-0cd2-4731-914a-4e36fb16847a",
+          "line_number": 2584,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T15:00:53.781Z",
+          "preview": ""
+        },
+        {
+          "uuid": "1dd9205b-c971-4234-aac1-61c9ceec9787",
+          "line_number": 2591,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T15:01:15.017Z",
+          "preview": "## P26 evaluation stages — T0 / T1 / T2\n\nThree snapshots of the **same 46 questions**, each with a p"
+        },
+        {
+          "uuid": "f694ee09-f625-41cf-bf7f-b867f225e35a",
+          "line_number": 2597,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T15:02:46.398Z",
+          "preview": ""
+        },
+        {
+          "uuid": "efcc6767-07f3-4611-bb8b-4454b1ca7dc4",
+          "line_number": 2599,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T15:02:49.525Z",
+          "preview": ""
+        },
+        {
+          "uuid": "7a1e01bc-0f6c-4bf0-a8a8-54bf4584af2b",
+          "line_number": 2602,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T15:02:52.831Z",
+          "preview": ""
+        },
+        {
+          "uuid": "5b1424bc-dd20-4a6e-bde0-6c6ca6bda4cf",
+          "line_number": 2605,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T15:02:55.747Z",
+          "preview": ""
+        },
+        {
+          "uuid": "12cc6c67-a6eb-4658-86dc-a8bfb20825c6",
+          "line_number": 2608,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T15:03:09.963Z",
+          "preview": "## P26 layered question taxonomy (L1–L8)\n\nEight layers, each targeting a specific failure mode. **46"
+        },
+        {
+          "uuid": "9a305060-47ec-4256-83f8-a5a7b42aefb5",
+          "line_number": 2611,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T15:08:38.490Z",
+          "preview": "\" Shell details                                                                             \n       "
+        },
+        {
+          "uuid": "8aee3038-e377-4654-a866-b15cb8c738c0",
+          "line_number": 2613,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T15:08:47.200Z",
+          "preview": "## What you're seeing\n\nThat running shell is **executing** the runner you just built — it's the live"
+        },
+        {
+          "uuid": "2e5d58f7-5eee-48da-a933-d471e9bffd8e",
+          "line_number": 2614,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T15:08:51.814Z",
+          "preview": ""
+        },
+        {
+          "uuid": "e383b832-e3af-41c9-8561-1ebfb2db12b7",
+          "line_number": 2619,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T15:10:03.595Z",
+          "preview": "why it needs to run it against all 46 questions? is this a real full run of P26? I thoguth we are ju"
+        },
+        {
+          "uuid": "d0345ad8-6ace-4a7e-b371-ad7084870861",
+          "line_number": 2621,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T15:10:18.777Z",
+          "preview": "Good catch — you're right to push back. Let me separate the two things:\n\n## Task #8 \"Build P26 MCP-l"
+        },
+        {
+          "uuid": "7404b419-4cfe-4cd5-89d3-d50c9904cb55",
+          "line_number": 2624,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T15:12:55.804Z",
+          "preview": "1 . \"                                                                                               "
+        },
+        {
+          "uuid": "da5808d6-140c-4da2-89eb-f3fe99d912d8",
+          "line_number": 2628,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T15:13:14.010Z",
+          "preview": "## 1. Task list vs \"full P26 run\"\n\n**No — finishing these 4 tasks does NOT equal a full P26 run.** T"
+        },
+        {
+          "uuid": "197189d3-79a3-4d17-94e8-7aac757c109a",
+          "line_number": 2648,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T15:15:08.035Z",
+          "preview": ""
+        }
+      ],
+      "evidence": [
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P26_ERP_MCP分层评估集/status.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P26_ERP_MCP分层评估集/",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P26_ERP_MCP分层评估集/results/",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P26_ERP_MCP分层评估集/scorer/",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P26_ERP_MCP分层评估集/questions/"
+      ]
+    }
+  ],
+  "last_updated": "2026-04-18T14:37:51.973763"
+}
