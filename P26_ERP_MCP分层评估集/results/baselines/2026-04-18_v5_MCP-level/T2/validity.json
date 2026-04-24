@@ -1,0 +1,1099 @@
+{
+  "summary": {
+    "total_scored": 40,
+    "refusals_excluded": 0,
+    "validity_overall_mean": 0.605,
+    "hit_overall_mean": 0.71,
+    "by_layer_validity": {
+      "L1": {
+        "count": 5,
+        "mean": 0.72
+      },
+      "L2": {
+        "count": 10,
+        "mean": 0.562
+      },
+      "L3": {
+        "count": 6,
+        "mean": 0.708
+      },
+      "L4": {
+        "count": 5,
+        "mean": 0.523
+      },
+      "L5": {
+        "count": 3,
+        "mean": 0.575
+      },
+      "L6": {
+        "count": 7,
+        "mean": 0.54
+      },
+      "L8": {
+        "count": 4,
+        "mean": 0.649
+      }
+    },
+    "by_layer_hit": {
+      "L1": {
+        "count": 5,
+        "mean": 1.0
+      },
+      "L2": {
+        "count": 10,
+        "mean": 0.778
+      },
+      "L3": {
+        "count": 4,
+        "mean": 0.625
+      },
+      "L4": {
+        "count": 5,
+        "mean": 0.8
+      },
+      "L5": {
+        "count": 3,
+        "mean": 0.75
+      },
+      "L6": {
+        "count": 6,
+        "mean": 0.333
+      },
+      "L8": {
+        "count": 2,
+        "mean": 0.666
+      }
+    }
+  },
+  "per_question": [
+    {
+      "picked_fields": [
+        "FNumber",
+        "FName",
+        "FSpecification",
+        "FBaseUnitId"
+      ],
+      "picked_count": 4,
+      "valid_keys_size": 372,
+      "available_forms": [
+        "BD_MATERIAL"
+      ],
+      "missing_forms": [],
+      "validity_rate": 1.0,
+      "hit_rate": 1.0,
+      "is_refusal": false,
+      "id": "L1-01",
+      "layer": "L1"
+    },
+    {
+      "picked_fields": [
+        "FNumber",
+        "FName",
+        "FDocumentStatus",
+        "FForbidStatus",
+        "FID",
+        "FBillNo"
+      ],
+      "picked_count": 6,
+      "valid_keys_size": 123,
+      "available_forms": [
+        "BD_Supplier"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.667,
+      "hit_rate": 1.0,
+      "is_refusal": false,
+      "id": "L1-02",
+      "layer": "L1"
+    },
+    {
+      "picked_fields": [
+        "FNumber",
+        "FName",
+        "FDocumentStatus"
+      ],
+      "picked_count": 3,
+      "valid_keys_size": 112,
+      "available_forms": [
+        "BD_Customer"
+      ],
+      "missing_forms": [],
+      "validity_rate": 1.0,
+      "hit_rate": 1.0,
+      "is_refusal": false,
+      "id": "L1-03",
+      "layer": "L1"
+    },
+    {
+      "picked_fields": [
+        "FID",
+        "FNumber",
+        "FName",
+        "FParentID",
+        "FDocumentStatus",
+        "FBillNo",
+        "FDate"
+      ],
+      "picked_count": 7,
+      "valid_keys_size": 40,
+      "available_forms": [
+        "BD_Department"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.571,
+      "hit_rate": 1.0,
+      "is_refusal": false,
+      "id": "L1-04",
+      "layer": "L1"
+    },
+    {
+      "picked_fields": [
+        "FID",
+        "FBillNo",
+        "FName",
+        "FDocumentStatus",
+        "FForbidStatus",
+        "F_BDK_ContractEndDate",
+        "F_BDK_ContractStartDate",
+        "F_BDK_ContractNo",
+        "FNumber",
+        "FExpiryDate",
+        "FContractEndDate"
+      ],
+      "picked_count": 11,
+      "valid_keys_size": 123,
+      "available_forms": [
+        "BD_Supplier"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.364,
+      "hit_rate": 1.0,
+      "is_refusal": false,
+      "id": "L1-05",
+      "layer": "L1"
+    },
+    {
+      "picked_fields": [
+        "FID",
+        "FBillNo",
+        "FDate",
+        "FDocumentStatus",
+        "FCreateDate",
+        "FStatus",
+        "FDeptID",
+        "FDepartmentID",
+        "FApplicantID",
+        "FCreatorID"
+      ],
+      "picked_count": 10,
+      "valid_keys_size": 130,
+      "available_forms": [
+        "PUR_Requisition"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.3,
+      "hit_rate": 0.4,
+      "is_refusal": false,
+      "id": "L2-01",
+      "layer": "L2"
+    },
+    {
+      "picked_fields": [
+        "FID",
+        "FBillNo",
+        "FDate",
+        "FSupplierId",
+        "FDocumentStatus",
+        "FName",
+        "FTotalAmount",
+        "FTotalAmountLocal",
+        "FTotalAllAmount",
+        "FAmount",
+        "FTotalTaxAmount"
+      ],
+      "picked_count": 11,
+      "valid_keys_size": 317,
+      "available_forms": [
+        "PUR_PurchaseOrder"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.455,
+      "hit_rate": 0.8,
+      "is_refusal": false,
+      "id": "L2-02",
+      "layer": "L2"
+    },
+    {
+      "picked_fields": [
+        "FBillNo",
+        "FDate",
+        "FCustId",
+        "FName",
+        "FSalerId",
+        "FAllAmount",
+        "FDocumentStatus",
+        "FID"
+      ],
+      "picked_count": 8,
+      "valid_keys_size": 360,
+      "available_forms": [
+        "SAL_SaleOrder"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.75,
+      "hit_rate": 1.0,
+      "is_refusal": false,
+      "id": "L2-03",
+      "layer": "L2"
+    },
+    {
+      "picked_fields": [
+        "FBillNo",
+        "FDate",
+        "FSupplierId",
+        "FName",
+        "FMaterialId",
+        "FActlandQty",
+        "FActReceiveQty",
+        "FDocumentStatus",
+        "FID"
+      ],
+      "picked_count": 9,
+      "valid_keys_size": 260,
+      "available_forms": [
+        "PUR_ReceiveBill"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.778,
+      "hit_rate": 1.0,
+      "is_refusal": false,
+      "id": "L2-04",
+      "layer": "L2"
+    },
+    {
+      "picked_fields": [
+        "FID",
+        "FBillNo",
+        "FDate",
+        "FDocumentStatus",
+        "FStockId",
+        "FName",
+        "FQty",
+        "FBaseQty"
+      ],
+      "picked_count": 8,
+      "valid_keys_size": 89,
+      "available_forms": [
+        "STK_MisDelivery"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.75,
+      "hit_rate": 1.0,
+      "is_refusal": false,
+      "id": "L2-05",
+      "layer": "L2"
+    },
+    {
+      "picked_fields": [
+        "FBillNo",
+        "FDate",
+        "FSupplierId",
+        "FName",
+        "FStockId",
+        "FMaterialId",
+        "FRealQty",
+        "FDocumentStatus",
+        "FID"
+      ],
+      "picked_count": 9,
+      "valid_keys_size": 233,
+      "available_forms": [
+        "STK_InStock"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.778,
+      "hit_rate": 1.0,
+      "is_refusal": false,
+      "id": "L2-06",
+      "layer": "L2"
+    },
+    {
+      "picked_fields": [
+        "FBillNo",
+        "FCUSTOMERID",
+        "FName",
+        "FALLAMOUNTFOR",
+        "FWRITTENOFFSTATUS",
+        "FDATE",
+        "FDocumentStatus",
+        "FID",
+        "FNumber"
+      ],
+      "picked_count": 9,
+      "valid_keys_size": 237,
+      "available_forms": [
+        "AR_receivable"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.667,
+      "hit_rate": 1.0,
+      "is_refusal": false,
+      "id": "L2-07",
+      "layer": "L2"
+    },
+    {
+      "picked_fields": [
+        "FID",
+        "FBillNo",
+        "FName",
+        "FUseDeptID",
+        "FUseEmpID",
+        "FOriginalValue",
+        "FA_CARD"
+      ],
+      "picked_count": 7,
+      "valid_keys_size": 145,
+      "available_forms": [
+        "FA_CARD"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.286,
+      "hit_rate": 0.25,
+      "is_refusal": false,
+      "id": "L2-08",
+      "layer": "L2"
+    },
+    {
+      "picked_fields": [
+        "FBillNo",
+        "FDate",
+        "FDocumentStatus",
+        "FMaterialId",
+        "FQty",
+        "FStockInQuaQty",
+        "FID"
+      ],
+      "picked_count": 7,
+      "valid_keys_size": 254,
+      "available_forms": [
+        "PRD_MO"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.857,
+      "hit_rate": 1.0,
+      "is_refusal": false,
+      "id": "L2-09",
+      "layer": "L2"
+    },
+    {
+      "picked_fields": [
+        "FID",
+        "FBillNo",
+        "FDate",
+        "FDocumentStatus",
+        "FSupplierId",
+        "FAmount",
+        "FSettleTypeId",
+        "FSupplier",
+        "FTotalAmount",
+        "FPayType",
+        "FKD",
+        "FPayAmount"
+      ],
+      "picked_count": 12,
+      "valid_keys_size": 0,
+      "available_forms": [],
+      "missing_forms": [
+        "AP_PAYBILL"
+      ],
+      "validity_rate": 0.0,
+      "hit_rate": 0.333,
+      "is_refusal": false,
+      "id": "L2-10",
+      "layer": "L2"
+    },
+    {
+      "picked_fields": [
+        "FID",
+        "FBillNo",
+        "FDate",
+        "FSupplierId",
+        "FName",
+        "FDocumentStatus",
+        "FDeliveryDate",
+        "FCloseStatus",
+        "FConfirmDate",
+        "FPurchaseOrderId"
+      ],
+      "picked_count": 10,
+      "valid_keys_size": 575,
+      "available_forms": [
+        "PUR_PurchaseOrder",
+        "PUR_ReceiveBill",
+        "BD_Supplier"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.8,
+      "hit_rate": 0.333,
+      "is_refusal": false,
+      "id": "L3-01",
+      "layer": "L3"
+    },
+    {
+      "picked_fields": [
+        "FID",
+        "FBillNo",
+        "FDate",
+        "FDocumentStatus",
+        "FInspectQty",
+        "FQualifiedQty",
+        "FUnqualifiedQty",
+        "FPlanQty",
+        "FFinishQty"
+      ],
+      "picked_count": 9,
+      "valid_keys_size": 426,
+      "available_forms": [
+        "PRD_MO",
+        "QM_InspectBill"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.667,
+      "hit_rate": null,
+      "is_refusal": false,
+      "id": "L3-02",
+      "layer": "L3"
+    },
+    {
+      "picked_fields": [
+        "FID",
+        "FBillNo",
+        "FDate",
+        "FDocumentStatus",
+        "FAmount",
+        "FAmountFor",
+        "FDeptId",
+        "FName",
+        "FCustomerId",
+        "FBillTypeID",
+        "FSupplierId"
+      ],
+      "picked_count": 11,
+      "valid_keys_size": 281,
+      "available_forms": [
+        "AR_receivable",
+        "AP_Payable"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.273,
+      "hit_rate": null,
+      "is_refusal": false,
+      "id": "L3-03",
+      "layer": "L3"
+    },
+    {
+      "picked_fields": [
+        "FID",
+        "FBillNo",
+        "FDate",
+        "FDocumentStatus",
+        "FMaterialId",
+        "FNumber",
+        "FName",
+        "FQty",
+        "FPrice",
+        "FAllAmount",
+        "FStockName",
+        "FQtyActual",
+        "FUnitId",
+        "FAmount",
+        "FTaxAmount"
+      ],
+      "picked_count": 15,
+      "valid_keys_size": 698,
+      "available_forms": [
+        "PUR_PurchaseOrder",
+        "STK_Inventory",
+        "BD_MATERIAL"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.8,
+      "hit_rate": 0.667,
+      "is_refusal": false,
+      "id": "L3-04",
+      "layer": "L3"
+    },
+    {
+      "picked_fields": [
+        "FMaterialId",
+        "FStockId",
+        "FBaseQty",
+        "FNumber",
+        "FName",
+        "FSpecification",
+        "FID",
+        "FQty",
+        "FSecQty"
+      ],
+      "picked_count": 9,
+      "valid_keys_size": 399,
+      "available_forms": [
+        "STK_Inventory",
+        "BD_MATERIAL"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.889,
+      "hit_rate": 1.0,
+      "is_refusal": false,
+      "id": "L3-05",
+      "layer": "L3"
+    },
+    {
+      "picked_fields": [
+        "FID",
+        "FBillNo",
+        "FApplicationDate",
+        "FApplicationDeptId",
+        "FName",
+        "FTotalAmount",
+        "FDocumentStatus",
+        "FDate",
+        "FNumber",
+        "FFullName",
+        "FParentID"
+      ],
+      "picked_count": 11,
+      "valid_keys_size": 165,
+      "available_forms": [
+        "PUR_Requisition",
+        "BD_Department"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.818,
+      "hit_rate": 0.5,
+      "is_refusal": false,
+      "id": "L3-06",
+      "layer": "L3"
+    },
+    {
+      "picked_fields": [
+        "FID",
+        "FBillNo",
+        "FDate",
+        "FDocumentStatus",
+        "FSupplierId",
+        "FName",
+        "FCreateDate",
+        "FApproverId",
+        "FApproveDate"
+      ],
+      "picked_count": 9,
+      "valid_keys_size": 317,
+      "available_forms": [
+        "PUR_PurchaseOrder"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.778,
+      "hit_rate": 1.0,
+      "is_refusal": false,
+      "id": "L4-01",
+      "layer": "L4"
+    },
+    {
+      "picked_fields": [
+        "FID",
+        "FNumber",
+        "FName",
+        "FDocumentStatus",
+        "FForbidStatus",
+        "FForbidDate",
+        "FModel"
+      ],
+      "picked_count": 7,
+      "valid_keys_size": 372,
+      "available_forms": [
+        "BD_MATERIAL"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.714,
+      "hit_rate": 1.0,
+      "is_refusal": false,
+      "id": "L4-02",
+      "layer": "L4"
+    },
+    {
+      "picked_fields": [
+        "FID",
+        "FBillNo",
+        "FDate",
+        "FCustomerId",
+        "FNumber",
+        "FName",
+        "FAllAmount",
+        "FDocumentStatus",
+        "FAmount",
+        "FAllAmount_LC",
+        "FAllAmountFor",
+        "FAllAmountFor_LC"
+      ],
+      "picked_count": 12,
+      "valid_keys_size": 339,
+      "available_forms": [
+        "AR_receivable",
+        "BD_Customer"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.333,
+      "hit_rate": 0.0,
+      "is_refusal": false,
+      "id": "L4-03",
+      "layer": "L4"
+    },
+    {
+      "picked_fields": [
+        "FID",
+        "FBillNo",
+        "FDate",
+        "FDocumentStatus",
+        "FCustId",
+        "FName",
+        "FNumber",
+        "FMaterialId",
+        "FQty",
+        "FPlanFinishDate",
+        "FStatus",
+        "F_BDK_Text1",
+        "F_BDK_Text2",
+        "F_BDK_Text3",
+        "F_BDK_Text4",
+        "F_BDK_Text5",
+        "FSourceBillNo",
+        "FSourceBillType"
+      ],
+      "picked_count": 18,
+      "valid_keys_size": 254,
+      "available_forms": [
+        "PRD_MO"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.389,
+      "hit_rate": 1.0,
+      "is_refusal": false,
+      "id": "L4-04",
+      "layer": "L4"
+    },
+    {
+      "picked_fields": [
+        "FID",
+        "FBillNo",
+        "FDocumentStatus",
+        "FCreatorId",
+        "FName",
+        "FCreateDate",
+        "FDate",
+        "FApproveStatus",
+        "FRequesterId",
+        "FDeptId"
+      ],
+      "picked_count": 10,
+      "valid_keys_size": 130,
+      "available_forms": [
+        "PUR_Requisition"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.4,
+      "hit_rate": 1.0,
+      "is_refusal": false,
+      "id": "L4-05",
+      "layer": "L4"
+    },
+    {
+      "picked_fields": [
+        "FID",
+        "FBillNo",
+        "FName",
+        "FContact",
+        "FPhone"
+      ],
+      "picked_count": 5,
+      "valid_keys_size": 123,
+      "available_forms": [
+        "BD_Supplier"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.4,
+      "hit_rate": 0.25,
+      "is_refusal": false,
+      "id": "L5-01",
+      "layer": "L5"
+    },
+    {
+      "picked_fields": [
+        "F_BDK_FK",
+        "F_BDK_PP",
+        "F_BDK_BPRemark",
+        "F_BDK_CSXX",
+        "F_BDK_Base",
+        "F_BDK_OADateTime",
+        "F_RFUX_TMMD",
+        "F_RFUX_TJYX",
+        "F_RFUX_TLSQD",
+        "F_RFUX_TYSL",
+        "F_RFUX_TFZ",
+        "F_RFUX_TSRD",
+        "F_RFUX_THDGC",
+        "F_RFUX_TZKSL",
+        "F_RFUX_TKDGC",
+        "F_RFUX_TCDGC",
+        "F_RFUX_TJTGS",
+        "F_RFUX_TWGYQ",
+        "FID",
+        "FNumber",
+        "FName",
+        "FSpecification",
+        "FCategoryID",
+        "F_BDK_",
+        "F_RFUX_"
+      ],
+      "picked_count": 25,
+      "valid_keys_size": 372,
+      "available_forms": [
+        "BD_MATERIAL"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.88,
+      "hit_rate": 1.0,
+      "is_refusal": false,
+      "id": "L5-02",
+      "layer": "L5"
+    },
+    {
+      "picked_fields": [
+        "FID",
+        "FBillNo",
+        "FDate",
+        "FDocumentStatus",
+        "FNote",
+        "FExplanation",
+        "FSupplierId",
+        "FName",
+        "FDeptId"
+      ],
+      "picked_count": 9,
+      "valid_keys_size": 317,
+      "available_forms": [
+        "PUR_PurchaseOrder"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.444,
+      "hit_rate": 1.0,
+      "is_refusal": false,
+      "id": "L5-03",
+      "layer": "L5"
+    },
+    {
+      "picked_fields": [
+        "FBillNo",
+        "FDocumentStatus",
+        "FApproveDate",
+        "FCloseStatus",
+        "FConfirmStatus",
+        "FSupplierId",
+        "FName",
+        "FOrderBillNo",
+        "FActReceiveQty",
+        "FID",
+        "FDate",
+        "F_BDK_Remarks"
+      ],
+      "picked_count": 12,
+      "valid_keys_size": 317,
+      "available_forms": [
+        "PUR_PurchaseOrder"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.667,
+      "hit_rate": 1.0,
+      "is_refusal": false,
+      "id": "L6-01",
+      "layer": "L6"
+    },
+    {
+      "picked_fields": [
+        "FID",
+        "FBillNo",
+        "FDate",
+        "FDocumentStatus",
+        "FTotalAmount",
+        "FDeptId",
+        "FName",
+        "FSupplierId",
+        "FAmount"
+      ],
+      "picked_count": 9,
+      "valid_keys_size": 317,
+      "available_forms": [
+        "PUR_PurchaseOrder"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.556,
+      "hit_rate": 0.0,
+      "is_refusal": false,
+      "id": "L6-02",
+      "layer": "L6"
+    },
+    {
+      "picked_fields": [
+        "FMaterialId",
+        "FNumber",
+        "FName",
+        "FQty",
+        "FUnitId",
+        "FDate",
+        "FCategory",
+        "FID",
+        "FBillNo",
+        "FDocumentStatus"
+      ],
+      "picked_count": 10,
+      "valid_keys_size": 97,
+      "available_forms": [
+        "STK_Inventory",
+        "STK_MisDelivery"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.5,
+      "hit_rate": 0.0,
+      "is_refusal": false,
+      "id": "L6-03",
+      "layer": "L6"
+    },
+    {
+      "picked_fields": [
+        "FID",
+        "FBillNo",
+        "FDate",
+        "FDocumentStatus",
+        "FCustomerId",
+        "FName",
+        "FAmount",
+        "FAmountFor",
+        "FRecConditionId",
+        "FRecAmount",
+        "FUnRecAmount",
+        "FAllAmount"
+      ],
+      "picked_count": 12,
+      "valid_keys_size": 237,
+      "available_forms": [
+        "AR_receivable"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.167,
+      "hit_rate": 0.0,
+      "is_refusal": false,
+      "id": "L6-04",
+      "layer": "L6"
+    },
+    {
+      "picked_fields": [
+        "FDocumentStatus",
+        "FForbidStatus",
+        "F_BDK_GYSState",
+        "FBusinessStatus",
+        "FStartDate",
+        "FEndDate",
+        "FSupplyClassify",
+        "FNumber",
+        "FName",
+        "FID",
+        "FBillNo",
+        "FDate",
+        "FSupId"
+      ],
+      "picked_count": 13,
+      "valid_keys_size": 123,
+      "available_forms": [
+        "BD_Supplier"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.692,
+      "hit_rate": 1.0,
+      "is_refusal": false,
+      "id": "L6-05",
+      "layer": "L6"
+    },
+    {
+      "picked_fields": [
+        "FNumber",
+        "FName",
+        "FStockName",
+        "FQty",
+        "FUnitID"
+      ],
+      "picked_count": 5,
+      "valid_keys_size": 399,
+      "available_forms": [
+        "STK_Inventory",
+        "BD_MATERIAL"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.6,
+      "hit_rate": 0.0,
+      "is_refusal": false,
+      "id": "L6-06",
+      "layer": "L6"
+    },
+    {
+      "picked_fields": [
+        "FID",
+        "FBillNo",
+        "FDate",
+        "FDocumentStatus",
+        "FInspectResult",
+        "FInspectQty",
+        "FQualifiedQty",
+        "FUnqualifiedQty",
+        "FMaterialId",
+        "FNumber",
+        "FName",
+        "FQty",
+        "FReceiveQty",
+        "FSRCBillNo",
+        "FSRCBillType"
+      ],
+      "picked_count": 15,
+      "valid_keys_size": 433,
+      "available_forms": [
+        "PUR_ReceiveBill",
+        "QM_InspectBill"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.6,
+      "hit_rate": null,
+      "is_refusal": false,
+      "id": "L6-07",
+      "layer": "L6"
+    },
+    {
+      "picked_fields": [
+        "FID",
+        "FBillNo",
+        "FDate",
+        "FSupplierId",
+        "FNumber",
+        "FName",
+        "FDocumentStatus",
+        "FDeliveryDate",
+        "FPurchaseOrderId"
+      ],
+      "picked_count": 9,
+      "valid_keys_size": 575,
+      "available_forms": [
+        "PUR_PurchaseOrder",
+        "PUR_ReceiveBill",
+        "BD_Supplier"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.778,
+      "hit_rate": 0.333,
+      "is_refusal": false,
+      "id": "L8-01",
+      "layer": "L8"
+    },
+    {
+      "picked_fields": [
+        "FID",
+        "FBillNo",
+        "FDate",
+        "FDocumentStatus",
+        "FMaterialId",
+        "FNumber",
+        "FName",
+        "FPrice",
+        "FQty",
+        "FAmount",
+        "FCreatorId",
+        "FSupplierId",
+        "FSettleOrgId"
+      ],
+      "picked_count": 13,
+      "valid_keys_size": 317,
+      "available_forms": [
+        "PUR_PurchaseOrder"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.692,
+      "hit_rate": 1.0,
+      "is_refusal": false,
+      "id": "L8-02",
+      "layer": "L8"
+    },
+    {
+      "picked_fields": [
+        "FID",
+        "FBillNo",
+        "FDate",
+        "FDocumentStatus",
+        "FDeliveryDate",
+        "FCustomerId",
+        "FName",
+        "FQty",
+        "FStockOutQty",
+        "FPlanFinishDate",
+        "FMaterialId",
+        "FNumber",
+        "FPlanQty",
+        "FStockQty"
+      ],
+      "picked_count": 14,
+      "valid_keys_size": 598,
+      "available_forms": [
+        "STK_Inventory",
+        "PRD_MO",
+        "SAL_SaleOrder"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.714,
+      "hit_rate": null,
+      "is_refusal": false,
+      "id": "L8-03",
+      "layer": "L8"
+    },
+    {
+      "picked_fields": [
+        "FID",
+        "FBillNo",
+        "FDate",
+        "FDocumentStatus",
+        "FNumber",
+        "FName",
+        "FStockName",
+        "FQty",
+        "FUnitName",
+        "FTotalAmount",
+        "FTotalQty",
+        "FCustomerId",
+        "FAmount",
+        "FAmountFor",
+        "FMaterialId",
+        "FPlanQty",
+        "FFinishQty"
+      ],
+      "picked_count": 17,
+      "valid_keys_size": 789,
+      "available_forms": [
+        "SAL_SaleOrder",
+        "PRD_MO",
+        "STK_Inventory",
+        "AR_receivable"
+      ],
+      "missing_forms": [],
+      "validity_rate": 0.412,
+      "hit_rate": null,
+      "is_refusal": false,
+      "id": "L8-04",
+      "layer": "L8"
+    }
+  ]
+}

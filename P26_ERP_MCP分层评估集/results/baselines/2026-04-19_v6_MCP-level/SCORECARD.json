@@ -1,0 +1,137 @@
+{
+  "baseline_id": "2026-04-19_v6_MCP-level",
+  "date": "2026-04-19",
+  "question_set": "P26 V1 / 60 questions",
+  "model": "deepseek-chat (temperature=0)",
+  "method": "Real MCP-level: LLM calls tools via stdio MCP protocol against src.server",
+  "stages": {
+    "T0": "query_* + describe_form + search_forms_online only (pre-P20S/P20T)",
+    "T1": "T0 + kingdee_get_schema/_relations/_list_cached_schemas (P20S)",
+    "T2": "T1 + kingdee_get_wiki (P20T)"
+  },
+  "states": {
+    "T0": {
+      "overall": {
+        "validity_rate": 0.684,
+        "hit_rate": 0.765,
+        "refusal_correctness_L7": 1.0,
+        "factual_mean_5": 2.609,
+        "business_mean_5": 2.684
+      },
+      "by_layer_validity": {
+        "L1": 0.686,
+        "L2": 0.678,
+        "L3": 0.8,
+        "L4": 0.735,
+        "L5": 0.603,
+        "L6": 0.647,
+        "L8": 0.694
+      },
+      "by_layer_hit": {
+        "L1": 0.857,
+        "L2": 0.858,
+        "L3": 0.375,
+        "L4": 0.917,
+        "L5": 0.917,
+        "L6": 0.574,
+        "L8": 0.683
+      },
+      "by_layer_factual": {
+        "L1": 3.286,
+        "L2": 2.5,
+        "L3": 3,
+        "L4": 2.4,
+        "L5": 2.857,
+        "L6": 2,
+        "L8": 2
+      },
+      "by_layer_business": {
+        "L4": 2.25,
+        "L6": 2.8,
+        "L8": 2.8
+      }
+    },
+    "T1": {
+      "overall": {
+        "validity_rate": 0.751,
+        "hit_rate": 0.752,
+        "refusal_correctness_L7": 1.0,
+        "factual_mean_5": 2.87,
+        "business_mean_5": 2.316
+      },
+      "by_layer_validity": {
+        "L1": 0.819,
+        "L2": 0.747,
+        "L3": 0.741,
+        "L4": 0.762,
+        "L5": 0.807,
+        "L6": 0.688,
+        "L8": 0.718
+      },
+      "by_layer_hit": {
+        "L1": 0.857,
+        "L2": 0.858,
+        "L3": 0.541,
+        "L4": 0.821,
+        "L5": 0.798,
+        "L6": 0.574,
+        "L8": 0.717
+      },
+      "by_layer_factual": {
+        "L1": 4.143,
+        "L2": 2.9,
+        "L3": 2.667,
+        "L4": 1.6,
+        "L5": 2.857,
+        "L6": 3.5,
+        "L8": 2.286
+      },
+      "by_layer_business": {
+        "L4": 2.25,
+        "L6": 2.4,
+        "L8": 2.2
+      }
+    },
+    "T2": {
+      "overall": {
+        "validity_rate": 0.761,
+        "hit_rate": 0.736,
+        "refusal_correctness_L7": 1.0,
+        "factual_mean_5": 2.826,
+        "business_mean_5": 3.105
+      },
+      "by_layer_validity": {
+        "L1": 0.9,
+        "L2": 0.766,
+        "L3": 0.792,
+        "L4": 0.756,
+        "L5": 0.689,
+        "L6": 0.728,
+        "L8": 0.714
+      },
+      "by_layer_hit": {
+        "L1": 0.857,
+        "L2": 0.863,
+        "L3": 0.521,
+        "L4": 0.821,
+        "L5": 0.762,
+        "L6": 0.519,
+        "L8": 0.717
+      },
+      "by_layer_factual": {
+        "L1": 4,
+        "L2": 2.2,
+        "L3": 3,
+        "L4": 3,
+        "L5": 2.571,
+        "L6": 3,
+        "L8": 2.429
+      },
+      "by_layer_business": {
+        "L4": 2.5,
+        "L6": 3.2,
+        "L8": 3.4
+      }
+    }
+  }
+}

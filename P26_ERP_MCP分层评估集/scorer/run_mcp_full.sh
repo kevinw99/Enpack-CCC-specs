@@ -78,7 +78,7 @@ base = Path("$BASELINE_DIR")
 scorecard = {
     "baseline_id": "${STAMP}_${VERSION}_MCP-level",
     "date": "${STAMP}",
-    "question_set": "P26 V1 / 46 questions",
+    "question_set": "P26 V1 / 60 questions",
     "model": "deepseek-chat (temperature=0)",
     "method": "Real MCP-level: LLM calls tools via stdio MCP protocol against src.server",
     "stages": {

@@ -1,0 +1,138 @@
+{
+  "entity_id": "spec:P27_清华同学会AI分享",
+  "entity_type": "spec",
+  "display_name": "Spec 27: 清华同学会AI分享",
+  "directory": "规格/P27_清华同学会AI分享",
+  "session_count": 6,
+  "sessions": [
+    {
+      "session_id": "2e51f72f-87ef-4e83-8945-ce09e5bfbc4c",
+      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/2e51f72f-87ef-4e83-8945-ce09e5bfbc4c.jsonl",
+      "confidence": 0.325,
+      "start_time": "2026-04-23T17:12:51.128Z",
+      "end_time": "2026-04-23T17:13:10.033Z",
+      "message_count": 13,
+      "matched_message_count": 4,
+      "matched_messages": [
+        {
+          "uuid": "c95877a1-9350-45b4-a784-8321d6378a24",
+          "line_number": 6,
+          "msg_type": "user",
+          "timestamp": "2026-04-23T17:12:56.665Z",
+          "preview": "continue on P27, update pdf                                                    \n    另外，关于克莱德代码 Claud"
+        },
+        {
+          "uuid": "8eb243f8-0a33-4f03-a86b-e496ac45cced",
+          "line_number": 12,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-23T17:13:04.331Z",
+          "preview": ""
+        },
+        {
+          "uuid": "ea911ad8-dbad-4ed1-8b12-ff65ac2cc4a6",
+          "line_number": 14,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-23T17:13:06.672Z",
+          "preview": ""
+        },
+        {
+          "uuid": "12bacfc6-2b7a-4112-9ff7-31e884f2cb1f",
+          "line_number": 18,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-23T17:13:10.013Z",
+          "preview": ""
+        }
+      ],
+      "evidence": [
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P27_清华同学会AI分享/",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P27_清华同学会AI分享/presentation.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P27_清华同学会AI分享/requirements.md",
+        "Text: ...continue on P27, update pdf                                                     ..."
+      ]
+    },
+    {
+      "session_id": "8aaa3e14-c8c5-4832-a830-5cea74707bc9",
+      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/8aaa3e14-c8c5-4832-a830-5cea74707bc9.jsonl",
+      "confidence": 0.2,
+      "start_time": "2026-04-23T17:05:45.207Z",
+      "end_time": "2026-04-23T17:12:27.709Z",
+      "message_count": 13,
+      "matched_message_count": 1,
+      "matched_messages": [
+        {
+          "uuid": "9e46ed62-8244-4816-8c4e-7bfac3e98665",
+          "line_number": 2,
+          "msg_type": "user",
+          "timestamp": "2026-04-23T17:05:45.207Z",
+          "preview": "continue on P27, update pdf\n  另外，关于克莱德代码 Claudecode， 我觉得这里边有些内容已经涉及到了商业秘密，   \n  就是说已经太多的去教别人怎么去用这样呢？"
+        }
+      ],
+      "evidence": [
+        "Text: ...continue on P27, update pdf   另外，关于克莱德代码 Claudecode， 我觉得这里边有些内容已经涉及到了商业秘密，      ..."
+      ]
+    },
+    {
+      "session_id": "a57ec0f1-9ce8-4a7e-a151-5a7699a1b3f9",
+      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/a57ec0f1-9ce8-4a7e-a151-5a7699a1b3f9.jsonl",
+      "confidence": 0.4,
+      "start_time": "2026-04-23T17:01:12.647Z",
+      "end_time": "2026-04-23T17:04:44.066Z",
+      "message_count": 9,
+      "matched_message_count": 0,
+      "matched_messages": [],
+      "evidence": []
+    },
+    {
+      "session_id": "08a6e88a-292e-4fec-a233-f57cd8025a75",
+      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/08a6e88a-292e-4fec-a233-f57cd8025a75.jsonl",
+      "confidence": 0.38,
+      "start_time": "2026-04-23T14:43:53.703Z",
+      "end_time": "2026-04-23T16:58:55.777Z",
+      "message_count": 124,
+      "matched_message_count": 0,
+      "matched_messages": [],
+      "evidence": []
+    },
+    {
+      "session_id": "0b9d88c9-f14f-40f8-adbc-9bc4c7407828",
+      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/0b9d88c9-f14f-40f8-adbc-9bc4c7407828.jsonl",
+      "confidence": 0.1,
+      "start_time": "2026-04-12T04:02:06.163Z",
+      "end_time": "2026-04-23T17:13:03.525Z",
+      "message_count": 4568,
+      "matched_message_count": 2,
+      "matched_messages": [
+        {
+          "uuid": "585fa920-15f9-448f-a11c-db8be33b9b4f",
+          "line_number": 5874,
+          "msg_type": "user",
+          "timestamp": "2026-04-23T17:09:18.923Z",
+          "preview": "continue on P27, update pdf                                                    \n    另外，关于克莱德代码 Claud"
+        },
+        {
+          "uuid": "9bfc8e78-22e4-4e8f-a55c-464951af479d",
+          "line_number": 5886,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-23T17:13:03.449Z",
+          "preview": ""
+        }
+      ],
+      "evidence": [
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P27_清华同学会AI分享/presentation.md",
+        "Text: ...continue on P27, update pdf                                                     ..."
+      ]
+    },
+    {
+      "session_id": "d187553a-451e-4a3a-a3a8-c44a1cb4f5d0",
+      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/d187553a-451e-4a3a-a3a8-c44a1cb4f5d0.jsonl",
+      "confidence": 0.19,
+      "start_time": "2026-04-08T13:28:37.764Z",
+      "end_time": "2026-04-23T14:39:14.320Z",
+      "message_count": 1361,
+      "matched_message_count": 0,
+      "matched_messages": [],
+      "evidence": []
+    }
+  ],
+  "last_updated": "2026-04-24T01:13:14.228896"
+}

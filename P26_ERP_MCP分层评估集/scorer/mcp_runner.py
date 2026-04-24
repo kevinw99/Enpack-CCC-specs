@@ -73,7 +73,7 @@ _SYSTEM_BASE = """你是金蝶 ERP 数据分析助手。用户会提出业务问
 - **幂等性**：同一个 form_id 只调一次 kingdee_get_schema；已经调过的 form_id 不要再调。已经调过 kingdee_list_cached_schemas 不要再调。
 - **不探索不存在的工具**：白名单外的工具不要尝试；kingdee_search_forms_online 不要连续调超过 1 次。
 - **优先行动**：拿到 schema/wiki 信息后**立刻进入 query_bills / query_materials 等数据动作**，不要继续"再确认一下字段"。
-- **Turn 预算**：最多 12 轮工具调用。到第 9 轮仍未查到数据要立即收尾输出 JSON；不要在 schema 探索上超过 4 轮。
+- **Turn 预算**：工具调用次数有限（见下方具体预算）。不要在 schema 探索上超过 4 轮，尽快进入数据查询。
 
 判断"伪问题"的双向约束（既防逃避也防硬答）：
 
@@ -107,11 +107,19 @@ fields 列你答题会引用的字段；只有真正的伪问题才允许 fields
 TOOL_QUOTAS = {"kingdee_search_forms_online": 2}
 
 
-def build_system_prompt(stage: str) -> str:
-    """Build stage-specific system prompt. T0 omits B/C query constraints."""
+def build_system_prompt(stage: str, complexity: str = "MEDIUM", max_turns: int = 12) -> str:
+    """Build stage-specific system prompt with adaptive turn budget."""
     parts = [_SYSTEM_BASE]
     if stage in ("T1", "T2"):
         parts.append(_SYSTEM_QUERY_CONSTRAINT)
+    # Adaptive turn budget hint
+    if complexity == "SIMPLE":
+        parts.append(f"\n这是一个简单查询题。跳过 list_cached_schemas，直接 get_schema → query_bills。"
+                     f"最多 {max_turns} 轮工具调用。\n")
+    elif complexity == "COMPLEX":
+        warn_turn = max_turns - 3
+        parts.append(f"\n这是一个复杂分析题，可能需要跨表关联。先用 get_relations 规划路径，再逐表 get_schema。"
+                     f"最多 {max_turns} 轮工具调用。到第 {warn_turn} 轮未查数据要立即收尾。\n")
     parts.append(_SYSTEM_TAIL)
     return "".join(parts)
 
@@ -169,9 +177,50 @@ def _extract_from_tool_args(tool_calls: list[dict]) -> list[str]:
     return dedup
 
 
+# ── Adaptive Turn Routing ─────────────────────────────────────────
+
+TURN_BUDGETS = {
+    "SIMPLE": 8,
+    "MEDIUM": 12,
+    "COMPLEX": 16,
+    "PSEUDO": 0,
+}
+
+
+def classify_question(q: dict) -> str:
+    """Classify question complexity for adaptive turn budget.
+
+    Uses metadata (layer + required_forms count) — zero-cost, deterministic.
+    Layer takes priority: L1/L2=SIMPLE, L3/L4=MEDIUM, L5/L6/L8=COMPLEX.
+    Form count is secondary tiebreaker within ambiguous layers.
+    """
+    if q.get("pseudo_question"):
+        return "PSEUDO"
+    layer = q.get("layer", "")
+    # Layer-based classification (primary)
+    # L1=basic lookup (8T), L2=multi-condition filter (12T, needs more turns)
+    if layer == "L1":
+        return "SIMPLE"
+    if layer == "L2":
+        return "MEDIUM"
+    if layer in ("L5", "L6", "L8"):
+        return "COMPLEX"
+    if layer in ("L3", "L4"):
+        # L3 multi-table joins and L4 status interpretation need full budget
+        n_forms = len(q.get("required_forms", []))
+        return "COMPLEX" if n_forms >= 3 else "MEDIUM"
+    # Unknown layer — use form count as fallback
+    n_forms = len(q.get("required_forms", []))
+    if n_forms <= 1:
+        return "SIMPLE"
+    if n_forms >= 3:
+        return "COMPLEX"
+    return "MEDIUM"
+
+
 # ── 单题执行：tool-use loop ────────────────────────────────────────
 
-MAX_TURNS = 12
+MAX_TURNS = 12  # default fallback
 
 
 async def answer_one(
@@ -182,15 +231,34 @@ async def answer_one(
     model: str,
     stage: str = "T1",
 ) -> dict:
+    # Code-level pseudo-question pre-filter: skip LLM entirely
+    if question.get("pseudo_question"):
+        plan = (f"此问题不在 ERP 数据范围内（{question['id']}），ERP 无法提供相关数据。"
+                f"建议查其他系统。问题: {question['question']}")
+        return {
+            "id": question["id"],
+            "layer": question["layer"],
+            "picked_fields": [],
+            "plan": plan,
+            "answer": plan,
+            "tool_calls": [],
+            "turns_used": 0,
+            "finish_reason": "pseudo_question_prefilter",
+        }
+
+    # Adaptive turn budget
+    complexity = classify_question(question)
+    max_turns = TURN_BUDGETS.get(complexity, MAX_TURNS)
+
     messages: list[dict] = [
-        {"role": "system", "content": build_system_prompt(stage)},
+        {"role": "system", "content": build_system_prompt(stage, complexity, max_turns)},
         {"role": "user", "content": f"问题: {question['question']}\n"
                                      f"提示相关表单: {', '.join(question.get('required_forms', [])) or '（未指定，自行判断）'}"},
     ]
     tool_calls_log: list[dict] = []
     tool_call_counts: dict[str, int] = {}   # code-level quota tracking
 
-    for turn in range(MAX_TURNS):
+    for turn in range(max_turns):
         # Sync OpenAI call (DeepSeek API)
         resp = await asyncio.to_thread(
             client.chat.completions.create,
@@ -283,7 +351,7 @@ async def answer_one(
             "finish_reason": finish,
         }
 
-    # Hit MAX_TURNS without a final text → force a no-tools summary call
+    # Hit max_turns without a final text → force a no-tools summary call
     messages.append({
         "role": "user",
         "content": "已达到工具调用上限。请立即基于已掌握信息输出最终 JSON "
@@ -318,7 +386,7 @@ async def answer_one(
         "plan": plan,
         "answer": " ".join(merged) + "\n" + plan,
         "tool_calls": tool_calls_log,
-        "turns_used": MAX_TURNS,
+        "turns_used": max_turns,
         "finish_reason": "max_turns_forced_summary",
     }
 
@@ -372,7 +440,9 @@ async def run(args: argparse.Namespace) -> int:
                     f.write(json.dumps(rec, ensure_ascii=False) + "\n")
                     f.flush()
                     tool_names = [tc["name"] for tc in rec.get("tool_calls", [])]
-                    print(f"[{i}/{len(questions)}] {rec['id']} ({rec['layer']}) — "
+                    cclass = classify_question(q)
+                    budget = TURN_BUDGETS.get(cclass, MAX_TURNS)
+                    print(f"[{i}/{len(questions)}] {rec['id']} ({rec['layer']}/{cclass}:{budget}T) — "
                           f"{len(rec.get('picked_fields', []))} fields / "
                           f"{len(tool_names)} tool calls: {tool_names}")
 

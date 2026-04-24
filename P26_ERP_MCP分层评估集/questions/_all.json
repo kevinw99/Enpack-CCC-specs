@@ -1116,5 +1116,395 @@
     "scoring_dimensions": [
       "factual_correctness"
     ]
+  },
+  {
+    "id": "L1-06",
+    "layer": "L1",
+    "source": "new",
+    "question": "列出所有销售订单的编号、日期、客户名称、单据状态。",
+    "expected_p20s_gain": "medium",
+    "expected_p20t_gain": "none",
+    "required_forms": [
+      "SAL_SaleOrder"
+    ],
+    "required_fields_hint": [
+      "FBillNo",
+      "FDate",
+      "FCustomerId.FName",
+      "FDocumentStatus"
+    ],
+    "reference_answer_points": [
+      "使用 SAL_SaleOrder 表",
+      "FBillNo / FDate / FCustomerId.FName 为核心字段"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": [
+      "field_validity_rate",
+      "factual_correctness"
+    ]
+  },
+  {
+    "id": "L1-07",
+    "layer": "L1",
+    "source": "new",
+    "question": "查询所有应收单，列出单据编号、日期、客户名称、总金额。",
+    "expected_p20s_gain": "medium",
+    "expected_p20t_gain": "none",
+    "required_forms": [
+      "AR_Receivable"
+    ],
+    "required_fields_hint": [
+      "FBillNo",
+      "FDate",
+      "FCustomerId.FName",
+      "FAllAmountFor"
+    ],
+    "reference_answer_points": [
+      "使用 AR_Receivable 表",
+      "FAllAmountFor 为金额字段"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": [
+      "field_validity_rate",
+      "factual_correctness"
+    ]
+  },
+  {
+    "id": "L4-06",
+    "layer": "L4",
+    "source": "new",
+    "question": "目前有哪些销售订单处于未审核状态？列出单据编号、客户和金额。",
+    "expected_p20s_gain": "large",
+    "expected_p20t_gain": "medium",
+    "required_forms": [
+      "SAL_SaleOrder"
+    ],
+    "required_fields_hint": [
+      "FBillNo",
+      "FDocumentStatus",
+      "FCustomerId.FName",
+      "FAllAmount"
+    ],
+    "reference_answer_points": [
+      "FDocumentStatus 过滤未审核状态",
+      "需要 schema 确认状态枚举值"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": [
+      "field_validity_rate",
+      "factual_correctness",
+      "business_grounding"
+    ]
+  },
+  {
+    "id": "L4-07",
+    "layer": "L4",
+    "source": "new",
+    "question": "查询质检单中不合格的记录，显示单据编号、物料名称和检验日期。",
+    "expected_p20s_gain": "large",
+    "expected_p20t_gain": "none",
+    "required_forms": [
+      "QM_InspectBill"
+    ],
+    "required_fields_hint": [
+      "FBillNo",
+      "FInspectResult",
+      "FMaterialId.FName"
+    ],
+    "reference_answer_points": [
+      "使用 QM_InspectBill 表",
+      "FInspectResult 判断不合格"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": [
+      "field_validity_rate",
+      "factual_correctness"
+    ]
+  },
+  {
+    "id": "L5-04",
+    "layer": "L5",
+    "source": "new",
+    "question": "查询每个客户的应收账款总额和最早的未结清应收单日期。",
+    "expected_p20s_gain": "large",
+    "expected_p20t_gain": "medium",
+    "required_forms": [
+      "AR_Receivable",
+      "BD_Customer"
+    ],
+    "required_fields_hint": [
+      "FCustomerId.FName",
+      "FAllAmountFor",
+      "FDate",
+      "FDocumentStatus"
+    ],
+    "reference_answer_points": [
+      "需要关联 AR_Receivable 和 BD_Customer",
+      "按客户分组汇总金额"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": [
+      "field_validity_rate",
+      "factual_correctness"
+    ]
+  },
+  {
+    "id": "L5-05",
+    "layer": "L5",
+    "source": "new",
+    "question": "列出本月销售出库单对应的销售订单编号和客户名称。",
+    "expected_p20s_gain": "large",
+    "expected_p20t_gain": "none",
+    "required_forms": [
+      "SAL_OUTSTOCK",
+      "SAL_SaleOrder"
+    ],
+    "required_fields_hint": [
+      "FBillNo",
+      "FSaleOrderNo",
+      "FCustomerId.FName"
+    ],
+    "reference_answer_points": [
+      "需要从 SAL_OUTSTOCK 关联到 SAL_SaleOrder",
+      "通过单据编号或源单关联"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": [
+      "field_validity_rate",
+      "factual_correctness"
+    ]
+  },
+  {
+    "id": "L5-06",
+    "layer": "L5",
+    "source": "new",
+    "question": "哪些采购订单已经收料但还未开具应付单？",
+    "expected_p20s_gain": "large",
+    "expected_p20t_gain": "medium",
+    "required_forms": [
+      "PUR_PurchaseOrder",
+      "PUR_ReceiveBill",
+      "AP_Payable"
+    ],
+    "required_fields_hint": [
+      "FBillNo",
+      "FSupplierId.FName"
+    ],
+    "reference_answer_points": [
+      "需要跨三张表比对",
+      "关联采购订单到收料到应付"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": [
+      "field_validity_rate",
+      "factual_correctness"
+    ]
+  },
+  {
+    "id": "L5-07",
+    "layer": "L5",
+    "source": "new",
+    "question": "查询质检不合格的收料通知单，显示供应商名称、物料和不合格原因。",
+    "expected_p20s_gain": "large",
+    "expected_p20t_gain": "none",
+    "required_forms": [
+      "PUR_ReceiveBill",
+      "QM_InspectBill"
+    ],
+    "required_fields_hint": [
+      "FBillNo",
+      "FSupplierId.FName",
+      "FMaterialId.FName",
+      "FInspectResult"
+    ],
+    "reference_answer_points": [
+      "需要关联 PUR_ReceiveBill 和 QM_InspectBill"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": [
+      "field_validity_rate",
+      "factual_correctness"
+    ]
+  },
+  {
+    "id": "L6-08",
+    "layer": "L6",
+    "source": "new",
+    "question": "客户 A 的信用额度是否已用完？还能下多少金额的销售订单？",
+    "expected_p20s_gain": "large",
+    "expected_p20t_gain": "large",
+    "required_forms": [
+      "BD_Customer",
+      "SAL_SaleOrder",
+      "AR_Receivable"
+    ],
+    "required_fields_hint": [
+      "FCreditLimit",
+      "FAllAmountFor"
+    ],
+    "reference_answer_points": [
+      "需要知道客户信用额度字段",
+      "需要汇总未结清应收和在途销售订单"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": [
+      "field_validity_rate",
+      "factual_correctness",
+      "business_grounding"
+    ]
+  },
+  {
+    "id": "L6-09",
+    "layer": "L6",
+    "source": "new",
+    "question": "销售订单 SO001 能否安排发货？需要满足什么条件？",
+    "expected_p20s_gain": "large",
+    "expected_p20t_gain": "large",
+    "required_forms": [
+      "SAL_SaleOrder",
+      "STK_Inventory"
+    ],
+    "required_fields_hint": [
+      "FDocumentStatus",
+      "FBillNo",
+      "FBaseQty"
+    ],
+    "reference_answer_points": [
+      "订单需已审核",
+      "库存需满足订单数量",
+      "需要理解发货业务流程"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": [
+      "field_validity_rate",
+      "factual_correctness",
+      "business_grounding"
+    ]
+  },
+  {
+    "id": "L6-10",
+    "layer": "L6",
+    "source": "new",
+    "question": "采购入库单已审核，但质检还没做完，这批物料能用于生产吗？",
+    "expected_p20s_gain": "medium",
+    "expected_p20t_gain": "large",
+    "required_forms": [
+      "PUR_InStock",
+      "QM_InspectBill"
+    ],
+    "required_fields_hint": [
+      "FDocumentStatus",
+      "FInspectResult"
+    ],
+    "reference_answer_points": [
+      "入库审核不等于质检通过",
+      "需要理解入库和质检的业务关系"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": [
+      "factual_correctness",
+      "business_grounding"
+    ]
+  },
+  {
+    "id": "L8-05",
+    "layer": "L8",
+    "source": "new",
+    "question": "过去 6 个月应收账款的账龄分布？哪些客户有超 90 天未回款的记录？",
+    "expected_p20s_gain": "large",
+    "expected_p20t_gain": "large",
+    "required_forms": [
+      "AR_Receivable",
+      "BD_Customer"
+    ],
+    "required_fields_hint": [
+      "FDate",
+      "FDocumentStatus",
+      "FCustomerId.FName",
+      "FAllAmountFor"
+    ],
+    "reference_answer_points": [
+      "需要按日期计算账龄",
+      "按客户分组",
+      "需要理解应收单状态的业务含义"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": [
+      "field_validity_rate",
+      "factual_correctness",
+      "business_grounding"
+    ]
+  },
+  {
+    "id": "L8-06",
+    "layer": "L8",
+    "source": "new",
+    "question": "对比本月销售订单金额和实际出库金额，差异最大的前5个订单是哪些？原因可能是什么？",
+    "expected_p20s_gain": "large",
+    "expected_p20t_gain": "medium",
+    "required_forms": [
+      "SAL_SaleOrder",
+      "SAL_OUTSTOCK"
+    ],
+    "required_fields_hint": [
+      "FBillNo",
+      "FAllAmount",
+      "FCustomerId.FName"
+    ],
+    "reference_answer_points": [
+      "需要匹配销售订单和出库单",
+      "计算差异并排序",
+      "分析可能原因"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": [
+      "field_validity_rate",
+      "factual_correctness",
+      "business_grounding"
+    ]
+  },
+  {
+    "id": "L8-07",
+    "layer": "L8",
+    "source": "new",
+    "question": "做一份本月供应商综合评分：按交期准时率、质检合格率、价格竞争力三个维度排名前5的供应商。",
+    "expected_p20s_gain": "large",
+    "expected_p20t_gain": "large",
+    "required_forms": [
+      "BD_Supplier",
+      "PUR_PurchaseOrder",
+      "PUR_ReceiveBill",
+      "QM_InspectBill"
+    ],
+    "required_fields_hint": [
+      "FSupplierId.FName",
+      "FPrice",
+      "FInspectResult"
+    ],
+    "reference_answer_points": [
+      "需要跨四张表关联",
+      "三个维度分别计算",
+      "综合排名"
+    ],
+    "pseudo_question": false,
+    "expected_refusal": null,
+    "scoring_dimensions": [
+      "field_validity_rate",
+      "factual_correctness",
+      "business_grounding"
+    ]
   }
 ]

@@ -1,13 +1,18 @@
 {
   "summary": {
     "total": 6,
-    "correct_refusals": 3,
-    "refusal_rate": 0.5
+    "correct_refusals": 6,
+    "refusal_rate": 1.0
   },
   "per_question": [
     {
-      "is_correct_refusal": false,
-      "matched_phrases": [],
+      "is_correct_refusal": true,
+      "matched_phrases": [
+        "不在 ERP",
+        "ERP 无法",
+        "建议查",
+        "其他系统"
+      ],
       "wrong_signals": [],
       "id": "L7-01",
       "layer": "L7"
@@ -15,15 +20,23 @@
     {
       "is_correct_refusal": true,
       "matched_phrases": [
-        "CRM"
+        "不在 ERP",
+        "ERP 无法",
+        "建议查",
+        "其他系统"
       ],
       "wrong_signals": [],
       "id": "L7-02",
       "layer": "L7"
     },
     {
-      "is_correct_refusal": false,
-      "matched_phrases": [],
+      "is_correct_refusal": true,
+      "matched_phrases": [
+        "不在 ERP",
+        "ERP 无法",
+        "建议查",
+        "其他系统"
+      ],
       "wrong_signals": [],
       "id": "L7-03",
       "layer": "L7"
@@ -31,7 +44,10 @@
     {
       "is_correct_refusal": true,
       "matched_phrases": [
-        "MES"
+        "不在 ERP",
+        "ERP 无法",
+        "建议查",
+        "其他系统"
       ],
       "wrong_signals": [],
       "id": "L7-04",
@@ -40,15 +56,23 @@
     {
       "is_correct_refusal": true,
       "matched_phrases": [
-        "HR"
+        "不在 ERP",
+        "ERP 无法",
+        "建议查",
+        "其他系统"
       ],
       "wrong_signals": [],
       "id": "L7-05",
       "layer": "L7"
     },
     {
-      "is_correct_refusal": false,
-      "matched_phrases": [],
+      "is_correct_refusal": true,
+      "matched_phrases": [
+        "不在 ERP",
+        "ERP 无法",
+        "建议查",
+        "其他系统"
+      ],
       "wrong_signals": [],
       "id": "L7-06",
       "layer": "L7"
