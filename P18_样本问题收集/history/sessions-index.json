@@ -3,18 +3,228 @@
   "entity_type": "spec",
   "display_name": "Spec 18: 样本问题收集",
   "directory": "规格/P18_样本问题收集",
-  "session_count": 5,
+  "session_count": 4,
   "sessions": [
     {
       "session_id": "0b9d88c9-f14f-40f8-adbc-9bc4c7407828",
       "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/0b9d88c9-f14f-40f8-adbc-9bc4c7407828.jsonl",
       "confidence": 0.32,
       "start_time": "2026-04-12T04:02:06.163Z",
-      "end_time": "2026-04-16T05:20:32.347Z",
-      "message_count": 2711,
-      "matched_message_count": 0,
-      "matched_messages": [],
-      "evidence": []
+      "end_time": "2026-04-23T17:13:18.374Z",
+      "message_count": 4569,
+      "matched_message_count": 29,
+      "matched_messages": [
+        {
+          "uuid": "4016b525-6907-45dc-9512-be8ab79f1977",
+          "line_number": 203,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T04:18:28.202Z",
+          "preview": "现在用 P18 的样本问题来测试搜索质量。"
+        },
+        {
+          "uuid": "da11ca82-ca85-418a-ac16-7eb53672eadb",
+          "line_number": 215,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T04:18:46.717Z",
+          "preview": ""
+        },
+        {
+          "uuid": "248b7bba-2690-447a-b0d7-96690ab84acb",
+          "line_number": 217,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T04:18:50.199Z",
+          "preview": ""
+        },
+        {
+          "uuid": "81d6c2b7-573a-456d-8200-e99064df4a6d",
+          "line_number": 220,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T04:18:58.046Z",
+          "preview": ""
+        },
+        {
+          "uuid": "fc6d53a9-8072-4610-9dfa-ee598f5d51fa",
+          "line_number": 223,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T04:19:01.938Z",
+          "preview": ""
+        },
+        {
+          "uuid": "66d0f677-9847-4a24-af36-d5ee86ea8ab3",
+          "line_number": 366,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T05:01:37.441Z",
+          "preview": "---\n\n全部完成了！以下是今天的工作总结：\n\n## 完成的工作\n\n### 1. Git 同步\n- 从 GitHub 同步了 `yongzhi_erp_mcp_0325` 分支到本地\n\n### 2. "
+        },
+        {
+          "uuid": "8dc38d03-3a7e-4554-b619-8e607f722a11",
+          "line_number": 514,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T13:19:54.114Z",
+          "preview": "## P21 状态\n\n**当前进度**: 全部 Phase 都还未开始 (所有 task 都是 `[ ]`)。\n\n但现在 **P20 已经完全可用了**，所以 P21 的所有依赖都已满足：\n- P18"
+        },
+        {
+          "uuid": "e911a19b-d9fa-4cdc-b273-f3db31d2b428",
+          "line_number": 522,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T13:22:13.828Z",
+          "preview": ""
+        },
+        {
+          "uuid": "e607b6cc-f1d4-41be-837b-1a15f13860e5",
+          "line_number": 530,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T13:22:41.837Z",
+          "preview": "很好，项目里已经有现成的 DeepSeek 客户端封装了。让我来回答你的问题：\n\n## 成本分析\n\n| 项目 | 数量 | 说明 |\n|------|------|------|\n| 测试问题 | ~"
+        },
+        {
+          "uuid": "bb7029a2-6c91-4780-a80b-4ab1b7e0bef8",
+          "line_number": 560,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T13:24:38.046Z",
+          "preview": "先检查 DeepSeek API key 是否可用，同时提取 P18 问题。"
+        },
+        {
+          "uuid": "748345ce-c6d7-4a0b-b95c-a455e34f6f28",
+          "line_number": 563,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T13:24:41.175Z",
+          "preview": ""
+        },
+        {
+          "uuid": "1b5efd96-669c-4447-895d-a4ddcf016af2",
+          "line_number": 583,
+          "msg_type": "user",
+          "timestamp": "2026-04-12T13:28:31.559Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        },
+        {
+          "uuid": "454e0446-4d2b-45b2-8ae3-010b80a936e6",
+          "line_number": 1848,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T00:34:31.954Z",
+          "preview": ""
+        },
+        {
+          "uuid": "67fd2c28-2d86-4af4-a250-f9a86caffe27",
+          "line_number": 1921,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T02:07:17.199Z",
+          "preview": "Done. Here's what was updated/created:\n\n**P21 更新**:\n- tasks.md 增加了\"总结论\"部分，明确了：\n  - P21验证了什么（方法论可行、KB"
+        },
+        {
+          "uuid": "b51c5518-16d3-4057-a144-a0243bed2c8c",
+          "line_number": 1931,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T03:23:00.082Z",
+          "preview": "Yes — Phase 1 and parts of Phase 2 don't need ERP MCP:\n\n1. **Task 1.1-1.3**: Filter B-type questions"
+        },
+        {
+          "uuid": "2f9b2246-7749-46d3-b813-569c47b789aa",
+          "line_number": 1937,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T03:28:39.860Z",
+          "preview": "Now let me read the P18 questions to get the full question text for the ERP subset."
+        },
+        {
+          "uuid": "a764afac-329f-4710-9a55-fe413f4cbb88",
+          "line_number": 1940,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T03:28:47.198Z",
+          "preview": "Now I have all the data. Let me cross-reference P19's gap matrix to build the ERP question set. I ne"
+        },
+        {
+          "uuid": "836e19a3-5146-45b3-8651-af6927c13c5c",
+          "line_number": 1941,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T03:28:48.151Z",
+          "preview": ""
+        },
+        {
+          "uuid": "80233790-46fc-4e35-ac95-7e76986ab3f6",
+          "line_number": 1958,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T03:31:32.601Z",
+          "preview": "Done. Here's what was completed:\n\n**Task 1.1 + 1.3 + 1.4**: Created `eval/questions_erp.py` with **2"
+        },
+        {
+          "uuid": "178d7f0d-508b-4843-ac53-7c720f039782",
+          "line_number": 2038,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T09:20:04.159Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        },
+        {
+          "uuid": "9eb5f09f-2aec-4738-90e8-b3015109e2b3",
+          "line_number": 2339,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T11:28:43.462Z",
+          "preview": "## P20S 规格全量实现完成 ✅\n\n### 代码交付 — `源代码/mcp-kingdee-server/`\n\n```\nschema_extractor/\n├── __init__.py / __"
+        },
+        {
+          "uuid": "fae9a609-d9a4-40b8-aa05-3aec6f1526a6",
+          "line_number": 2411,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T12:22:17.943Z",
+          "preview": "好问题。直接结论：**P19 的 28 题不会充分暴露 P20S/P20T 的价值**，因为那批题是\"筛掉 KB 能回答的\"（即 B 类 ERP 依赖题），但 P20S/P20T 的价值维度跟\"是否需"
+        },
+        {
+          "uuid": "c2797ff2-f2a4-45f9-88ec-0478c7b405a0",
+          "line_number": 2441,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T12:32:31.876Z",
+          "preview": "P26 初稿完成。**只新建了文件，没改任何 P20/P21/P23 现有文档**，P23 评估期间绝对安全。\n\n## 回到你的疑问总结\n\n**Q: P20S/P20T 已实现，P23 评估结果会变吗"
+        },
+        {
+          "uuid": "4c318ac2-3d76-45f2-8e00-19a6d3ec6c54",
+          "line_number": 2454,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T12:49:56.687Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        },
+        {
+          "uuid": "4d18075a-01dd-441f-89df-44a23adeb2f0",
+          "line_number": 5847,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-19T06:03:45.306Z",
+          "preview": "## 综合分析与题库扩展建议\n\n### 当前覆盖状况\n\nP18 有 52 个问题，但只有 **15 个** 进入了 P26 的 60 题评估集。还有 **37 个 P18 问题未被使用**，特别是研发"
+        },
+        {
+          "uuid": "2825c59a-205a-4186-b0d7-df0a4d347591",
+          "line_number": 5857,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-19T06:06:46.678Z",
+          "preview": "好，现在清楚了。让我回答你的两个问题。\n\n---\n\n## 1. 跨版本可比性方案\n\n目前的问题：如果从 60→80 题，整体均分就不可比了（分母不同）。解决办法：\n\n**给每个题目加 `batch` "
+        },
+        {
+          "uuid": "59f8cb00-2a51-45aa-903e-8ab7cd97d676",
+          "line_number": 5861,
+          "msg_type": "user",
+          "timestamp": "2026-04-19T06:10:56.196Z",
+          "preview": "“P18 的 37 个未用问题中约 8-10 个可以直接改编，减少从零起草的工作量         \n                          ”37个未用问题都是因为什么原因没有用了第二如"
+        },
+        {
+          "uuid": "c1e2aca2-1df6-470d-a7de-5e78fc6512f2",
+          "line_number": 5864,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-19T06:11:01.767Z",
+          "preview": "好问题。让我查清楚每一道 P18 题没用的具体原因。"
+        },
+        {
+          "uuid": "3ba3f285-5b22-485e-a8d9-7c0663493a20",
+          "line_number": 5870,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-19T06:15:17.222Z",
+          "preview": "## P18 的 52 题完整分类\n\n| 类别 | 数量 | 说明 |\n|---|---|---|\n| **A: 已在 P26 中** | 15 | 通过 P23 评估轮次引入 |\n| **B: 可查"
+        }
+      ],
+      "evidence": [
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P18_样本问题收集/",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P18_样本问题收集/样本问题库.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P18_样本问题收集/样本问题库.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P18_样本问题收集/样本问题库.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P18_样本问题收集/样本问题库.md"
+      ]
     },
     {
       "session_id": "cd10a8e5-37e3-49f3-b4e7-4d2dc2237e69",
@@ -116,34 +326,167 @@
       "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/d187553a-451e-4a3a-a3a8-c44a1cb4f5d0.jsonl",
       "confidence": 0.31,
       "start_time": "2026-04-08T13:28:37.764Z",
-      "end_time": "2026-04-17T03:57:53.228Z",
-      "message_count": 1108,
-      "matched_message_count": 0,
-      "matched_messages": [],
-      "evidence": []
+      "end_time": "2026-04-23T14:39:14.320Z",
+      "message_count": 1361,
+      "matched_message_count": 17,
+      "matched_messages": [
+        {
+          "uuid": "326a7b34-ff24-4971-9d22-a53f6da67541",
+          "line_number": 13,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-08T13:28:51.121Z",
+          "preview": ""
+        },
+        {
+          "uuid": "c62ae934-6704-4c50-aab3-0814f4333000",
+          "line_number": 348,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T03:45:12.919Z",
+          "preview": ""
+        },
+        {
+          "uuid": "9afbe03e-bf55-4250-ae79-7e449340b13c",
+          "line_number": 351,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T03:45:17.910Z",
+          "preview": ""
+        },
+        {
+          "uuid": "1237d271-27a8-4a61-8edc-f40268310bb7",
+          "line_number": 353,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T03:45:23.356Z",
+          "preview": ""
+        },
+        {
+          "uuid": "f312609c-b359-40d4-87c8-4fb0fe28c47d",
+          "line_number": 355,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T03:45:51.928Z",
+          "preview": "好的，现在我可以做判断了。\n\n### 分析：新需求 vs P18现有需求\n\n**P18现有52个问题的本质**：都是 **\"问答型\"需求** — 员工向AI提一个问题，AI从ERP/知识库中查数据后给"
+        },
+        {
+          "uuid": "0a9d4c10-745f-40fe-8d43-ba64e9075944",
+          "line_number": 375,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T03:56:31.060Z",
+          "preview": "P22 规格已创建。核心结构：\n\n- **6个需求** 编号 N-01 到 N-06，每个都有场景、输入输出、实现思路、复杂度\n- **优先级排序**: N-02(可行性分析) 和 N-05(体系文件"
+        },
+        {
+          "uuid": "dd1ffdc8-1d2d-4781-a830-866b3cbd046f",
+          "line_number": 440,
+          "msg_type": "user",
+          "timestamp": "2026-04-12T04:18:35.344Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        },
+        {
+          "uuid": "b824de0f-cfcb-465d-902f-945832a90270",
+          "line_number": 829,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T06:30:37.609Z",
+          "preview": "Now I can give you the full answer. It was **NOT** automatic from `PROJECT_GUIDELINES.md`. Here's wh"
+        },
+        {
+          "uuid": "d97dfb91-685d-4f21-92fb-fbff20fd594a",
+          "line_number": 840,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T07:02:57.151Z",
+          "preview": "create a new spec for this:\nI have a two hours meeting with the full team  tomorrow.\n\n1. please find"
+        },
+        {
+          "uuid": "5d401b9b-e6c3-432d-85f3-ac8f1ca4e7c5",
+          "line_number": 881,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T07:05:52.987Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        },
+        {
+          "uuid": "8defee21-663d-49db-b370-c497f92e9651",
+          "line_number": 970,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T07:11:00.185Z",
+          "preview": "P25 spec 已全部创建完成。文件结构：\n\n```\n规格/P25_团队全员会议/\n├── requirements.md      # 9 项需求 + 5 项约束\n├── design.md   "
+        },
+        {
+          "uuid": "2143394c-845f-45e3-be93-f1ee3e22c7ea",
+          "line_number": 980,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T07:11:00.990Z",
+          "preview": "<task-notification>\n<task-id>a5fd12e86ce37675f</task-id>\n<tool-use-id>toolu_019KtDkefLidZ2xKsY6gVbHV"
+        },
+        {
+          "uuid": "0b7b8a35-6059-4f7d-a774-f1b69c625369",
+          "line_number": 1095,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T08:52:34.874Z",
+          "preview": ""
+        },
+        {
+          "uuid": "535d2ca7-2efc-4b4a-a82c-62db08775ded",
+          "line_number": 1251,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-18T06:43:44.123Z",
+          "preview": "The agent's audit was shallow on the active specs. Let me get accurate status for P18+ which are the"
+        },
+        {
+          "uuid": "50db93af-e85f-4474-a7b4-5cb410f5e578",
+          "line_number": 1256,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-18T06:45:58.986Z",
+          "preview": "Here's the accurate status of all active specs:\n\n## 规格状态总览\n\n| Spec | 名称 | 完成度 | 未完成关键任务 | 依赖 |\n|----"
+        },
+        {
+          "uuid": "286e07d5-5207-4fd1-a7d8-e063948ee178",
+          "line_number": 1293,
+          "msg_type": "user",
+          "timestamp": "2026-04-18T06:54:18.040Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        },
+        {
+          "uuid": "778449e5-1572-474a-80fc-723b1b3db9eb",
+          "line_number": 1444,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-23T09:16:50.191Z",
+          "preview": "PDF 更新完成（321KB）。做了以下调整：\n\n**去掉的内容：**\n- 开场白（口头讲）\n- 个人经历表格（口头讲）\n- 工程师名字（李桁、梁咏芝等全部去掉）\n- 内部项目编号（P18/P19/P"
+        }
+      ],
+      "evidence": [
+        "File: 规格/P18_样本问题收集/history/sessions-index.json",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P18_样本问题收集/requirements.md",
+        "File: 规格/P18_样本问题收集/**/*.{md,json}",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P18_样本问题收集/样本问题库.md",
+        "File: 规格/P18_样本问题收集/history/sessions-index.json"
+      ]
     },
     {
-      "session_id": "0da77daf-0891-43ef-ad0d-0f1a746b9d0b",
-      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/0da77daf-0891-43ef-ad0d-0f1a746b9d0b.jsonl",
-      "confidence": 0.19,
-      "start_time": "2026-03-08T16:49:53.563Z",
-      "end_time": "2026-03-08T21:40:47.546Z",
-      "message_count": 219,
-      "matched_message_count": 0,
-      "matched_messages": [],
-      "evidence": []
-    },
-    {
-      "session_id": "d975fd50-8501-402f-8803-b1eeffc6efff",
-      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/d975fd50-8501-402f-8803-b1eeffc6efff.jsonl",
-      "confidence": 0.29,
-      "start_time": "2026-03-08T15:17:30.425Z",
-      "end_time": "2026-03-17T16:46:10.350Z",
-      "message_count": 701,
-      "matched_message_count": 0,
-      "matched_messages": [],
-      "evidence": []
+      "session_id": "650a3dc9-73c7-4e96-be0e-5e16bc00f446",
+      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/650a3dc9-73c7-4e96-be0e-5e16bc00f446.jsonl",
+      "confidence": 0.11,
+      "start_time": "2026-03-20T21:41:20.338Z",
+      "end_time": "2026-03-20T22:09:24.589Z",
+      "message_count": 122,
+      "matched_message_count": 2,
+      "matched_messages": [
+        {
+          "uuid": "b2beb70a-04c1-40ee-ab93-6fd9a641b120",
+          "line_number": 109,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-20T21:54:41.004Z",
+          "preview": "All done. Here's a summary:\n\n**Completed:**\n1. Pulled latest from `base` repo and resolved merge con"
+        },
+        {
+          "uuid": "b2a2c994-d18e-4dd2-a7ec-c7160a7217d1",
+          "line_number": 170,
+          "msg_type": "assistant",
+          "timestamp": "2026-03-20T22:02:37.484Z",
+          "preview": "## LLM vs Regex 分类结果全面对比\n\n### 一、总体结构性差异\n\n| 维度 | 旧版（Regex） | 新版（LLM） |\n|------|-----------|----------"
+        }
+      ],
+      "evidence": [
+        "Text: ...All done. Here's a summary:  **Completed:** 1. Pulled latest from `base` repo an...",
+        "Text: ...## LLM vs Regex 分类结果全面对比  ### 一、总体结构性差异  | 维度 | 旧版（Regex） | 新版（LLM） | |------|--..."
+      ]
     }
   ],
-  "last_updated": "2026-04-18T14:37:51.977720"
+  "last_updated": "2026-04-25T22:29:37.179948"
 }

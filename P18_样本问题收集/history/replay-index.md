@@ -1,9 +1,10 @@
 # Spec 18: 样本问题收集 - Replay Index
 
-> Generated: 2026-03-20 14:51
-> Sessions: 2
+> Generated: 2026-05-03 22:26
+> Sessions: 3
 
 | Date | Person | File |
 |------|--------|------|
-| 2026-03-11_01-01 | kweng | [kweng_2026-03-11_01-01.md](replay/kweng_2026-03-11_01-01.md) |
-| 2026-03-08_19-20 | kweng | [kweng_2026-03-08_19-20.md](replay/kweng_2026-03-08_19-20.md) |
+| 2026-04-13_03-27 | kweng | [kweng_2026-04-13_03-27.md](replay/kweng_2026-04-13_03-27.md) |
+| 2026-04-12_04-50 | kweng | [kweng_2026-04-12_04-50.md](replay/kweng_2026-04-12_04-50.md) |
+| 2026-04-12_03-07 | kweng | [kweng_2026-04-12_03-07.md](replay/kweng_2026-04-12_03-07.md) |

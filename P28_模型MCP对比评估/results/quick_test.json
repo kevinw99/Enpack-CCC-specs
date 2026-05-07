@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "timestamp": "2026-05-03T17:55:48.568883",
+    "questions_count": 1,
+    "providers": [
+      "deepseek",
+      "claude"
+    ]
+  },
+  "results": [
+    {
+      "id": "KB-01",
+      "question": "恩派克的主要产品有哪些？各产品的市场定位如何？",
+      "category": "kb_only",
+      "description": "公司产品线概览",
+      "deepseek": {
+        "tools_planned": [
+          "kb_product",
+          "kb_company_profile"
+        ],
+        "tools_data_count": 2,
+        "tool_details": [
+          {
+            "tool": "kb_product",
+            "reason": "",
+            "status": "ok",
+            "result_count": 5
+          },
+          {
+            "tool": "kb_company_profile",
+            "reason": "",
+            "status": "ok",
+            "result_count": 3
+          }
+        ],
+        "answer": "根据知识库中的数据，恩派克（Enpack/英联股份）的主要产品及其市场定位如下：\n\n### 主要产品及市场定位\n\n1. **标准复合铜箔（8μm）**\n   - **加工费**：16,000 元/吨\n   - **总价**：约 11,900 美元/吨\n   - **毛利率**：8-12%\n   - **市场定位**：基础型产品，面向通用电池市场。当前行业产能过剩，价格竞争激烈，毛利率较低，属于走量型产品。\n\n2. **超薄铜箔（6μm）**\n   - **加工费**：18,000 元/吨\n   - **总价**：约 12,450 美元/吨\n   - **毛利率**：10-14%\n   - **市场定位**：技术升级产品，针对高能量密度需求（如高端消费电子、动力电池）。毛利率略高于标准产品，但受行业整体压力影响，利润空间有限。\n\n3. **复合铝箔**\n   - **加工费**：16,000 元/吨\n   - **总价**：约 10,500 美元/吨\n   - **毛利率**：25-30%\n   - **市场定位**：高利润产品，主要应用于对成本敏感但要求稳定性能的领域（如储能、部分动力电池）。毛利率显著高于铜箔产品，是公司当前利润的重要来源。\n\n4. **SSB专用箔（固态电池专用箔）**\n   - **加工费**：22,000+ 元/吨\n   - **总价**：13,500+ 美元/吨\n   - **毛利率**：15-20%\n   - **市场定位**：战略前瞻性产品，针对下一代固态电池技术。加工费最高，毛利率中等，但市场潜力巨大，是公司未来增长的关键机会点。\n\n### 定价策略补充\n根据知识库中的**量价折扣结构**，公司对不同年采购量的客户提供差异化定价（从标准价到最高-6%折扣），但**所有折扣均以不低于22%的毛利率为底线**。这意味着复合铝箔和SSB专用箔更可能享受折扣空间，而铜箔产品（标准及超薄）因基础毛利率较低，折扣空间有限。\n\n> 以上信息均来源于知识库中的《定价分析执行摘要-EN》和《定价策略与利润率分析-EN》文件。如需更详细的公司档案（如产能、客户结构等），可进一步查阅公司知识库中的完整文档。",
+        "router_tokens": {
+          "input_tokens": 521,
+          "output_tokens": 75
+        },
+        "answer_tokens": {
+          "input_tokens": 1520,
+          "output_tokens": 540
+        },
+        "total_input_tokens": 2041,
+        "total_output_tokens": 615,
+        "route_time_s": 2.27,
+        "exec_time_s": 4.83,
+        "answer_time_s": 8.91,
+        "total_time_s": 16.01,
+        "cost_usd": 0.000458
+      },
+      "claude": {
+        "error": "Connection error."
+      }
+    }
+  ],
+  "summary": {
+    "deepseek": {
+      "total_input_tokens": 2041,
+      "total_output_tokens": 615,
+      "total_cost_usd": 0.0005,
+      "total_time_s": 16.0,
+      "avg_time_s": 16.01,
+      "avg_cost_usd": 0.000458
+    },
+    "claude": {
+      "total_input_tokens": 0,
+      "total_output_tokens": 0,
+      "total_cost_usd": 0,
+      "total_time_s": 0,
+      "avg_time_s": 0.0,
+      "avg_cost_usd": 0.0
+    }
+  }
+}

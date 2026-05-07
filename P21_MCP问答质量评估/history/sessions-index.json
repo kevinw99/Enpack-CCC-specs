@@ -3,7 +3,7 @@
   "entity_type": "spec",
   "display_name": "Spec 21: MCP问答质量评估",
   "directory": "规格/P21_MCP问答质量评估",
-  "session_count": 5,
+  "session_count": 4,
   "sessions": [
     {
       "session_id": "9f48e43f-e80d-4f47-9d73-fbcb85f141b2",
@@ -12,20 +12,412 @@
       "start_time": "2026-04-15T10:31:11.253Z",
       "end_time": "2026-04-15T12:58:01.989Z",
       "message_count": 390,
-      "matched_message_count": 0,
-      "matched_messages": [],
-      "evidence": []
+      "matched_message_count": 12,
+      "matched_messages": [
+        {
+          "uuid": "d2e6ecfc-df48-4231-bdaf-9401f8f6a1ec",
+          "line_number": 166,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T11:16:11.207Z",
+          "preview": "Now I have a thorough understanding of the P21 toolchain and P23 requirements. Let me read the LLM c"
+        },
+        {
+          "uuid": "2a706396-835c-41db-9dcd-0cb2cef8f00c",
+          "line_number": 174,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T11:16:29.373Z",
+          "preview": "Now I have a thorough understanding of the P21 eval toolchain and P23 design. Let me check a few mor"
+        },
+        {
+          "uuid": "f56ef965-64be-45b8-b4e7-a3498c25765d",
+          "line_number": 196,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T11:22:19.898Z",
+          "preview": "Now I have a thorough understanding of the codebase. Let me read the questions_kb.py to understand t"
+        },
+        {
+          "uuid": "5f1700da-5cca-4940-a486-5fb808aa6c5f",
+          "line_number": 199,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T11:22:33.257Z",
+          "preview": "Now I have a thorough understanding of the entire pipeline. Let me now think about how to adapt this"
+        },
+        {
+          "uuid": "b69540b1-fc19-4a7e-9092-f029dae40c62",
+          "line_number": 260,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T11:32:30.255Z",
+          "preview": "关于您的问题：评估用的 LLM API 是 **DeepSeek**（主评估），原因是：\n\n1. **DeepSeek 成本极低**：$0.14/M输入 vs Anthropic $3.0/M输入，差"
+        },
+        {
+          "uuid": "59276fde-ee3f-47f4-9113-58d1e2ea798e",
+          "line_number": 354,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T12:13:35.721Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        },
+        {
+          "uuid": "ba23c790-8441-4bf8-a639-2c8232577dfb",
+          "line_number": 371,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T12:14:09.343Z",
+          "preview": "Now I can see the issue clearly. The scores JSON has fields like `domain`, `complexity`, `kb_coverag"
+        },
+        {
+          "uuid": "013f650f-a383-4241-901e-5f590f2836a8",
+          "line_number": 400,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T12:19:44.890Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        },
+        {
+          "uuid": "8a449db2-95d5-4162-9bdc-310cbb023ec6",
+          "line_number": 419,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T12:21:06.183Z",
+          "preview": "Now let me also check the P21 evaluation results document format to maintain consistency:"
+        },
+        {
+          "uuid": "697f5c5c-d873-449b-aa77-a8eb65309595",
+          "line_number": 424,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T12:21:15.160Z",
+          "preview": "现在我来创建 P23 评估结果文档。先看看 P21 有没有类似的结果文档作为参考格式："
+        },
+        {
+          "uuid": "bac35deb-da94-45e2-a3ca-0b6a19667318",
+          "line_number": 425,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T12:21:15.583Z",
+          "preview": ""
+        },
+        {
+          "uuid": "2ff54914-d113-435b-9beb-1af6fba18433",
+          "line_number": 443,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T12:24:09.101Z",
+          "preview": "文档已生成。以下是保存的内容：\n\n### 新建文件\n- **`规格/P23_ERP_MCP问答质量评估/results.md`** — P23 完整评估结果报告，包含：\n  - 总结论（82%胜率，+"
+        }
+      ],
+      "evidence": [
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P21_MCP问答质量评估/history/replay-index.md",
+        "Text: ...Now I have a thorough understanding of the P21 toolchain and P23 requirements. L...",
+        "Text: ...Now I have a thorough understanding of the P21 eval toolchain and P23 design. Le...",
+        "Text: ...Now I have a thorough understanding of the codebase. Let me read the questions_k...",
+        "Text: ...Now I have a thorough understanding of the entire pipeline. Let me now think abo..."
+      ]
     },
     {
       "session_id": "0b9d88c9-f14f-40f8-adbc-9bc4c7407828",
       "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/0b9d88c9-f14f-40f8-adbc-9bc4c7407828.jsonl",
       "confidence": 0.38,
       "start_time": "2026-04-12T04:02:06.163Z",
-      "end_time": "2026-04-16T05:20:32.347Z",
-      "message_count": 2711,
-      "matched_message_count": 0,
-      "matched_messages": [],
-      "evidence": []
+      "end_time": "2026-04-23T17:13:18.374Z",
+      "message_count": 4569,
+      "matched_message_count": 42,
+      "matched_messages": [
+        {
+          "uuid": "efc96cb4-ca86-4567-b024-80e7356d9465",
+          "line_number": 501,
+          "msg_type": "user",
+          "timestamp": "2026-04-12T13:18:27.429Z",
+          "preview": "lets continue on P21, what is the status and what to do next"
+        },
+        {
+          "uuid": "4f271fa6-410b-4c1a-acd4-bed120333be3",
+          "line_number": 508,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T13:19:36.614Z",
+          "preview": ""
+        },
+        {
+          "uuid": "3ac83925-d5a2-48ae-a722-71bf6e011911",
+          "line_number": 510,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T13:19:37.086Z",
+          "preview": ""
+        },
+        {
+          "uuid": "7eecd570-ee08-4cff-ba9f-a2b9c2e307f4",
+          "line_number": 512,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T13:19:37.600Z",
+          "preview": ""
+        },
+        {
+          "uuid": "8dc38d03-3a7e-4554-b619-8e607f722a11",
+          "line_number": 514,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T13:19:54.114Z",
+          "preview": "## P21 状态\n\n**当前进度**: 全部 Phase 都还未开始 (所有 task 都是 `[ ]`)。\n\n但现在 **P20 已经完全可用了**，所以 P21 的所有依赖都已满足：\n- P18"
+        },
+        {
+          "uuid": "e607b6cc-f1d4-41be-837b-1a15f13860e5",
+          "line_number": 530,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T13:22:41.837Z",
+          "preview": "很好，项目里已经有现成的 DeepSeek 客户端封装了。让我来回答你的问题：\n\n## 成本分析\n\n| 项目 | 数量 | 说明 |\n|------|------|------|\n| 测试问题 | ~"
+        },
+        {
+          "uuid": "1b5efd96-669c-4447-895d-a4ddcf016af2",
+          "line_number": 583,
+          "msg_type": "user",
+          "timestamp": "2026-04-12T13:28:31.559Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        },
+        {
+          "uuid": "1cbf6fe1-3446-4968-ab6b-b38302a6449f",
+          "line_number": 1041,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T14:02:29.335Z",
+          "preview": "Now let me update P21 tasks.md and commit everything:"
+        },
+        {
+          "uuid": "c476cf81-163b-4e71-824a-5b604db71852",
+          "line_number": 1049,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T14:02:44.271Z",
+          "preview": ""
+        },
+        {
+          "uuid": "df4e2a06-e065-4f88-a23a-2c8ae9823771",
+          "line_number": 1051,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T14:03:06.329Z",
+          "preview": ""
+        },
+        {
+          "uuid": "e82612a0-19aa-407e-9b6a-c1fe2380e829",
+          "line_number": 1062,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T14:03:21.420Z",
+          "preview": "I see there are a lot of untracked `rd_ai_tools` files — these appear to be pre-existing code from a"
+        },
+        {
+          "uuid": "9eb63ab9-0942-494f-89e5-bde6f5b90cb8",
+          "line_number": 1063,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T14:03:23.678Z",
+          "preview": ""
+        },
+        {
+          "uuid": "92986363-4f47-43b0-b282-8fe464cd64ad",
+          "line_number": 1072,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T14:03:59.038Z",
+          "preview": "All P21 tasks complete. Here's a summary of what was accomplished:\n\n---\n\n## P21 评估完成\n\n### 产出文件\n- `ev"
+        },
+        {
+          "uuid": "30c8bc97-8968-48da-9ee0-eaacd81eafb0",
+          "line_number": 1164,
+          "msg_type": "user",
+          "timestamp": "2026-04-12T15:35:20.553Z",
+          "preview": "<task-notification>\n<task-id>bae46j3rn</task-id>\n<tool-use-id>toolu_019p4EHpkDHGz8VSHDw3PxUF</tool-u"
+        },
+        {
+          "uuid": "29f12a9a-de01-4c79-9dad-58193b560523",
+          "line_number": 1210,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T16:36:04.493Z",
+          "preview": "Now update P21 tasks and commit:"
+        },
+        {
+          "uuid": "2f45a2a3-d8b7-4e3e-8466-6c60ec6878d1",
+          "line_number": 1211,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T16:36:05.679Z",
+          "preview": ""
+        },
+        {
+          "uuid": "ad85f68b-be5a-4865-b99c-6dcb8ac3ab42",
+          "line_number": 1214,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T16:36:24.760Z",
+          "preview": ""
+        },
+        {
+          "uuid": "8b034a8a-b1c6-460b-9796-790466a64f81",
+          "line_number": 1218,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T16:36:32.570Z",
+          "preview": ""
+        },
+        {
+          "uuid": "6292a9a9-cfd9-4ede-917b-a06c6bc21825",
+          "line_number": 1228,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T16:37:02.248Z",
+          "preview": "P21 Phase 5 完成，全部已推送到 GitHub `7a94a99`。\n\n---\n\n## 总结\n\nP21评估完成了两轮迭代：\n\n### V1 → V2 改进效果\n\n| | V1 | V2 | "
+        },
+        {
+          "uuid": "5571c9e2-ffc6-4dbb-9394-b7e79357cdc5",
+          "line_number": 1325,
+          "msg_type": "user",
+          "timestamp": "2026-04-12T16:51:31.273Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        },
+        {
+          "uuid": "eb3f3621-7d23-4661-8c30-602836adedc9",
+          "line_number": 1821,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T00:27:08.624Z",
+          "preview": ""
+        },
+        {
+          "uuid": "c56b8a89-fbde-400b-9fae-f1179300e608",
+          "line_number": 1823,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T00:27:31.513Z",
+          "preview": ""
+        },
+        {
+          "uuid": "31a9e311-63fc-4f05-85f5-fab9927aacdf",
+          "line_number": 1826,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T00:27:43.574Z",
+          "preview": ""
+        },
+        {
+          "uuid": "b8754c14-f942-49ed-b896-01e223fc1caa",
+          "line_number": 1873,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T00:37:15.127Z",
+          "preview": "Now update P21 tasks.md to reflect the report and the fairness qualification."
+        },
+        {
+          "uuid": "4d7c1106-1fab-4f69-8627-8458766811ea",
+          "line_number": 1874,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T00:37:17.229Z",
+          "preview": ""
+        },
+        {
+          "uuid": "8078bf2a-aabf-46e2-9a46-6bf58b8bdd6c",
+          "line_number": 1884,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T02:03:52.179Z",
+          "preview": ""
+        },
+        {
+          "uuid": "6dc45e9b-f6f9-41c6-b55d-dc64465dc19c",
+          "line_number": 1886,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T02:03:52.803Z",
+          "preview": ""
+        },
+        {
+          "uuid": "5223847a-0070-4097-9d02-d62f6935a904",
+          "line_number": 1888,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T02:03:53.132Z",
+          "preview": ""
+        },
+        {
+          "uuid": "64601bb1-dae8-471e-b5a4-86a102275793",
+          "line_number": 1901,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T02:04:30.905Z",
+          "preview": "P22 already exists, so the next number is P23. Let me now update P21's conclusion and create P23."
+        },
+        {
+          "uuid": "71aca4db-631f-4fbc-b0c4-244dfd1efcc1",
+          "line_number": 1902,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T02:04:31.407Z",
+          "preview": ""
+        },
+        {
+          "uuid": "3792e1dc-5214-4b72-beb3-48fbd811f7ea",
+          "line_number": 1904,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T02:04:36.726Z",
+          "preview": "Now let me update P21 with a final conclusion section and create P23."
+        },
+        {
+          "uuid": "7f78c6c5-6c69-4c3b-8ae0-a20006a0efaf",
+          "line_number": 1905,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T02:04:49.241Z",
+          "preview": ""
+        },
+        {
+          "uuid": "67fd2c28-2d86-4af4-a250-f9a86caffe27",
+          "line_number": 1921,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T02:07:17.199Z",
+          "preview": "Done. Here's what was updated/created:\n\n**P21 更新**:\n- tasks.md 增加了\"总结论\"部分，明确了：\n  - P21验证了什么（方法论可行、KB"
+        },
+        {
+          "uuid": "a764afac-329f-4710-9a55-fe413f4cbb88",
+          "line_number": 1940,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T03:28:47.198Z",
+          "preview": "Now I have all the data. Let me cross-reference P19's gap matrix to build the ERP question set. I ne"
+        },
+        {
+          "uuid": "80233790-46fc-4e35-ac95-7e76986ab3f6",
+          "line_number": 1958,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T03:31:32.601Z",
+          "preview": "Done. Here's what was completed:\n\n**Task 1.1 + 1.3 + 1.4**: Created `eval/questions_erp.py` with **2"
+        },
+        {
+          "uuid": "e28ca000-c329-45fe-a0e8-8026d4aa43fb",
+          "line_number": 1964,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T03:35:53.830Z",
+          "preview": "\n\nLooking at what's left across P21 and P23:\n\n**P21 remaining**: Task 5.5 (human review) and 5.6 (ex"
+        },
+        {
+          "uuid": "2ad32667-ad23-407d-a4dc-4cc02d07d4d8",
+          "line_number": 1976,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T03:36:48.289Z",
+          "preview": ""
+        },
+        {
+          "uuid": "178d7f0d-508b-4843-ac53-7c720f039782",
+          "line_number": 2038,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T09:20:04.159Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        },
+        {
+          "uuid": "4b6555fa-c16a-4936-af6a-24c92cc908a5",
+          "line_number": 2418,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T12:29:10.461Z",
+          "preview": "## 先回答你的疑问\n\n**短答**：P20E 代码实际上**已经被 P20S 动过**（我之前加了 3 个 schema 工具到 `src/tools/schema.py` 并注册进 `server"
+        },
+        {
+          "uuid": "c2797ff2-f2a4-45f9-88ec-0478c7b405a0",
+          "line_number": 2441,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T12:32:31.876Z",
+          "preview": "P26 初稿完成。**只新建了文件，没改任何 P20/P21/P23 现有文档**，P23 评估期间绝对安全。\n\n## 回到你的疑问总结\n\n**Q: P20S/P20T 已实现，P23 评估结果会变吗"
+        },
+        {
+          "uuid": "5b768a12-3718-4bd1-9436-db91deba9430",
+          "line_number": 2555,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T13:05:40.819Z",
+          "preview": "please check 规格/P23_ERP_MCP问答质量评估/results.md , does that confirm that \"待 P23 结束 \" has been completed"
+        },
+        {
+          "uuid": "daddd418-0571-4d89-a6da-a81f674e0294",
+          "line_number": 2814,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T14:09:01.777Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        }
+      ],
+      "evidence": [
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P21_MCP问答质量评估/requirements.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P21_MCP问答质量评估/tasks.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P21_MCP问答质量评估/design.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P21_MCP问答质量评估/tasks.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P21_MCP问答质量评估/tasks.md"
+      ]
     },
     {
       "session_id": "cd10a8e5-37e3-49f3-b4e7-4d2dc2237e69",
@@ -274,23 +666,96 @@
       "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/d187553a-451e-4a3a-a3a8-c44a1cb4f5d0.jsonl",
       "confidence": 0.21,
       "start_time": "2026-04-08T13:28:37.764Z",
-      "end_time": "2026-04-17T03:57:53.228Z",
-      "message_count": 1108,
-      "matched_message_count": 0,
-      "matched_messages": [],
-      "evidence": []
-    },
-    {
-      "session_id": "d975fd50-8501-402f-8803-b1eeffc6efff",
-      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/d975fd50-8501-402f-8803-b1eeffc6efff.jsonl",
-      "confidence": 0.16,
-      "start_time": "2026-03-08T15:17:30.425Z",
-      "end_time": "2026-03-17T16:46:10.350Z",
-      "message_count": 701,
-      "matched_message_count": 0,
-      "matched_messages": [],
-      "evidence": []
+      "end_time": "2026-04-23T14:39:14.320Z",
+      "message_count": 1361,
+      "matched_message_count": 11,
+      "matched_messages": [
+        {
+          "uuid": "360bb28a-0cfe-435f-998c-6b8e5280c27a",
+          "line_number": 791,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T08:51:52.724Z",
+          "preview": ""
+        },
+        {
+          "uuid": "b824de0f-cfcb-465d-902f-945832a90270",
+          "line_number": 829,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T06:30:37.609Z",
+          "preview": "Now I can give you the full answer. It was **NOT** automatic from `PROJECT_GUIDELINES.md`. Here's wh"
+        },
+        {
+          "uuid": "1e72878d-70a5-433c-9e58-0ca3c78ba85f",
+          "line_number": 978,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T07:11:00.989Z",
+          "preview": "<task-notification>\n<task-id>a7faad9bea1e8338f</task-id>\n<tool-use-id>toolu_017xR68iwnF9k6uFFPoTZSV5"
+        },
+        {
+          "uuid": "2143394c-845f-45e3-be93-f1ee3e22c7ea",
+          "line_number": 980,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T07:11:00.990Z",
+          "preview": "<task-notification>\n<task-id>a5fd12e86ce37675f</task-id>\n<tool-use-id>toolu_019KtDkefLidZ2xKsY6gVbHV"
+        },
+        {
+          "uuid": "cedd1f2d-c12a-4a84-86de-14d2a1e67cdf",
+          "line_number": 986,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T07:36:44.117Z",
+          "preview": "Let me check the P21 results and P11 context first."
+        },
+        {
+          "uuid": "a9d35068-75eb-4ea9-af7e-b8c82e9a25a7",
+          "line_number": 987,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T07:36:44.409Z",
+          "preview": ""
+        },
+        {
+          "uuid": "37bbc147-3012-4b9e-943c-614449cd3cad",
+          "line_number": 993,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T07:36:51.073Z",
+          "preview": ""
+        },
+        {
+          "uuid": "0b7b8a35-6059-4f7d-a774-f1b69c625369",
+          "line_number": 1095,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T08:52:34.874Z",
+          "preview": ""
+        },
+        {
+          "uuid": "50db93af-e85f-4474-a7b4-5cb410f5e578",
+          "line_number": 1256,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-18T06:45:58.986Z",
+          "preview": "Here's the accurate status of all active specs:\n\n## 规格状态总览\n\n| Spec | 名称 | 完成度 | 未完成关键任务 | 依赖 |\n|----"
+        },
+        {
+          "uuid": "286e07d5-5207-4fd1-a7d8-e063948ee178",
+          "line_number": 1293,
+          "msg_type": "user",
+          "timestamp": "2026-04-18T06:54:18.040Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        },
+        {
+          "uuid": "1ab3f083-9f8e-44aa-b07c-1f9810ac28f7",
+          "line_number": 1321,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-18T06:55:18.319Z",
+          "preview": "Both repos are pushing. All replay generation is complete:\n\n| Spec | Replays | Status |\n|------|----"
+        }
+      ],
+      "evidence": [
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P21_MCP问答质量评估/history/sessions-index.json",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P21_MCP问答质量评估",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P21_MCP问答质量评估/tasks.md",
+        "File: 规格/P21_MCP问答质量评估/history/sessions-index.json",
+        "Text: ...Now I can give you the full answer. It was **NOT** automatic from `PROJECT_GUIDE..."
+      ]
     }
   ],
-  "last_updated": "2026-04-18T14:37:51.976135"
+  "last_updated": "2026-04-25T22:29:37.176625"
 }

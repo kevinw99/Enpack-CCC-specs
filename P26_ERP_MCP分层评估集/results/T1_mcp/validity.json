@@ -2,36 +2,36 @@
   "summary": {
     "total_scored": 54,
     "refusals_excluded": 0,
-    "validity_overall_mean": 0.751,
-    "hit_overall_mean": 0.752,
+    "validity_overall_mean": 0.717,
+    "hit_overall_mean": 0.772,
     "by_layer_validity": {
       "L1": {
         "count": 7,
-        "mean": 0.819
+        "mean": 0.948
       },
       "L2": {
         "count": 10,
-        "mean": 0.747
+        "mean": 0.746
       },
       "L3": {
         "count": 6,
-        "mean": 0.741
+        "mean": 0.605
       },
       "L4": {
         "count": 7,
-        "mean": 0.762
+        "mean": 0.727
       },
       "L5": {
         "count": 7,
-        "mean": 0.807
+        "mean": 0.783
       },
       "L6": {
         "count": 10,
-        "mean": 0.688
+        "mean": 0.546
       },
       "L8": {
         "count": 7,
-        "mean": 0.718
+        "mean": 0.712
       }
     },
     "by_layer_hit": {
@@ -45,7 +45,7 @@
       },
       "L3": {
         "count": 4,
-        "mean": 0.541
+        "mean": 0.521
       },
       "L4": {
         "count": 7,
@@ -53,7 +53,7 @@
       },
       "L5": {
         "count": 7,
-        "mean": 0.798
+        "mean": 0.833
       },
       "L6": {
         "count": 9,
@@ -61,7 +61,7 @@
       },
       "L8": {
         "count": 5,
-        "mean": 0.717
+        "mean": 0.883
       }
     }
   },
@@ -71,16 +71,15 @@
         "FNumber",
         "FName",
         "FSpecification",
-        "FBaseUnitId",
-        "FID"
+        "FBaseUnitId"
       ],
-      "picked_count": 5,
+      "picked_count": 4,
       "valid_keys_size": 372,
       "available_forms": [
         "BD_MATERIAL"
       ],
       "missing_forms": [],
-      "validity_rate": 0.8,
+      "validity_rate": 1.0,
       "hit_rate": 1.0,
       "is_refusal": false,
       "id": "L1-01",
@@ -109,18 +108,15 @@
       "picked_fields": [
         "FNumber",
         "FName",
-        "FID",
-        "FDocumentStatus",
-        "FBillNo",
-        "FCreateDate"
+        "FDocumentStatus"
       ],
-      "picked_count": 6,
+      "picked_count": 3,
       "valid_keys_size": 112,
       "available_forms": [
         "BD_Customer"
       ],
       "missing_forms": [],
-      "validity_rate": 0.667,
+      "validity_rate": 1.0,
       "hit_rate": 1.0,
       "is_refusal": false,
       "id": "L1-03",
@@ -130,10 +126,9 @@
       "picked_fields": [
         "FNumber",
         "FName",
-        "FParentID",
-        "FDocumentStatus"
+        "FParentID"
       ],
-      "picked_count": 4,
+      "picked_count": 3,
       "valid_keys_size": 40,
       "available_forms": [
         "BD_Department"
@@ -152,21 +147,16 @@
         "FEndDate",
         "FStartDate",
         "FDocumentStatus",
-        "F_BDK_GYSState",
-        "FAddress",
-        "FTel",
-        "FBillNo",
-        "FDate",
-        "FSupplierId",
-        "FContractNo"
+        "FSupplierGrade",
+        "F_BDK_GYSState"
       ],
-      "picked_count": 12,
+      "picked_count": 7,
       "valid_keys_size": 123,
       "available_forms": [
         "BD_Supplier"
       ],
       "missing_forms": [],
-      "validity_rate": 0.667,
+      "validity_rate": 1.0,
       "hit_rate": 1.0,
       "is_refusal": false,
       "id": "L1-05",
@@ -217,12 +207,12 @@
     {
       "picked_fields": [
         "FBillNo",
+        "FDate",
         "FCustId",
         "FName",
         "FSalerId",
         "FAllAmount",
-        "FDocumentStatus",
-        "FDate"
+        "FDocumentStatus"
       ],
       "picked_count": 7,
       "valid_keys_size": 360,
@@ -260,20 +250,21 @@
     },
     {
       "picked_fields": [
-        "FBillNo",
         "FDate",
-        "FDocumentStatus",
         "FStockId",
         "FName",
-        "FQty"
+        "FQty",
+        "FDocumentStatus",
+        "FID",
+        "FBillNo"
       ],
-      "picked_count": 6,
+      "picked_count": 7,
       "valid_keys_size": 89,
       "available_forms": [
         "STK_MisDelivery"
       ],
       "missing_forms": [],
-      "validity_rate": 0.833,
+      "validity_rate": 0.714,
       "hit_rate": 1.0,
       "is_refusal": false,
       "id": "L2-05",
@@ -328,12 +319,12 @@
       "picked_fields": [
         "FAssetNO",
         "FName",
-        "FOriginalValue",
         "FAllocUseDeptID",
-        "FAllocUserID",
+        "FKEEPERID",
+        "FOrgVal",
         "FDocumentStatus",
-        "FID",
-        "FF",
+        "FAllocUserID",
+        "FOriginalValue",
         "FA_CARD"
       ],
       "picked_count": 9,
@@ -342,7 +333,7 @@
         "FA_CARD"
       ],
       "missing_forms": [],
-      "validity_rate": 0.667,
+      "validity_rate": 0.889,
       "hit_rate": 0.25,
       "is_refusal": false,
       "id": "L2-08",
@@ -353,18 +344,19 @@
         "FBillNo",
         "FDate",
         "FMaterialId",
+        "FNumber",
         "FName",
         "FQty",
-        "FStockInQuaQty",
+        "FYieldQty",
         "FDocumentStatus"
       ],
-      "picked_count": 7,
+      "picked_count": 8,
       "valid_keys_size": 254,
       "available_forms": [
         "PRD_MO"
       ],
       "missing_forms": [],
-      "validity_rate": 0.857,
+      "validity_rate": 0.75,
       "hit_rate": 1.0,
       "is_refusal": false,
       "id": "L2-09",
@@ -373,14 +365,17 @@
     {
       "picked_fields": [
         "FBillNo",
-        "FDATE",
-        "FCONTACTUNIT",
+        "FDate",
+        "FDocumentStatus",
+        "FSUPPLIERID",
         "FName",
-        "FPAYAMOUNTFOR",
-        "FSETTLETYPEID",
-        "FDOCUMENTSTATUS"
+        "FALLAMOUNTFOR",
+        "FPayConditon",
+        "FSupplierId",
+        "FAllAmount",
+        "FID"
       ],
-      "picked_count": 7,
+      "picked_count": 10,
       "valid_keys_size": 0,
       "available_forms": [],
       "missing_forms": [
@@ -400,12 +395,15 @@
         "FSupplierId",
         "FName",
         "FDocumentStatus",
-        "FDeliveryDate",
         "FConfirmDate",
-        "FPurchaseOrgId",
-        "FArrivalDate"
+        "FPlanReceiveDate",
+        "FEntry_FPlanReceiveDate",
+        "FEntry_FMaterialId",
+        "FNumber",
+        "FPurchaseOrderId",
+        "FEntry_FSourceBillNo"
       ],
-      "picked_count": 10,
+      "picked_count": 13,
       "valid_keys_size": 575,
       "available_forms": [
         "PUR_PurchaseOrder",
@@ -413,7 +411,7 @@
         "BD_Supplier"
       ],
       "missing_forms": [],
-      "validity_rate": 0.8,
+      "validity_rate": 0.538,
       "hit_rate": 0.333,
       "is_refusal": false,
       "id": "L3-01",
@@ -428,21 +426,17 @@
         "FMaterialId",
         "FNumber",
         "FName",
-        "FQty",
-        "FFinishQty",
-        "FWorkShopId",
-        "FInspectQty",
-        "FQualifiedQty",
-        "FUnqualifiedQty"
+        "FPlanQty",
+        "FFinishQty"
       ],
-      "picked_count": 13,
+      "picked_count": 9,
       "valid_keys_size": 426,
       "available_forms": [
         "PRD_MO",
         "QM_InspectBill"
       ],
       "missing_forms": [],
-      "validity_rate": 0.615,
+      "validity_rate": 0.444,
       "hit_rate": null,
       "is_refusal": false,
       "id": "L3-02",
@@ -450,26 +444,28 @@
     },
     {
       "picked_fields": [
+        "FID",
         "FBillNo",
         "FDate",
         "FDocumentStatus",
         "FCustomerId",
         "FName",
-        "FAllAmount",
-        "FSupplierId",
-        "FID",
+        "FAmount",
         "FDeptId",
         "FBillTypeID",
+        "FRecConditionId",
+        "FDay",
+        "FAmountFor",
         "FParentID"
       ],
-      "picked_count": 11,
+      "picked_count": 13,
       "valid_keys_size": 281,
       "available_forms": [
         "AR_receivable",
         "AP_Payable"
       ],
       "missing_forms": [],
-      "validity_rate": 0.273,
+      "validity_rate": 0.231,
       "hit_rate": null,
       "is_refusal": false,
       "id": "L3-03",
@@ -477,18 +473,20 @@
     },
     {
       "picked_fields": [
-        "FID",
-        "FBillNo",
-        "FDate",
         "FMaterialId",
         "FNumber",
         "FName",
+        "FAllAmount",
         "FQty",
+        "FBaseQty",
+        "FStockId",
+        "FID",
+        "FBillNo",
+        "FDate",
         "FPrice",
-        "FAmount",
         "FDocumentStatus"
       ],
-      "picked_count": 10,
+      "picked_count": 12,
       "valid_keys_size": 698,
       "available_forms": [
         "PUR_PurchaseOrder",
@@ -496,8 +494,8 @@
         "BD_MATERIAL"
       ],
       "missing_forms": [],
-      "validity_rate": 0.9,
-      "hit_rate": 0.333,
+      "validity_rate": 0.917,
+      "hit_rate": 1.0,
       "is_refusal": false,
       "id": "L3-04",
       "layer": "L3"
@@ -509,10 +507,9 @@
         "FName",
         "FSpecification",
         "FStockId",
-        "FBaseQty",
         "FQty"
       ],
-      "picked_count": 7,
+      "picked_count": 6,
       "valid_keys_size": 399,
       "available_forms": [
         "STK_Inventory",
@@ -520,7 +517,7 @@
       ],
       "missing_forms": [],
       "validity_rate": 1.0,
-      "hit_rate": 1.0,
+      "hit_rate": 0.75,
       "is_refusal": false,
       "id": "L3-05",
       "layer": "L3"
@@ -529,21 +526,24 @@
       "picked_fields": [
         "FID",
         "FBillNo",
-        "FApplicationDate",
-        "FApplicationDeptId",
+        "FCreateDate",
+        "FDate",
+        "FDocumentStatus",
+        "FDeptId",
         "FName",
         "FTotalAmount",
-        "FDocumentStatus"
+        "FDept",
+        "FDepartment"
       ],
-      "picked_count": 7,
+      "picked_count": 10,
       "valid_keys_size": 165,
       "available_forms": [
         "PUR_Requisition",
         "BD_Department"
       ],
       "missing_forms": [],
-      "validity_rate": 0.857,
-      "hit_rate": 0.5,
+      "validity_rate": 0.5,
+      "hit_rate": 0.0,
       "is_refusal": false,
       "id": "L3-06",
       "layer": "L3"
@@ -554,15 +554,17 @@
         "FDate",
         "FSupplierId",
         "FName",
-        "FDocumentStatus"
+        "FDocumentStatus",
+        "FApproverId",
+        "FApproveDate"
       ],
-      "picked_count": 5,
+      "picked_count": 7,
       "valid_keys_size": 317,
       "available_forms": [
         "PUR_PurchaseOrder"
       ],
       "missing_forms": [],
-      "validity_rate": 0.8,
+      "validity_rate": 0.857,
       "hit_rate": 1.0,
       "is_refusal": false,
       "id": "L4-01",
@@ -574,16 +576,19 @@
         "FName",
         "FForbidStatus",
         "FForbidDate",
+        "FForbidReson",
         "FID",
+        "FBillNo",
+        "FDate",
         "FDocumentStatus"
       ],
-      "picked_count": 6,
+      "picked_count": 9,
       "valid_keys_size": 372,
       "available_forms": [
         "BD_MATERIAL"
       ],
       "missing_forms": [],
-      "validity_rate": 0.833,
+      "validity_rate": 0.667,
       "hit_rate": 1.0,
       "is_refusal": false,
       "id": "L4-02",
@@ -598,11 +603,11 @@
         "FName",
         "FAllAmount",
         "FDocumentStatus",
-        "FBillTypeID",
+        "FDueDate",
+        "FBillType",
         "FNumber",
         "FCreditDays",
-        "FCreditAmount",
-        "FDueDate"
+        "FCreditAmount"
       ],
       "picked_count": 12,
       "valid_keys_size": 339,
@@ -611,7 +616,7 @@
         "BD_Customer"
       ],
       "missing_forms": [],
-      "validity_rate": 0.417,
+      "validity_rate": 0.333,
       "hit_rate": 0.0,
       "is_refusal": false,
       "id": "L4-03",
@@ -621,30 +626,28 @@
       "picked_fields": [
         "FBillNo",
         "FDate",
-        "FCustId",
-        "FName",
-        "FMaterialId",
-        "FNumber",
-        "FQty",
-        "FLot",
-        "FDeliveryDate",
         "FDocumentStatus",
         "FSaleOrderNo",
+        "FMaterialId",
+        "FName",
+        "FQty",
         "FPlanStartDate",
         "FPlanFinishDate",
         "FStartDate",
         "FFinishDate",
         "FStatus",
         "FDescription",
-        "FNote"
+        "FCustId",
+        "FAllAmount",
+        "FLot"
       ],
-      "picked_count": 18,
+      "picked_count": 16,
       "valid_keys_size": 254,
       "available_forms": [
         "PRD_MO"
       ],
       "missing_forms": [],
-      "validity_rate": 0.722,
+      "validity_rate": 0.812,
       "hit_rate": 1.0,
       "is_refusal": false,
       "id": "L4-04",
@@ -652,22 +655,25 @@
     },
     {
       "picked_fields": [
+        "FID",
         "FBillNo",
-        "FDocumentStatus",
         "FApplicationDate",
-        "FApplicantId",
+        "FDocumentStatus",
+        "FApproverId",
         "FName",
-        "FTotalAmount",
         "FApproveDate",
+        "FApplicantId",
+        "FTotalAmount",
+        "FDate",
         "FNote"
       ],
-      "picked_count": 8,
+      "picked_count": 11,
       "valid_keys_size": 130,
       "available_forms": [
         "PUR_Requisition"
       ],
       "missing_forms": [],
-      "validity_rate": 0.875,
+      "validity_rate": 0.727,
       "hit_rate": 1.0,
       "is_refusal": false,
       "id": "L4-05",
@@ -675,26 +681,24 @@
     },
     {
       "picked_fields": [
-        "F_BDK_LXR",
-        "F_BDK_LXDH",
+        "FSupplierId",
         "FNumber",
         "FName",
+        "F_BDK_LXR",
+        "F_BDK_LXDH",
         "FContact",
         "FTel",
         "FMobile",
-        "FDocumentStatus",
-        "FID",
         "FBillNo",
-        "FDate",
-        "FSupplierId"
+        "FDate"
       ],
-      "picked_count": 12,
+      "picked_count": 10,
       "valid_keys_size": 123,
       "available_forms": [
         "BD_Supplier"
       ],
       "missing_forms": [],
-      "validity_rate": 0.667,
+      "validity_rate": 0.7,
       "hit_rate": 1.0,
       "is_refusal": false,
       "id": "L5-01",
@@ -702,12 +706,6 @@
     },
     {
       "picked_fields": [
-        "F_BDK_FK",
-        "F_BDK_PP",
-        "F_BDK_BPRemark",
-        "F_BDK_CSXX",
-        "F_BDK_Base",
-        "F_BDK_OADateTime",
         "F_RFUX_TMMD",
         "F_RFUX_TJYX",
         "F_RFUX_TLSQD",
@@ -720,24 +718,27 @@
         "F_RFUX_TCDGC",
         "F_RFUX_TJTGS",
         "F_RFUX_TWGYQ",
+        "F_BDK_FK",
+        "F_BDK_PP",
+        "F_BDK_BPRemark",
+        "F_BDK_CSXX",
+        "F_BDK_Base",
+        "F_BDK_OADateTime",
         "FID",
         "FNumber",
         "FName",
-        "FBillNo",
-        "FDate",
-        "FDocumentStatus",
         "FSpecification",
         "FCategoryID",
-        "F_BDK_",
-        "F_RFUX_"
+        "F_RFUX_",
+        "F_BDK_"
       ],
-      "picked_count": 28,
+      "picked_count": 25,
       "valid_keys_size": 372,
       "available_forms": [
         "BD_MATERIAL"
       ],
       "missing_forms": [],
-      "validity_rate": 0.821,
+      "validity_rate": 0.88,
       "hit_rate": 1.0,
       "is_refusal": false,
       "id": "L5-02",
@@ -745,33 +746,28 @@
     },
     {
       "picked_fields": [
-        "FID",
-        "FBillNo",
-        "FDate",
-        "FDocumentStatus",
         "F_BDK_Text",
         "F_BDK_Remarks",
         "F_BDK_SFYF",
         "F_BDK_MBBZJC",
-        "FEntryNote",
         "FReqTraceNo",
         "FContractNo",
+        "FEntryNote",
+        "FBillNo",
+        "FDate",
         "FSupplierId",
         "FName",
-        "FProjectId",
-        "FNumber",
-        "FPriority",
-        "FUrgentLevel",
-        "FUrgency",
+        "FDocumentStatus",
+        "FID",
         "F_BDK_"
       ],
-      "picked_count": 19,
+      "picked_count": 14,
       "valid_keys_size": 317,
       "available_forms": [
         "PUR_PurchaseOrder"
       ],
       "missing_forms": [],
-      "validity_rate": 0.579,
+      "validity_rate": 0.786,
       "hit_rate": 1.0,
       "is_refusal": false,
       "id": "L5-03",
@@ -782,24 +778,25 @@
         "FBillNo",
         "FDocumentStatus",
         "FCloseStatus",
-        "FConfirmStatus",
         "FQty",
         "FReceiveQty",
         "FRemainReceiveQty",
         "FSupplierId",
         "FName",
-        "FDate",
-        "FAllAmount",
         "FMaterialId",
-        "FNumber"
+        "FNumber",
+        "FDate",
+        "FApproverId",
+        "FApproveDate",
+        "FStockInQty"
       ],
-      "picked_count": 13,
+      "picked_count": 14,
       "valid_keys_size": 317,
       "available_forms": [
         "PUR_PurchaseOrder"
       ],
       "missing_forms": [],
-      "validity_rate": 0.846,
+      "validity_rate": 0.857,
       "hit_rate": 1.0,
       "is_refusal": false,
       "id": "L6-01",
@@ -807,25 +804,26 @@
     },
     {
       "picked_fields": [
+        "FID",
         "FBillNo",
         "FDate",
         "FDocumentStatus",
-        "FPurchaseDeptId",
+        "FSupplierId",
         "FName",
-        "FMaterialId",
-        "FNumber",
+        "FPurchaseDeptId",
         "FAllAmount",
-        "FBillAllAmount",
-        "FQty",
-        "FPrice"
+        "FNumber",
+        "FCategoryID",
+        "FCurrencyId",
+        "FApplicationDeptId"
       ],
-      "picked_count": 11,
+      "picked_count": 12,
       "valid_keys_size": 317,
       "available_forms": [
         "PUR_PurchaseOrder"
       ],
       "missing_forms": [],
-      "validity_rate": 0.818,
+      "validity_rate": 0.5,
       "hit_rate": 1.0,
       "is_refusal": false,
       "id": "L6-02",
@@ -838,18 +836,19 @@
         "FName",
         "FQty",
         "FUnitId",
-        "FBillNo",
+        "FStockId",
         "FDate",
-        "FDocumentStatus"
+        "FBillNo",
+        "FCustomerId"
       ],
-      "picked_count": 8,
+      "picked_count": 9,
       "valid_keys_size": 97,
       "available_forms": [
         "STK_Inventory",
         "STK_MisDelivery"
       ],
       "missing_forms": [],
-      "validity_rate": 0.625,
+      "validity_rate": 0.556,
       "hit_rate": 0.0,
       "is_refusal": false,
       "id": "L6-03",
@@ -857,22 +856,31 @@
     },
     {
       "picked_fields": [
-        "FDocumentStatus",
-        "FWRITTENOFFSTATUS",
-        "FAPPROVEDATE",
+        "FID",
         "FBillNo",
-        "FALLAMOUNTFOR",
-        "FCUSTOMERID",
+        "FDate",
+        "FDocumentStatus",
+        "FCustomerId",
         "FName",
-        "FDATE"
+        "FAllAmount",
+        "FApproveStatus",
+        "FRecAmount",
+        "FUnRecAmount",
+        "FAmount",
+        "FPaidAmount",
+        "FRecAllAmount",
+        "FUnRecAllAmount",
+        "FRecAmt",
+        "FUnRecAmt",
+        "FSettleStatus"
       ],
-      "picked_count": 8,
+      "picked_count": 17,
       "valid_keys_size": 237,
       "available_forms": [
         "AR_receivable"
       ],
       "missing_forms": [],
-      "validity_rate": 0.875,
+      "validity_rate": 0.118,
       "hit_rate": 0.0,
       "is_refusal": false,
       "id": "L6-04",
@@ -880,6 +888,8 @@
     },
     {
       "picked_fields": [
+        "FNumber",
+        "FName",
         "FDocumentStatus",
         "FForbidStatus",
         "F_BDK_GYSState",
@@ -887,9 +897,7 @@
         "FStartDate",
         "FEndDate",
         "FSupplierId",
-        "FNumber",
-        "FName",
-        "FID",
+        "FSuggestSupplierId",
         "FBillNo",
         "FDate"
       ],
@@ -907,26 +915,30 @@
     },
     {
       "picked_fields": [
+        "FMaterialId",
+        "FQty",
+        "FBaseQty",
         "FNumber",
         "FName",
-        "FStockName",
-        "FQty",
-        "FUnitId",
-        "FDocumentStatus",
+        "FSpecification",
+        "FMaterialID2",
+        "FNeedQty2",
+        "FStdQty",
         "FDate",
-        "FPlanQty",
         "FBillNo",
-        "FMaterialId"
+        "FPlanStartDate",
+        "FPlanFinishDate",
+        "FMaterialID"
       ],
-      "picked_count": 10,
+      "picked_count": 14,
       "valid_keys_size": 399,
       "available_forms": [
         "STK_Inventory",
         "BD_MATERIAL"
       ],
       "missing_forms": [],
-      "validity_rate": 0.5,
-      "hit_rate": 0.0,
+      "validity_rate": 0.429,
+      "hit_rate": 1.0,
       "is_refusal": false,
       "id": "L6-06",
       "layer": "L6"
@@ -937,23 +949,22 @@
         "FDate",
         "FDocumentStatus",
         "FSRCBILLNO",
-        "FSRCBILLTYPEID",
-        "FStockOrgId",
-        "FName",
         "FSupplierId",
-        "FApproveStatus",
+        "FName",
         "FInspectStatus",
-        "FStockStatus",
-        "FReceiveBillNo"
+        "FReceiveStatus",
+        "FInspectResult",
+        "FID",
+        "FSRCBILLTYPEID"
       ],
-      "picked_count": 12,
+      "picked_count": 11,
       "valid_keys_size": 433,
       "available_forms": [
         "PUR_ReceiveBill",
         "QM_InspectBill"
       ],
       "missing_forms": [],
-      "validity_rate": 0.417,
+      "validity_rate": 0.455,
       "hit_rate": null,
       "is_refusal": false,
       "id": "L6-07",
@@ -968,13 +979,9 @@
         "FName",
         "FDocumentStatus",
         "FDeliveryDate",
-        "FPlanReceiveDate",
-        "FPlanDate",
-        "FReceiveDate",
-        "FEntryID",
-        "FActualDate"
+        "FReceiveDate"
       ],
-      "picked_count": 12,
+      "picked_count": 8,
       "valid_keys_size": 575,
       "available_forms": [
         "PUR_PurchaseOrder",
@@ -982,7 +989,7 @@
         "BD_Supplier"
       ],
       "missing_forms": [],
-      "validity_rate": 0.5,
+      "validity_rate": 0.75,
       "hit_rate": 0.667,
       "is_refusal": false,
       "id": "L8-01",
@@ -990,17 +997,17 @@
     },
     {
       "picked_fields": [
+        "FID",
+        "FBillNo",
         "FDate",
         "FMaterialId",
         "FNumber",
         "FName",
-        "FPrice",
         "FQty",
+        "FPrice",
         "FAllAmount",
         "FSupplierId",
-        "FDocumentStatus",
-        "FID",
-        "FBillNo"
+        "FDocumentStatus"
       ],
       "picked_count": 11,
       "valid_keys_size": 317,
@@ -1016,24 +1023,21 @@
     },
     {
       "picked_fields": [
-        "FID",
         "FBillNo",
         "FDate",
-        "FPlanFinishDate",
+        "FDeliveryDate",
+        "FCustId",
+        "FName",
         "FMaterialId",
         "FNumber",
-        "FName",
-        "FPlanQty",
-        "FStatus",
-        "FDocumentStatus",
-        "FStockId",
         "FQty",
-        "FDeliveryDate",
-        "FCustomerId",
-        "FTotalQty",
-        "FTotalAmount"
+        "FDocumentStatus",
+        "FRemainOutQty",
+        "FNoStockInQty",
+        "FPlanFinishDate",
+        "FStatus"
       ],
-      "picked_count": 16,
+      "picked_count": 13,
       "valid_keys_size": 598,
       "available_forms": [
         "STK_Inventory",
@@ -1041,7 +1045,7 @@
         "SAL_SaleOrder"
       ],
       "missing_forms": [],
-      "validity_rate": 0.625,
+      "validity_rate": 0.846,
       "hit_rate": null,
       "is_refusal": false,
       "id": "L8-03",
@@ -1109,15 +1113,16 @@
         "FDATE",
         "FCUSTOMERID",
         "FName",
-        "FALLAMOUNTFOR"
+        "FALLAMOUNTFOR",
+        "FDocumentStatus"
       ],
-      "picked_count": 5,
+      "picked_count": 6,
       "valid_keys_size": 237,
       "available_forms": [
         "AR_Receivable"
       ],
       "missing_forms": [],
-      "validity_rate": 0.8,
+      "validity_rate": 0.833,
       "hit_rate": 0.25,
       "is_refusal": false,
       "id": "L1-07",
@@ -1126,11 +1131,11 @@
     {
       "picked_fields": [
         "FBillNo",
-        "FDocumentStatus",
+        "FDate",
         "FCustId",
         "FName",
         "FAllAmount",
-        "FDate"
+        "FDocumentStatus"
       ],
       "picked_count": 6,
       "valid_keys_size": 360,
@@ -1152,7 +1157,7 @@
         "FName",
         "FInspectResult",
         "FUnqualifiedQty",
-        "FQualifiedQty"
+        "FDocumentStatus"
       ],
       "picked_count": 7,
       "valid_keys_size": 210,
@@ -1170,22 +1175,23 @@
       "picked_fields": [
         "FCUSTOMERID",
         "FName",
-        "FNumber",
-        "FBillNo",
-        "FDATE",
-        "FDocumentStatus",
+        "FDate",
         "FALLAMOUNTFOR",
-        "FWRITTENOFFSTATUS"
+        "FWRITTENOFFSTATUS",
+        "FDocumentStatus",
+        "FBillNo",
+        "FOPENSTATUS",
+        "FNumber"
       ],
-      "picked_count": 8,
+      "picked_count": 9,
       "valid_keys_size": 339,
       "available_forms": [
         "AR_Receivable",
         "BD_Customer"
       ],
       "missing_forms": [],
-      "validity_rate": 1.0,
-      "hit_rate": 0.25,
+      "validity_rate": 0.889,
+      "hit_rate": 0.5,
       "is_refusal": false,
       "id": "L5-04",
       "layer": "L5"
@@ -1197,9 +1203,9 @@
         "FCustomerID",
         "FName",
         "FSrcBillNo",
-        "FSrcType",
-        "FDocumentStatus",
+        "FSrcBillType",
         "FCustId",
+        "FEntrySrcBillNo",
         "FHTZD"
       ],
       "picked_count": 9,
@@ -1209,7 +1215,7 @@
         "SAL_SaleOrder"
       ],
       "missing_forms": [],
-      "validity_rate": 0.778,
+      "validity_rate": 0.556,
       "hit_rate": 0.333,
       "is_refusal": false,
       "id": "L5-05",
@@ -1218,20 +1224,22 @@
     {
       "picked_fields": [
         "FBillNo",
+        "FOrderBillNo",
         "FDate",
         "FSupplierId",
         "FName",
-        "FMaterialId",
-        "FQty",
-        "FReceiveQty",
         "FInvoiceQty",
-        "FOrderBillNo",
+        "FReceiveQty",
         "FORDERNUMBER",
         "FDocumentStatus",
+        "FStockOrgId",
+        "FAllAmount",
+        "FDATE",
+        "FDOCUMENTSTATUS",
         "FSUPPLIERID",
-        "FDOCUMENTSTATUS"
+        "FALLAMOUNTFOR"
       ],
-      "picked_count": 13,
+      "picked_count": 15,
       "valid_keys_size": 641,
       "available_forms": [
         "PUR_PurchaseOrder",
@@ -1239,7 +1247,7 @@
         "AP_Payable"
       ],
       "missing_forms": [],
-      "validity_rate": 0.923,
+      "validity_rate": 0.933,
       "hit_rate": 1.0,
       "is_refusal": false,
       "id": "L5-06",
@@ -1247,32 +1255,34 @@
     },
     {
       "picked_fields": [
+        "FID",
         "FBillNo",
         "FDate",
         "FInspectResult",
         "FUnqualifiedQty",
+        "FQualifiedQty",
+        "FRejectQty",
+        "FAcceptQty",
+        "FMemo",
         "FSrcBillNo0",
+        "FSrcBillType0",
         "FMaterialId",
         "FNumber",
         "FName",
         "FSupplierId",
-        "FQCStatus",
         "FDocumentStatus",
-        "FActReceiveQty",
-        "FRejectQty",
-        "FRejectReason",
-        "FMemo",
-        "FDefectReasonId",
-        "FDefectMemo"
+        "FSourceBillNo",
+        "FSourceBillType",
+        "FInspectOrgId"
       ],
-      "picked_count": 17,
+      "picked_count": 19,
       "valid_keys_size": 433,
       "available_forms": [
         "PUR_ReceiveBill",
         "QM_InspectBill"
       ],
       "missing_forms": [],
-      "validity_rate": 0.882,
+      "validity_rate": 0.737,
       "hit_rate": 1.0,
       "is_refusal": false,
       "id": "L5-07",
@@ -1280,19 +1290,21 @@
     },
     {
       "picked_fields": [
-        "FID",
+        "FName",
+        "FIsCreditCheck",
         "FBillNo",
         "FDate",
+        "FCustId",
         "FAllAmount",
         "FDocumentStatus",
+        "FDATE",
+        "FCUSTOMERID",
+        "FALLAMOUNTFOR",
+        "FID",
         "FNumber",
-        "FName",
-        "FCreditLimit",
-        "FCreditUsed",
-        "FCreditBalance",
-        "FCustomerId"
+        "FCREDITLIMIT"
       ],
-      "picked_count": 11,
+      "picked_count": 13,
       "valid_keys_size": 650,
       "available_forms": [
         "BD_Customer",
@@ -1300,8 +1312,8 @@
         "AR_Receivable"
       ],
       "missing_forms": [],
-      "validity_rate": 0.545,
-      "hit_rate": 0.5,
+      "validity_rate": 0.769,
+      "hit_rate": 0.0,
       "is_refusal": false,
       "id": "L6-08",
       "layer": "L6"
@@ -1311,6 +1323,7 @@
         "FBillNo",
         "FDocumentStatus",
         "FCloseStatus",
+        "FCancelStatus",
         "FQty",
         "FRemainOutQty",
         "FStockOutQty",
@@ -1319,21 +1332,27 @@
         "FMaterialId",
         "FNumber",
         "FName",
+        "FStockOrgId",
         "FCustId",
-        "FSaleOrgId",
         "FDate",
-        "FSaleDeptId",
-        "FSalerId",
-        "FNote"
+        "FSaleOrgId",
+        "FApproverId",
+        "FApproveDate",
+        "FUnitID",
+        "FCustomerID",
+        "FMaterialID",
+        "FRealQty",
+        "FMustQty",
+        "FStockID"
       ],
-      "picked_count": 17,
+      "picked_count": 24,
       "valid_keys_size": 376,
       "available_forms": [
         "SAL_SaleOrder",
         "STK_Inventory"
       ],
       "missing_forms": [],
-      "validity_rate": 0.882,
+      "validity_rate": 0.708,
       "hit_rate": 0.667,
       "is_refusal": false,
       "id": "L6-09",
@@ -1341,57 +1360,58 @@
     },
     {
       "picked_fields": [
+        "FID",
         "FBillNo",
+        "FDate",
         "FDocumentStatus",
+        "FStockOrgId",
+        "FName",
+        "FStockId",
+        "FInspectOrgId",
+        "FInspectDeptId",
         "FMaterialId",
         "FNumber",
-        "FName",
-        "FRealQty",
-        "FQCStatus",
-        "FInspectResult",
-        "FSrcBillNo0",
-        "FInspectQty",
-        "FQualifiedQty",
-        "FUnqualifiedQty",
-        "FCheckInComing",
-        "FDate",
-        "FSupplierId",
-        "FStockId",
-        "FActlandQty"
+        "FUnitId",
+        "FQty",
+        "FSourceBillNo",
+        "FSourceBillType"
       ],
-      "picked_count": 17,
+      "picked_count": 15,
       "valid_keys_size": 210,
       "available_forms": [
         "PUR_InStock",
         "QM_InspectBill"
       ],
       "missing_forms": [],
-      "validity_rate": 0.706,
-      "hit_rate": 1.0,
+      "validity_rate": 0.4,
+      "hit_rate": 0.5,
       "is_refusal": false,
       "id": "L6-10",
       "layer": "L6"
     },
     {
       "picked_fields": [
+        "FID",
         "FBillNo",
-        "FDATE",
-        "FENDDATE_H",
-        "FCUSTOMERID",
+        "FDate",
+        "FCustomerId",
         "FName",
-        "FALLAMOUNTFOR",
+        "FAllAmount",
         "FDocumentStatus",
-        "FWRITTENOFFSTATUS"
+        "FBillTypeID",
+        "FRecConditionId",
+        "FNumber",
+        "FCreateDate"
       ],
-      "picked_count": 8,
+      "picked_count": 11,
       "valid_keys_size": 339,
       "available_forms": [
         "AR_Receivable",
         "BD_Customer"
       ],
       "missing_forms": [],
-      "validity_rate": 1.0,
-      "hit_rate": 0.25,
+      "validity_rate": 0.545,
+      "hit_rate": 0.75,
       "is_refusal": false,
       "id": "L8-05",
       "layer": "L8"
@@ -1401,19 +1421,26 @@
         "FID",
         "FBillNo",
         "FDate",
-        "FAllAmount",
-        "FCustomerId",
+        "FDocumentStatus",
+        "FSRCBILLNO",
+        "FStockOrgId",
         "FName",
-        "FDocumentStatus"
+        "FStockId",
+        "FCustomerId",
+        "FAllAmount",
+        "FAmount",
+        "FTotalAmount",
+        "FSRCBILLTYPEID",
+        "FHTZD"
       ],
-      "picked_count": 7,
+      "picked_count": 14,
       "valid_keys_size": 545,
       "available_forms": [
         "SAL_SaleOrder",
         "SAL_OUTSTOCK"
       ],
       "missing_forms": [],
-      "validity_rate": 0.571,
+      "validity_rate": 0.5,
       "hit_rate": 1.0,
       "is_refusal": false,
       "id": "L8-06",
@@ -1428,16 +1455,20 @@
         "FName",
         "FNumber",
         "FDocumentStatus",
+        "FCloseStatus",
+        "FMaterialId",
+        "FQty",
+        "FPrice",
         "FAllAmount",
-        "FActReceiveQty",
-        "FInStockQty",
         "FOrderBillNo",
+        "FInspectResult",
         "FQualifiedQty",
         "FUnqualifiedQty",
-        "FInspectResult",
-        "FQCStatus"
+        "FSampleDamageQty",
+        "FSupplierGrade",
+        "FSupplierClassify"
       ],
-      "picked_count": 15,
+      "picked_count": 19,
       "valid_keys_size": 746,
       "available_forms": [
         "BD_Supplier",
@@ -1446,8 +1477,8 @@
         "QM_InspectBill"
       ],
       "missing_forms": [],
-      "validity_rate": 0.933,
-      "hit_rate": 0.667,
+      "validity_rate": 0.947,
+      "hit_rate": 1.0,
       "is_refusal": false,
       "id": "L8-07",
       "layer": "L8"

@@ -1,0 +1,203 @@
+{
+  "entity_id": "spec:P28_模型MCP对比评估",
+  "entity_type": "spec",
+  "display_name": "Spec 28: 模型MCP对比评估",
+  "directory": "规格/P28_模型MCP对比评估",
+  "session_count": 1,
+  "sessions": [
+    {
+      "session_id": "62539c3a-d689-4f0a-a482-a6eee0f9713b",
+      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/62539c3a-d689-4f0a-a482-a6eee0f9713b.jsonl",
+      "confidence": 0.26,
+      "start_time": "2026-05-03T09:35:30.269Z",
+      "end_time": "2026-05-03T10:05:13.347Z",
+      "message_count": 175,
+      "matched_message_count": 25,
+      "matched_messages": [
+        {
+          "uuid": "9ac578af-9207-420c-94a2-101990ce8bde",
+          "line_number": 57,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-03T09:39:28.653Z",
+          "preview": "\n\n抱歉，我在研究现有代码结构，花了太多时间在阅读上。让我总结一下已经了解到的信息，然后快速推进：\n\n**已了解的：**\n- 下一个规格编号是 P28\n- 两个 MCP Server：KB (`mcp"
+        },
+        {
+          "uuid": "f1ae86cf-582e-48ea-86b5-684af5486d43",
+          "line_number": 75,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-03T09:40:01.926Z",
+          "preview": "Now I have everything I need. Let me create the P28 spec and comparison script. I'll work on the spe"
+        },
+        {
+          "uuid": "5310e3b1-d6c0-485e-9f8c-a53952744a00",
+          "line_number": 76,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-03T09:40:02.552Z",
+          "preview": ""
+        },
+        {
+          "uuid": "3339d7ce-c81a-4594-8fb3-d87f5200cdcf",
+          "line_number": 83,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-03T09:40:23.876Z",
+          "preview": ""
+        },
+        {
+          "uuid": "7dd59cf9-0ebd-4998-bcb2-221f50f6bfa1",
+          "line_number": 85,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-03T09:40:37.727Z",
+          "preview": ""
+        },
+        {
+          "uuid": "f867b751-692a-418b-a53f-f6606bc75ecb",
+          "line_number": 87,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-03T09:40:39.875Z",
+          "preview": ""
+        },
+        {
+          "uuid": "5e31c589-9036-427e-89c9-f2d7d35c4a67",
+          "line_number": 93,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-03T09:41:11.569Z",
+          "preview": ""
+        },
+        {
+          "uuid": "1c679163-9a99-4e87-a6eb-11292f1539d7",
+          "line_number": 99,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-03T09:43:11.207Z",
+          "preview": ""
+        },
+        {
+          "uuid": "b41647a4-194c-45a7-bfb7-c470cddd9ded",
+          "line_number": 107,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-03T09:43:25.479Z",
+          "preview": ""
+        },
+        {
+          "uuid": "0961c626-8d75-4c95-a829-595f600e21b5",
+          "line_number": 111,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-03T09:43:33.524Z",
+          "preview": ""
+        },
+        {
+          "uuid": "d45b4e7e-16b0-43b1-bd0f-b6fd7727c8b8",
+          "line_number": 118,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-03T09:43:49.965Z",
+          "preview": ""
+        },
+        {
+          "uuid": "5524f50a-f438-4a73-9622-a8b1adb18315",
+          "line_number": 121,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-03T09:44:08.063Z",
+          "preview": ""
+        },
+        {
+          "uuid": "6c191c8a-49ba-4695-968b-fdb6abb2f339",
+          "line_number": 126,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-03T09:45:08.314Z",
+          "preview": ""
+        },
+        {
+          "uuid": "36d442a4-ebf0-445c-b48a-f18d163dbd45",
+          "line_number": 129,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-03T09:45:19.765Z",
+          "preview": ""
+        },
+        {
+          "uuid": "51c65c0b-726d-46fb-baf5-9d41b8f578b5",
+          "line_number": 134,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-03T09:45:30.403Z",
+          "preview": ""
+        },
+        {
+          "uuid": "0aca3dd5-1d76-49fe-9148-edf9a76dacdd",
+          "line_number": 137,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-03T09:45:42.229Z",
+          "preview": ""
+        },
+        {
+          "uuid": "58afd280-48fd-434a-aaef-286375baeb43",
+          "line_number": 140,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-03T09:46:00.761Z",
+          "preview": ""
+        },
+        {
+          "uuid": "41db9223-75c0-400e-94c1-111bbcaafb6c",
+          "line_number": 146,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-03T09:46:17.350Z",
+          "preview": ""
+        },
+        {
+          "uuid": "98772134-5424-4927-b874-c057bd89795d",
+          "line_number": 149,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-03T09:46:27.993Z",
+          "preview": ""
+        },
+        {
+          "uuid": "ced0665e-e7e5-4a35-bc9d-b35cb9096e55",
+          "line_number": 169,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-03T09:49:08.345Z",
+          "preview": ""
+        },
+        {
+          "uuid": "4698c2db-dcdb-4907-ad75-1f3d68f38e2a",
+          "line_number": 203,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-03T09:55:18.905Z",
+          "preview": ""
+        },
+        {
+          "uuid": "8261b895-5800-495c-bc64-be35cef41107",
+          "line_number": 229,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-03T09:56:50.943Z",
+          "preview": ""
+        },
+        {
+          "uuid": "f9c2d9c9-b8ba-4471-a57b-38df097dc5de",
+          "line_number": 238,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-03T10:04:45.627Z",
+          "preview": ""
+        },
+        {
+          "uuid": "07024c52-ad0d-4a49-b73f-0a08455c8b62",
+          "line_number": 243,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-03T10:04:50.063Z",
+          "preview": ""
+        },
+        {
+          "uuid": "5a8110c6-194e-4bb0-9ea7-1d7be4b0e7c6",
+          "line_number": 245,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-03T10:05:12.717Z",
+          "preview": "结果非常清晰了。以下是完整测试的关键发现：\n\n## P28 测试结果总结\n\n### 成本与性能对比\n\n| 指标 | DeepSeek | Claude Opus | 倍数 |\n|------|----"
+        }
+      ],
+      "evidence": [
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P28_模型MCP对比评估/results",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P28_模型MCP对比评估/requirements.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P28_模型MCP对比评估/design.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P28_模型MCP对比评估/tasks.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P28_模型MCP对比评估/questions.py"
+      ]
+    }
+  ],
+  "last_updated": "2026-05-03T22:26:00.258944"
+}

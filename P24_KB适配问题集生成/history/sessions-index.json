@@ -327,14 +327,112 @@
     {
       "session_id": "d187553a-451e-4a3a-a3a8-c44a1cb4f5d0",
       "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/d187553a-451e-4a3a-a3a8-c44a1cb4f5d0.jsonl",
-      "confidence": 0.18,
+      "confidence": 0.25,
       "start_time": "2026-04-08T13:28:37.764Z",
-      "end_time": "2026-04-17T03:57:53.228Z",
-      "message_count": 1108,
-      "matched_message_count": 0,
-      "matched_messages": [],
-      "evidence": []
+      "end_time": "2026-04-23T14:39:14.320Z",
+      "message_count": 1361,
+      "matched_message_count": 13,
+      "matched_messages": [
+        {
+          "uuid": "5d401b9b-e6c3-432d-85f3-ac8f1ca4e7c5",
+          "line_number": 881,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T07:05:52.987Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        },
+        {
+          "uuid": "7245eb30-1b4a-4147-add0-25bbfcbe5d30",
+          "line_number": 931,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T07:07:00.648Z",
+          "preview": ""
+        },
+        {
+          "uuid": "8defee21-663d-49db-b370-c497f92e9651",
+          "line_number": 970,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T07:11:00.185Z",
+          "preview": "P25 spec 已全部创建完成。文件结构：\n\n```\n规格/P25_团队全员会议/\n├── requirements.md      # 9 项需求 + 5 项约束\n├── design.md   "
+        },
+        {
+          "uuid": "1e72878d-70a5-433c-9e58-0ca3c78ba85f",
+          "line_number": 978,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T07:11:00.989Z",
+          "preview": "<task-notification>\n<task-id>a7faad9bea1e8338f</task-id>\n<tool-use-id>toolu_017xR68iwnF9k6uFFPoTZSV5"
+        },
+        {
+          "uuid": "2143394c-845f-45e3-be93-f1ee3e22c7ea",
+          "line_number": 980,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T07:11:00.990Z",
+          "preview": "<task-notification>\n<task-id>a5fd12e86ce37675f</task-id>\n<tool-use-id>toolu_019KtDkefLidZ2xKsY6gVbHV"
+        },
+        {
+          "uuid": "0b7b8a35-6059-4f7d-a774-f1b69c625369",
+          "line_number": 1095,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T08:52:34.874Z",
+          "preview": ""
+        },
+        {
+          "uuid": "50db93af-e85f-4474-a7b4-5cb410f5e578",
+          "line_number": 1256,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-18T06:45:58.986Z",
+          "preview": "Here's the accurate status of all active specs:\n\n## 规格状态总览\n\n| Spec | 名称 | 完成度 | 未完成关键任务 | 依赖 |\n|----"
+        },
+        {
+          "uuid": "286e07d5-5207-4fd1-a7d8-e063948ee178",
+          "line_number": 1293,
+          "msg_type": "user",
+          "timestamp": "2026-04-18T06:54:18.040Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        },
+        {
+          "uuid": "00574b75-cdb3-45d4-a841-7b16cb1ed11c",
+          "line_number": 1302,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-18T06:54:35.245Z",
+          "preview": ""
+        },
+        {
+          "uuid": "8d4f147d-75cf-4540-abe3-355dd646fbd4",
+          "line_number": 1304,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-18T06:54:43.440Z",
+          "preview": "All replays were generated successfully — P22 (3), P23 (4), P24 (2), P25 (2), P26 (2), R22 (2). Let "
+        },
+        {
+          "uuid": "cda74c03-5ed2-4313-bcea-8b78226ad341",
+          "line_number": 1311,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-18T06:54:55.786Z",
+          "preview": ""
+        },
+        {
+          "uuid": "1ab3f083-9f8e-44aa-b07c-1f9810ac28f7",
+          "line_number": 1321,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-18T06:55:18.319Z",
+          "preview": "Both repos are pushing. All replay generation is complete:\n\n| Spec | Replays | Status |\n|------|----"
+        },
+        {
+          "uuid": "10c339aa-0898-4d01-8c6d-31cc93e47a6e",
+          "line_number": 1333,
+          "msg_type": "user",
+          "timestamp": "2026-04-18T06:55:18.939Z",
+          "preview": "<task-notification>\n<task-id>buz27v30n</task-id>\n<tool-use-id>toolu_01WcdVp2F5edJguDnzxzyPmB</tool-u"
+        }
+      ],
+      "evidence": [
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P24_KB适配问题集生成/",
+        "File: 规格/P24_KB适配问题集生成/history/",
+        "File: 规格/P24_KB适配问题集生成/history/replay/",
+        "File: 规格/P24_KB适配问题集生成/history/replay-index.md",
+        "File: 规格/P24_KB适配问题集生成/history/replay/"
+      ]
     }
   ],
-  "last_updated": "2026-04-18T14:37:51.975175"
+  "last_updated": "2026-04-24T14:34:39.417395"
 }

@@ -3,18 +3,151 @@
   "entity_type": "spec",
   "display_name": "Spec 20: MCP知识库服务",
   "directory": "规格/P20_MCP知识库服务",
-  "session_count": 4,
+  "session_count": 3,
   "sessions": [
     {
       "session_id": "0b9d88c9-f14f-40f8-adbc-9bc4c7407828",
       "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/0b9d88c9-f14f-40f8-adbc-9bc4c7407828.jsonl",
       "confidence": 0.31,
       "start_time": "2026-04-12T04:02:06.163Z",
-      "end_time": "2026-04-16T05:20:32.347Z",
-      "message_count": 2711,
-      "matched_message_count": 0,
-      "matched_messages": [],
-      "evidence": []
+      "end_time": "2026-04-23T17:13:18.374Z",
+      "message_count": 4569,
+      "matched_message_count": 18,
+      "matched_messages": [
+        {
+          "uuid": "3c2887c5-f1fe-42ec-92f7-d7669a88bf6e",
+          "line_number": 19,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T04:02:29.431Z",
+          "preview": ""
+        },
+        {
+          "uuid": "68641181-f381-4e3f-87c0-f68fba93f81a",
+          "line_number": 46,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T04:02:54.603Z",
+          "preview": ""
+        },
+        {
+          "uuid": "560e0d32-cc8c-4366-aecc-4499547c6970",
+          "line_number": 48,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T04:02:55.006Z",
+          "preview": ""
+        },
+        {
+          "uuid": "aa415375-4186-4ea4-8976-8cb55acf8537",
+          "line_number": 59,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T04:03:34.366Z",
+          "preview": "好的，分支已同步。下面是我的分析：\n\n---\n\n## ERP MCP（yongzhi_erp_mcp_0325 分支）功能概览\n\nYongzhi 开发的是 **金蝶云星空 ERP MCP Server"
+        },
+        {
+          "uuid": "4b4b525f-6453-4167-927f-42b6e50365f1",
+          "line_number": 80,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T04:10:18.665Z",
+          "preview": "清楚了。以下是 Git 状态分析：\n\n## 当前 Git 状态\n\n```\n                    ← 分叉点 (7b20115)\n                   /       "
+        },
+        {
+          "uuid": "5563bf73-ba28-4106-a8d1-bd59c58c2f92",
+          "line_number": 231,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T04:19:56.899Z",
+          "preview": "## 测试结果总结\n\n**整体状态：P20 MCP 知识库服务已经可以工作了！**\n\n| 指标 | 数据 |\n|------|------|\n| 索引文件 | 47 个 markdown 文件 |\n|"
+        },
+        {
+          "uuid": "c1bc4ae0-a0bf-4790-ad98-e354bd0e82f6",
+          "line_number": 332,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T04:58:28.185Z",
+          "preview": "现在更新 P20 tasks.md。"
+        },
+        {
+          "uuid": "4cfe9b68-a4d8-4715-aee0-abc878f1fe67",
+          "line_number": 333,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T04:59:06.977Z",
+          "preview": ""
+        },
+        {
+          "uuid": "ed51b990-3a80-4e99-b010-95d908dbee3e",
+          "line_number": 341,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T04:59:39.734Z",
+          "preview": ""
+        },
+        {
+          "uuid": "ff5f837e-e5ee-47a8-92d6-d2e81aa3e031",
+          "line_number": 345,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T04:59:57.315Z",
+          "preview": ""
+        },
+        {
+          "uuid": "f2dce2d4-d920-4c94-9342-d2f0645ce82d",
+          "line_number": 470,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T10:29:45.388Z",
+          "preview": ""
+        },
+        {
+          "uuid": "8dc38d03-3a7e-4554-b619-8e607f722a11",
+          "line_number": 514,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T13:19:54.114Z",
+          "preview": "## P21 状态\n\n**当前进度**: 全部 Phase 都还未开始 (所有 task 都是 `[ ]`)。\n\n但现在 **P20 已经完全可用了**，所以 P21 的所有依赖都已满足：\n- P18"
+        },
+        {
+          "uuid": "1b5efd96-669c-4447-895d-a4ddcf016af2",
+          "line_number": 583,
+          "msg_type": "user",
+          "timestamp": "2026-04-12T13:28:31.559Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        },
+        {
+          "uuid": "893baf5e-732c-4d7f-a2b7-4137906e0341",
+          "line_number": 1891,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T02:04:04.158Z",
+          "preview": "Now let me check the P20 spec to understand ERP MCP context, and the project template for P23."
+        },
+        {
+          "uuid": "b3573e3a-f7a3-4e1f-9279-12528980e4a6",
+          "line_number": 1894,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T02:04:05.736Z",
+          "preview": ""
+        },
+        {
+          "uuid": "9a4af9df-f92d-4e63-882d-a94d1317827f",
+          "line_number": 1896,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-13T02:04:23.922Z",
+          "preview": ""
+        },
+        {
+          "uuid": "4b6555fa-c16a-4936-af6a-24c92cc908a5",
+          "line_number": 2418,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T12:29:10.461Z",
+          "preview": "## 先回答你的疑问\n\n**短答**：P20E 代码实际上**已经被 P20S 动过**（我之前加了 3 个 schema 工具到 `src/tools/schema.py` 并注册进 `server"
+        },
+        {
+          "uuid": "c2797ff2-f2a4-45f9-88ec-0478c7b405a0",
+          "line_number": 2441,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T12:32:31.876Z",
+          "preview": "P26 初稿完成。**只新建了文件，没改任何 P20/P21/P23 现有文档**，P23 评估期间绝对安全。\n\n## 回到你的疑问总结\n\n**Q: P20S/P20T 已实现，P23 评估结果会变吗"
+        }
+      ],
+      "evidence": [
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P20_MCP知识库服务/requirements.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P20_MCP知识库服务/design.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P20_MCP知识库服务/tasks.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P20_MCP知识库服务/tasks.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P20_MCP知识库服务/design.md"
+      ]
     },
     {
       "session_id": "cd10a8e5-37e3-49f3-b4e7-4d2dc2237e69",
@@ -81,23 +214,124 @@
       "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/d187553a-451e-4a3a-a3a8-c44a1cb4f5d0.jsonl",
       "confidence": 0.28,
       "start_time": "2026-04-08T13:28:37.764Z",
-      "end_time": "2026-04-17T03:57:53.228Z",
-      "message_count": 1108,
-      "matched_message_count": 0,
-      "matched_messages": [],
-      "evidence": []
-    },
-    {
-      "session_id": "d975fd50-8501-402f-8803-b1eeffc6efff",
-      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/d975fd50-8501-402f-8803-b1eeffc6efff.jsonl",
-      "confidence": 0.23,
-      "start_time": "2026-03-08T15:17:30.425Z",
-      "end_time": "2026-03-17T16:46:10.350Z",
-      "message_count": 701,
-      "matched_message_count": 0,
-      "matched_messages": [],
-      "evidence": []
+      "end_time": "2026-04-23T14:39:14.320Z",
+      "message_count": 1361,
+      "matched_message_count": 15,
+      "matched_messages": [
+        {
+          "uuid": "6a4f8e11-54ea-475b-a09d-b345620edda6",
+          "line_number": 35,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-09T10:54:27.083Z",
+          "preview": ""
+        },
+        {
+          "uuid": "41583dfb-0771-48d8-88bb-87c91ca030ba",
+          "line_number": 37,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-09T10:54:46.457Z",
+          "preview": "我看到了这张截图。这是路边明和AI讨论幻觉问题后得到的分析，总结得很到位。让我梳理一下关键点：\n\n### 截图中的分析总结\n\n**幻觉三大根源：**\n\n1. **数据流不清楚 → AI凭推断填充** "
+        },
+        {
+          "uuid": "0a9d4c10-745f-40fe-8d43-ba64e9075944",
+          "line_number": 375,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T03:56:31.060Z",
+          "preview": "P22 规格已创建。核心结构：\n\n- **6个需求** 编号 N-01 到 N-06，每个都有场景、输入输出、实现思路、复杂度\n- **优先级排序**: N-02(可行性分析) 和 N-05(体系文件"
+        },
+        {
+          "uuid": "18c2be85-6b64-419e-a4ed-41ab27716d1b",
+          "line_number": 381,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T03:57:22.485Z",
+          "preview": ""
+        },
+        {
+          "uuid": "a2135746-09a6-4d92-a3bd-00b931d93b4a",
+          "line_number": 383,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T03:57:28.171Z",
+          "preview": ""
+        },
+        {
+          "uuid": "3da9d939-0f90-4689-95c6-5475c8b2ed19",
+          "line_number": 385,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T03:57:28.617Z",
+          "preview": ""
+        },
+        {
+          "uuid": "b52e4b8a-b3fe-4249-a56d-5155d553879c",
+          "line_number": 420,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T04:16:07.457Z",
+          "preview": "Good. The infrastructure is solid — P20 (MCP server), P13 (PDF parsing), P11 (ML models) all have wo"
+        },
+        {
+          "uuid": "dd1ffdc8-1d2d-4781-a830-866b3cbd046f",
+          "line_number": 440,
+          "msg_type": "user",
+          "timestamp": "2026-04-12T04:18:35.344Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        },
+        {
+          "uuid": "7f798d86-e0c8-4f68-87d5-edef93eef4b9",
+          "line_number": 644,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-12T04:28:35.011Z",
+          "preview": "All 6 tools implemented — **37 Python files** total. Here's the summary:\n\n| Tool | Module | Files | "
+        },
+        {
+          "uuid": "b824de0f-cfcb-465d-902f-945832a90270",
+          "line_number": 829,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T06:30:37.609Z",
+          "preview": "Now I can give you the full answer. It was **NOT** automatic from `PROJECT_GUIDELINES.md`. Here's wh"
+        },
+        {
+          "uuid": "1e72878d-70a5-433c-9e58-0ca3c78ba85f",
+          "line_number": 978,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T07:11:00.989Z",
+          "preview": "<task-notification>\n<task-id>a7faad9bea1e8338f</task-id>\n<tool-use-id>toolu_017xR68iwnF9k6uFFPoTZSV5"
+        },
+        {
+          "uuid": "2143394c-845f-45e3-be93-f1ee3e22c7ea",
+          "line_number": 980,
+          "msg_type": "user",
+          "timestamp": "2026-04-15T07:11:00.990Z",
+          "preview": "<task-notification>\n<task-id>a5fd12e86ce37675f</task-id>\n<tool-use-id>toolu_019KtDkefLidZ2xKsY6gVbHV"
+        },
+        {
+          "uuid": "0b7b8a35-6059-4f7d-a774-f1b69c625369",
+          "line_number": 1095,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-15T08:52:34.874Z",
+          "preview": ""
+        },
+        {
+          "uuid": "50db93af-e85f-4474-a7b4-5cb410f5e578",
+          "line_number": 1256,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-18T06:45:58.986Z",
+          "preview": "Here's the accurate status of all active specs:\n\n## 规格状态总览\n\n| Spec | 名称 | 完成度 | 未完成关键任务 | 依赖 |\n|----"
+        },
+        {
+          "uuid": "778449e5-1572-474a-80fc-723b1b3db9eb",
+          "line_number": 1444,
+          "msg_type": "assistant",
+          "timestamp": "2026-04-23T09:16:50.191Z",
+          "preview": "PDF 更新完成（321KB）。做了以下调整：\n\n**去掉的内容：**\n- 开场白（口头讲）\n- 个人经历表格（口头讲）\n- 工程师名字（李桁、梁咏芝等全部去掉）\n- 内部项目编号（P18/P19/P"
+        }
+      ],
+      "evidence": [
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P20_MCP知识库服务/requirements.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P20_MCP知识库服务/",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P20_MCP知识库服务/tasks.md",
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P20_MCP知识库服务/design.md",
+        "File: 规格/P20_MCP知识库服务/history/sessions-index.json"
+      ]
     }
   ],
-  "last_updated": "2026-04-18T14:37:51.980780"
+  "last_updated": "2026-04-25T22:29:37.180297"
 }

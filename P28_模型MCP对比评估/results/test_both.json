@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "timestamp": "2026-05-03T17:49:52.418526",
+    "questions_count": 2,
+    "providers": [
+      "deepseek",
+      "claude"
+    ]
+  },
+  "results": [
+    {
+      "id": "KB-01",
+      "question": "恩派克的主要产品有哪些？各产品的市场定位如何？",
+      "category": "kb_only",
+      "description": "公司产品线概览",
+      "deepseek": {
+        "tools_planned": [
+          "kb_product",
+          "kb_company_profile"
+        ],
+        "tools_data_count": 2,
+        "tool_details": [
+          {
+            "tool": "kb_product",
+            "reason": "",
+            "status": "ok",
+            "result_count": 5
+          },
+          {
+            "tool": "kb_company_profile",
+            "reason": "",
+            "status": "ok",
+            "result_count": 3
+          }
+        ],
+        "answer": "根据知识库数据，恩派克（Enpack/英联股份）的主要产品及市场定位如下：\n\n### 主要产品与市场定位\n\n1. **标准复合铜箔（8μm）**\n   - **加工费**：16,000 ¥/吨\n   - **总价**：约 USD 11,900/吨\n   - **毛利率**：8-12%\n   - **市场定位**：基础走量产品，竞争激烈，利润率较低。当前市场处于产能过剩后的温和复苏期，2024年加工费曾低至10,000-13,000 ¥/吨。\n\n2. **超薄铜箔（6μm）**\n   - **加工费**：18,000 ¥/吨\n   - **总价**：约 USD 12,450/吨\n   - **毛利率**：10-14%\n   - **市场定位**：技术升级产品，面向对能量密度有更高要求的客户（如高端动力电池），毛利率略高于标准产品，但竞争同样激烈。\n\n3. **复合铝箔**\n   - **加工费**：16,000 ¥/吨\n   - **总价**：约 USD 10,500/吨\n   - **毛利率**：25-30%\n   - **市场定位**：高利润核心产品。毛利率显著高于铜箔产品，是公司当前盈利的重要支柱，市场竞争力较强。\n\n4. **SSB（固态电池）专用箔材**\n   - **加工费**：22,000+ ¥/吨\n   - **总价**：USD 13,500+/吨\n   - **毛利率**：15-20%\n   - **市场定位**：战略增长产品。面向下一代固态电池技术，加工费最高，毛利率可观。公司将其视为未来增长机会（SSB opportunity），目前处于市场培育和高端客户拓展阶段。\n\n### 定价策略补充\n根据知识库中的**阶梯定价结构**，公司对年采购量在2,000吨以上的客户提供2%-6%的价格折扣，但**所有折扣不得低于22%的毛利润底线**。这意味着复合铝箔和SSB专用箔材有更大的折扣空间，而标准铜箔由于基础毛利率低，折扣空间有限。\n\n> 注：以上数据来源于知识库中的《定价分析执行摘要-EN》和《定价策略与利润率分析-EN》。如需更详细的公司档案（如财务数据、组织结构等），可访问 `/知识库/01_公司档案/` 目录下的完整文档。",
+        "router_tokens": {
+          "input_tokens": 521,
+          "output_tokens": 75
+        },
+        "answer_tokens": {
+          "input_tokens": 1520,
+          "output_tokens": 530
+        },
+        "total_input_tokens": 2041,
+        "total_output_tokens": 605,
+        "route_time_s": 1.85,
+        "exec_time_s": 3.84,
+        "answer_time_s": 7.86,
+        "total_time_s": 13.55,
+        "cost_usd": 0.000455
+      },
+      "claude": {
+        "error": "Connection error."
+      }
+    },
+    {
+      "id": "KB-02",
+      "question": "复合铜箔和传统铜箔相比有什么技术优势？",
+      "category": "kb_only",
+      "description": "产品技术对比",
+      "deepseek": {
+        "tools_planned": [
+          "kb_search",
+          "kb_industry"
+        ],
+        "tools_data_count": 1,
+        "tool_details": [
+          {
+            "tool": "kb_search",
+            "reason": "",
+            "status": "no_data"
+          },
+          {
+            "tool": "kb_industry",
+            "reason": "",
+            "status": "ok",
+            "result_count": 5
+          }
+        ],
+        "answer": "根据知识库信息，英联股份（英年科技）自2022年起布局新能源汽车动力锂电池复合铜箔、复合铝箔业务，作为公司的“第二主业”。关于复合铜箔与传统铜箔相比的技术优势，知识库中未提供具体对比数据，但结合行业通用知识，我可以补充以下分析：\n\n**根据知识库**：公司产品为“新能源汽车动力锂电池复合铜箔”，属于复合集流体技术路线，但未详细说明其性能优势。\n\n**根据行业通用知识**，复合铜箔相比传统铜箔的主要技术优势包括：\n1. **安全性提升**：复合铜箔采用“金属-高分子-金属”的三明治结构，高分子层（如PET或PP）在电池热失控时可起到熔断作用，有效防止内部短路，显著提升电池安全性。\n2. **能量密度提高**：高分子材料密度远低于铜，复合铜箔整体重量更轻，可提升电池能量密度约5-10%。\n3. **成本降低潜力**：铜用量减少约60-70%，在铜价高企背景下，原材料成本有显著下降空间。\n4. **循环寿命与兼容性**：部分设计可改善电解液浸润性，但需注意界面结合力可能影响长期循环性能。\n\n如需获取英联股份复合铜箔的具体性能指标（如剥离强度、面密度、延伸率等）或与行业基准的对比数据，建议查阅公司内部研发报告或联系技术部门。",
+        "router_tokens": {
+          "input_tokens": 520,
+          "output_tokens": 95
+        },
+        "answer_tokens": {
+          "input_tokens": 777,
+          "output_tokens": 304
+        },
+        "total_input_tokens": 1297,
+        "total_output_tokens": 399,
+        "route_time_s": 2.27,
+        "exec_time_s": 0.16,
+        "answer_time_s": 5.22,
+        "total_time_s": 7.65,
+        "cost_usd": 0.000293
+      },
+      "claude": {
+        "error": "Connection error."
+      }
+    }
+  ],
+  "summary": {
+    "deepseek": {
+      "total_input_tokens": 3338,
+      "total_output_tokens": 1004,
+      "total_cost_usd": 0.0007,
+      "total_time_s": 21.2,
+      "avg_time_s": 10.6,
+      "avg_cost_usd": 0.000374
+    },
+    "claude": {
+      "total_input_tokens": 0,
+      "total_output_tokens": 0,
+      "total_cost_usd": 0,
+      "total_time_s": 0,
+      "avg_time_s": 0.0,
+      "avg_cost_usd": 0.0
+    }
+  }
+}
