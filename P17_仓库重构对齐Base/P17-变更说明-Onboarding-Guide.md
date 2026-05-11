@@ -376,10 +376,66 @@ Configuration is in `.session-history.json` at the project root. The underlying 
 
 ---
 
-## 6. Quick Checklist for New Team Members
+## 6. Setting Up the RESTRICTED Repo（敏感内容仓库）
 
-- [ ] Clone the repo and `cd Enpack_CCC`
+主仓库 `Enpack_CCC` 的目录结构预留了 `RESTRICTED/` 路径用于存放敏感规格（R## 前缀）、实验数据、知识库等内容。这个目录实际上是另一个**独立的私有仓库**（`Enpack_CCC_RESTRICTED`），但必须克隆到主仓库内的 `RESTRICTED/` 路径下，这样两个仓库在文件系统层面合为一体，工具链（如 `/history scan`、Claude Code 等）能自动发现 `RESTRICTED/规格/R##_xxx/` 下的规格文件。
+
+主仓库的 `.gitignore` 已排除 `RESTRICTED/`，所以两个仓库虽然物理上嵌套，但各自独立管理 git 历史，互不干扰。
+
+### 克隆步骤（必须在主仓库根目录下执行）
+
+```bash
+cd ~/AI/Enpack_CCC    # ← 必须在主仓库根目录
+
+# 克隆到 RESTRICTED/ 路径，与主仓库目录合为一体
+git clone https://github.com/kevinw99/Enpack_CCC_RESTRICTED.git RESTRICTED
+
+# 验证：应能看到 R14 等规格目录
+ls RESTRICTED/规格/
+# → R14_知识库权限管理系统/  ...
+```
+
+克隆后的目录结构：
+
+```
+Enpack_CCC/                    ← 主仓库 (public)
+├── 规格/P01_.../              ← 公开规格
+├── 规格/P17_.../
+├── RESTRICTED/                ← 私有仓库 (clone 到此路径，gitignored)
+│   ├── .git/                  ← RESTRICTED 自己的 git
+│   ├── 规格/R14_.../          ← 敏感规格
+│   ├── 知识库/
+│   └── 实验数据/
+└── ...
+```
+
+### 权限要求
+
+- 你需要对 `kevinw99/Enpack_CCC_RESTRICTED` 有**读取权限**（private repo）
+- 如果 `git clone` 报 403/404，请联系 kweng 将你的 GitHub 账号加为 collaborator
+
+### 日常操作
+
+RESTRICTED 有独立的 git 历史，推拉操作需在 `RESTRICTED/` 目录内执行：
+
+```bash
+cd ~/AI/Enpack_CCC/RESTRICTED
+
+git pull origin main           # 拉取更新
+git add <files>                # 提交变更
+git commit -m "your message"
+git push origin main
+```
+
+> **注意**：在主仓库根目录执行 `git status` 时**不会**显示 `RESTRICTED/` 内的变更。要查看 RESTRICTED 的状态，必须先 `cd RESTRICTED`。
+
+---
+
+## 7. Quick Checklist for New Team Members
+
+- [ ] Clone the repo: `git clone <url> Enpack_CCC && cd Enpack_CCC`
 - [ ] Add base remote: `git remote add base https://github.com/kevinw99/ai-project-base.git`
+- [ ] Clone RESTRICTED repo: `git clone https://github.com/kevinw99/Enpack_CCC_RESTRICTED.git RESTRICTED`
 - [ ] Read `REPO_GUIDE.md` for file ownership rules
 - [ ] Read `PROJECT_GUIDELINES.md` for workflow conventions
 - [ ] In Claude Code, run `/history scan` to build initial session indices
