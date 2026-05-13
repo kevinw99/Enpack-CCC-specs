@@ -69,3 +69,47 @@
 - 模型选择: Flash / Pro / Hybrid
 - 显示工具详情: 开/关
 - 显示成本统计: 开/关
+
+## 部署
+
+采用 Cloudflare + 阿里云双部署架构，详见 [`AI-ALL/docs/leapbound-infra-plan.md`](../../../AI-ALL/docs/leapbound-infra-plan.md)。
+
+### 环境一览
+
+| 环境 | 入口 | 用途 |
+|------|------|------|
+| 阿里云 ECS (上海) | `http://47.116.176.127` | 国内用户，KB + ERP 全功能 |
+| Cloudflare Containers | `https://enpack-ai-chat.kevinweng99.workers.dev` | 海外演示，KB only |
+
+### 阿里云管理
+
+- **ECS 控制台**: https://ecs.console.aliyun.com/
+- 实例: ecs.e-c1m1.large, 2vCPU 2GiB, Ubuntu 22.04, 华东2 (上海)
+- 部署目录: `/opt/enpack-ai-chat/`
+- 容器: `enpack-ai-chat` (port 80→8501)
+
+### 常用运维命令
+
+```bash
+# SSH 登录
+ssh root@47.116.176.127
+
+# 查看容器状态
+docker ps
+
+# 重启服务
+cd /opt/enpack-ai-chat && docker compose restart
+
+# 查看日志
+docker logs enpack-ai-chat --tail 100 -f
+
+# 重新部署（本地执行）
+cd Enpack_CCC/deploy/domestic
+./deploy-to-server.sh 47.116.176.127
+```
+
+### 部署流程与配置
+
+构建脚本、Docker Compose、环境变量等详见：
+- 本仓库: `deploy/domestic/` (阿里云) 和 `deploy/cloud/` (Cloudflare)
+- 完整架构文档: `AI-ALL/docs/leapbound-infra-plan.md` §1–8
