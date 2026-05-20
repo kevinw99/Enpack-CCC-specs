@@ -3,7 +3,7 @@
   "entity_type": "spec",
   "display_name": "Spec 08: 复合集流体公司档案研究",
   "directory": "规格/P08_复合集流体公司档案研究",
-  "session_count": 2,
+  "session_count": 1,
   "sessions": [
     {
       "session_id": "d187553a-451e-4a3a-a3a8-c44a1cb4f5d0",
@@ -33,36 +33,7 @@
         "File: 规格/P08_复合集流体公司档案研究/history/sessions-index.json",
         "Text: ...Now I can give you the full answer. It was **NOT** automatic from `PROJECT_GUIDE..."
       ]
-    },
-    {
-      "session_id": "650a3dc9-73c7-4e96-be0e-5e16bc00f446",
-      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/650a3dc9-73c7-4e96-be0e-5e16bc00f446.jsonl",
-      "confidence": 0.11,
-      "start_time": "2026-03-20T21:41:20.338Z",
-      "end_time": "2026-03-20T22:09:24.589Z",
-      "message_count": 122,
-      "matched_message_count": 2,
-      "matched_messages": [
-        {
-          "uuid": "b2beb70a-04c1-40ee-ab93-6fd9a641b120",
-          "line_number": 109,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-20T21:54:41.004Z",
-          "preview": "All done. Here's a summary:\n\n**Completed:**\n1. Pulled latest from `base` repo and resolved merge con"
-        },
-        {
-          "uuid": "b2a2c994-d18e-4dd2-a7ec-c7160a7217d1",
-          "line_number": 170,
-          "msg_type": "assistant",
-          "timestamp": "2026-03-20T22:02:37.484Z",
-          "preview": "## LLM vs Regex 分类结果全面对比\n\n### 一、总体结构性差异\n\n| 维度 | 旧版（Regex） | 新版（LLM） |\n|------|-----------|----------"
-        }
-      ],
-      "evidence": [
-        "Text: ...All done. Here's a summary:  **Completed:** 1. Pulled latest from `base` repo an...",
-        "Text: ...## LLM vs Regex 分类结果全面对比  ### 一、总体结构性差异  | 维度 | 旧版（Regex） | 新版（LLM） | |------|--..."
-      ]
     }
   ],
-  "last_updated": "2026-04-24T14:34:39.416554"
+  "last_updated": "2026-05-13T09:02:04.121522"
 }

@@ -1,6 +1,6 @@
 # Spec 24: KB适配问题集生成 - Replay Index
 
-> Generated: 2026-05-03 22:26
+> Generated: 2026-05-13 09:02
 > Sessions: 2
 
 | Date | Person | File |

@@ -1,0 +1,60 @@
+{
+  "entity_id": "spec:P30_MCP问答记录与质量评估",
+  "entity_type": "spec",
+  "display_name": "Spec 30: MCP问答记录与质量评估",
+  "directory": "规格/P30_MCP问答记录与质量评估",
+  "session_count": 2,
+  "sessions": [
+    {
+      "session_id": "6a17de55-6add-4461-9384-b174e93af776",
+      "file_path": "/Users/sss/.claude/projects/-Users-sss-gee-Enpack-CCC/6a17de55-6add-4461-9384-b174e93af776.jsonl",
+      "confidence": 0.155,
+      "start_time": "2026-05-17T14:28:26.951Z",
+      "end_time": "2026-05-17T15:15:16.832Z",
+      "message_count": 140,
+      "matched_message_count": 2,
+      "matched_messages": [
+        {
+          "uuid": "7391aa91-af76-4fa5-9a85-9fe918c4c0b1",
+          "line_number": 13,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-17T14:29:19.162Z",
+          "preview": "先澄清一下：这段代码在 `源代码/ai-chat-client/pipeline.py:356-371`，不在 `app.py`。\n\n## 代码作用\n\n这是一个 Python `for...else`"
+        },
+        {
+          "uuid": "1cb6a430-f98b-43bd-8dfd-4cfa3d42b03b",
+          "line_number": 84,
+          "msg_type": "user",
+          "timestamp": "2026-05-17T14:40:35.815Z",
+          "preview": "好的 同步更新一下 规格/P30_MCP问答记录与质量评估下的文件"
+        }
+      ],
+      "evidence": [
+        "Text: ...先澄清一下：这段代码在 `源代码/ai-chat-client/pipeline.py:356-371`，不在 `app.py`。  ## 代码作用  这是一个...",
+        "Text: ...好的 同步更新一下 规格/P30_MCP问答记录与质量评估下的文件..."
+      ]
+    },
+    {
+      "session_id": "4269cef8-8016-4a80-ac7e-6bb3a8f8e4af",
+      "file_path": "/Users/sss/.claude/projects/-Users-sss-gee-Enpack-CCC/4269cef8-8016-4a80-ac7e-6bb3a8f8e4af.jsonl",
+      "confidence": 0.1,
+      "start_time": "2026-05-14T07:17:04.560Z",
+      "end_time": "2026-05-14T07:30:07.931Z",
+      "message_count": 17,
+      "matched_message_count": 1,
+      "matched_messages": [
+        {
+          "uuid": "5bfbcc39-93dd-4b78-bec6-8bdfd7012f94",
+          "line_number": 27,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-14T07:30:07.903Z",
+          "preview": "金蝶 MCP Server 相关的规格有多个，都在 `/Users/sss/gee/Enpack_CCC/规格/` 下：\n\n| 编号 | 名称 |\n|------|------|\n| **P20** "
+        }
+      ],
+      "evidence": [
+        "Text: ...金蝶 MCP Server 相关的规格有多个，都在 `/Users/sss/gee/Enpack_CCC/规格/` 下：  | 编号 | 名称 | |-----..."
+      ]
+    }
+  ],
+  "last_updated": "2026-05-18T13:50:24.630309"
+}

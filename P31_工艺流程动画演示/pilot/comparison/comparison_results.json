@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-05-16T23:52:54.158025",
+  "segments": {
+    "sc3a_equipment": {
+      "title": "PVD设备全景 (宏观)",
+      "prompt": "工业级PVD真空镀膜设备全景，银白色不锈钢机身，大型真空腔体居中，左右两侧有放卷和收卷辊，塑料薄膜从左侧辊展开穿过腔体再卷到右侧。设备干净整洁，工厂背景，柔和的工业灯光。镜头从设备右前方缓缓推进到腔体正面。电影级画质，工业宣传片风格。",
+      "duration": 10,
+      "kling": {
+        "path": "/Users/kweng/AI/Enpack_CCC/规格/P30_工艺流程动画演示/pilot/comparison/kling_sc3a_equipment.mp4",
+        "size_mb": 4.864601135253906,
+        "task_id": "884655283300487266"
+      }
+    },
+    "sc3c_boats_heat": {
+      "title": "蒸发舟加热 (中景)",
+      "prompt": "真空腔体内部，一排6个陶瓷蒸发舟整齐排列在底部。从暗到亮：蒸发舟逐个通电加热，从灰色变为暗红、橙红、亮白色，发出强烈的热辐射光芒。铝丝从上方自动送入每个舟中，接触高温舟面后迅速熔化成银色液体。腔体内壁反射橙色光芒。镜头沿蒸发舟排列方向缓缓平移。",
+      "duration": 10,
+      "kling": {
+        "path": "/Users/kweng/AI/Enpack_CCC/规格/P30_工艺流程动画演示/pilot/comparison/kling_sc3c_boats_heat.mp4",
+        "size_mb": 6.124773979187012,
+        "task_id": "884655285053853789"
+      }
+    },
+    "sc5_defect_splash": {
+      "title": "凹凸点缺陷 (微观)",
+      "prompt": "蒸发舟内的银色铝液在高温下剧烈沸腾，液面产生气泡，气泡破裂时弹射出微小的银色液滴飞溅到上方。类似一锅沸腾的油溅出油花的效果。液滴飞向上方的塑料薄膜，撞击薄膜表面形成微小的凸起。高速摄影风格，慢动作，戏剧性灯光。",
+      "duration": 10,
+      "kling": {
+        "path": "/Users/kweng/AI/Enpack_CCC/规格/P30_工艺流程动画演示/pilot/comparison/kling_sc5_defect_splash.mp4",
+        "size_mb": 8.201974868774414,
+        "task_id": "884655286383284256"
+      }
+    }
+  }
+}

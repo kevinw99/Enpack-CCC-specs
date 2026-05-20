@@ -1,0 +1,31 @@
+{
+  "entity_id": "spec:P02_电池材料关键绩效指标研究",
+  "entity_type": "spec",
+  "display_name": "Spec 02: 电池材料关键绩效指标研究",
+  "directory": "规格/P02_电池材料关键绩效指标研究",
+  "session_count": 1,
+  "sessions": [
+    {
+      "session_id": "ca19b295-a91e-480e-b4a2-ea5dc58567b3",
+      "file_path": "/Users/sss/.claude/projects/-Users-sss-gee-Enpack-CCC/ca19b295-a91e-480e-b4a2-ea5dc58567b3.jsonl",
+      "confidence": 0.1,
+      "start_time": "2026-05-19T08:13:29.346Z",
+      "end_time": "2026-05-19T08:19:10.946Z",
+      "message_count": 10,
+      "matched_message_count": 1,
+      "matched_messages": [
+        {
+          "uuid": "1fd05cde-458e-476c-ac28-e90a709aa038",
+          "line_number": 14,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-19T08:19:10.934Z",
+          "preview": " The full pipeline completed successfully. Here's a summary:\n\n**增量扫描**: 3 new sessions processed (ou"
+        }
+      ],
+      "evidence": [
+        "Text: ... The full pipeline completed successfully. Here's a summary:  **增量扫描**: 3 new se..."
+      ]
+    }
+  ],
+  "last_updated": "2026-05-19T17:15:00.383007"
+}

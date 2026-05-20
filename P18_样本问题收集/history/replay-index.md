@@ -1,6 +1,6 @@
 # Spec 18: 样本问题收集 - Replay Index
 
-> Generated: 2026-05-03 22:26
+> Generated: 2026-05-13 09:02
 > Sessions: 3
 
 | Date | Person | File |

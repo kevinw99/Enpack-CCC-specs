@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "script": "S01 — PVD蒸镀工艺流程",
+    "total_duration": "3-5 min",
+    "tool_split": "Seedance=宏观氛围, Blender=微观精确"
+  },
+  "segments": [
+    {
+      "scene": 1,
+      "name": "s01_sc1_why_battery",
+      "title": "为什么需要集流体",
+      "duration": 10,
+      "tool": "seedance",
+      "prompt": "手机和电动车的锂电池内部结构剖面图，从电池外壳逐层剖开，展示正极、负极、电解液和集流体。集流体（金属薄片）高亮发光，电流沿集流体流动的箭头动画效果。科技感蓝色配色，深色背景，电影级3D渲染风格。镜头从电池外部缓缓推进到内部微观结构。",
+      "ref_image": null,
+      "narration_text": "你的手机、电动车里都有锂电池。锂电池内部有正极和负极，中间靠锂离子移动来充放电。但锂离子在正负极材料里产生的电流需要被收集起来，导出到外部电路——承担这个角色的薄片叫集流体。"
+    },
+    {
+      "scene": 2,
+      "name": "s01_sc2_sandwich",
+      "title": "三明治结构",
+      "duration": 30,
+      "tool": "blender",
+      "prompt": null,
+      "ref_image": null,
+      "note": "已完成 — pilot/composite/scene2_final.mp4"
+    },
+    {
+      "scene": 3,
+      "name": "s01_sc3a_equipment",
+      "title": "PVD设备全景",
+      "duration": 10,
+      "tool": "seedance",
+      "prompt": "工业级PVD真空镀膜设备全景，银白色不锈钢机身，大型真空腔体居中，左右两侧有放卷和收卷辊，塑料薄膜从左侧辊展开穿过腔体再卷到右侧。设备干净整洁，工厂背景，柔和的工业灯光。镜头从设备右前方缓缓推进到腔体正面。电影级画质，工业宣传片风格。",
+      "ref_image": "/tmp/ref_frames/ref_0001.png"
+    },
+    {
+      "scene": 3,
+      "name": "s01_sc3b_vacuum",
+      "title": "抽真空",
+      "duration": 5,
+      "tool": "seedance",
+      "prompt": "PVD真空镀膜设备的真空腔体特写，不锈钢腔体门关闭，机械泵启动的画面。腔体表面有真空计指针转动，显示气压下降。冷色调工业灯光，安静的科技感氛围。镜头固定，聚焦在真空计和腔体表面。",
+      "ref_image": null
+    },
+    {
+      "scene": 3,
+      "name": "s01_sc3c_boats_heat",
+      "title": "蒸发舟加热",
+      "duration": 10,
+      "tool": "seedance",
+      "prompt": "真空腔体内部，一排6个陶瓷蒸发舟整齐排列在底部。从暗到亮：蒸发舟逐个通电加热，从灰色变为暗红、橙红、亮白色，发出强烈的热辐射光芒。铝丝从上方自动送入每个舟中，接触高温舟面后迅速熔化成银色液体。腔体内壁反射橙色光芒。镜头沿蒸发舟排列方向缓缓平移。",
+      "ref_image": "/tmp/ref_a01/detail_0004.png"
+    },
+    {
+      "scene": 3,
+      "name": "s01_sc3d_deposition",
+      "title": "铝蒸汽沉积",
+      "duration": 10,
+      "tool": "seedance",
+      "prompt": "PVD真空腔体内部全景透视。底部一排发出白热光芒的蒸发舟，大量银白色铝蒸汽从舟面升腾而起，形成雾状蒸汽柱向上飘升。顶部一条半透明的塑料薄膜在两个滚轮之间连续移动，铝蒸汽接触薄膜后凝结，薄膜下表面逐渐变成银色金属光泽。从底部橙色热光到上方冷蓝色的色彩渐变。镜头从底部蒸发舟缓缓上摇到顶部薄膜。电影级工业动画，体积雾效果。",
+      "ref_image": "/tmp/ref_a01/detail_0008.png"
+    },
+    {
+      "scene": 3,
+      "name": "s01_sc3f_output",
+      "title": "成品卷出",
+      "duration": 10,
+      "tool": "seedance",
+      "prompt": "PVD真空镀膜设备右侧，镀好铝层的塑料薄膜从真空腔体出口连续卷出，薄膜表面呈现均匀的银色金属光泽，在灯光下反射出镜面效果。收卷辊稳定旋转，薄膜平整无褶皱。干净的工厂环境，明亮的白色灯光。",
+      "ref_image": "/tmp/ref_a01/detail_0014.png"
+    },
+    {
+      "scene": 4,
+      "name": "s01_sc4_boat_detail",
+      "title": "蒸发舟细节",
+      "duration": 15,
+      "tool": "seedance",
+      "prompt": "单个蒸发舟的超近距离特写。一个12厘米长3厘米宽的白色陶瓷小容器（氮化硼材质），内部盛有银色液态铝。一根细铝丝从上方缓缓送入舟内，接触液面后瞬间熔化融入铝液池。舟体通电发出暗红色光芒，铝液面微微沸腾，有细小的银色蒸汽从液面升起。微距摄影风格，浅景深，暖色调。",
+      "ref_image": null
+    },
+    {
+      "scene": 4,
+      "name": "s01_sc4b_36boats",
+      "title": "36舟俯视排列",
+      "duration": 10,
+      "tool": "blender",
+      "prompt": null,
+      "note": "Blender精确建模：两排各18个舟的俯视排列图，标注尺寸"
+    },
+    {
+      "scene": 5,
+      "name": "s01_sc5_defect_splash",
+      "title": "凹凸点缺陷",
+      "duration": 15,
+      "tool": "seedance",
+      "prompt": "蒸发舟内的银色铝液在高温下剧烈沸腾，液面产生气泡，气泡破裂时弹射出微小的银色液滴飞溅到上方。类似一锅沸腾的油溅出油花的效果。液滴飞向上方的塑料薄膜，撞击薄膜表面形成微小的凸起。高速摄影风格，慢动作，戏剧性灯光。",
+      "ref_image": null
+    },
+    {
+      "scene": 5,
+      "name": "s01_sc5b_defect_micro",
+      "title": "凹凸点微观",
+      "duration": 10,
+      "tool": "blender",
+      "prompt": null,
+      "note": "Blender精确建模：三种飞溅机制对比动画（气泡核化/送丝冲击/舟间热辐射）"
+    },
+    {
+      "scene": 6,
+      "name": "s01_sc6_solution_reduce",
+      "title": "减舟方案",
+      "duration": 10,
+      "tool": "blender",
+      "prompt": null,
+      "note": "Blender精确建模：36舟→18舟对比俯视图，热辐射强度色彩变化，凹凸点计数柱状图"
+    },
+    {
+      "scene": 6,
+      "name": "s01_sc6b_tungsten_mesh",
+      "title": "钨网方案",
+      "duration": 15,
+      "tool": "seedance",
+      "prompt": "一片极细的金属丝编织网（钨网，200目）平铺在蒸发舟的铝液面上。铝液沿着网格的细丝均匀铺展开来（毛细效应），就像纸巾吸水一样。无钨网时液面局部堆积沸腾飞溅，有钨网后液面平静均匀。分屏对比效果：左半边无网（飞溅）vs 右半边有网（平静）。微距摄影风格。",
+      "ref_image": null
+    },
+    {
+      "scene": 7,
+      "name": "s01_sc7_quality",
+      "title": "质量验证",
+      "duration": 10,
+      "tool": "seedance",
+      "prompt": "工业生产线上，一台CCD工业相机正在扫描高速移动的银色金属化薄膜。相机旁边有一个显示屏实时显示检测结果，画面中有绿色的OK标记。薄膜从左到右连续移动，表面反射出均匀的金属光泽。最终薄膜卷成大卷，贴上合格标签。明亮的洁净车间环境。",
+      "ref_image": null
+    }
+  ]
+}

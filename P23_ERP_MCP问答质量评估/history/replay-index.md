@@ -1,6 +1,6 @@
 # Spec 23: ERP_MCP问答质量评估 - Replay Index
 
-> Generated: 2026-05-03 22:26
+> Generated: 2026-05-13 09:02
 > Sessions: 4
 
 | Date | Person | File |

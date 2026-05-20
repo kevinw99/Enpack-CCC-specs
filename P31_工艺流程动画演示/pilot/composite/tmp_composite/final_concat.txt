@@ -1,0 +1,7 @@
+file '/Users/kweng/AI/Enpack_CCC/规格/P30_工艺流程动画演示/pilot/composite/tmp_composite/scene1_final.mp4'
+file '/Users/kweng/AI/Enpack_CCC/规格/P30_工艺流程动画演示/pilot/composite/tmp_composite/scene2_final.mp4'
+file '/Users/kweng/AI/Enpack_CCC/规格/P30_工艺流程动画演示/pilot/composite/tmp_composite/scene3_final.mp4'
+file '/Users/kweng/AI/Enpack_CCC/规格/P30_工艺流程动画演示/pilot/composite/tmp_composite/scene4_final.mp4'
+file '/Users/kweng/AI/Enpack_CCC/规格/P30_工艺流程动画演示/pilot/composite/tmp_composite/scene5_final.mp4'
+file '/Users/kweng/AI/Enpack_CCC/规格/P30_工艺流程动画演示/pilot/composite/tmp_composite/scene6_final.mp4'
+file '/Users/kweng/AI/Enpack_CCC/规格/P30_工艺流程动画演示/pilot/composite/tmp_composite/scene7_final.mp4'
