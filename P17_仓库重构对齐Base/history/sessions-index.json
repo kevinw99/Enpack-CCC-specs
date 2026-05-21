@@ -3,8 +3,37 @@
   "entity_type": "spec",
   "display_name": "Spec 17: 仓库重构对齐Base",
   "directory": "规格/P17_仓库重构对齐Base",
-  "session_count": 2,
+  "session_count": 3,
   "sessions": [
+    {
+      "session_id": "f9d045cf-3cfa-4ffb-8d27-28558200aaa9",
+      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/f9d045cf-3cfa-4ffb-8d27-28558200aaa9.jsonl",
+      "confidence": 0.1,
+      "start_time": "2026-05-19T07:31:23.621Z",
+      "end_time": "2026-05-20T13:39:06.503Z",
+      "message_count": 930,
+      "matched_message_count": 2,
+      "matched_messages": [
+        {
+          "uuid": "f098cce7-29bb-4277-9155-89a611c1061b",
+          "line_number": 38,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-19T07:39:31.163Z",
+          "preview": ""
+        },
+        {
+          "uuid": "39f3c62d-19c7-4843-8357-99a01f8bd494",
+          "line_number": 923,
+          "msg_type": "user",
+          "timestamp": "2026-05-20T10:49:35.031Z",
+          "preview": "This session is being continued from a previous conversation that ran out of context. The summary be"
+        }
+      ],
+      "evidence": [
+        "File: /Users/kweng/AI/Enpack_CCC/规格/P17_仓库重构对齐Base/design.md",
+        "Text: ...This session is being continued from a previous conversation that ran out of con..."
+      ]
+    },
     {
       "session_id": "c7346006-8563-43f6-a715-bbe44f93259d",
       "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/c7346006-8563-43f6-a715-bbe44f93259d.jsonl",
@@ -118,5 +147,5 @@
       ]
     }
   ],
-  "last_updated": "2026-05-14T23:32:31.318961"
+  "last_updated": "2026-05-20T22:13:55.886378"
 }

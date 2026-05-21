@@ -1,6 +1,6 @@
 # Spec 28: 模型MCP对比评估 - Replay Index
 
-> Generated: 2026-05-13 09:02
+> Generated: 2026-05-21 20:15
 > Sessions: 2
 
 | Date | Person | File |

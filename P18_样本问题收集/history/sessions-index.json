@@ -3,8 +3,53 @@
   "entity_type": "spec",
   "display_name": "Spec 18: 样本问题收集",
   "directory": "规格/P18_样本问题收集",
-  "session_count": 3,
+  "session_count": 4,
   "sessions": [
+    {
+      "session_id": "8f2c6ad8-270a-459d-9273-e781828ce607",
+      "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/8f2c6ad8-270a-459d-9273-e781828ce607.jsonl",
+      "confidence": 0.14,
+      "start_time": "2026-05-20T06:13:19.822Z",
+      "end_time": "2026-05-20T14:14:17.861Z",
+      "message_count": 375,
+      "matched_message_count": 4,
+      "matched_messages": [
+        {
+          "uuid": "78b79a27-64c6-44e3-83cc-faf06e316e05",
+          "line_number": 57,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-20T06:23:41.250Z",
+          "preview": ""
+        },
+        {
+          "uuid": "eb79c6ac-64be-4348-a06f-ffeb29dcb353",
+          "line_number": 61,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-20T06:27:01.844Z",
+          "preview": "Scale check: 4648 files to move from P30→P31 (Blender render frames), 77 other files, 3 P18 modify/d"
+        },
+        {
+          "uuid": "3dc0dd41-8e08-4594-9b7f-a1658ae34cd2",
+          "line_number": 87,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-20T06:30:33.401Z",
+          "preview": "Decisions noted:\n- P18 replays: accept remote delete\n- `src/session_history`: keep symlink (override"
+        },
+        {
+          "uuid": "b35beed6-4a64-4268-a66a-b35bfe14a6ed",
+          "line_number": 276,
+          "msg_type": "assistant",
+          "timestamp": "2026-05-20T09:07:03.911Z",
+          "preview": "Done. Summary:\n\n**Final state:**\n- ✅ On `main`, ahead of `origin/main` by 1 commit (your replayed `7"
+        }
+      ],
+      "evidence": [
+        "File: 规格/P18_样本问题收集/history/replay/",
+        "Text: ...Scale check: 4648 files to move from P30→P31 (Blender render frames), 77 other f...",
+        "Text: ...Decisions noted: - P18 replays: accept remote delete - `src/session_history`: ke...",
+        "Text: ...Done. Summary:  **Final state:** - ✅ On `main`, ahead of `origin/main` by 1 comm..."
+      ]
+    },
     {
       "session_id": "0b9d88c9-f14f-40f8-adbc-9bc4c7407828",
       "file_path": "/Users/kweng/.claude/projects/-Users-kweng-AI-Enpack-CCC/0b9d88c9-f14f-40f8-adbc-9bc4c7407828.jsonl",
@@ -459,5 +504,5 @@
       ]
     }
   ],
-  "last_updated": "2026-05-13T09:02:04.097768"
+  "last_updated": "2026-05-21T20:15:15.607404"
 }
